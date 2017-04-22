@@ -1,0 +1,61 @@
+body
+{
+background-color:#f0f3f4;
+
+}
+
+.log100
+{
+
+}
+
+.zzz
+{
+background-color:#fff;margin-top:70px;border: 1px #dddddd solid;
+}
+.panel
+{
+	background: rgba(255,255,255,0.0);
+	border:0px;
+
+}
+.panel-default>.panel-heading
+{
+	background: rgba(255,255,255,0.0);
+	border:0px;
+}
+.panel-default>.panel-heading{
+color:#384146;
+font-size:13pt;
+}
+.input-lg {
+
+	font-size:10pt;
+}
+.margin
+{
+	margin-top:-15px;
+	border-top:none;
+}
+.form-control {
+border-radius:0px;
+}
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] 
+{
+  float: right;
+  margin-left: 20px;
+}
+.bg-dark a {
+color:#384146;
+  margin-left: 20px;
+}
+.btn-default {
+  color: #000 !important;
+  background-color: #fff;
+  border-color: #ddd;
+  height:30px;
+}
+.alert {
+font-size:9pt;
+font-family:tahoma;
+}

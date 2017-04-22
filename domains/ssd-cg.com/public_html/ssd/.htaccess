@@ -1,0 +1,55 @@
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9-/]+)$ ssd.php?url=$1
+RewriteRule ^([a-zA-Z0-9-/]+)/$ ssd.php?url=$1
+RewriteCond %{HTTP_HOST} !^www\.ssd-cg\.com
+RewriteRule (.*)http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/$1 [R=301,L] 
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ErrorDocument 404 /unique/error.php
+order deny,allow
+AddDefaultCharset UTF-8
+<FilesMatch "\.(gif|jpe?g|png|ico|css|js|swf|woff)$">
+     Header set Cache-Control "max-age=172800000, public, must-revalidate"
+</FilesMatch>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+ AddType application/x-javascript .js
+ AddType text/css .css
+</IfModule>
+<IfModule mod_deflate.c>
+ AddOutputFilterByType DEFLATE text/css application/x-javascript text/x-component text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/javascript
+ <IfModule mod_setenvif.c>
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+ </IfModule>
+ <IfModule mod_headers.c>
+  Header append Vary User-Agent env=!dont-vary
+ </IfModule>
+</IfModule>
+SetOutputFilter DEFLATE
+ <IfModule mod_setenvif.c>
+  SetEnvIfNoCase Request_URI \.(?:rar|zip)$ no-gzip dont-vary
+  SetEnvIfNoCase Request_URI \.(?:gif|jpg|png)$ no-gzip dont-vary
+  SetEnvIfNoCase Request_URI \.(?:avi|mov|mp4)$ no-gzip dont-vary
+  SetEnvIfNoCase Request_URI \.mp3$ no-gzip dont-vary
+ </IfModule>          
+           
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+
+   RewriteRule sitemap\.xml sitemap.xml.php [L]
+
+   RewriteCond %{REQUEST_FILENAME} -f [OR]
+   RewriteCond %{REQUEST_FILENAME} -d
+   RewriteRule ^.*$ - [S=40]
+
+   RewriteRule ^$ app/webroot/ [L]
+   RewriteRule (.*) app/webroot/$1 [L]
+</IfModule>                  

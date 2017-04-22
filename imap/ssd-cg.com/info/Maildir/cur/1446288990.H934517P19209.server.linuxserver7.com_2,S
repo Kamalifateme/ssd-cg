@@ -1,0 +1,51 @@
+Return-path: <somayyesafi@yahoo.com>
+Envelope-to: Info@ssd-cg.com
+Delivery-date: Sat, 31 Oct 2015 14:26:30 +0330
+Received: from nm46-vm2.bullet.mail.ne1.yahoo.com ([98.138.121.82])
+	by server.linuxserver7.com with esmtps (TLSv1:ECDHE-RSA-RC4-SHA:128)
+	(Exim 4.86)
+	(envelope-from <somayyesafi@yahoo.com>)
+	id 1ZsTpl-0003dw-Uf
+	for Info@ssd-cg.com; Sat, 31 Oct 2015 14:26:30 +0330
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1446288745; bh=y74kTohmPTZCKj1tsfrad3fawV+mE7MlS3x1gSiXcig=; h=Date:From:Reply-To:To:Subject:References:From:Subject; b=PlkyG3/dK/HWxKHt/+1YqrvkEYDED5r+40ll8KnrP0OhsYYFMbL+vQfdr/Z+7c5cfdH6/xVva5q+lFNOlgMm/7eXdccxbmheHRD2+XqL+YmoufsGyKy23KI5yJUapI8VvSOwiot0KyFXCuBiQ8CVlGDe888FVym45NN5QBljWs1rfvhha0+McYPJTkCcc1eeNI46tY/EPV8mxWlBRoAT91x3zOkBaBN2Ws4rssUnzS/jxasWrH1Y7p8QfVdxew7g1AzdZi62XOy6L7mDwoz6/21HXPNH2Uc6taApwyS9Y5liJQm7/WUP73EqjZLS+ju0lWo2VjYgmPL/MO4fGtClvg==
+Received: from [127.0.0.1] by nm46.bullet.mail.ne1.yahoo.com with NNFMP; 31 Oct 2015 10:52:25 -0000
+Received: from [98.138.226.180] by nm46.bullet.mail.ne1.yahoo.com with NNFMP; 31 Oct 2015 10:49:26 -0000
+Received: from [212.82.98.48] by tm15.bullet.mail.ne1.yahoo.com with NNFMP; 31 Oct 2015 10:49:26 -0000
+Received: from [212.82.98.100] by tm1.bullet.mail.ir2.yahoo.com with NNFMP; 31 Oct 2015 10:49:26 -0000
+Received: from [127.0.0.1] by omp1037.mail.ir2.yahoo.com with NNFMP; 31 Oct 2015 10:49:26 -0000
+X-Yahoo-Newman-Property: ymail-4
+X-Yahoo-Newman-Id: 88869.89288.bm@omp1037.mail.ir2.yahoo.com
+X-YMail-OSG: _Kn3XAkVM1lOBt0xIOHqwzgDam0RU0.iByEQbBVU3hk3Tf6jAP.PqKWpWWVUwW1
+ kw4yKvcYjYLs0syo10uIyR.tpfKV9wLqU1QzuDCbcCQ8guU8mrs1DcGd5wwdWlzHFwFBBWT.kT4v
+ NsJOyiSEUb5TLvMmiUaIZqCHq5rMTi6l4iC26wWnh.GsGxuW.no0351X0NV._pYW5hVfXe2ZiWZ9
+ tKjtZoY9dMEU.bZrNdTCtkZwES.850g7eT3Ng2VK02qNTaKVc.PzsIxzSvLDnyixlqDH5NZjABW8
+ yNvD7pgzq4v1NaPrxrYE56MM.eYqkhbRIuaTgnRZ71ddP23Yf9d7yw8CrHY6SZe5doDFdC.azTVg
+ dYjPWJzLKWMZYKJNTHOcSFUuWQieJRw9LL.nUJmMprrq35b8gGl9WLy8ilFIQO6J6PL_adAuO0ZB
+ 0k.DWuvmhOwVmspKhpJ96YUjJj8sNBWDs_p0EThYl07ljRb1j8PpKnbCAaMtAffzTdnBjU4fM
+Received: by 217.12.8.244; Sat, 31 Oct 2015 10:49:25 +0000 
+Date: Sat, 31 Oct 2015 10:49:25 +0000 (UTC)
+From: 
+	=?UTF-8?Q?=E2=80=AASomayye_Safi=E2=80=AC_=E2=80=AA?= <somayyesafi@yahoo.com>
+Reply-To: 
+	=?UTF-8?Q?=E2=80=AASomayye_Safi=E2=80=AC_=E2=80=AA?= <somayyesafi@yahoo.com>
+To: "Info@ssd-cg.com" <Info@ssd-cg.com>
+Message-ID: <1082782436.162316.1446288565344.JavaMail.yahoo@mail.yahoo.com>
+Subject: 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_162315_965065921.1446288565343"
+References: <1082782436.162316.1446288565344.JavaMail.yahoo@mail.yahoo.com>
+Content-Length: 485
+
+------=_Part_162315_965065921.1446288565343
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+------=_Part_162315_965065921.1446288565343
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div style="color:#000; background-color:#fff; font-family:verdana, helvetica, sans-serif;font-size:32px"><div id="yui_3_16_0_1_1446288467560_2333"><br></div></div></body></html>
+------=_Part_162315_965065921.1446288565343--

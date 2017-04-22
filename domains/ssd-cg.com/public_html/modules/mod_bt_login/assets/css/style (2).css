@@ -1,0 +1,141 @@
+#btbox-overlay {
+	width: 100% !important;
+	height: 100% !important;
+	min-height: 100% !important;
+	position: fixed !important;	
+	background: #fff;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.register-switch, .login-switch {
+	position: relative;
+}
+
+.register-switch, .login-switch, #bt-user-login, #bt-user-register {
+	z-index: 1000;	
+}
+#bt-user-login ul {
+	margin:0 0 1px;
+	display:block;
+	list-style-type:none;
+	margin:0 0 1px;
+	padding:10px 0;
+	position:relative !important;
+	left:0;
+	top:0;
+}
+#bt-user-login ul li a:link, #bt-user-login ul li a:visited {
+padding:3px !important;
+}
+
+#bt-user-register, #bt-user-login, #bt-logged-in {
+    background: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    color: #333333;
+    display: none;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    /*top: 21px;*/
+    z-index: 999;
+}
+#bt-user-login h3,
+#bt-user-register h3{
+	background:url(../images/header_bglogin.jpg) repeat-x top left;
+	line-height:41px;
+	padding:0 15px;
+	font-weight:normal;
+}
+#bt-user-login .inputbox,
+#bt-user-register .inputbox{
+	background:url(../images/inputbox_login.jpg) no-repeat top left;
+	border:none;
+	width:202px;
+	padding:9px 0 9px 0px;
+	text-indent:10px;
+	margin:7px 0;
+}
+.mainbox{
+	padding:10px 15px;
+}
+#bt-user-login td,
+#bt-user-register td{
+	padding:0;
+}
+.pretext{
+	line-height:24px;
+	padding:0;
+	color:#545454;
+	font-family:Arial;
+}
+#bt-user-login .bt-login-user, #bt-user-login .bt-login-password, #bt-user-login .mod_login_remember {
+    /*display: block;
+    float: left;
+    width: 145px;*/
+}
+#bt-logged-in{
+	min-width:300px;
+}
+#bt-user-login .button, #bt-user-register .button,#bt-logged-in .button {
+    background: url("../images/bgd-button.png") no-repeat scroll 0 0;
+	width:96px;
+	text-align:center;
+	height:33px;
+	line-height:33px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #4A4A4A;
+	font-size:16px;
+	text-transform:uppercase;
+	border:none;
+	cursor:pointer;
+}
+#bt-user-login .button:hover, #bt-user-register .button:hover, #bt-logged-in .button:hover{
+    background: url("../images/bgd-button.png") no-repeat scroll 0 -34px;
+}
+#bt-user-login .button {
+    border: medium none;
+    margin-top: 0px;
+}
+#bt-user-register .button:hover {
+}
+#form-login-remember {
+    /*display: block;
+    float: left;*/
+    padding: 10px 5px 0 5px;
+}
+#login-form #modlgn-remember {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+#member-registration span.red {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #CC0000;
+    display: inline;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+#member-registration label.hasTip {
+}
+.registration input {
+    float: left;
+}
+.bt-login-links {
+    margin-top: 10px;
+}
+#ja-login .login .bt-login-links li{
+	background:url(../images/bullet_login.png) no-repeat center left;
+	padding:0 0 0 10px;
+	width:99%;
+}
+.mainbox .split_line{
+	border-top:1px solid #dddddd;
+	margin:15px 0;
+}

@@ -1,0 +1,963 @@
+AWSTATS DATA FILE 7.3 (build 20140126)
+# If you remove this file, all statistics for date 201610 will be lost/reset.
+# Last config file used to build this data file was /home/ussdc531/domains/ssd-cg.com/awstats/.data/awstats.ssd-cg.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2028                
+POS_TIME 2698                
+POS_VISITOR 14677               
+POS_DAY 23527               
+POS_DOMAIN 3590                
+POS_LOGIN 3824                
+POS_ROBOT 3979                
+POS_WORMS 4995                
+POS_EMAILSENDER 5126                
+POS_EMAILRECEIVER 5269                
+POS_SESSION 24384               
+POS_SIDER 24594               
+POS_FILETYPES 5404                
+POS_DOWNLOADS 5721                
+POS_OS 5769                
+POS_BROWSER 6046                
+POS_SCREENSIZE 7710                
+POS_UNKNOWNREFERER 7784                
+POS_UNKNOWNREFERERBROWSER 8120                
+POS_ORIGIN 8285                
+POS_SEREFERRALS 8429                
+POS_PAGEREFS 8607                
+POS_SEARCHWORDS 9106                
+POS_KEYWORDS 9271                
+POS_MISC 2361                
+POS_ERRORS 9343                
+POS_CLUSTER 3680                
+POS_SIDER_404 9492                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20161101000313 186 37865 17897776908106
+FirstTime 0
+LastTime 20161031204234
+LastUpdate 20161104030726 186 0 185 0 0
+TotalVisits 303                 
+TotalUnique 212                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 233                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 12 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 28 125 5203440 299 372 1021230
+1 13 14 202285 96 139 677963
+2 9 9 29290 139 179 286662
+3 18 18 44960 321 360 2251110
+4 34 34 51962 147 207 1622537
+5 4 4 14317 221 250 197966
+6 15 17 264285 89 165 2817193
+7 22 23 475167 158 335 367655
+8 44 80 2763997 359 435 544624
+9 335 965 17357179 365 756 651876
+10 671 1856 43881294 567 933 1348576
+11 298 633 5912887 209 377 1198303
+12 326 635 11276799 147 373 4268068
+13 239 811 19460402 176 364 342737
+14 124 402 9178471 111 257 600660
+15 28 107 6045663 86 147 990508
+16 33 74 821966 67 214 2875062
+17 39 109 4427922 84 186 2044813
+18 44 144 4994377 263 333 700851
+19 31 141 8663653 351 443 7342326
+20 41 116 4871108 146 239 663981
+21 40 66 1825407 108 208 346688
+22 17 17 56482 52 109 159020
+23 34 51 125451 83 182 231897
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 2487 6451 147948764
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 24
+bingbot 1423 4424301 20161031222757 140
+mj12bot 1383 578147 20161031022304 107
+googlebot 637 1697176 20161031235327 45
+ahrefsbot 260 96457 20161031214747 23
+bot[\s_+:,\.\;\/\\-] 198 122383 20161030010107 78
+no_user_agent 186 1127355 20161031230843 2
+bingpreview 75 4537971 20161029165542 0
+semrushbot 72 28971 20161031164457 9
+seznambot 63 4231181 20161025014655 31
+exabot 47 30963 20161031072023 20
+spider 2 720 20161031083846 0
+googlebot\-image 30 14033094 20161030034942 0
+seokicks\.de 16 11696 20161031073143 8
+libwww 2 18675 20161026172023 0
+ips\-agent 3 1830 20161009221941 1
+slurp 36 25188 20161030092516 16
+phantom 14 51700 20161030170639 0
+unknown 5 5374 20161028091345 5
+python 5 1537 20161027181411 0
+surveybot 4 3002 20161022142834 2
+archive\.org_bot 2 1462 20161007142726 1
+spbot 2 1059 20161023033428 1
+twitterbot 1 341 20161030130454 0
+crawl 39 17431 20161031144114 5
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+css 1019 1092363 0 0
+png 1285 53186661 0 0
+woff 280 3286461 0 0
+woff2 9 114263 0 0
+php 1287 5530108 0 0
+tif 16 9472 0 0
+html 27 9490 0 0
+xml 1 4738 0 0
+jpg 423 75185698 0 0
+js 1180 3579362 0 0
+Unknown 868 5560273 0 0
+gif 54 216230 0 0
+svg 2 173645 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 16
+linuxandroid 463 75
+winxp 50 24
+winlong 2 2
+macosx6 1 1
+ios_iphone 111 72
+unix 42 42
+winnt 188 49
+linux 36 36
+win7 5233 2095
+macosx 4 4
+win2003 3 3
+win8 90 14
+macosx9 4 4
+Unknown 146 34
+win8.1 77 31
+macosx7 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 79
+firefox28.0 8 8
+chrome44.0.2403.125 20 20
+msie6.0 1 1
+chrome40.0.2214.115 4 4
+chrome52.0.2743.116 4 0
+firefox44.0 2 2
+chrome34.0.1847.137 4 4
+firefox4.0 1 1
+chrome29.0.1547.62 2 2
+firefox18.0 2 2
+chrome39.0.2171.95 44 9
+opera26.0.1656.60 6 6
+chrome31.0.1650.57 1 1
+firefox34.0 27 27
+firefox49.0 518 215
+msie8.0 36 3
+firefox43.0 7 6
+chrome53.0.2785.124 128 27
+msie7.0 1 1
+chrome27.0.1453.90 1 1
+chrome37.0.2062.120 3 3
+chrome50.0.2661.102 1 1
+chrome49.0.2623.112 28 4
+chrome39.0.2171.96 42 42
+firefox48.0 253 81
+chrome10.0.648.133 1 1
+firefox29.0 2 2
+firefox38.0 10 10
+chrome14.0.803.0 1 1
+firefox2.0.0.6 1 1
+firefox47.0 130 28
+chrome54.0.2840.71 779 565
+firefox3.5.5 1 1
+firefox25.0 41 4
+mozilla 1 0
+firefox3.6.3 1 1
+chrome48.0.2564.103 4 4
+chrome41.0.2228.0 1 1
+chrome44.0.2403.133 22 5
+firefox35.0 8 8
+chrome21.0.1180.89 2 2
+chrome37.0.2062.124 1 1
+opera12.17 1 1
+android 74 8
+chrome38.0.1025.166 69 4
+chrome48.0.2564.116 4 4
+chrome42.0.2311.111 1 0
+firefox24.0 1 1
+firefox3.5.3 1 1
+firefox31.0 4 4
+chrome46.0.2490.76 4 0
+firefox6.0.2 1 1
+chrome53.0.2785.89 2 2
+chrome47.0.2526.111 6 6
+chrome54.0.2840.68 32 13
+chrome53.0.2785.116 828 240
+chrome43.0.2357.93 29 3
+firefox3.6.9 1 1
+msie9.0 149 114
+Unknown 15 15
+chrome47.0.2526.83 20 5
+chrome30.0.0.0 37 4
+firefox32.0 1 1
+firefox3.5.6 2 2
+firefox17.0 22 22
+opera35.0.2066.37 2 2
+chrome49.0.2623.87 2 2
+chrome53.0.2785.143 2809 824
+safari10.0 111 72
+chrome36.0.1985.67 1 1
+chrome28.0.1500.71 2 2
+chrome36.0.1985.97 1 1
+chrome38.0.2125.102 47 6
+msie11.0 6 3
+chrome48.0.2564.109 4 4
+chrome51.0.2704.106 1 1
+msie10.0 1 1
+chrome39.0.2171.99 8 8
+chrome48.0.2564.97 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+KickFire 20161027113207
+Mozilla/5.0_(Android_5.1;_Mobile;_rv:49.0)_Gecko/49.0_Firefox/49.0 20161016095635
+}__test|O:21:\ 20161018035258
+panscient.com 20161028091349
+Mozilla/5.0_(Android_4.2.2;_Tablet;_rv:47.0)_Gecko/47.0_Firefox/47.0 20161009140336
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+KickFire 20161027113207
+}__test|O:21:\ 20161018035258
+panscient.com 20161028091349
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 381 387
+From1 1 1
+From2 28 55
+From3 10 13
+From4 2067 5995
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+google 23 50
+yandex 1 1
+yahoo 4 4
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 10
+http://www.timer4web.com/domain/ssd-cg.com 2 2
+http://pizza-tycoon.com 1 1
+http://hvd-store.com 1 1
+http://burger-imperia.com 1 1
+http://www.facebook.com/home.php 1 1
+http://www.yazdfarda.com/news/1394/12/111623.html 1 1
+http://twitter.com/home 1 1
+http://l.instagram.com 1 1
+http://my.aryanic.com/clientarea.php 1 1
+http://www.yazdhim.ir/SC.php 0 3
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+ssd-cg.com 4
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 1
+ssd-cg.com 4
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+302 148 413668
+303 134 38962
+500 1005 793252
+301 10 6061
+404 1514 1216871
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 168
+/wp-configuration.php 2 -
+/tmp/bogel.php 1 -
+//images/stories/Palestine.php 1 -
+/cache/clean.php 1 -
+/wp-content/plugins/SocketIasrgasfontrol.php 3 -
+/images/stories/filemga.php 1 -
+/images/logo_img.php 2 -
+/editor/editor/ 1 -
+/images/1ndex.php 3 -
+/images/w0rm.php 1 -
+/ws0.php 1 -
+/error-log.php 4 -
+/tmp.php 6 -
+/webconfig.txt.php 3 -
+/xmlrpc.php 1 -
+/sqlbak.php 2 -
+/tmp/sfx.php 2 -
+/cache/defau1t.php 3 -
+/register.php 3 http://ssd-cg.com/
+/libraries/one_word.php 1 -
+/js/fckeditor/editor/ 1 -
+/log.php 1 -
+/register 6 http://ssd-cg.com/
+/libraries/image-import.php 1 -
+/administrator/administrator.php 3 -
+/cache/cachee.php 1 -
+//wp-login.php 1 -
+/Abbrevsprl.php 1 -
+/images/p.php 1 -
+/wp-content/plugins/wp-footers.php 1 -
+/libraries/joomla/web.php 1 -
+/wp-login.php 2 -
+/wp-content/plugins/sql_dump.php 1 -
+/images/stories/shell.php 1 -
+/images/sym.php 1 -
+/email.php 1 -
+/images/stories/0day.php 2 -
+/tmp/petx.php 1 -
+/wp-data.php 1 -
+/wsdl.php 3 -
+/bookmark.php 3 -
+/thumb.php 1 -
+/wp-admin 1 -
+/member/index_do.php 6 http://ssd-cg.com/
+/images/defau1t.php 3 -
+/sql_dump.php 2 -
+/media/jss.php 4 -
+/shootme.php 1 -
+/license.php 2 -
+/plugins/system/index.php 1 -
+/infos.php 1 -
+/includes/u2p.php 2 -
+/wp-content/uploads/Fbrrchive.php 3 -
+/media/reads.php 1 -
+/css.php 1 -
+/register.asp 3 http://ssd-cg.com/
+/install.php 1 -
+/wp-cache.php 1 -
+/images/stories/black.php 1 -
+/ssd/admin/resource/js/source/helpers/jquery.fancybox-buttons.js 111 http://www.ssd-cg.com/ssd/admin/work/edit_clinic/4
+//images/xxu.php 1 -
+/images/stories/xsamxadoo.php 1 -
+/jconfig.php 3 -
+/libraries/respectMuslims.php 1 -
+/u.php 1 -
+/roundcubee/ 1 -
+//plugins/content/fsave/download.php 1 -
+/admin/fckeditor/editor/ 1 -
+/administrator/webconfig.txt.php 3 -
+/wp-content/plugins/wpfootes.php 3 -
+/tmp/pz.php 1 -
+/do/reg.php 6 http://ssd-cg.com/do/reg.php
+/images/stories/s.php 3 -
+/functions.php 1 -
+/ssd/admin/resource/js/ImageSelect.js 289 http://www.ssd-cg.com/ssd/admin/work
+/wp-content/plugins/myshe.php 3 -
+/wp-content/plugins/Analyser.php 1 -
+/images/robots.txt.php 1 -
+//images/stories/vito.php 1 -
+/active.php 1 -
+/configurationbak.php.suspected 3 -
+/plugins/content/mysql/config.php 1 -
+/help.php 1 -
+/maill.php 1 -
+/images/stories/3xp.php 6 -
+/mide.php 3 -
+/google-assist.php 3 -
+/SessionController.php 1 -
+/xmlsrpc.php 3 -
+/al277.php 1 -
+/b1.php 3 -
+/wp-content/ 1 http://ssd-cash.com/wp-content/
+/images/head.php 1 -
+/ssd/admin/edit_title 1 http://www.ssd-cg.com/ssd/admin/title/edit_title/2
+/auth/register 3 http://ssd-cg.com/
+/component/users 2 -
+/cache/news.php 1 -
+/libraries/joomla/css.php 1 -
+/RoseLeif.php 3 -
+/%D8%AF%D9%88%D8%B1%D9%87%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%22%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D9%81%D8%B1%D9%85%D9%88%D9%84%D8%A7%D8%B3%DB%8C%D9%88%D9%86%20%D8%A8%D8%AF%D9%86%D9%87%20%D8%A7%D9%86%D9%88%D8%A7%D8%B9%20%DA%A9%D8%A7%D8%B4%DB%8C%22%20 20 -
+/default_component.php 1 -
+/images/google-assist.php 3 -
+/ssd/admin/resource/js/source/helpers/jquery.fancybox-media.js 141 http://www.ssd-cg.com/ssd/admin/work/edit_clinic/4
+/media/1ndex.php 3 -
+/apple-touch-icon-120x120.png 128 -
+/goog1es.php 4 -
+/images/wp-mail.php 4 -
+/ny.php 1 -
+/include/fckeditor/editor/ 1 -
+/authenticating.php 1 -
+/libraries/joomla/wso.php 3 -
+//x.php 1 -
+/site/tmp/cTivrC.php 3 -
+/cli/40dd1d.php 3 -
+/apple-touch-icon-120x120-precomposed.png 128 -
+/.git/ 1 http://ssd-cg.com/.git/
+/wp-main.php 1 -
+/wp-includes/ 1 http://ssd-cg.com/wp-includes/
+/robots.txt.php 3 -
+/media/tmp.php 3 -
+/libraries/joomla/exporter.php 6 http://ssd-cg.com/
+/show.php 3 -
+/register/ 3 http://ssd-cg.com/
+/dswat.org/wsdl.php 1 -
+/wp-content/plugins/SocketIontrol.php 3 -
+/logs.asp 1 -
+/apple-touch-icon.png 127 -
+/wp-content/plugins/wp-cache.php 1 -
+/common/fckeditor/editor/ 1 -
+/images/stories/0d4y.php 1 -
+//images/stories/3xp.php 1 -
+/administrator/includes/readmy.php 1 -
+/ssd/admin/resource/js/select2/select2.png 20 http://www.ssd-cg.com/ssd/admin/resource/js/select2/select2.css
+/cache/cache_aqbmkwwx.php 1 -
+/images/laj.php 1 -
+/roundcubel 1 -
+/images/al277.php 1 -
+/comment/class 3 http://ssd-cg.com/
+/m.php 2 -
+/images/404.php 3 -
+/update.php 3 -
+/media/css.php 1 -
+/tmp/logo_img.php 1 -
+/logs/logger.php 1 -
+/wp-content/plugins/Fbrrchive.php 1 -
+/apple-touch-icon-precomposed.png 127 -
+/r3x.php 1 -
+/libraries/joomla/zipy.php 3 -
+/news.php 2 -
+/zibi.php 1 -
+/fckeditor/editor/ 1 -
+//images/stories/0day.php 1 -
+/configurationbak.php 3 -
+/tmp/guide.php 3 -
+/manage/fckeditor/editor/ 1 -
+/elements.php 1 -
+/webconfig.txt.php.suspected 1 -
+/admin 1 -
+/configbak.php 3 -
+/includes.php 1 -
+/images/stories/alfa.php 1 -
+/images/stories/a.php 2 -
+/robot.php 3 -
+/ssd/admin/resource/js/source/helpers/jquery.fancybox-thumbs.js 126 http://www.ssd-cg.com/ssd/admin/work/edit_clinic/4
+/administrator/dbconfig.php 1 -
+/cache/support.php 3 -
+/modules/mod_administrator/config.php 1 -
+/go.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 233
+31.57.36.192 312 899 10468227 20161008141939
+94.183.94.142 231 250 258633 20161030125842
+94.183.233.56 189 550 29009752 20161015141706
+94.183.203.93 176 191 387891 20161029125224
+94.183.234.27 131 427 2197071 20161016112411
+94.183.95.208 112 437 1950023 20161001140712
+91.121.157.80 104 104 705864 20161026045549
+31.57.37.3 97 275 6980874 20161003140118
+31.57.36.243 76 194 4425770 20161004150127
+31.58.14.9 69 201 4369948 20161027125357
+181.41.212.123 1 1 6474 20161016112851
+162.212.168.14 1 1 397 20161012150413
+91.250.41.130 1 1 321 20161014085438
+195.154.204.114 8 8 2568 20161022232556
+2.183.155.181 5 20 8103 20161016164517
+5.124.37.245 5 41 2315241 20161001131130
+66.102.8.198 0 3 147583 
+223.207.38.120 0 1 407100 
+46.166.148.152 1 1 397 20161021145357
+139.162.187.84 11 78 5122382 20161016095634
+46.224.27.30 0 1 483204 
+178.235.12.40 1 1 342 20161029005515
+94.183.232.159 11 11 70219 20161031092504
+151.237.178.253 1 1 360 20161022102840
+66.249.83.142 1 19 1272428 20161005000924
+85.180.236.21 1 1 397 20161007171346
+104.160.4.233 1 1 360 20161024002915
+5.124.126.100 1 1 4269 20161004003433
+5.123.126.177 5 5 21362 20161015145419
+5.208.143.160 8 53 2215361 20161009140329
+213.136.92.188 1 1 341 20161005213513
+77.247.181.165 1 1 397 20161025215320
+84.241.60.109 5 40 2312063 20161023094205
+5.123.173.100 2 2 8556 20161026084200
+77.237.164.5 5 22 15406 20161009231200
+5.123.190.150 1 1 4266 20161008002140
+31.56.236.225 16 16 119123 20161024111315
+66.249.93.66 1 1 397 20161027121252
+5.124.10.99 2 2 8612 20161021224304
+149.202.114.211 1 1 397 20161013103559
+155.94.243.51 1 1 360 20161003200240
+209.222.77.220 1 1 397 20161006041603
+188.215.131.72 1 1 4213 20161003203125
+31.56.239.240 13 48 70592 20161019115016
+5.199.142.195 2 2 819 20161013141521
+5.124.84.143 1 1 586 20161020093228
+188.208.84.55 3 29 1224237 20161029194727
+74.91.26.114 1 1 360 20161005040159
+104.238.180.234 1 1 341 20161007001501
+91.108.72.191 19 19 7931 20161006043714
+104.207.150.177 1 1 341 20161012101130
+5.254.97.91 1 1 397 20161021102220
+54.149.119.67 2 2 5695 20161001082025
+192.3.24.112 1 1 360 20161008104246
+151.236.221.69 1 1 6474 20161016112839
+216.177.128.166 0 4 1242104 
+2.190.87.45 0 1 161162 
+91.107.190.78 1 1 4271 20161004162519
+62.210.81.20 4 4 1284 20161030204445
+173.208.211.250 4 4 1284 20161030201325
+104.223.6.9 1 1 397 20161020005657
+46.166.143.147 1 1 397 20161005125646
+5.217.28.90 6 45 2551463 20161008191622
+212.244.210.219 1 1 397 20161005104824
+217.66.203.187 0 5 2790343 
+109.74.151.149 1 1 360 20161006041645
+66.249.93.158 4 6 185580 20161029171742
+66.249.83.146 2 22 1182367 20161005000840
+51.254.182.120 6 6 1926 20161027141824
+107.174.255.239 1 1 360 20161026234559
+54.213.224.141 2 2 5697 20161008123813
+178.151.143.166 10 10 3410 20161016001147
+5.124.123.88 1 1 4318 20161023083506
+5.124.40.253 1 1 4307 20161029072407
+5.123.19.188 4 4 17108 20161013161708
+5.123.96.78 1 1 4365 20161024075041
+5.123.100.153 2 2 8486 20161031000125
+23.105.56.57 1 1 360 20161021114559
+31.57.37.153 2 2 4661 20161017143518
+94.183.232.103 5 5 9743 20161009175412
+195.154.209.149 4 4 1284 20161017215605
+46.166.141.13 18 18 7509 20161005125644
+95.38.179.233 6 41 2312542 20161022104006
+199.182.234.59 2 2 794 20161025101113
+148.251.190.163 5 40 2312170 20161026170212
+94.183.233.20 50 163 829787 20161002131655
+185.130.78.252 1 1 397 20161027010339
+176.31.149.121 3 3 1191 20161011061342
+5.124.212.138 2 2 8489 20161030090043
+91.99.252.197 4 12 325129 20161031145306
+176.123.1.126 1 1 397 20161017201055
+31.57.37.181 14 14 17195 20161010132616
+188.215.133.48 1 1 4221 20161009213944
+23.105.56.119 1 1 360 20161007161916
+5.232.235.109 0 1 128936 
+192.160.102.164 1 1 397 20161009155904
+91.107.145.222 1 1 4268 20161018154654
+5.124.125.227 2 2 8646 20161027114517
+109.163.234.2 2 2 819 20161019072946
+85.9.77.101 0 1 483404 
+91.108.73.210 1 1 360 20161006212806
+31.58.14.109 19 19 168844 20161026135802
+5.196.73.88 1 1 341 20161008082948
+5.123.6.105 2 2 8554 20161010173310
+94.183.92.169 46 243 197597 20161005130700
+91.99.254.170 7 7 36235 20161007234614
+5.248.72.30 0 1 4738 
+5.123.252.104 3 3 12873 20161001164941
+54.80.183.244 1 1 397 20161004151249
+94.183.202.90 5 5 5858 20161004183858
+23.236.171.190 1 1 360 20161022114503
+94.183.232.76 17 52 67158 20161017122442
+5.123.98.32 2 2 8530 20161008171115
+109.163.234.4 2 2 819 20161017070309
+91.210.147.227 1 1 397 20161004032839
+185.94.189.142 1 1 397 20161005035019
+91.236.74.165 6 6 2482 20161025190107
+54.85.184.32 1 1 6885 20161003014600
+31.7.90.130 6 47 2652246 20161030151523
+107.173.112.239 1 1 360 20161010125505
+196.53.36.177 0 1 17376 
+107.174.254.94 1 1 360 20161028083547
+46.224.117.23 0 1 161162 
+192.154.106.250 2 2 794 20161003201015
+85.9.77.117 3 34 1823113 20161016140026
+136.243.67.139 6 41 2312447 20161028203222
+94.183.234.211 32 102 149554 20161020103819
+45.35.63.194 1 1 397 20161006200559
+38.100.21.68 1 1 397 20161009011610
+108.61.166.66 1 1 397 20161002163125
+37.72.191.60 1 1 360 20161002230607
+62.210.81.42 2 2 642 20161023222343
+5.124.186.6 1 1 4306 20161022075944
+107.150.72.48 2 2 720 20161020173042
+31.202.241.227 1 1 234 20161014163038
+185.129.62.63 2 2 738 20161006142107
+151.239.146.115 5 41 2552217 20161006081357
+217.170.203.205 1 1 397 20161020015404
+185.93.183.218 3 3 1191 20161024145834
+181.215.244.40 1 1 397 20161026212755
+5.223.160.240 4 42 1705567 20161019130122
+83.223.165.180 1 1 341 20161013070928
+66.249.83.144 1 17 131163 20161005000938
+104.144.53.39 1 1 360 20161013005947
+62.212.73.49 1 1 397 20161020132856
+188.214.169.73 25 123 4759191 20161009184301
+72.76.221.220 13 13 46893 20161028091349
+5.123.69.71 3 3 12753 20161017175426
+83.143.240.35 1 1 397 20161012122437
+46.229.170.197 2 2 682 20161031124357
+104.160.9.252 1 1 397 20161007204012
+91.200.12.29 7 7 2443 20161018035258
+5.123.81.205 1 1 4265 20161009073742
+5.124.133.178 1 1 4266 20161007010807
+66.249.93.157 2 2 4643 20161031103353
+82.99.250.50 0 1 59148 
+85.9.93.165 10 66 2991433 20161002210031
+107.175.152.194 1 1 360 20161012082129
+5.124.60.146 5 5 21414 20161003161152
+46.166.143.184 19 19 7931 20161005211415
+37.220.35.202 2 2 757 20161023152941
+188.214.169.7 10 55 4831917 20161011191244
+88.198.22.8 1 1 321 20161014085510
+185.129.148.216 16 16 6352 20161029163714
+185.21.77.83 0 1 429211 
+109.230.223.30 8 69 6155329 20161027123818
+85.10.246.235 2 35 2184247 20161003092857
+136.243.9.23 1 1 321 20161012131123
+5.39.222.22 3 3 1098 20161027225358
+209.128.119.82 1 1 341 20161027113207
+195.22.127.184 1 1 397 20161018225000
+192.99.62.7 3 3 1079 20161004160840
+213.136.84.244 3 3 1191 20161020153014
+31.57.36.118 66 101 291836 20161009140406
+31.57.36.252 23 84 81406 20161022141716
+95.141.31.18 1 1 397 20161025030653
+2.190.211.233 3 37 3024573 20161001135631
+89.163.237.45 2 2 819 20161004104346
+46.225.128.42 0 7 3166893 
+109.122.233.57 4 41 2863368 20161010150455
+31.11.139.107 2 2 720 20161029065318
+5.123.122.150 1 1 4269 20161004092456
+54.149.209.16 1 1 6885 20161001180641
+5.161.49.180 0 1 111516 
+5.124.2.217 3 3 12804 20161019184402
+79.141.167.20 1 1 397 20161022201842
+188.215.209.152 0 1 301000 
+85.9.125.218 0 1 128992 
+91.107.146.150 1 1 4265 20161017152737
+5.123.51.209 1 1 4365 20161024003304
+5.74.246.227 0 1 59148 
+104.160.9.225 1 1 397 20161007071033
+5.190.188.41 4 36 1698633 20161020003412
+188.214.172.58 7 8 35204 20161013205413
+178.33.200.180 3 3 1191 20161011043936
+35.161.87.27 2 2 720 20161027062529
+107.174.255.229 1 1 360 20161029072124
+195.242.80.33 1 1 360 20161018190711
+87.206.240.101 1 1 360 20161029001012
+5.190.10.11 4 28 605676 20161023165037
+151.238.208.128 0 1 128936 
+2.184.51.13 12 29 57557 20161008133503
+31.58.14.75 47 277 6693364 20161015103315
+66.249.93.217 2 2 8671 20161023200053
+109.163.234.5 1 1 397 20161007223127
+31.57.36.36 7 46 2474381 20161030203506
+94.183.233.136 3 3 5059 20161006095013
+83.143.240.44 2 2 794 20161012170529
+149.56.78.157 1 1 360 20161014164119
+66.102.8.202 0 4 406190 
+103.248.117.65 1 1 341 20161025174520
+37.57.231.156 1 1 397 20161028020924
+31.56.239.170 23 23 126746 20161023120808
+198.144.182.211 1 1 6948 20161012150417
+46.165.236.109 4 4 1284 20161024124232
+45.32.129.1 2 2 682 20161028201923
+149.202.206.103 2 2 682 20161008204351
+94.23.169.94 1 1 397 20161028104715
+5.124.249.4 4 4 17300 20161026132922
+66.102.8.200 0 4 303564 
+31.57.36.152 5 5 5822 20161016165829
+46.182.106.190 2 2 819 20161023182030
+66.249.93.216 1 1 4365 20161023211655
+5.123.29.119 1 1 4306 20161021091357
+31.184.133.22 1 1 397 20161027010337
+66.249.93.159 4 6 167648 20161031204234
+23.250.121.59 1 1 360 20161020012806
+94.183.234.156 44 50 213642 20161025131835
+78.50.238.34 1 1 397 20161007012121
+5.123.251.93 1 1 4266 20161005234400
+69.164.213.14 1 1 6448 20161016112843
+5.124.202.235 1 1 4254 20161015230334
+94.183.95.183 15 50 66534 20161018130621
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20161001 129 525 7811567 12
+20161002 65 235 4260148 9
+20161003 105 317 9310634 8
+20161004 91 209 4447129 11
+20161005 95 358 3722432 16
+20161006 34 71 3051060 9
+20161007 15 16 450287 9
+20161008 345 988 13099580 12
+20161009 113 308 7300817 11
+20161010 22 60 2907213 7
+20161011 16 62 4839037 3
+20161012 8 8 9558 8
+20161013 17 18 58506 9
+20161014 6 7 306854 6
+20161015 249 840 35731152 9
+20161016 166 579 11004149 12
+20161017 31 66 83832 11
+20161018 26 67 2997549 7
+20161019 24 97 1786553 8
+20161020 44 146 1855387 10
+20161021 7 7 14469 6
+20161022 39 137 2589381 10
+20161023 40 102 4408479 10
+20161024 50 50 307041 9
+20161025 120 127 825894 11
+20161026 44 79 2589041 10
+20161027 90 283 10537915 14
+20161028 28 67 3604924 11
+20161029 197 242 1957401 19
+20161030 252 351 5403519 10
+20161031 19 29 677256 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 26
+5mn-15mn 6
+0s-30s 234
+15mn-30mn 12
+30s-2mn 8
+2mn-5mn 6
+30mn-1h 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 146
+/roundcube/ 462 2944376 4 6
+/ 335 131154 127 107
+/ssd/ 223 942042 69 78
+/administrator/ 111 737974 10 10
+/ssd/admin/filemanager/dialog.php 83 557079 0 0
+/ssd/fonts/BYekan.woff 81 680082 0 1
+/ssd/fonts/fontawesome-webfont.woff 81 1712108 0 18
+/ssd/fonts/BTraffic.woff 72 545681 0 2
+/ssd/admin/newsk 62 1119216 0 0
+/ssd/learning-courses 61 256525 0 2
+/ssd/admin/mosha/edit_mali/6 1 7943 0 0
+/index.php/component/k2/itemlist/user/2732.html 1 321 1 0
+/ssd/business-clinic/tax-issues 1 3787 0 0
+/ssd/admin/filemanager/fonts/BKoodakBold.woff 3 48924 0 0
+/index.php/component/k2/itemlist/user/2613.html 2 642 2 0
+/ssd/admin/title/delete_title/11 1 2643 0 0
+/ssd/admin/work/edit_clinic/3 2 15863 0 0
+/ssd/ssd-business 4 15392 0 1
+/ssd/business-clinic/Knowledge-Business-Rules 4 11995 0 0
+/ssd/business-services/Investment-Finaning 4 15086 0 0
+/index.php/forum/topic/create 3 1266 0 0
+/ssd/admin/work/edit_service/4 8 71673 0 0
+/ssd/news/Director-General-of-the-Department-of-Co-operative-visit 3 13179 1 0
+/ssd/admin/auth/login 39 138005 12 0
+/ssd/archive-images/Workshop-inventory-control-techniques 2 8456 1 0
+/ssd/financial/Financial-Facts 8 31733 0 0
+/libraries/joomla/session/session.php 1 234 1 1
+/ssd/admin/slide/edit_slide/10 1 7581 0 0
+/ssd/business-clinic/Legal-insurance-issues 3 11390 0 0
+/ssd/admin/newsk/edit_news/204 1 9628 0 0
+/ssd/admin/news/add_news 3 23376 0 0
+/ssd/management 23 91838 1 0
+/index.php/component/users 1 341 1 0
+/index.php/component/k2/itemlist/user/2745.html 2 642 2 0
+/ssd/business-knowledge/Business-Articles 7 39296 0 0
+/index.php/component/k2/itemlist/user/2515.html 1 321 1 0
+/ssd/business-services 49 189554 0 1
+/ssd/admin/resource/fonts/BKoodakBold.woff 9 48925 0 0
+/index.php/component/k2/itemlist/user/3081 9 3425 9 9
+/ssd/admin/resource/fonts/Yekan.woff 10 65722 0 1
+/ssd/archive-images/Workshop-engob-in-terms-of-curriculum-design 3 26449 1 1
+/ssd/learning-courses/3 16 58528 0 0
+/ssd/admin/resource/fonts/fontawesome-webfont.woff2 9 114263 0 0
+/ssd/admin/title/add_title2 2 15174 0 0
+/ssd/admin/newsk/edit_news/210 2 19157 0 0
+/ssd/admin/newsk/edit_news/198 1 9546 0 0
+/ssd/about-us 10 39617 2 3
+/ssd/admin/filemanager/execute.php 11 4741 0 0
+/ssd/business-services/Plans-evaluation 4 15179 0 0
+/ssd/reg 3 11353 0 0
+/ssd/admin/resource/fonts/BYekan.woff 9 52286 0 1
+/ssd/admin/newsk/edit_news/192 1 9557 0 0
+/ssd/admin/newsk/edit_news/197 1 10731 0 0
+/ssd/admin/work 50 594988 0 0
+/ssd/financial 26 98973 2 0
+/index.php/component/k2/itemlist/user/2019.html 2 720 2 2
+/ssd/business-services/Growth-Business-Development 2 7464 0 0
+/roundcube/skins/larry/watermark.html 3 1186 0 0
+/index.php/component/k2/itemlist/user/1016 3 1115 3 3
+/index.php/author-login 11 4367 11 11
+/ssd/business-services/Trainings-Business 1 3766 0 0
+/index.php/component/k2/itemlist/user/2770.html 1 321 1 0
+/ssd/admin/work/edit_dan/1 2 23559 0 0
+/ssd/admin/resource/css/simple-line-icons/fonts/Simple-Line-Icons.woff 9 118887 0 0
+/ssd/management/contact-us 1 3742 0 0
+/index.php/component/k2/itemlist/user/2622.html 1 321 1 0
+/ssd/admin/resource/js/editor/skins/lightgray/fonts/tinymce.woff 4 8750 0 0
+/ssd/news/Permit-consultation-center-and-entrepreneurship-services 1 4550 0 0
+/ssd/ssd-education 4 14691 1 0
+/ssd/technical/Technical-consulting-services 13 53716 0 0
+/ssd/admin/work/edit_dan/4 6 53032 0 0
+/ssd/admin/tutorial/add_learn 1 7209 0 0
+/ssd/admin/news/edit_news/145 2 17388 0 0
+/ssd/admin/work/edit_clinic/4 1 7784 0 0
+/ssd/management/Management-consulting-services 11 44178 0 1
+/ssd/admin/contacts 1 6976 0 0
+/ssd/business-knowledge/Smart-Business 4 15405 0 0
+/ssd/management/Knowledge-management 10 37869 0 0
+/ssd/technical 36 137567 1 1
+/ssd/admin/work/edit_service/3 10 88762 0 0
+/ssd/admin/title/edit_title/10 1 10351 0 0
+// 2 682 0 0
+/ssd/business-clinic 22 86500 0 0
+/ssd/admin/title/edit_descr/3 1 8038 0 0
+/index.php/component/k2/itemlist/user/2016.html 1 397 1 1
+/ssd/archive-images/Workshop-management-challenges 1 4193 0 0
+/ssd/admin/mosha/add_fani 1 7593 0 0
+/ssd/admin/title/edit_title/4 1 6753 0 0
+/index.php/component/k2/itemlist/user/2612.html 1 321 1 0
+/index.php/component/k2/itemlist/user/2359.html 1 360 1 1
+/ssd/business-knowledge/Monitoring-new-technologies 12 46672 0 0
+/ssd/business-services/contact-us 1 3732 0 0
+/ssd/admin/files 9 54662 0 0
+/ssd/admin/filemanager/upload.php 9 3915 0 0
+/modules/ 1 304 1 1
+/ssd/archive-images/Seminar-on-international-trade-procedures 1 4291 0 1
+/ssd/news/Success-of-small-businesses-workshop 4 17060 1 3
+/ssd/admin/work/edit_service/1 7 61663 0 0
+/index.php/component/k2/itemlist/user/2620.html 3 1216 2 0
+/ssd/ssd-consultation 6 24135 0 0
+/ssd/business-knowledge/Business-model 6 22974 0 0
+/ssd/learning-courses/2 7 25655 0 1
+/index.php/component/k2/itemlist/user/2460.html 1 321 1 0
+/roundcube/program/js/tinymce/skins/lightgray/fonts/tinymce-small.woff 2 5096 0 0
+/ssd/admin/tutorial/edit_learn/43 2 17259 0 0
+/ssd/business-clinic/Brand-registration-and-inventions 11 40555 0 1
+/index.php/ 2 682 0 0
+/ssd/admin/title/delete_title/10 1 2661 0 0
+/index.php/component/k2/itemlist/user/2117 9 3240 9 9
+/ssd/admin/tutorial/edit_learn/44 2 15721 0 0
+/ssd/admin/title/edit_title/2 2 14459 0 0
+/ssd/admin/slide/edit_slide/15 1 7601 0 0
+/index.php/component/k2/itemlist/user/2731.html 1 321 1 0
+/index.php/component/users/ 13 4579 11 12
+/ssd/admin/tutorial 9 126405 0 0
+/ssd/learning-courses/1 7 25655 0 0
+/ssd/admin/mosha/edit_fani/2 1 11832 0 0
+/index.php/component/k2/itemlist/user/2378.html 2 642 2 0
+/ssd/technical/Technical-Facts 18 139184 0 2
+/roundcube/program/resources/blank.tif 16 9472 0 0
+/ssd/admin/work/edit_service/2 7 61853 0 0
+/ssd/news/National-conference-on-demography-forum 7 28581 0 2
+/index.php/index.php/component/users/ 1 341 0 1
+/ssd/admin/mosha 8 128381 0 0
+/ssd/newsall 5 19648 1 1
+/index.php/component/k2/itemlist/user/2344.html 1 321 1 0
+/ssd/admin/slide 2 14618 0 0
+/ssd/admin/title 11 133375 0 0
+/ssd/business-knowledge 34 138996 0 0
+/ssd/admin/mosha/edit_man/7 1 8088 0 0
+/ssd/contact-us 5 17338 0 2
+/ssd/business-services/Business-Development 14 57660 0 0
+/ssd/news/Training-course-Introduction-to-Entrepreneurship 3 12633 0 1
+/index.php/component/k2/itemlist/user/2675.html 1 360 1 1
+/ssd/business-services/Set-up-Improve-Business 5 18905 0 0
+/ssd/admin/news 6 73332 0 0
+/ssd/admin/title/add_title 4 30689 0 0
+/ssd/archive-images 7 32507 0 0
+/ssd/financial/Financial-Consulting-services 8 32976 0 1
+/ssd/newsall2 1 8759 0 0
+/ssd/admin/newsk/add_news 28 234526 0 0
+/ssd/learning-courses/4 27 155759 0 0
+/index.php/component/k2/itemlist/user/2205.html 1 360 1 1
+/ssd/admin/news/edit_news/150 3 31222 0 0
+/index.php/component/k2/itemlist/user/1840.html 1 397 1 1
+/ssd/admin/ 33 202005 0 0
+END_SIDER

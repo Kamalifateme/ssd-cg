@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="module" method="upgrade" client="site">
+
+	<name>ZT Piece Maker</name>
+	<author>ZooTemplate</author>
+	<creationDate>11 January, 2012</creationDate>
+	<copyright>Copyright (C) 2011 http://www.zootemplate.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>support@zootemplate.com</authorEmail>
+	<authorUrl>http://www.zootemplate.com</authorUrl>
+	<version>1.7.0</version>
+	<description><![CDATA[ZT Piecemaker developed by <a href="http://www.zootemplate.com" title="Joomla Templates">www.zootemplate.com</a>]]></description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<files folder="install">
+		<filename module="mod_zt_piecemaker">mod_zt_piecemaker.php</filename>
+		<filename module="mod_zt_piecemaker">mod_zt_piecemaker.xml</filename>
+		<filename>helper.php</filename>
+		<filename>_helper.php</filename>
+		<filename>index.html</filename>
+		<filename>thumbnail.inc.php</filename>
+		<filename>piecemaker.swf</filename>
+		<folder>elements</folder>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+	</files>
+	
+</extension>

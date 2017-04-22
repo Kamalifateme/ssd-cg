@@ -1,0 +1,70 @@
+	.mycontainer{
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		border-radius: 4px 4px 4px 4px;
+		font-size: 12px;
+		line-height: 18px;
+		margin: 0 0 9px;
+		padding: 8.5px;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+	.clear{clear:both;}
+	.tinypic{
+		width:120px;
+		height:90px;
+		border-radius: 5px;
+		}
+	.almasrayanpanel div.almasrayanIcon, #almasrayanpanel div.almasrayanIcon {
+		float: right;
+		margin-bottom: 15px;
+		margin-right: 15px;
+	}
+	div.almasrayanIcon-wrapper div.almasrayanIconDesc {
+		border: 1px solid #CCCCCC;
+		border-radius: 5px;
+		padding: 2px;
+	}
+	div.almasrayanIcon-wrapper div.almasrayanIcon img.daroopic {
+		background-color: #FFFFFF;
+		border: 1px solid #CCCCCC;
+		height: 85px;
+		padding: 4px;
+		width: 140px;
+	}
+	div.almasrayanIcon-wrapper div.almasrayanIcon div.desc {
+		margin: 2px;
+		text-align: justify;
+	}
+	.almasrayanpanel div.almasrayanIcon a, #almasrayanpanel div.almasrayanIcon a {
+		background-color: #FFFFFF;
+		background-position: -30px center;
+		border: 1px solid #CCCCCC;
+		border-radius: 5px 5px 5px 5px;
+		color: #565656;
+		display: block;
+		float: right;
+		margin: 2px;
+		height: 150px;
+		text-decoration: none;
+		transition-duration: 0.8s;
+		transition-property: background-position, -moz-border-radius-bottomleft, -moz-box-shadow;
+		vertical-align: middle;
+		width: 125px;
+	}
+	#almasrayanpanel div.almasrayanIcon a:hover, #almasrayanpanel div.almasrayanIcon a:focus, 
+	#almasrayanpanel div.almasrayanIcon a:active, .almasrayanpanel div.almasrayanIcon a:hover,
+	.almasrayanpanel div.almasrayanIcon a:focus, .almasrayanpanel div.almasrayanIcon a:active {
+		background-position: 0 center;
+		border-bottom-left-radius: 50% 20px;
+		box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+		position: relative;
+		z-index: 10;
+	}
+	#almasrayanpanel img, .almasrayanpanel img,.almasrayanIcon img {
+		margin-left: 1px;
+		margin-right: 1px;
+		margin-top: 5px;
+	}
+	.loading{
+	background-color:#CC3366;
+	}

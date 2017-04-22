@@ -1,0 +1,659 @@
+Return-path: <reply@activetrail.com>
+Envelope-to: info@ssd-cg.com
+Delivery-date: Thu, 07 Jan 2016 18:19:10 +0330
+Received: from mmmailgw108.mymarketing.co.il ([91.199.29.8])
+	by server.linuxserver7.com with esmtp (Exim 4.86)
+	(envelope-from <reply@activetrail.com>)
+	id 1aHBsD-000A9K-0G
+	for info@ssd-cg.com; Thu, 07 Jan 2016 18:19:10 +0330
+X-IADB-IP: 91.199.29.8
+X-IADB-IP-REVERSE: 8.29.199.91
+DomainKey-Signature: q=dns; a=rsa-sha1; c=nofws;
+ d=incredimail.com; s=at;
+ h=x-bbounce:x-iadb-url:sender:submitter:x-feedback-id:from:to:message-id:date:subject:mime-version:content-type;
+ b=SmQkov1FVKlz0TguvVfbzmEnYHRlryqAYM0h/okvYY8lRRpLmMNM3LfbcIFlcFWR6Sia
+ 1fcVY/ZDq1pa0SbeJ0Mvb1ZdS0OBKkZD0OQW/d7go8Ox43MSKgvjjUA5qplICH1vzBxSk+
+ xdbWLoZN9EVlh2pcs7bh3akjNN7Pu9EJk=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; q=dns/txt;
+ d=incredimail.com; s=at;
+ h=X-BBounce:X-IADB-URL:Sender:Submitter:X-Feedback-ID:From:To:Message-ID:Date:Subject:MIME-Version:Content-type:Content-Transfer-Encoding;
+ bh=bNYlA/T8Cr1mKTvJ5rrJrULiuMBJJkCZPXbn3uB/OtA=;
+ b=S9DJ0LiIDtvbJFsnC2kKnGhxM5Fv51kDFVsbQvrfGi+30WHrrU3svU3bg+zwYmPWIKji
+ 0vMrvAYmFTDuw/ovSisEhJJBtjnvCApcrAbdHK+A0DPaw4C2dhcpM/cWDs+bKU1felO4M0
+ ArKFPZ4jETLBMtQNsHZMPzcxE1Pf1TIb8=
+X-BBounce: 87572110|13175801|info@ssd-cg.com|10|0|62441|1
+X-IADB-URL: http://www.isipp.com/iadb.php
+Sender: "=?utf-8?B?SW5jcmVkaU1haWw=?=" <incredimail@incredimail.com>
+Submitter: reply@activetrail.com
+X-Feedback-ID: 62441:62441.13175801.0:G1:atgfbl
+List-Unsubscribe: <http://app.activetrail.com/unsubscribe/0X1EFB34A854EF809C6E5A59A8D5DCE4642198600BCBC7985D3D997F3DDEF41EAD552835B8FF6C759D.htm>, <mailto:unsubscribe-0X1EFB34A854EF809C6E5A59A8D5DCE4642198600BCBC7985D3D997F3DDEF41EAD552835B8FF6C759D@atmailsvr.net?subject=unsubscribe>
+Reply-To: incredimail@incredimail.com
+From: "IncrediMail" <incredimail@incredimail.com>
+To: "info@ssd-cg.com" <info@ssd-cg.com>
+Message-ID: <9ab140ebc0b841ae8c96278e6c8d8c1b@incredimail.com>
+Date: Thu, 07 Jan 2016 16:45:44 +0200
+Subject: =?utf-8?B?V2luZG93cyBVcGRhdGU=?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----FEFA92920FB643AA9240F828DBC7D09D"
+
+------FEFA92920FB643AA9240F828DBC7D09D
+Content-type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+
+View this email=20
+in your browser: http://app=2Eactivetrail=2Ecom/ShowCampaign=2Easpx=20
+
+
+
+
+
+
+
+=3D=3D
+ Windows Update=20
+
+
+
+It seems like the recent Windows security update interferes with some F=
+lash components in IncrediMail and causes it to crash on launch=2E=20
+
+Windows 10 - FIX=20
+Microsoft released a fix to the previous update so now Windows 10 users=
+ should be able to use IncrediMail correctly=2E=20
+Since updates runs automatically on Windows 10 you have nothing to do o=
+n your side and check check if IncrediMail opens now=2E=20
+If you still encounter issues in IncrediMail it might be because you di=
+dn't get the update yet=2E=C2=A0=20
+In this case you may wait for the update or=20
+click here: http://www2l=2Eincredimail=2Ecom/support/utilities/IM_fix=2E=
+exe and run the fix file=2E=C2=A0=20
+
+Windows 7 & 8 - FIX=20
+
+Click here: http://www2l=2Eincredimail=2Ecom/support/utilities/IM_fix=2E=
+exe to download and run the fix file=2E=20
+
+We are very sorry for the inconvenience and thank you for your patience=
+=2E=20
+
+The IncrediMail Team=20
+
+
+
+Perion | Bear Creek Parkway, Suite 320 | Redmond | U=2ES=2E | 15809=20
+Unsubscribe: http://app=2Eactivetrail=2Ecom/OptOut=2Easpx =C2=A0|=C2=A0=
+=20
+Report spam: http://app=2Eactivetrail=2Ecom/SpamAbuse=2Easpx=20
+
+http://www=2Eactivetrail=2Ecom
+
+------FEFA92920FB643AA9240F828DBC7D09D
+Content-type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1=2E0 Transitional//EN" "http:=
+//www=2Ew3=2Eorg/TR/xhtml1/DTD/xhtml1-transitional=2Edtd"><html><head><=
+meta HTTP-EQUIV=3D'Content-Type' CONTENT=3D'text/html; charset=3Dutf-8'=
+><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1=2E0"><style type=3D'text/css'> =2EExternalClass { display: block !=
+important; } body { -webkit-text-size-adjust: none !important; }</style=
+>                                                                      =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                                                       =
+                                    </head><body leftmargin=3D'0' margi=
+nwidth=3D'0' topmargin=3D'0' marginheight=3D'0' offset=3D'0' style=3D'm=
+argin: 0;padding: 0; margin: 0;font-family: "Helvetica Neue",Helvetica,=
+Arial,sans-serif;font-size: 14px;line-height: 20px;color: #333;backgrou=
+nd-color: #fff;'/><img src=3D"https://trailer=2Eweb-view=2Enet/Open/0X6=
+5ED6A828AA474F5C43C118B2F6D7F917C5E52D374A92BD8015070CC4A87D1C42B18D517=
+183476B3=2Egif" width=3D"1" height=3D"1" border=3D"0" alt=3D""/><div><t=
+able style=3D'width:100%'><tbody><tr width=3D"100%"><td width=3D"100%" =
+style=3D"padding:0;"><div><style type=3D"text/css">im_source_mail {
+=09color: #16711680;
+}
+#outlook a {
+=09padding: 0;
+}
+body {
+}
+=2EReadMsgBody {
+=09width: 100%;
+}
+=2EExternalClass {
+=09width: 100%;
+}
+=2EExternalClass * { line-height: 120%!important; }=20
+body {
+=09-webkit-text-size-adjust: none;
+=09width: 100% !important;
+=09margin: 0;
+=09padding: 0;
+}
+img {
+=09border: 0;
+=09height: auto;
+=09line-height: 100%;
+=09outline: none;
+=09text-decoration: none;
+}
+=2EReadMsgBody, #mpf0_readMsgBodyContainer {
+=09text-align: center;
+=09color: #000;
+}
+center table {
+=09width: 100%;
+}
+center table td {
+=09color: #808080 !important;
+}
+center table td a {
+=09color: #808080 !important;
+=09text-decoration: underline !important;
+}
+</style>
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" valign=3D"top">
+=09=09=09<div align=3D"center">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"650">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td height=3D"42">
+=09=09=09=09=09=09<table align=3D"middle" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" valign=3D"top" width=3D"650">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" height=3D"42" valign=
+=3D"top" width=3D"650">
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"10"></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"color=
+:#114165;" valign=3D"middle">* <a href=3D"https://chrome=2Egoogle=2Ecom=
+/webstore/detail/incredimail/npndnkjhbbmjlbcbmkkdkmfofjkaaahm??utm_sour=
+ce=3Demails&amp;utm_medium=3Demail&amp;utm_campaign=3DIM_Ext" style=3D"=
+text-decoration: none; color: #0546ff; font-size: 18px; text-align: cen=
+ter; font-family: Tahoma, arial, 'Helvetica Neue', Helvetica, sans-seri=
+f; font-weight: normal; line-height: 150%; text-decoration: underline;"=
+ target=3D"_blank" title=3D"Get it Now!">Notify me on the latest update=
+s &amp; special sales</a> *</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"10"></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</div>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<div align=3D"center" class=3D"bt bl-content-removable bt-version-2" id=
+=3D"template-body" style=3D"width:100%;font-style:normal;font-weight:no=
+rmal;font-family:arial, sans-serif;font-size:15px;color:#606060;"><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"bt-main-wrapper" style=3D"width:100%;background-color:#f9f9f9;borde=
+r-collapse:collapse;" align=3D"center" valign=3D"top" is-new-template=3D=
+"0"><tbody><tr><td class=3D"bt-margin" width=3D"100%" align=3D"center" =
+style=3D"margin:0px;padding:6px 0px 0px;" valign=3D"top"><table class=3D=
+"template-main-table bt-background template-direction-left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:600px;direction:lt=
+r;text-align:left;background-color:#ffffff;" valign=3D"top" width=3D"60=
+0"><tbody><tr><td class=3D"bt-border" style=3D"width:600px;padding:0px;=
+border-color:#000000;min-width:600px;" valign=3D"top" width=3D"600"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:600=
+px;" valign=3D"top" width=3D"600"><tbody><tr><td class=3D"bl-zone bl-zo=
+ne-dropable zone-marked" name=3D"FrameworkZone" style=3D"width:600px;" =
+width=3D"600" valign=3D"top" height=3D""><div class=3D"bb bbh" name=3D"=
+header" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ style=3D"display: block;"><div class=3D"bbc" contenteditable=3D"false"=
+><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ style=3D""><tbody><tr><td class=3D"bbc-table bbcl2 bbdl" style=3D""><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cl=
+ass=3D"bbcr bbcfr" style=3D"background-color:#f9f9f9;"><tbody><tr><td v=
+align=3D"top" class=3D"bbcri" style=3D"padding-top:18px;padding-bottom:=
+18px;direction:ltr;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"bbccl bbc-new-column b1c" align=3D"left" width=3D"600" sty=
+le=3D"width:600px;"><tbody><tr><td valign=3D"top" class=3D"bp1c bcw" wi=
+dth=3D"600" style=3D"width:600px;direction:ltr;padding:0px 18px 0px 18p=
+x;"><div class=3D"bbci bbcitx bbciv cke_editable_inline cke_contents_lt=
+r cke_show_borders" spellcheck=3D"true" role=3D"textbox" aria-label=3D"=
+Rich Text Editor, editor1" aria-describedby=3D"cke_51" style=3D"text-al=
+ign:center;font-size:14px;line-height:1=2E2;min-height:8px;font-style:n=
+ormal;font-family:arial, sans-serif;color:#606060;"><div>View this emai=
+l <a href=3D"http://trailer=2Eweb-view=2Enet/Show/0X65ED6A828AA474F5C43=
+C118B2F6D7F917C5E52D374A92BD8015070CC4A87D1C42B18D517183476B3=2Ehtm" st=
+yle=3D"word-wrap:break-word !important;color:#00008C;border:0;outline:n=
+one;text-decoration:none;">in your browser</a></div></div></td></tr></t=
+body></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" class=3D"bbcr bbclr" style=3D"back=
+ground-color:rgba(0, 0, 0, 0);"><tbody><tr><td valign=3D"top" class=3D"=
+bbcri" style=3D"padding-top:18px;padding-bottom:18px;direction:ltr;"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"bbccl bb=
+c-new-column b1c" align=3D"left" width=3D"600" style=3D"width:600px;"><=
+tbody><tr><td valign=3D"top" class=3D"bp1c bcw" width=3D"600" style=3D"=
+width:600px;direction:ltr;padding:0px 18px 0px 18px;"><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" class=3D"bbcic" width=3D"100%" s=
+tyle=3D""><tbody><tr><td class=3D"bbcici" style=3D"direction:ltr;"><div=
+ class=3D"bbci bbcii bbcil" style=3D"text-align:left;font-style:normal;=
+font-family:arial, sans-serif;font-size:15px;color:#606060;" onselectst=
+art=3D"return false;"><img width=3D"209" height=3D"28" style=3D"max-wid=
+th:387px;width:209px;height:auto !important;display:inline-block;vertic=
+al-align:top;border:0px;outline:none;text-decoration:none;" src=3D"http=
+s://cdn-media=2Eweb-view=2Enet/i/wxeezcswwd/LOGO_1=2Epng?cache=3D143868=
+4574808" border=3D"0" alt=3D"logo-en" class=3D""></div></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table></div></div><div class=3D"bb bbtimage" name=3D"textima=
+ge" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" dir=
+=3D"rtl" style=3D"display: block;"><div class=3D"bbc" contenteditable=3D=
+"false"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" dir=3D"rtl" style=3D""><tbody><tr><td class=3D"bbc-table bbdl" =
+style=3D""><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" class=3D"bbcr bbcfr bbclr" style=3D""><tbody><tr class=3D"bb=
+cr-outer"><td valign=3D"top" class=3D"bbcri" align=3D"right" width=3D"1=
+82" style=3D"width:182px;padding-bottom:9px;padding-top:9px;direction:l=
+tr;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"b=
+bccl bbc-new-column b2c" align=3D"right" width=3D"182" style=3D"width:1=
+82px;"><tbody><tr><td valign=3D"top" class=3D"bp2cr bcw" width=3D"182" =
+style=3D"width:182px;direction:ltr;padding:0px 18px 0px 0px;"><div clas=
+s=3D"bbci bbcii" width=3D"282" style=3D"text-align:center;font-style:no=
+rmal;font-family:arial, sans-serif;font-size:15px;color:#606060;"><img =
+border=3D"0" src=3D"https://cdn-media=2Eweb-view=2Enet/i/wxeezcswwd/sup=
+port_chub_6=2Epng?cache=3D1438684884659" width=3D"164" height=3D"89=2E3=
+8388625592417" style=3D"display:inline-block;max-width:257px;width:164p=
+x;height:auto !important;vertical-align:top;border:0px;outline:none;tex=
+t-decoration:none;" class=3D"" alt=3D"support_chub_6" title=3D"support_=
+chub_6"></div></td></tr></tbody></table></td><td valign=3D"top" class=3D=
+"bbcri" align=3D"left" width=3D"382" style=3D"width:382px;padding-botto=
+m:9px;padding-top:9px;direction:ltr;"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"bbccl bbc-new-column b2c" align=3D"left"=
+ width=3D"382" style=3D"width:382px;"><tbody><tr><td valign=3D"top" cla=
+ss=3D"bp2cl bcw" width=3D"382" style=3D"width:382px;direction:ltr;paddi=
+ng:0px 0px 0px 18px;"><table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" class=3D"bbcic" width=3D"382" style=3D"width:382px;"><tbody><tr>=
+<td class=3D"bbcici" width=3D"382" style=3D"width:382px;direction:ltr;"=
+><div class=3D"bbci bbcitx" style=3D"direction:ltr;text-align:left;line=
+-height:1=2E2;min-height:8px;font-style:normal;font-family:arial, sans-=
+serif;font-size:15px;color:#606060;"><h1 style=3D"font-family:arial, sa=
+ns-serif;background-color:#ffffff;display:block;margin:0;padding:0;font=
+-weight:bold;border:0px;color:#606060 !important;font-size:40px;letter-=
+spacing:normal !important;line-height:1=2E2;"><br><span style=3D"font-s=
+ize:37px;">Windows Update</span></h1></div></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></t=
+able></div></div><div class=3D"bb bbt" name=3D"text" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"background-color=
+:rgba(255, 243, 165, 0);font-style:normal;font-family:arial, sans-serif=
+;font-size:15px;color:#606060;"><div class=3D"bbc" contenteditable=3D"f=
+alse"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" style=3D""><tbody><tr><td class=3D"bbc-table bbdl" style=3D""><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"bbcr bbcfr bbclr" style=3D"background-color:rgba(0, 0, 0, 0);"><tbo=
+dy><tr><td valign=3D"top" class=3D"bbcri" style=3D"padding-bottom:16px;=
+padding-top:12px;direction:ltr;"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"bbccl bbc-new-column b1c" align=3D"left" wid=
+th=3D"600" style=3D"width:600px;"><tbody><tr><td valign=3D"top" class=3D=
+"bp1c bcw" width=3D"600" style=3D"width:600px;direction:ltr;padding:0px=
+ 18px 0px 18px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" class=3D"bbcic" width=3D"100%" style=3D""><tbody><tr><td class=3D"bbc=
+ici" style=3D"direction:ltr;"><div class=3D"bbci bbcitx bl-in-edit-mode=
+-single" style=3D"direction:ltr;text-align:left;line-height:1=2E2;min-h=
+eight:8px;font-style:normal;font-family:arial, sans-serif;font-size:15p=
+x;color:#606060;"><h1 style=3D"display:block;margin:0;padding:0;font-we=
+ight:bold;background-color:transparent;border:0px;color:#606060 !import=
+ant;font-size:40px;letter-spacing:normal !important;line-height:1=2E2;"=
+></h1><h3 style=3D"display:block;margin:0;padding:0;font-weight:bold;ba=
+ckground-color:transparent;border:0px;line-height:1=2E2;font-size:18px;=
+letter-spacing:normal;"><span style=3D"font-family:arial,helvetica,sans=
+-serif;"><span style=3D"line-height: 18px;">It seems like the recent Wi=
+ndows security update interferes with some Flash components in IncrediM=
+ail and causes it to crash on launch=2E<br><br><u><strong>Windows 10 - =
+FIX</strong></u><br>Microsoft released a fix to the previous update so =
+now Windows 10 users should be able to use IncrediMail correctly=2E<br>=
+Since updates runs automatically on Windows 10 you have nothing to do o=
+n your side and check check if IncrediMail opens now=2E<br>If you still=
+ encounter issues in IncrediMail it might be because you didn't get the=
+ update yet=2E&nbsp;<br>In this case you may wait for the update or <u>=
+<a href=3D"http://trailer=2Eweb-view=2Enet/Links/0X1A0700F0E26F421699BA=
+E4A57F723E7A4550A4DB53B4BB0C5EC6F64604A205F9977DE28E59472E3649E1375C543=
+C326B92E825D65DBEDCCF91F9282047B550E8BCFF4D13A167D936=2Ehtm" style=3D"t=
+ext-decoration:none;color:#6DC6DD;font-weight:bold;word-wrap:break-word=
+ !important;border:0;outline:none;">click here</a></u> and run the fix =
+file=2E&nbsp;<br><br><u>Windows 7 &amp; 8 - FIX</u><br><u><a href=3D"ht=
+tp://trailer=2Eweb-view=2Enet/Links/0XE15DDB459F03AAC536994DD8B52ED6415=
+95A489709C88284BFAC00D515A23AF194D1CA7907CB50C149E1375C543C326B92E825D6=
+5DBEDCCF91F9282047B550E8BCFF4D13A167D936=2Ehtm" style=3D"text-decoratio=
+n:none;color:#6DC6DD;font-weight:bold;word-wrap:break-word !important;b=
+order:0;outline:none;">Click here</a></u> to download and run the fix f=
+ile=2E<br><br>We are very sorry for the inconvenience and thank you for=
+ your patience=2E<br><br><em>The IncrediMail Team</em></span></span></h=
+3></div></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></div></div><div class=3D"bb b=
+bt" name=3D"text" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" dir=3D"ltr" style=3D"font-style:normal;font-family:arial, sa=
+ns-serif;font-size:15px;color:#606060;"><div class=3D"bbc" contentedita=
+ble=3D"false"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0" dir=3D"ltr" style=3D""><tbody><tr><td class=3D"bbc-table =
+bbdl" style=3D""><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"bbcr bbcfr bbclr" style=3D""><tbody><tr class=
+=3D"bbcr-outer"><td valign=3D"top" class=3D"bbcri" align=3D"left" width=
+=3D"600" style=3D"width:600px;padding-bottom:9px;padding-top:9px;direct=
+ion:ltr;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"bbccl bbc-new-column b1c" align=3D"left" width=3D"600" style=3D"wid=
+th:600px;"><tbody><tr><td valign=3D"top" class=3D"bp1c bcw" width=3D"60=
+0" style=3D"width:600px;direction:ltr;padding:0px 18px 0px 18px;"><tabl=
+e cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"bbcic" widt=
+h=3D"100%" style=3D"width:100%;"><tbody><tr><td class=3D"bbcici" width=3D=
+"" style=3D"direction:ltr;"><div class=3D"bbci bbcitx bl-in-edit-mode-s=
+ingle" style=3D"direction:ltr;text-align:left;line-height:1=2E2;min-hei=
+ght:8px;font-style:normal;font-family:arial, sans-serif;font-size:15px;=
+color:#606060;"></div></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table></div></div></td=
+></tr></tbody></table></td></tr></tbody></table><table class=3D"bl-new-=
+footer-container" style=3D"width:600px;direction:ltr;text-align:left;" =
+valign=3D"top" width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"bl-new-footer-wrapper" style=3D"width:60=
+0px;padding:0px;" valign=3D"top" width=3D"600"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"width:600px;" valign=3D"top" w=
+idth=3D"600"><tbody class=3D"bl-new-footer-content"><tr><td class=3D"bl=
+-zone" name=3D"FooterZone" style=3D"width:600px;" width=3D"600" valign=3D=
+"top" height=3D""><div class=3D"bb bbf" name=3D"Footer Block"><div clas=
+s=3D"bbc" contenteditable=3D"false"><div class=3D"bbc-table bbcl0 bbdl"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ class=3D"bbcr bbcfr bbclr" style=3D"background-color:transparent;"><tb=
+ody><tr><td valign=3D"top" class=3D"bbcri" style=3D"padding-top:18px;pa=
+dding-bottom:9px;direction:ltr;"><table align=3D"left" width=3D"600" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"bbccl b1c" styl=
+e=3D""><tbody><tr><td valign=3D"top" class=3D"bp1c" style=3D"padding:0p=
+x 18px 0px 18px;"><div class=3D"bbci bbcitx bbci-canspam canspam-info-u=
+ninit item-uneditable bl-content-item-unremovable" style=3D"padding-top=
+:0px !important;font-size:12px !important;text-align:center;line-height=
+:1=2E2;min-height:8px;font-style:normal;font-family:arial, sans-serif;c=
+olor:#606060;"><span class=3D"canspam-companyname">Perion</span> | <spa=
+n class=3D"canspam-address1">Bear Creek Parkway, Suite 320</span> | <sp=
+an class=3D"canspam-city">Redmond</span> | <span class=3D"canspam-count=
+ry">U=2ES=2E </span> | <span class=3D"canspam-phone">15809</span></div>=
+<div class=3D"bbci bbcitx bbci-unsubscribe bl-content-item-unremovable"=
+ style=3D"padding-top:7px !important;text-align:center;font-size:14px;l=
+ine-height:1=2E2;min-height:8px;font-style:normal;font-family:arial, sa=
+ns-serif;color:#606060;"><a class=3D"unsubscribe-link" href=3D"http://w=
+ww=2Eweb-view=2Enet/Out_0X65ED6A828AA474F5C43C118B2F6D7F917C5E52D374A92=
+BD8015070CC4A87D1C42B18D517183476B3=2Ehtm" style=3D"color:#08C;word-wra=
+p:break-word !important;border:0;outline:none;text-decoration:none;">Un=
+subscribe</a><span class=3D"bl-link-sep">&nbsp;|&nbsp;</span><a class=3D=
+"report-spam-link" href=3D"https://app=2Eactivetrail=2Ecom/SpamAbuse_0X=
+65ED6A828AA474F5C43C118B2F6D7F917C5E52D374A92BD8015070CC4A87D1C42B18D51=
+7183476B3=2Ehtm" style=3D"color:#08C;word-wrap:break-word !important;bo=
+rder:0;outline:none;text-decoration:none;">Report spam</a></div></td></=
+tr></tbody></table></td></tr></tbody></table></div></div></div></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table><=
+style title=3D"resp" type=3D"text/css">@media screen and (max-width: 48=
+0px) {
+      div[class*=3D"bt"] td[class*=3D"bt-border"] {min-width: 0px!impor=
+tant;}
+
+      div[class*=3D"bt-version-2"] table[class*=3D"b2c"], div[class*=3D=
+"bt-version-2"] td[class*=3D"bbcri"] {display: block !important; max-wi=
+dth: 600px !important; width: 100% !important;}
+      div[class*=3D"bt-version-2"] table[class*=3D"b2c"], div[class*=3D=
+"bt-version-2"] td[class*=3D"bbcri"] > table { padding-bottom: 36px; }
+      div[class*=3D"bt-version-2"] table[class*=3D"bl-4-columns"], div[=
+class*=3D"bt-version-2"] td[class*=3D"bbcri"] {display: block !importan=
+t; max-width: 600px !important; width: 100% !important;}
+      div[class*=3D"bt-version-2"] table[class*=3D"bl-4-columns"], div[=
+class*=3D"bt-version-2"] td[class*=3D"bbcri"] > table { padding-bottom:=
+ 36px; }
+      body, table, td, p, a, li, blockquote { -webkit-text-size-adjust:=
+ 100% !important;}
+
+      div[class*=3D"bt-version-2"] div[class*=3D"bbt"] td[class*=3D"bbc=
+ici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleright"] td[c=
+lass*=3D"bbcici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbitext"] td[class*=3D=
+"bbcici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbtimage"] td[class*=3D=
+"bbcici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleleft"] td[cl=
+ass*=3D"bbcici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleright"] td[c=
+lass*=3D"bbcici"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbtunderimage"] td[cla=
+ss*=3D"bbcici"] { width:100%!important; }
+
+      div[class*=3D"bt-version-2"] div[class*=3D"bbp-v2"] td[class*=3D"=
+bp2cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbp-v2"] td[class*=3D"=
+bp2cr"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbd"] td[class*=3D"bp2=
+cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbd"] td[class*=3D"bp2=
+cr"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbt"] td[class*=3D"bp2=
+cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbt"] td[class*=3D"bp2=
+cr"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleleft"] td[cl=
+ass*=3D"bp2cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleleft"] td[cl=
+ass*=3D"bp2cr"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleright"] td[c=
+lass*=3D"bp2cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-articleright"] td[c=
+lass*=3D"bp2cr"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbitext"] td[class*=3D=
+"bp2cl"],
+      div[class*=3D"bt-version-2"] div[class*=3D"bbitext"] td[class*=3D=
+"bp2cr"] { width:320px!important; }
+
+      div[class*=3D"bt-version-2"] div[class*=3D"bb-button"] td[class*=3D=
+"bbcri"] {display: inline-block !important; }
+      }
+
+      @media screen and (max-width: 480px)
+      {
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"bbcitbc"] =
+{ padding-top:0px; }
+
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcitttc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcitttc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcitttc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcittxc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcittxc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcittxc"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbciti"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbciti"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbciti"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcitd-priceContent"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcitd-priceContent"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcitd-priceContent"]
+      { height: auto !important; }
+
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcitttc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcitttc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcitttc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcittxc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcittxc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcittxc"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbciti"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbciti"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbciti"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b1c"] t=
+d[class*=3D"bbcitd-priceContent"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] table[class*=3D"b2c"] t=
+d[class*=3D"bbcitd-priceContent"] td[class*=3D"bbcitd-wrapper"],
+      div[class*=3D"bt"] div[class*=3D"bbp-v2"] td[class*=3D"b3c"] td[c=
+lass*=3D"bbcitd-priceContent"] td[class*=3D"bbcitd-wrapper"]
+      {height: auto !important; padding:9px; }
+
+      div[class*=3D"bt"] td[class*=3D"bt-margin"] { padding:0 0 !import=
+ant; }
+
+      div[class*=3D"bt"] table[class*=3D"template-main-table"] {margin-=
+right:0px !important; margin-left:0px !important;}
+
+      div[class*=3D"bt"] table[class*=3D"template-main-table"],
+      div[class*=3D"bt"] td[class*=3D"bt-border"],
+      div[class*=3D"bt"] td[class*=3D"bt-border"] > table,
+
+     =20
+      div[class*=3D"bt"] table[class*=3D"bl-new-footer-container"],
+      div[class*=3D"bt"] td[class*=3D"bl-new-footer-wrapper"],
+      div[class*=3D"bt"] td[class*=3D"bl-new-footer-wrapper"] > table,
+
+      div[class*=3D"bt"] table[class*=3D"b1c"],
+      div[class*=3D"bt"] table[class*=3D"b2c"],
+      div[class*=3D"bt"] td[class*=3D"b3c"],
+      div[class*=3D"bt"] td[class*=3D"bl-zone"],
+      div[class*=3D"bt"] td[class*=3D"bl-zone"] > table,
+      div[class*=3D"bt"] td[class*=3D"bbcri"]
+      { width: 320px !important; }
+
+      div[class*=3D"bt"] td[class*=3D"bbcri"]  table[class*=3D"bbccl"]
+      { width: 100% !important; }
+
+     =20
+      div[class*=3D"bt"] td[class*=3D"bt-border"],
+      table[class*=3D"bl-new-footer-container"] td[class*=3D"bl-zone"]
+      { border-width:0px !important; }
+
+      div[class*=3D"bt"] table[class*=3D"b2c"],
+      div[class*=3D"bt"] td[class*=3D"b3c"]
+      { width: 100% !important; max-width: 600px !important; }
+
+      div[class*=3D"bt"] div[class*=3D"bbcii"] img { width: 100% !impor=
+tant; }
+
+      div[class*=3D"bt"] td[class*=3D"nsp"] img { max-width:320px !impo=
+rtant; }
+
+      div[class*=3D"bt"] td[class*=3D"bp1c"],
+      div[class*=3D"bt"] td[class*=3D"bp2cl"],
+      div[class*=3D"bt"] td[class*=3D"bp2cr"],
+      div[class*=3D"bt"] td[class*=3D"bp3c"]
+      { padding: 0px 18px 18px 18px !important; }
+
+      div[class*=3D"bt"] td[class*=3D"bbcri"]  table:last-child td[clas=
+s*=3D"bp1c"],
+      div[class*=3D"bt"] td[class*=3D"bbcri"]  table:last-child td[clas=
+s*=3D"bp2cl"],
+      div[class*=3D"bt"] td[class*=3D"bbcri"]  table:last-child td[clas=
+s*=3D"bp2cr"],
+      div[class*=3D"bt"] td[class*=3D"bbcri"]  table:last-child td[clas=
+s*=3D"bp3c"]
+      { padding: 0px 18px 0px 18px !important; }
+
+      div[class*=3D"bt"] div[class*=3D"bb-Share"] td[class*=3D"bcw"]
+      { padding: 0px !important; }
+
+      div[class*=3D"bt"] td[class*=3D"bbccl"]
+      { display: block !important; max-width: 600px !important; width: =
+100% !important; }
+
+      div[class*=3D"bt"] table[class*=3D"bbcct"],
+      div[class*=3D"bt"] td[class*=3D"bbccl"] > table
+      { max-width: 600px !important; width: 100% !important; }
+
+      div[class*=3D"bt"] td[class*=3D"bcf"],
+      div[class*=3D"bt"] td[class*=3D"bcm"]
+      { padding-bottom: 18px !important; }
+
+      div[class*=3D"bt"] =2Ebbcitd
+      { padding-bottom: 9px !important; }
+      }
+
+      /*Keep these styles here so they will be included in all campaign=
+s (inliner will not remove them)*/
+      body{ width:100% !important; -webkit-text-size-adjust:none; -ms-t=
+ext-size-adjust:none; margin:0; padding:0}
+      #outlook a { padding: 0; }
+      =2EReadMsgBody { width: 100%; }
+      =2EExternalClass { width: 100% !important; line-height: 100% !imp=
+ortant; }
+      =2Eyshortcuts { color: #5187bd; }
+      =2Eyshortcuts a span { color: #5187bd; border-bottom: none !impor=
+tant; background: none !important; }
+      =2Ebt =2Ebbpcartitems =2Ebbcl1 =2Ebbci-product-item-name {text-al=
+ign:center !important;}
+      =2Ebt =2Ebbpcartitems =2Ebbcl1 =2Ebbci-product-item-price {text-a=
+lign:center !important;}
+      =2Ebt =2Ebbporderitems =2Ebbcl1 =2Ebbci-product-item-name {text-a=
+lign:center !important;}
+      =2Ebt =2Ebbporderitems =2Ebbcl1 =2Ebbci-product-item-price {text-=
+align:center !important;}</style> <style type=3D"text/css"> =2Ebt table=
+ {
+=09border-collapse: collapse !important;
+=09mso-table-lspace: 0pt !important;
+=09mso-table-rspace: 0pt !important;
+} =2Ebt td {
+=09border-collapse: collapse !important;
+=09mso-table-lspace: 0pt !important;
+=09mso-table-rspace: 0pt !important;
+} =2Ebt =2Ebt-border {
+=09border-collapse: collapse !important;
+=09mso-table-lspace: 0pt !important;
+=09mso-table-rspace: 0pt !important;
+} </style></div></div></td></tr><tr width=3D"100%"><td width=3D"100%" s=
+tyle=3D"padding:0;"><div style=3D"font: 11px Ariel; color: black; text-=
+align: center" dir=3D"ltr"></div><div style=3D'font-size:12px; font-fam=
+ily : Arial; color :gray;text-align:center; padding-bottom:0px;'><div s=
+tyle=3D'text-align:center; direction:ltr'></div></div><div style=3D"fon=
+t-size: 12px; font-family: Arial, Tahoma; text-align: center; color: #6=
+06060;padding-top: 7px;" dir=3D"ltr">Sent&nbsp;with&nbsp;<a href=3D"htt=
+p://www=2Eactivetrail=2Ecom?utm_medium=3DEmail&utm_source=3DList&utm_ca=
+mpaign=3DNormalEnglish" rel=3D"nofollow" style=3D"font-size: 12px; font=
+-family: Arial, Tahoma; color:#08c;text-decoration:none;">ActiveTrail</=
+a>&nbsp;software</div></td></tr></tbody></table></div></body></html>
+------FEFA92920FB643AA9240F828DBC7D09D--
+
+

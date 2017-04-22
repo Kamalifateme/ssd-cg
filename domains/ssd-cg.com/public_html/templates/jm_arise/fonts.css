@@ -1,0 +1,38 @@
+ @font-face {
+	font-family: 'bardiya';
+	src:	url('../fonts/bardiya.eot?#') format('eot'),  /* IE6–8 */
+		url('../fonts/bardiya.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		url('../fonts/bardiya.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */		
+}
+
+@font-face {
+	font-family: 'trafic';
+	src:	url('../fonts/trafic.eot?#') format('eot'),  /* IE6–8 */
+		url('../fonts/trafic.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		url('../fonts/trafic.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */		
+}
+
+@font-face {
+	font-family: 'homa';
+	src:	url('../fonts/homa.eot?#') format('eot'),  /* IE6–8 */
+		url('../fonts/homa.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		url('../fonts/homa.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */	
+}
+@font-face {
+	font-family: 'titr';
+	src:  	url('../fonts/titr.eot#')format('eot'), 
+		url('../fonts/titr.woff') format('woff'),
+		url('../fonts/titr.ttf') format('truetype');		
+}
+@font-face {
+	font-family: 'Yekan';
+	src:  	url('../fonts/BYekan.eot#')format('eot'), 
+		url('../fonts/BYekan.woff') format('woff'),
+		url('../fonts/BYekan.ttf') format('truetype');		
+}
+@font-face {
+	font-family: 'badr';
+	src:  	url('../fonts/badr.eot#')format('eot'), 
+		url('../fonts/badr.woff') format('woff'),
+		url('../fonts/badr.ttf') format('truetype');		
+}

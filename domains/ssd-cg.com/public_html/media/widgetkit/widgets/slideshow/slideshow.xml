@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget>
+    <settings>
+		<setting name="style" label="استایل" type="style" path="slideshow:styles" default="default" />
+        <setting name="autoplay" label="پخش خودکار" type="radio" default="1">
+			<option value="1">بله</option>
+			<option value="0">خیر</option>
+		</setting>
+        <setting name="interval" label="مدت زمان پخش خودکار (میلی ثانیه)" type="text" default="5000" />
+        <setting name="width" label="طول" type="text" default="auto" />
+        <setting name="height" label="ارتفاع" type="text" default="auto" />
+        <setting name="duration" label="مدت زمان پخش افکت ( میلی ثانیه )" type="text" default="500" />
+        <setting name="index" label="ایندکس شروع" type="text" default="0" />
+        <setting name="order" label="ترتیب" type="list" default="default">
+            <option value="default">پیشفرض</option>
+            <option value="random">تصادفی</option>
+        </setting>
+    </settings>
+</widget>

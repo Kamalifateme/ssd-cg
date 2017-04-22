@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade" client="site">
+	<name>ماژول تویتر ویجت کیت فارسی</name>
+	<author>YOOtheme</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright (C) 2007 - 2011 YOOtheme GmbH</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+	<assetsLicense>YOOtheme Proprietary Use License (http://www.yootheme.com/license)</assetsLicense>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.0.0</version>
+	<description>ماژول توییتر ویجت کیت</description>
+	<files>
+		<filename module="mod_widgetkit_twitter">mod_widgetkit_twitter.php</filename>	
+	</files>
+	<params>
+		<param name="style_" type="list" default="list" label="استایل" description="استایل تویت ها">
+			<option value="list">لیست</option>
+			<option value="single">تنها</option>
+			<option value="bubbles">حباب</option>
+		</param>
+		<param name="from_user" type="text" default="" label="از کاربر (ها)" description="نمایش تویت ها از یک کاربر یا چند کاربر ( کاربر ها را با کاما از هم جدا کنید )" />
+		<param name="to_user" type="text" default="" label="به کاربر ( ها )" description="نمایش تویت ها به یک کاربر یا چند کاربر ( کاربر ها را با کاما از هم جدا کنید )" />
+		<param name="ref_user" type="text" default="" label="کاربر ( ها ) ی ارجاع شده" description="نمایش تویت ها به یک کاربر ارجاع شده یا چند کاربر ارجاع شده ( کاربر ها را با کاما از هم جدا کنید )" />
+		<param name="hashtag" type="text" default="" label="با تگ هش" description="نمایش تویت ها به همراه تگ هش" />
+		<param name="word" type="text" default="" label="با کلمه" description="نمایش تویت ها با یک کلمه" />
+		<param name="nots" type="textarea" rows="5" cols="30" default="" label="نه با این کلمه ها" description="این کلمه ها فیلتر خواهند شد ( با فاصله از هم جدا کنید )" />
+		<param name="limit" type="text" size="6" default="5" label="محدودیت" description="تعداد تویت را برای نمایش محدود کنید" />
+		<param name="image_size" type="text" default="48" label="سایز تصویر به پیکسل" description="سایز پیشفرض تصویر 48 پیکسل هست" />
+		<param name="show_image" type="radio" default="1" label="تصویر" description="نمایش / پنهان کردن تصاویر تویت ها از کاربران">
+			<option value="0">پنهان</option>
+			<option value="1">نمایش</option>
+		</param>
+		<param name="show_author" type="radio" default="1" label="نویسنده" description="نمایش / پنهان کردن نویسنده توییت">
+			<option value="0">پنهان</option>
+			<option value="1">نمایش</option>
+		</param>
+		<param name="show_date" type="radio" default="1" label="تاریخ انتشار" description="نمایش / پنهان کردن تاریخ انتشار توییت ها">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="پسوند کلاس ماژول" description="پسوند کلاس ماژول" />
+	</params>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic">
+				<field name="style_" type="list" default="list" label="استایل" description="استایل تویت ها">
+					<option value="list">لیست</option>
+					<option value="single">تنها</option>
+					<option value="bubbles">حباب</option>
+				</field>
+				<field name="from_user" type="text" default="" label="از کاربر (ها)" description="نمایش تویت ها از یک کاربر یا چند کاربر ( کاربر ها را با کاما از هم جدا کنید )" />
+				<field name="to_user" type="text" default="" label="به کاربر ( ها )" description="نمایش تویت ها به یک کاربر یا چند کاربر ( کاربر ها را با کاما از هم جدا کنید )" />
+				<field name="ref_user" type="text" default="" label="کاربر ( ها ) ی ارجاع شده" description="نمایش تویت ها به یک کاربر ارجاع شده یا چند کاربر ارجاع شده ( کاربر ها را با کاما از هم جدا کنید )" />
+				<field name="hashtag" type="text" default="" label="با تگ هش" description="نمایش تویت ها به همراه تگ هش" />
+				<field name="word" type="text" default="" label="با کلمه" description="نمایش تویت ها با یک کلمه" />
+				<field name="nots" type="textarea" rows="5" cols="30" default="" label="نه با این کلمه ها" description="این کلمه ها فیلتر خواهند شد ( با فاصله از هم جدا کنید )" />
+				<field name="limit" type="text" size="6" default="5" label="محدودیت" description="تعداد تویت را برای نمایش محدود کنید" />
+				<field name="image_size" type="text" default="48" label="سایز تصویر به پیکسل" description="سایز پیشفرض تصویر 48 پیکسل هست" />
+				<field name="show_image" type="radio" default="1" label="تصویر" description="نمایش / پنهان کردن تصاویر تویت ها از کاربران">
+					<option value="0">پنهان</option>
+					<option value="1">نمایش</option>
+				</field>
+				<field name="show_author" type="radio" default="1" label="نویسنده" description="نمایش / پنهان کردن نویسنده توییت">
+					<option value="0">پنهان</option>
+					<option value="1">نمایش</option>
+				</field>
+				<field name="show_date" type="radio" default="1" label="تاریخ انتشار" description="نمایش / پنهان کردن تاریخ انتشار توییت ها">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+		</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="پسوند کلاس ماژول" description="پسوند کلاس ماژول" />	
+			</fieldset>
+		</fields>
+	</config>
+</extension>

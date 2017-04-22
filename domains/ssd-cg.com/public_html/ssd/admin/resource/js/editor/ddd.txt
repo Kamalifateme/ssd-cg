@@ -1,0 +1,50 @@
+// Sets the HTML contents of the activeEditor editor
+tinyMCE.activeEditor.setContent('<span>some</span> html');
+
+// Sets the raw contents of the activeEditor editor
+tinyMCE.activeEditor.setContent('<span>some</span> html', {format : 'raw'});
+
+// Sets the content of a specific editor (my_editor in this example)
+tinyMCE.get('my_editor').setContent(data);
+
+// Sets the bbcode contents of the activeEditor editor if the bbcode plugin was added
+tinyMCE.activeEditor.setContent('[b]some[/b] html', {format : 'bbcode'});
+
+
+
+
+
+
+
+var value = tinymce.get('text').getContent();
+
+
+
+
+
+
+// Get the HTML contents of the currently active editor
+console.debug(tinyMCE.activeEditor.getContent());
+
+// Get the raw contents of the currently active editor
+tinyMCE.activeEditor.getContent({format : 'raw'});
+
+// Get content of a specific editor:
+tinyMCE.get('content id').getContent()
+
+
+
+
+
+
+
+// Adds an onclick event to an editor by id (shorter version)
+tinyMCE.get('mytextbox').onClick.add(function(ed, e) {
+   ed.windowManager.alert('Hello world!');
+});
+
+// Adds an onclick event to an editor by id (longer version)
+tinymce.EditorManager.get('mytextbox').onClick.add(function(ed, e) {
+   ed.windowManager.alert('Hello world!');
+});
+

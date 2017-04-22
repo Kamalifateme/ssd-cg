@@ -1,0 +1,27 @@
+.corenews h3 {
+	font-size: 13px;
+	font-weight: bold;
+	background: #f6f6f6;
+	padding: 4px 0;
+	cursor: pointer;
+	margin-bottom: 1px;
+	padding-left: 3px;
+}
+
+.corenews .dateauthor {
+	font-size: 11px;
+	color: #666;
+}
+
+.corenews div.element span{
+	display: block;
+	padding-top: 3px;
+}
+
+.corenews div.element .readon {
+	margin: 0 0 5px 0;
+}
+
+.corecontent{
+	
+}

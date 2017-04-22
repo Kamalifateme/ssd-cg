@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7.0" type="module" method="upgrade" client="site">
+	
+	<name>ZT Piece Maker</name>
+	<author>ZooTemplate</author>
+	<creationDate>11 January, 2012</creationDate>
+	<copyright>Copyright (C) 2011 http://www.zootemplate.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>support@zootemplate.com</authorEmail>
+	<authorUrl>http://www.zootemplate.com</authorUrl>
+	<version>1.7.0</version>
+	<description><![CDATA[ZT Piecemaker developed by <a href="http://www.zootemplate.com" title="Joomla Templates">www.zootemplate.com</a>]]></description>
+	
+	<files>
+		<filename module="mod_zt_piecemaker">mod_zt_piecemaker.php</filename>
+		<filename>helper.php</filename>
+		<filename>_helper.php</filename>
+		<filename>index.html</filename>
+		<filename>thumbnail.inc.php</filename>
+		<filename>piecemaker.swf</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+	</files>		
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />		
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="false"
+					size="10"
+					label="JCATEGORY"
+					description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />
+				<field name="ordering" type="list" default="created" label="Order By" description="Order By">
+					<option value="created">Recently Added</option>
+					<option value="modified">Recently Modified</option>
+					<option value="ordering">Ordering </option>
+				</field>
+				<field name="sort_order" type="radio" default="desc" label="Sort Order" description="Sort Order">
+					<option value="desc">Descending</option>
+					<option value="asc">Ascending</option>
+				</field>
+				<field name="intro_length" type="text" default="30" label="Introtext Length" description="Introtext Length" />
+				<field name="module_width" default="700" type="text" label="Width" description="Module Width" />
+				<field name="module_height" default="300" type="text" label="Height" description="Module Height" />
+				<field name="no_items" type="text" label="Number Of Items" description="Number Of Items" default="5" />
+				<field name="no_slices" type="text" default="7" label="Number Of Segments" description="Number Of Segments" />
+				<field name="tween_time" type="text" default="1.2" label="Tween Time" description="Tween Time" />
+				<field name="tween_delay" type="text" default="0.1" label="Tween Delay" description="Tween Delay" />
+				<field name="tween_type" type="list" default="easeInOutBack" label="Tween type" description="type of transition">
+					<option value="linear">linear</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				<field name="zDistance" type="text" default="0" label="Z Distance" description="to which extend are the cubes moved on z axis when being tweened. Negative values bring the cube closer to the camera, positive values take it further away. A good range is roughly between -200 and 700" />
+				<field name="expand" type="text" default="20" label="Expand" description="to which extend are the cubes moved away from each other when tweening" />		
+				<field name="innerColor" type="text" default="#111111" label="Inner color" description="color of the sides of the elements in hex values" />
+				<field name="textBackground" type="text" default="#0064C8" label="Text background" description="color of the description text background in hex values" />
+				<field name="shadowDarkness" type="text" default="100" label="Shadow darkness" description="to which extend are the sides shadowed, when the elements are tweening and the sided move towards the background. 100 is black, 0 is no darkening" />
+				<field name="textDistance" type="text" default="25" label="Text distance" description="distance of the info text to the borders of its background" />
+				<field name="autoplay" type="text" default="10" label="Autoplay" description="number of seconds to the next image, when autoplay is on. Set 0, if you do not want autoplay" />
+				<field name="show_description" type="radio" default="0" label="Show Description" description="Show Description">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

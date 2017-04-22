@@ -1,0 +1,13 @@
+Version 1.1
+
+Fixbug
+
+- Upgrade Joomla ver 2.5.8
+- Insert module Google Map into page Contact
+- Upgrade module BT Login to version 2.4.3
+- Upgrade K2 ver 2.6.2
+- Upgrade module BT Slideshow ver 1.1
+- Upgrade module BT Content Slider ver 1.5
+- Upgrade module BT Facebook Like Page ver 1.2
+- Fix some error of language
+- Fix some error of content

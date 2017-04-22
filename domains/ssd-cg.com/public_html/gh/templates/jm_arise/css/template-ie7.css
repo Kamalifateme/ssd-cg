@@ -1,0 +1,41 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+
+/* ------------------- */
+/* -- typo.css  -- */
+/* ------------------- */
+
+/* MESSAGE BOXES AND LEGENDS STYLE
+-----------------------------------------------------------------*/
+.custombadge-new li {
+	zoom: 0 !important;
+}
+div.btl-buttonsubmit span{
+	display: inline!important;
+	zoom:1;
+}
+input.btl-buttonsubmit, button.btl-buttonsubmit{
+	padding: 0 12px 0 6px;
+    width: auto;  /* IE table-cell margin fix */
+    overflow: visible;
+}
+.contact-form .button{
+	padding: 0 12px 0 6px;
+    width: auto;  /* IE table-cell margin fix */
+    overflow: visible;
+}
+#ja-botsl .moduletable_newsletter .inputbox{
+	margin-right:5px;
+}
+#bt_ul{
+	margin-top: 0!important;
+	margin-bottom: 10!important;
+}

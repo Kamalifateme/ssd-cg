@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget>
+    <settings>
+        <setting name="enable" label="فعالسازی" type="radio" default="1" description="اگر غیر فعال باشد JavaScript لایت باکس بارگذاری نخواهد شد.">
+			<option value="1">بله</option>
+			<option value="0">خیر</option>
+		</setting>
+        <setting name="title_position" label="مکان عنوان" type="list" default="float" description="شما می توانید مکان عنوان لایت باکس را تنظیم کنید .">
+			<option value="float">Float</option>
+			<option value="outside">Outside</option>
+			<option value="inside">Inside</option>
+			<option value="over">Over</option>
+		</setting>
+        <setting name="transition_in" label="افکت باز شدن" type="list" default="fade" description="شما می توانید افکتی را که هنگام باز شدن لایت باکس استفاده می شود ، تنظیم کنید.">
+			<option value="fade">Fade</option>
+			<option value="elastic">Elastic</option>
+			<option value="none">None</option>
+		</setting>
+        <setting name="transition_out" label="افکت بسته شدن" type="list" default="fade" description="شما می توانید افکتی را که هنگام بسته شدن لایت باکس استفاده می شود ، تنظیم کنید.">
+			<option value="fade">Fade</option>
+			<option value="elastic">Elastic</option>
+			<option value="none">None</option>
+		</setting>
+        <setting name="overlay_show" label="نمایش پوشش" type="radio" default="1" description="فعال کردن / غیر فعال کردن پوشش زمینه لایت باکس">
+			<option value="1">بله</option>
+			<option value="0">خیر</option>
+		</setting>
+        <setting name="overlay_color" label="رنگ پوشش" type="text" default="#777" description="رنگ پوشش لایت باکس . از مقادیر کد های هکس برای رنگ استفاده کنید ." />
+        <setting name="overlay_opacity" label="شفافیت پوشش" type="text" default="0.7" description="شفافیت پوشش لایت باکس . از مقادیری بین 0 تا 1 استفاده کنید ." />
+        <setting name="selector" label="سلکتور" type="text" default="a[data-lightbox]" description="شما می توانید سلکتور پیشفرض لایت باکس را برای فعال سازی آن در المنت ها تغییر دهید ." />
+    </settings>
+</widget>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>Persian Language Pack</name>
+	<packagename>fa-IR</packagename>
+	<version>2.5.9.1</version>
+	<creationDate>03/02/2013</creationDate>
+	<author>Farsi translation team : joomlafarsi.com</author>
+	<authorEmail>team@joomlafarsi.com</authorEmail>
+	<authorUrl>www.joomlafarsi.com</authorUrl>
+	<url></url>
+	<packager>Joomla! Farsi Team</packager>
+	<packagerurl>www.joomlafarsi.com</packagerurl>
+	<description>
+		<![CDATA[
+			<h3>فارسی ساز جوملا 2.5 کاری از تیم برگزیده جوملا در ایران. جوملا فارسی دات کام</h3>
+			<h3>Joomla! 2.5 Full Farsi (fa-IR) Language Package version 2.5.9v1</h3>
+			<br>
+		]]>
+	</description>
+	<files>
+		<file type="language" client="site" id="fa-IR">site_fa-IR.zip</file>
+		<file type="language" client="administrator" id="fa-IR">admin_fa-IR.zip</file>
+	</files>
+<updateservers>
+       <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+</updateservers>
+</extension>

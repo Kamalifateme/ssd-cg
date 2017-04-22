@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>almasrayan</name>
+	<author>حسین توکلی</author>
+	<creationDate>1393/11/01</creationDate>
+	<copyright>(C) 2003 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>reshkooeiah@gmail.com</authorEmail>
+	<authorUrl>almasrayan.com</authorUrl>
+	<version>1.0.0</version>
+	<description>ندارد</description>
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<scriptfile>install.php</scriptfile>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_almasrayan.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.com_almasrayan.ini</language>
+	</languages>
+	<files folder="site">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>almasrayan.php</filename>
+		<filename>router.php</filename>
+	</files>
+	<administration>
+		<menu>com_almasrayan</menu>
+			<submenu>
+				<menu link="option=com_almasrayan">PANEL</menu>
+				<menu link="option=com_almasrayan&amp;view=args">ALMASRAYAN_ARGS</menu>
+				<menu link="option=com_almasrayan&amp;view=help">ALMASRAYAN_HELP</menu>
+				<menu link="option=com_almasrayan&amp;view=about">ALMASRAYAN_ABOUT</menu>
+			</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>almasrayan.php</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_almasrayan.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_almasrayan.sys.ini</language>
+			<language tag="fa-IR">fa-IR/fa-IR.com_almasrayan.ini</language>
+			<language tag="fa-IR">fa-IR/fa-IR.com_almasrayan.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

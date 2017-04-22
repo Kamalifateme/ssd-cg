@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+	<name>ماژول آکاردئوني مطالب جومینا</name>
+	<author>گروه توسعه افزونه جومینا</author>
+	<creationDate>Dec 2011</creationDate>
+	<copyright>(C) 2008 - 2011 RumahBelanja.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>coretemplate@gmail.com</authorEmail>
+	<authorUrl>www.JOOMINA.IR</authorUrl>
+	<version>2.1</version>
+	<description><![CDATA[<body link="#0170CA" alink="#008080" vlink="#0170CA"><div align="center"><table border="1" cellpadding="6" cellspacing="0" id="table1" bordercolor="#e5e5e5" style="font-family: Tahoma" width="70%" dir="rtl"><tr><td rowspan="6" width="190" height="200"><img border="0" src="http://www.topjoomina.ir/download.php?imgf=13233526261.jpg" width="202" height="190"></td><td colspan="2" bgcolor="#ff6600"><p align="center"><b><a style="text-decoration: none" target="_blank" href="http://www.joomina.ir"><font color="#FFFFFF">وب سایت جومینا</font></a>&nbsp; با افتخار تقدیم میکند	</b> </p></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">نام افزونه :</font></td><td bgcolor="#f5f5f5"><span lang="fa">ماژول آکاردئونی مطالب</span></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">توضیحات:</font></td><td bgcolor="#f5f5f5">	<span lang="fa">از این ماژول برای نمایش مطالب به شکل آکاردئون استفاده میشود . در این ماژول میتوانید تعدادی از مطالب را به صورت تصادفی یا مطالب اخیر و ... نمایش دهید</span></td></tr><tr><td width="150" bgcolor="#0170ca"><font color="#FFFFFF"><font size="2">توسعه دهنده برای</font><span lang="fa"><font size="2"> ایرانیان:</font></span></font></td><td bgcolor="#f5f5f5"><span lang="fa">وب سایت جومینا</span></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">ترجمه و فارسی سازی<span lang="fa"></span> :</font></td>	<td bgcolor="#f5f5f5">گروه توسعه افزونه جومینا</td></tr>	<tr><td width="150" bgcolor="#0170ca">				<font size="2" color="#FFFFFF">مراجع جوملا<span lang="fa"> ایرانی</span>:</font></td><td bgcolor="#f5f5f5">	<p align="center"><a style="text-decoration: none" target="_blank" href="http://www.joomina.ir">مرکز ارائه خدمات به طراحان وب</a><span lang="fa">&nbsp;&nbsp; ا&nbsp;&nbsp; </span>	<a style="text-decoration: none" target="_blank" href="http://forum.joomina.ir">انجمن تخصصی جوملا</a><span lang="fa">&nbsp;&nbsp; ا&nbsp;&nbsp;&nbsp;</span><a style="text-decoration: none" target="_blank" href="http://joominamarket.com">فروشگاه افزونه های تخصصی جوملا</a>&nbsp;&nbsp;<span lang="fa">ا</span>&nbsp;&nbsp;<a style="text-decoration: none" target="_blank" href="http://joominahost.com">هاستینگ منطبق بر جوملا</a></td></tr></table></div>]]></description> 
+	<files>
+		<filename module="mod_accordian_frontpage_core">mod_accordian_frontpage_core.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>css/index.html</filename>
+		<filename>css/style.css</filename>
+		<filename>mod_accordian_frontpage_core.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_accordian_frontpage_core.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_accordian_frontpage_core.sys.ini</language>
+		<language tag="fa-IR">language/fa-IR/fa-IR.mod_accordian_frontpage_core.ini</language>
+		<language tag="fa-IR">language/fa-IR/fa-IR.mod_accordian_frontpage_core.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="count" type="text" default="5" label="COUNT" description="COUNT_DESC" />
+				<field name="catid" type="category" extension="com_content" multiple="true" size="10" label="CHOOSECATEGORY" description="CHOOSECATEGORYDESC" />
+				<field name="show_front" type="radio" default="1" label="FRONTPAGEITEMS" description="FRONTPAGEITEMSDESC">
+					<option value="1">SHOW</option>
+					<option value="0">HIDE</option>
+				</field>
+				<field name="totalskip" type="text" default="0" label="TOTALSKIP" description="TOTALSKIP_DESC" />
+				<field name="orderedby" type="list" default="1" label="ORDERING" description="ORDERING_DESC">
+					<option value="0">RANDOM</option>
+					<option value="1">THELATEST</option>
+					<option value="2">THEOLDEST</option>
+					<option value="3">THEPOP</option>
+					<option value="4">THELESS</option>
+					<option value="5">MODIFFIRST</option>
+				</field>
+				<field name="user_id" type="list" default="0" label="AUTHORS" description="AUTHORS_DESC">
+					<option value="0">ANYONE</option>
+					<option value="by_me">ADD_OR_MODIF_ME</option>
+					<option value="not_me">NOT_ADD_OR_MODIF_ME</option>
+				</field>
+				<field name="show_author" type="radio" default="1" label="SHOWAUTHORS" description="SHOWAUTHORS_DESC">
+					<option value="0">HIDE</option>
+					<option value="1">SHOW</option>
+				</field>
+				
+				<field name="show_date" type="radio" default="1" label="SHOWDATE" description="SHOWDATE_DESC">
+					<option value="0">HIDE</option>
+					<option value="1">SHOW</option>
+				</field>
+				<field name="time_format" type="text" default="d-m-Y" label="TIMEFORMAT" description="TIMEFORMATDESC" />
+				<field name="title_as_link" type="radio" default="0" label="TITLEASLINK" description="TITLEASLINKDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="preview_count" type="text" default="200" label="PRELENGTH" description="PRELENGTHDESC" />
+				<field name="full_link" type="radio" default="1" label="SFULLLINK" description="SFULLLINKDESC">
+					<option value="0">HIDE</option>
+					<option value="1">SHOW</option>
+				</field>
+				<field name="modspacer1" type="spacer" default="" label="" description="" hr="true"/>
+				<field name="date_filtering" type="radio" default="off" label="MOD_AFP_DATEFILTERING_LABEL" description="MOD_AFP_DATEFILTERING_DESC">
+					<option value="off">MOD_AFP_OPTION_OFF_VALUE</option>
+					<option value="range">MOD_AFP_OPTION_DATERANGE_VALUE</option>
+					<option value="relative">MOD_AFP_OPTION_RELATIVEDAY_VALUE</option>
+				</field>
+				<field name="start_date_range" type="calendar" format="%Y-%m-%d %H:%M:%S" label="STARTDATE_LABEL" description="STARTDATE_DESC" size="22" filter="user_utc" />
+				<field name="end_date_range" type="calendar" format="%Y-%m-%d %H:%M:%S" label="ENDDATE_LABEL" description="ENDDATE_DESC" size="22" filter="user_utc" />
+				<field name="relative_date" type="text" default="500" label="RELATIVEDATE_LABEL" description="RELATIVEDATE_DESC" />
+				<field name="modspacer2" type="spacer" default="" label="" description="" hr="true"/>
+				<field name="start_open" type="text" default="0" label="STARTOPEN" description="STARTOPENDESC" />
+				<field name="start_transition" type="radio" default="1" label="TRANSTART" description="TRANSTARTDESC">
+					<option value="1">TRANS</option>
+					<option value="0">OPEN</option>
+				</field>
+				<field name="transparent_slide" type="radio" default="1" label="TRANSLIDE" description="TRANSLIDEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="moo_duration" type="text" default="200" label="PANELDURATION" description="PANELDURATIONDESC" />
+				<field name="moo_transition" type="list" default="Expo.easeOut" label="TRANSEFFECT" description="TRANSEFFECTDESC">
+					<option value="linear">linear</option>
+					<option value="Quad.easeOut">Quad.easeOut</option>
+					<option value="Quad.easeIn">Quad.easeIn</option>
+					<option value="Quad.easeInOut">Quad.easeInOut</option>
+					<option value="Cubic.easeOut">Cubic.easeOut</option>
+					<option value="Cubic.easeIn">Cubic.easeIn</option>
+					<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+					<option value="Quart.easeOut">Quart.easeOut</option>
+					<option value="Quart.easeIn">Quart.easeIn</option>
+					<option value="Quart.easeInOut">Quart.easeInOut</option>
+					<option value="Quint.easeOut">Quint.easeOut</option>
+					<option value="Quint.easeIn">Quint.easeIn</option>
+					<option value="Quint.easeInOut">Quint.easeInOut</option>
+					<option value="Expo.easeOut">Expo.easeOut</option>
+					<option value="Expo.easeIn">Expo.easeIn</option>
+					<option value="Expo.easeInOut">Expo.easeInOut</option>
+					<option value="Circ.easeOut">Circ.easeOut</option>
+					<option value="Circ.easeIn">Circ.easeIn</option>
+					<option value="Circ.easeInOut">Circ.easeInOut</option>
+					<option value="Sine.easeOut">Sine.easeOut</option>
+					<option value="Sine.easeIn">Sine.easeIn</option>
+					<option value="Sine.easeInOut">Sine.easeInOut</option>
+					<option value="Back.easeOut">Back.easeOut</option>
+					<option value="Back.easeIn">Back.easeIn</option>
+					<option value="Back.easeInOut">Back.easeInOut</option>
+					<option value="Bounce.easeOut">Bounce.easeOut</option>
+					<option value="Bounce.easeIn">Bounce.easeIn</option>
+					<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+					<option value="Elastic.easeOut">Elastic.easeOut</option>
+					<option value="Elastic.easeIn">Elastic.easeIn</option>
+					<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+				</field>
+				<field name="layout_style" type="list" default="0" label="LAYOUTSTYLE" description="LAYOUTSTYLEDESC">
+					<option value="0">BYCOLUMN</option>
+					<option value="1">BYROW</option>
+				</field>
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="MODULECLASSSUFFIX"
+					description="fieldMODULECLASSSUFFIX" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,214 @@
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container{
+	width:400px;
+	height:400px;
+}
+#simplemodal-container a.modalCloseImg {background:url(../images/close_bt.png) top no-repeat; width:26px; height:26px; display:inline; z-index:3200; position:absolute; top:6px; right:10px; cursor:pointer;}
+#simplemodal-container a.modalCloseImg:hover {background:url(../images/close_bt.png) bottom no-repeat; width:26px; height:26px; display:inline; z-index:3200; position:absolute; top:6px; right:10px; cursor:pointer;}
+
+.btl-content-block{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+	border:1px solid #dadada;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    color: #333333;
+    display: none;
+    height: auto;
+    overflow: hidden;
+    text-align: left;	
+	font-size:12px;
+}
+.btl-content-block h3{
+	background: url("../images/header_bglogin.jpg") repeat-x scroll left top transparent;
+    font-weight: normal;
+    line-height: 41px;
+	margin:0px;
+    padding: 0 15px;
+	margin-bottom:10px;
+	text-transform: uppercase;
+	font-size:18px;
+	color:#515151;
+
+}
+
+.btl-input input[type=text],
+.btl-input input[type=password]{
+	background: url("../images/inputbox_login.png") no-repeat scroll left top transparent;
+    border: medium none;
+    margin: 7px 0;
+    padding: 9px 0 9px 0;
+    text-indent: 10px;
+    width: 189px;
+}
+
+#btl .btl-panel{
+	overflow:hidden;
+
+}
+#btl .btl-panel > #btl-panel-profile{
+	background:url(../images/btl-panel-bg.png) top right no-repeat;
+	padding-right:30px;
+}
+#btl .btl-panel > span{
+	display:block;
+	float:right;
+	background:url(../images/btl-panel-bg.png) top left no-repeat;
+	height:26px;
+	line-height:26px;
+	padding:0 20px;
+	cursor:pointer;
+}
+.btl-error{
+	display:none;
+}
+.btl-field{
+	overflow:hidden;
+}
+.btl-label{
+	float:left;
+	margin-left:15px;
+}
+.btl-input{
+	float:right;
+	margin-right:15px;
+}
+.btl-label{
+	padding-top:15px;
+}
+.clear{
+	clear:both;
+}
+.btl-error{
+	color: #FF0000;
+	margin-left:15px;
+	padding:4px 0 10px 0;
+}
+.btl-note{
+	margin-left:15px;
+	padding:10px 0;
+}
+input.btl-buttonsubmit,
+button.btl-buttonsubmit{
+    background: url("../images/bgd-button.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    text-shadow: 0 1px 1px #4A4A4A;
+    text-transform: uppercase;
+    width: 96px;
+}
+input.btl-buttonsubmit:hover,
+button.btl-buttonsubmit:hover{
+	background: url("../images/bgd-button.png") no-repeat scroll 0 -34px transparent;
+}
+div.btl-buttonsubmit{
+	text-align:center;
+	padding:15px;
+}
+
+#btl-panel-login{
+	border:1px solid #dadada;
+	border-right:none;
+	border-radius:2px 0px 0px 2px;
+}
+#btl-panel-registration{
+	border:1px solid #dadada;
+	border-left:1px solid #d9d9d9;
+	border-radius:0px 2px 2px 0px;
+}
+
+#btl-content > .btl-content-block{
+	margin-top:2px;
+	right:10px;
+	position:absolute;
+	z-index:999;
+}
+#btl-content #btl-content-login{
+	width:209px;
+}
+
+#btl-content #btl-content-registration{
+	width:310px;
+}
+#btl-content .btl-content-block .btl-note{
+	display:none;
+}
+#btl-content .btl-content-block h3,
+
+#btl-content .btl-content-block .btl-label{
+	margin-left:10px;
+}
+#btl-content #btl-content-login .btl-input{
+	margin-left:10px;
+	margin-right:0px;
+	float:left;
+}
+#btl-content .btl-content-block h3{
+	background:none;
+    font-weight: normal;
+    line-height: 41px;
+	margin:0px 10px 10px 10px;
+    padding: 0px;
+	text-transform: uppercase;
+	font-size:18px;
+	border-bottom:1px dotted #c4c4c4;
+	color:#515151;
+
+}
+#btl-content div.btl-buttonsubmit{
+	margin-left:10px;
+	text-align:left;
+	padding:10px 0px 0px 0px;
+}
+#btl-content #btl-content-login .btl-label {
+	padding-top:0px;
+}
+
+
+/* CSS FOR USER PROFILE MODULE**/
+#btl-content  #btl-content-profile h3{
+	color:#627905;
+	margin:0px;
+}
+#btl-content-profile > div {
+	float:left;
+	overflow:hidden;
+	width:200px;
+	margin:0 10px 10px 10px;
+}
+#btl-content-profile ul.menu{
+	padding: 0px;!important;
+	margin:0px!important;
+	position:static;
+	background:none!important;
+	border:none!important;
+}
+#btl-content-profile ul.menu li {
+    background: url("../images/bullet.png") no-repeat scroll 5px 15px transparent;
+    padding: 0 0 0 20px!important;
+	border-bottom: 1px solid #E8E8E8;
+	display:list-item!important;
+    line-height: 37px;
+	
+}
+#btl-content-profile ul.menu li a {
+    color: #616161!important;
+	text-decoration:none!important;
+	border:none!important;
+	background:none!important;
+	display:inline!important;
+	padding:0!important;
+	margin:0!important;
+	text-transform: none!important;
+}
+
+#btl-content-profile div.btl-buttonsubmit{
+	clear:both;
+	margin-bottom:10px;
+	width:auto;
+}

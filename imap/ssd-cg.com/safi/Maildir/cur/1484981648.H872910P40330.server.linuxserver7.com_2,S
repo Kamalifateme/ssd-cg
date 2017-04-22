@@ -1,0 +1,71 @@
+Return-path: <>
+Envelope-to: safi@ssd-cg.com
+Delivery-date: Sat, 21 Jan 2017 10:24:08 +0330
+Received: from mail by server.linuxserver7.com with local (Exim 4.86)
+	id 1cUpYu-000AUP-Qt
+	for safi@ssd-cg.com; Sat, 21 Jan 2017 10:24:08 +0330
+X-Failed-Recipients: mehdigadami@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server.linuxserver7.com>
+To: safi@ssd-cg.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1484981648-eximdsn-722021017
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1cUpYu-000AUP-Qt@server.linuxserver7.com>
+Date: Sat, 21 Jan 2017 10:24:08 +0330
+
+--1484981648-eximdsn-722021017
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  mehdigadami@gmail.com
+    host gmail-smtp-in.l.google.com [74.125.128.26]
+    SMTP error from remote mail server after RCPT TO:<mehdigadami@gmail.com>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser d10si6164127wmi.71 - gsmtp
+
+--1484981648-eximdsn-722021017
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server.linuxserver7.com
+
+Action: failed
+Final-Recipient: rfc822;mehdigadami@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. Learn more at
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser d10si6164127wmi.71 - gsmtp
+
+--1484981648-eximdsn-722021017
+Content-type: text/rfc822-headers
+
+Return-path: <safi@ssd-cg.com>
+Received: from [::1] (helo=www.ssd-cg.com)
+	by server.linuxserver7.com with esmtpa (Exim 4.86)
+	(envelope-from <safi@ssd-cg.com>)
+	id 1cUpYr-000AT4-Fy
+	for mehdigadami@gmail.com; Sat, 21 Jan 2017 10:24:05 +0330
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="=_35ca63fe82936816a76cece3b5f07ede"
+Date: Sat, 21 Jan 2017 10:24:05 +0330
+From: safi@ssd-cg.com
+To: mehdigadami@gmail.com
+Subject: =?UTF-8?Q?=5BSSD=5D=D8=AF=D9=88=D8=B1=D9=87_=D8=A2=D9=85=D9=88?=
+ =?UTF-8?Q?=D8=B2=D8=B4=DB=8C_=D8=A2=D8=B4=D9=86=D8=A7=DB=8C=DB=8C_=D8=A8?=
+ =?UTF-8?Q?=D8=A7_=D9=82=D9=88=D8=A7=D9=86=DB=8C=D9=86_=DA=A9=D8=A7=D8=B1?=
+Message-ID: <40e688b30932d303d027eddcc039d6fb@ssd-cg.com>
+X-Sender: safi@ssd-cg.com
+User-Agent: Roundcube Webmail/1.1.3
+X-Exim-DSN-Information: Due to administrative limits only headers are returned
+
+
+--1484981648-eximdsn-722021017--

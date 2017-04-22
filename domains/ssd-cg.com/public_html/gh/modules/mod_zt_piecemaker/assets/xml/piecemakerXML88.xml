@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+  <Settings>
+    <imageWidth>960</imageWidth>
+    <imageHeight>360</imageHeight>
+    <segments>5</segments>
+    <tweenTime>1.2</tweenTime>
+    <tweenDelay>0.1</tweenDelay>
+    <tweenType>easeInOutBack</tweenType>
+    <zDistance>0</zDistance>
+    <expand>5</expand>
+    <innerColor>0x5</innerColor>
+    <textBackground>0x111111</textBackground>
+    <shadowDarkness>100</shadowDarkness>
+    <textDistance>25</textDistance>
+    <autoplay>10</autoplay>
+  </Settings>
+  <Image Filename="">
+    <Text>
+  		
+    </Text>
+  </Image>
+  <Image Filename="images/stories/thumbs/com_content/77/jvpiecemaker_960x360.png">
+    <Text>
+  		
+    </Text>
+  </Image>
+  <Image Filename="">
+    <Text>
+  		
+    </Text>
+  </Image>
+  <Image Filename="images/stories/thumbs/com_content/75/jvpiecemaker_960x360.png">
+    <Text>
+  		
+    </Text>
+  </Image>
+  <Image Filename="">
+    <Text>
+  		
+    </Text>
+  </Image>
+</Piecemaker>

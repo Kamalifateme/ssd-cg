@@ -1,0 +1,214 @@
+/**
+ * @version $Id: style.css 2012 2012-01-17 16:30:47Z  $
+ * @author Design & Accessible Team ( JoomlaFarsi  )
+ * @package JoomlaFarsi
+ * @Website www.JoomlaFarsi.com
+ * @subpackage Install-Template
+ * @copyright Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;}
+#back1{ 	position: relative;	margin:0 auto;	text-align:right;	direction:rtl;	width:789px;	height:494px;
+
+	
+		}
+
+#back2{	left:0px;	top:0px;	position:absolute;	width:395px;	height:125px;	background-image:url(joomla-intro_03.jpg);
+			}
+#back3{	left:395px;	top:0px; 	position:absolute;	width:394px;	height:125px;	background-image:url(joomla-intro_04.jpg);
+		}
+#back4{	left:0px;	top:125px; 	position:absolute;	width:155px;	height:369px;	background-image:url(joomla-intro_06.jpg);
+		}
+#back2a{	left:155px;	top:125px;	position:absolute;	width:155px;	height:369px;	background-image:url(joomla-intro_07.jpg);
+			}
+#back3a{	left:310px;	top:125px; 	position:absolute;	width:155px;	height:369px;	background-image:url(joomla-intro_08.jpg);
+		}
+#back4a{	left:465px;	top:125px; 	position:absolute;	width:155px;	height:369px;	background-image:url(joomla-intro_09.jpg);
+		}
+#back2b{	left:620px;	top:125px;	position:absolute;	width:169px;	height:369px;	background-image:url(joomla-intro_10.jpg);
+			}
+			
+#back {
+
+	}
+body {background-color:#f6e7cf;
+background-image:url( back.jpg);
+background-repeat:repeat-x;
+	
+}
+
+#copyright{
+position: absolute;	
+font-family:tahoma;
+font-size:10px;
+font-style:normal;
+text-align:center;
+bottom:2px;
+right:150px;
+direction:ltr;
+width:500px;
+}
+#pic2{
+font-family:tahoma;
+font-size:10px;
+font-style:normal;
+position:absolute;
+right:30px;
+bottom:70px;
+}
+#pic3{
+
+}
+
+a#download{ background-image:url( download.png); bottom:100px}
+a#extentions{ background-image:url(extentions.png);bottom:50px } 
+a#install{ background-image:url(install.png);bottom:0px } 
+a#doc { background-image:url(doc.png);bottom:150px } 
+a#forum{ background-image:url(forum.png);bottom:200px } 
+
+
+#homeaboutus {
+		overflow: auto;
+	}
+
+#homeaboutus a {
+	position: absolute;
+	background-repeat:no-repeat;
+	display: block;
+	font-size-adjust:none;
+	text-indent: -0px;
+	font-size:none;
+	height:50px;
+	width:60px;
+	padding-top:15px;
+	
+		}
+#homeaboutus a:hover {
+	
+	text-indent: -0px;}
+
+
+
+.animated_div
+{text-align:right;
+width:40px;
+background:#;
+color:#ff0000;
+font-weight:bold;
+font-size:0px;
+padding:0px 5px 0px 0px;
+float:right;
+margin:0px;
+-webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+-webkit-border-radius:5px;
+-o-transition-property:width,height,-o-transform,background,font-size,opacity;
+-o-transition-duration:1s,1s,1s,1s,1s,1s;
+-moz-transition-property:width,height,-o-transform,background,font-size,opacity;
+-moz-transition-duration:1s,1s,1s,1s,1s,1s;
+transition-property:width,height,transform,background,font-size,opacity;
+transition-duration:1s,1s,1s,1s,1s,1s;
+border-radius:5px;
+opacity:0.4;
+}
+
+.animated_div:hover
+{
+opacity:1;
+background:#;
+width:184px;
+font-size:11px;
+}
+
+
+#main{
+width:412px;
+height:268px;
+top:120px;
+background-image:url( matnj.png);
+background-repeat:no-repeat;
+position: relative;	margin:0 auto;
+
+}
+
+#matn{
+text-align:right;
+top:60px;
+padding-right:10px;
+width:370px;
+position: relative;	margin:0 auto;
+font-family:tahoma;
+font-size:14px;
+font-style:normal;
+text-transform: uppercase;
+font-variant: normal;
+-webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+-webkit-border-radius:5px;
+-o-transition-property:width,height,-o-transform,background,font-size,opacity,text-shadow;
+-o-transition-duration:1s,1s,1s,1s,1s,1s;
+-moz-transition-property:width,height,-o-transform,background,font-size,opacity,text-shadow;
+-moz-transition-duration:1s,1s,1s,1s,1s,1s;
+transition-property:width,height,transform,background,font-size,opacity,text-shadow;
+transition-duration:1s,1s,1s,1s,1s,1s;
+text-shadow: 0px 0px 1px #000;
+
+
+}
+#matn:hover{text-shadow: 0px 0px 1px #f00;
+opacity:1;
+}
+
+#install1 a{
+background-image:url( install1.png);
+background-repeat:no-repeat;
+top:240px;
+right:120px;
+width:173px;
+height:41px;
+position: absolute;	margin:0 auto;
+-webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+-webkit-border-radius:5px;
+-o-transition-property:width,height,-o-transform,background,font-size,opacity,text-shadow;
+-o-transition-duration:1s,1s,1s,1s,1s,1s;
+-moz-transition-property:width,height,-o-transform,background,font-size,opacity,text-shadow;
+-moz-transition-duration:1s,1s,1s,1s,1s,1s;
+transition-property:width,height,transform,background,font-size,opacity,text-shadow;
+transition-duration:1s,1s,1s,1s,1s,1s;
+opacity:0.7;
+}
+#install1 a:hover{
+background-image:url( install1.png);
+position: absolute;	margin:0 auto;
+width:173px;
+height:41px;
+opacity:1;
+}
+#wjoomla{
+top:12px;
+right:25px;
+color:#993300;
+font-size:18px;
+font-family:tahoma;
+width:150px;
+height:20px;
+font-weight:bold;
+position: absolute;	margin:0 auto;
+background-image:url( what-is-joomla.png);
+background-repeat:no-repeat;
+width:173px;
+height:41px;
+}

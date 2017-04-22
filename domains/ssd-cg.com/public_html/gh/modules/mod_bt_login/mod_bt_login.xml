@@ -1,0 +1,219 @@
+<?xml version="1.1" encoding="iso-8859-1"?>
+<extension 
+	type="module" 
+	version="1.7.0" 
+	client="site"
+	 method="upgrade">
+	<name>BT Login</name>
+    <author>BowThemes</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>BowThemes Co., Ltd.</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details.</license>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://bowthemes.com</authorUrl>
+	<version>1.1</version>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details
+	</license>
+	<description>
+	<![CDATA[
+		<style>
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 5px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				list-style: none outside none;
+				padding: 5px 5px 5px 20px;				
+			}
+			
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_bt_login/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+		<div class="bt_description">
+			<h3>BT Login Module Version 1.0</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_bt_login/admin/images/bt-login.png"></a>
+			<p>BT Login module is alternate Joomla! login module with special styles associated and can be placed at various position, while you can retain the standard login module in the default position.
+			</p>
+			<br clear="both" />
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Ability to run the same time with login module of Joomla</li>
+				<li>2 style dispay options : Modal box and Drop down</li>
+				<li>Compatibility with Joomla 1.6 and Joomla 1.7</li>
+				<li>Cross Browser Support: IE7+, Firefox 2+, Safari 3+, Chrome 8+, Opera 9+</li>
+			</ul>
+			<h3>UPgrade versions</h3>
+			<p>
+				Your current versions is 1.1. <a target="_blank" href="http://bowthemes.com">Find our latest versions now</a>
+			</p>
+			<h3>Userful links</h3>
+			<ul>
+				<li>Video tutorials</li>
+				<li>Report bug</li>
+				<li>Forum support</li>
+			</ul>
+			<h3>About bow themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright 2004 - 2011 <a target="_blank" href="http://bowthemes.com">http://bowthemes.com</a>	
+
+		</div>
+	]]>	
+	</description>
+	<files>
+		<filename module="mod_bt_login">mod_bt_login.php</filename>
+		<filename module="mod_bt_login">ajax.php</filename>
+		<filename module="mod_bt_login">helper.php</filename>
+		<filename module="mod_bt_login">index.html</filename>
+		<folder module="mod_bt_login">tmpl</folder>
+		<folder module="mod_bt_login">assets</folder>
+		<folder module="mod_bt_login">admin</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_bt_login.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params">
+			
+			<fieldset addfieldpath="/modules/mod_bt_login/admin/formfield"
+				name="basic">
+				<field type="asset" name="asset" path="modules/mod_bt_login/admin/" />
+				<field 
+					name="display_type" 
+					type="list" 
+					default="0" 
+					
+					label="DISPLAY_TYPE_LABEL" description="DISPLAY_TYPE_DESC">
+					<option value="0">Modal</option>
+					<option value="1">Dropdown</option>
+				</field>
+				<field 
+					name="login" 
+					type="menuitem" 
+					default="" 
+					disable="separator" 
+					label="LOGIN_REDIRECTION_URL" 
+					description="PARAMLOGINREDIRECTURL" > 
+					<option value="">JDEFAULT</option>
+				</field>
+				<field 
+					name="logout" 
+					type="menuitem" 
+					default="" 
+					disable="separator" 
+					label="LOGOUT_REDIRECTION_URL" 
+					description="PARAMLOGOUTREDIRECTURL" >
+					<option value="">JDEFAULT</option>
+				</field>
+				<field 
+					name="greeting" 
+					type="list" 
+					class="bt_switch"
+					default="1" 
+					label="GREETING" 
+					description="GREETING_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field 
+					name="name" 
+					type="list" 
+					default="0" 
+					label="NAME_USERNAME" description="NAME_USERNAME_DESC">
+					<option value="0">Username</option>
+					<option value="1">Name</option>
+				</field>
+				<field 
+					name="usesecure" 
+					type="list" 
+					class="bt_switch"
+					default="0" 
+					label="ENCRYPT_LOGIN_FORM" 
+					description="ENCRYT_LOGIN_FORM_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field 
+					name="module_id" 
+					id="bt_module_id" 
+					type="sql" 
+					default="0" 
+					multiple="multiple" 
+					size="10" 
+					label="MODULEID_LABEL" 
+					description="MODULEID_DESC" 
+					query="SELECT id, module, title FROM #__modules WHERE  `client_id`=0 AND ( `published` !=-2 AND `published` !=0 ) ORDER BY position ASC" key_field="id" value_field="title" 
+					/>
+					
+				<field 
+					name="module_position" 
+					id="bt_module_position" 
+					type="sql" 
+					default="0" 
+					multiple="multiple" 
+					size="10" 
+					label="MODULEPOSITION_LABEL" 
+					description="MODULEPOSITION_DESC" 
+					query="SELECT DISTINCT position FROM #__modules ORDER BY position ASC" key_field="position" value_field="position" 
+					/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field 
+					name="loadJquery" 
+					type="list" 
+					default="auto" 
+					label="BT_LOADJQUERY" 
+					description="BT_LOADJQUERY_DESC">
+					<option value="auto">Auto</option>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field 
+					name="loadCSS" 
+					type="list" 
+					default="1" 
+					class="bt_switch"
+					label="BT_LOADCSS" 
+					description="BT_LOADCSS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+			<fieldset addfieldpath="/modules/mod_bt_login/admin/formfield"
+				name="about" label="BT_ABOUT">
+				<field type="about" name="about"  path="modules/mod_bt_login/admin/images"  />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

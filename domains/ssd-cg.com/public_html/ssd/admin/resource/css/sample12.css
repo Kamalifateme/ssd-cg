@@ -1,0 +1,57 @@
+.bg-black {
+background-color:#fff;
+}
+.nav-primary ul.nav>li>a
+{
+border:0px;
+font-size:13px;
+}
+.bg-black .nav>li>a
+{
+color:#363f44;
+}
+.nav-primary li>a>i
+{
+color:#363f44;
+}
+.nav-primary ul.nav>li:hover>a>i.icon, .nav-primary ul.nav>li:focus>a>i.icon, .nav-primary ul.nav>li>a:hover>i.icon, .nav-primary ul.nav>li>a:focus>i.icon, .nav-primary ul.nav>li>a:active>i.icon, .nav-primary ul.nav>li.active>a>i.icon {
+  color: #363f44;
+}
+.nav-primary ul.nav>li:hover>a, .nav-primary ul.nav>li:focus>a, .nav-primary ul.nav>li>a:hover, .nav-primary ul.nav>li>a:focus, .nav-primary ul.nav>li>a:active, .nav-primary ul.nav>li.active>a {
+    color: #363f44;
+    background-color: #f6f8f8;
+    text-shadow: none;
+}
+.bg-primary.lter, .bg-primary .lter {
+  background-color: #fff;
+}
+body
+{
+background-color:#f0f3f4;
+}
+html
+{
+background-color:#f0f3f4;
+
+}
+.bg-dark a
+{
+color:#a6a8b1;
+}
+.logo
+{
+background-color:#3a3f51;
+}
+.header.navbar, .footer.navbar
+{
+	background-color:#3a3f51;
+}
+.bg-dark .nav>li>a
+{
+color:#a6a8b1;
+}
+.navbar-left a:hover
+{
+background-color:#edf1f2;
+
+}

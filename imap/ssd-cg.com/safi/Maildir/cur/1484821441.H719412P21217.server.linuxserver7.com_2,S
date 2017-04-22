@@ -1,0 +1,65 @@
+Return-path: <>
+Envelope-to: safi@ssd-cg.com
+Delivery-date: Thu, 19 Jan 2017 13:54:01 +0330
+Received: from mail by server.linuxserver7.com with local (Exim 4.86)
+	id 1cU9sv-0005W4-MG
+	for safi@ssd-cg.com; Thu, 19 Jan 2017 13:54:01 +0330
+X-Failed-Recipients: vadmvin@yahoo.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server.linuxserver7.com>
+To: safi@ssd-cg.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1484821441-eximdsn-1498775110
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1cU9sv-0005W4-MG@server.linuxserver7.com>
+Date: Thu, 19 Jan 2017 13:54:01 +0330
+
+--1484821441-eximdsn-1498775110
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  vadmvin@yahoo.com
+    host mta6.am0.yahoodns.net [66.196.118.33]
+    SMTP error from remote mail server after end of data:
+    554 delivery error: dd This user doesn't have a yahoo.com account (vadmvin@yahoo.com) [0] - mta1005.mail.bf1.yahoo.com
+
+--1484821441-eximdsn-1498775110
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server.linuxserver7.com
+
+Action: failed
+Final-Recipient: rfc822;vadmvin@yahoo.com
+Status: 5.0.0
+Remote-MTA: dns; mta6.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 delivery error: dd This user doesn't have a yahoo.com account (vadmvin@yahoo.com) [0] - mta1005.mail.bf1.yahoo.com
+
+--1484821441-eximdsn-1498775110
+Content-type: text/rfc822-headers
+
+Return-path: <safi@ssd-cg.com>
+Received: from [::1] (helo=www.ssd-cg.com)
+	by server.linuxserver7.com with esmtpa (Exim 4.86)
+	(envelope-from <safi@ssd-cg.com>)
+	id 1cU9sq-0005SH-K0
+	for vadmvin@yahoo.com; Thu, 19 Jan 2017 13:53:56 +0330
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="=_db80ea19a29314e1f5793f8d4f987c18"
+Date: Thu, 19 Jan 2017 13:53:56 +0330
+From: safi@ssd-cg.com
+To: vadmvin@yahoo.com
+Subject: =?UTF-8?Q?=5BSSD=5D=D8=AF=D9=88=D8=B1=D9=87_=D8=A2=D9=85=D9=88?=
+ =?UTF-8?Q?=D8=B2=D8=B4=DB=8C_=D8=A2=D8=B4=D9=86=D8=A7=DB=8C=DB=8C_=D8=A8?=
+ =?UTF-8?Q?=D8=A7_=D9=82=D9=88=D8=A7=D9=86=DB=8C=D9=86_=DA=A9=D8=A7=D8=B1?=
+Message-ID: <8ac4efa32918033cc7d394bc7da664c2@ssd-cg.com>
+X-Sender: safi@ssd-cg.com
+User-Agent: Roundcube Webmail/1.1.3
+X-Exim-DSN-Information: Due to administrative limits only headers are returned
+
+
+--1484821441-eximdsn-1498775110--

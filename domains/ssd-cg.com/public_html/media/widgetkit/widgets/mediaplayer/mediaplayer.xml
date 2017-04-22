@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget>
+    <settings>
+        <setting name="enable" label="فعالسازی" type="radio" default="1" description="اگر غیر فعال باشد JavaScript مدیا پلیر بارگذاری نخواهد شد.">
+			<option value="1">بله</option>
+			<option value="0">خیر</option>
+		</setting>
+        <setting name="selector" label="سلکتور" type="text" default="video,audio" description="شما می توانید سلکتور پیشفرض مدیا پلیر را برای فعال سازی آن در المنت ها تغییر دهید ." />
+    </settings>
+</widget>

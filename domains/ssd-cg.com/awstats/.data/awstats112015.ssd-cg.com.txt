@@ -1,0 +1,1148 @@
+AWSTATS DATA FILE 7.3 (build 20140126)
+# If you remove this file, all statistics for date 201511 will be lost/reset.
+# Last config file used to build this data file was /home/ussdc531/domains/ssd-cg.com/awstats/.data/awstats.ssd-cg.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2028                
+POS_TIME 2715                
+POS_VISITOR 22160               
+POS_DAY 39984               
+POS_DOMAIN 3674                
+POS_LOGIN 3909                
+POS_ROBOT 4064                
+POS_WORMS 5064                
+POS_EMAILSENDER 5195                
+POS_EMAILRECEIVER 5338                
+POS_SESSION 40892               
+POS_SIDER 41105               
+POS_FILETYPES 5473                
+POS_DOWNLOADS 5840                
+POS_OS 5909                
+POS_BROWSER 6204                
+POS_SCREENSIZE 8254                
+POS_UNKNOWNREFERER 8328                
+POS_UNKNOWNREFERERBROWSER 8637                
+POS_ORIGIN 8798                
+POS_SEREFERRALS 8947                
+POS_PAGEREFS 9115                
+POS_SEARCHWORDS 10502               
+POS_KEYWORDS 10847               
+POS_MISC 2377                
+POS_ERRORS 11103               
+POS_CLUSTER 3765                
+POS_SIDER_404 11248               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20151201000229 1608 289348 9011302948410
+FirstTime 20151101021235
+LastTime 20151130235940
+LastUpdate 20151201030905 1608 0 1607 0 0
+TotalVisits 464                 
+TotalUnique 362                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 489                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 198 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 350 1697 16388745 225 295 870301
+1 191 454 5724308 185 205 907874
+2 186 280 2096562 143 168 564779
+3 206 355 2993057 155 261 2038484
+4 181 263 1992762 140 158 463901
+5 175 181 1460000 155 173 920297
+6 186 441 4274634 175 197 769632
+7 227 857 12380376 177 209 1283179
+8 219 643 7541538 199 229 804804
+9 495 2456 17116789 240 311 946180
+10 603 3017 35151618 265 316 1247286
+11 732 3023 33375890 191 268 689161
+12 554 2758 34788086 187 318 946093
+13 529 2930 26757386 221 277 739328
+14 376 1726 18815705 158 188 480600
+15 240 741 9076401 153 184 892046
+16 230 1225 17809145 140 175 597570
+17 233 915 11693965 147 183 729814
+18 165 404 3501273 138 166 926724
+19 337 1246 16125612 156 198 591066
+20 241 670 7691855 175 208 831999
+21 274 931 9512402 174 291 2041213
+22 346 1221 9231699 177 217 719143
+23 299 988 13486480 171 197 428207
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 7575 29422 318986288
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 23
+mj12bot 800 9671521 20151130185147 268
+googlebot 415 2154220 20151130204717 47
+bingbot 336 1757131 20151130193031 134
+bingpreview 170 2724074 20151127032947 0
+slurp 130 640800 20151130203628 33
+ahrefsbot 108 630896 20151130143314 6
+bot[\s_+:,\.\;\/\\-] 101 570615 20151125065908 22
+crawl 42 300503 20151116175212 0
+ia_archiver 15 380677 20151121193003 5
+archive\.org_bot 15 284853 20151118100130 5
+mediapartners\-google 3 19471 20151125160548 0
+no_user_agent 4 106642 20151102235000 0
+exabot 6 32305 20151123015702 1
+libwww 3 117098 20151120214756 0
+[\s_+:,\.\;\/\\-]bot 2 9417 20151128181319 1
+ips\-agent 12 337584 20151109181602 1
+^java\/[0-9] 1 37098 20151127053033 0
+unknown 5 4011 20151127031304 5
+robot 10 135417 20151129080313 5
+surveybot 4 19278 20151124074922 2
+favicon 1 8754 20151129080940 0
+wget 1 533 20151127053031 0
+twitterbot 3 19884 20151128114629 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 16
+css 6858 11660868 0 0
+eot 48 1293165 0 0
+png 3774 28389785 0 0
+ttf 92 2230253 0 0
+htm 2 2230 0 0
+woff 670 10757280 0 0
+txt 2 3970 0 0
+swf 1 10106 0 0
+php 5917 40839649 0 0
+tif 2 566 0 0
+html 5 1186 0 0
+jpg 2543 153176667 0 0
+js 8448 63287098 0 0
+jpeg 4 0 0 0
+Unknown 839 6862828 0 0
+gif 217 470637 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/README.txt 2 0 3970
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 16
+linuxandroid 4088 270
+winlong 102 14
+winxp 6353 4046
+ios_iphone 520 25
+win2003 11 4
+macosx9 1 1
+win8 686 70
+ios_ipad 227 21
+unix 28 1
+winnt 526 54
+java 1 1
+linux 163 17
+win7 14128 2534
+macosx 77 77
+win8.1 2328 345
+Unknown 183 95
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 95
+msie6.0 3 1
+chrome48.0.2547.0 45 5
+chrome40.0.2214.115 7 7
+chrome37.0.2062.117 71 4
+chrome45.0.2454.85 4231 1495
+chrome34.0.1847.137 11 11
+sonyericsson 128 13
+firefox3.0.1 1 1
+chrome28.0.1500.94 531 30
+safari10.3.0.1418 93 5
+chrome39.0.2171.95 157 157
+opera26.0.1656.60 4 4
+chrome31.0.1650.63 68 4
+firefox34.0 13 11
+msie8.0 745 63
+chrome24.0.1290.1 85 85
+chrome39.0.2171.65 1 1
+firefox43.0 132 9
+msie7.0 940 7
+chrome37.0.2062.120 4 4
+firefox41.0 1903 183
+chrome42.0.2311.152 1 0
+safari7.0.2 1 1
+netscape 73 73
+chrome48.0.2564.10 138 8
+chrome37.0.2005.0 95 7
+chrome45.0.2454.99 1 1
+opera12.16 7 7
+firefox40.0 170 14
+firefox42.0 2748 232
+chrome37.0.2049.0 1 1
+chrome40.0.2214.109 84 7
+lg\- 189 16
+firefox29.0 3198 3198
+firefox38.0 190 20
+firefox7.0.1 1 1
+chrome32.0.1700.107 23 2
+chrome46.0.2490.80 1233 96
+chrome36.0.1985.143 148 9
+mozilla 175 16
+opera12.10 67 4
+chrome44.0.2403.157 94 5
+chrome38.0.2125.114 137 8
+chrome42.0.2311.135 158 17
+chrome37.0.0.0 47 1
+chrome46.0.2490.86 4602 479
+firefox3.6.3 1 1
+chrome45.0.2454.84 154 7
+chrome41.0.2228.0 2 2
+firefox36.0 50 50
+chrome48.0.2552.0 1 1
+firefox35.0 11 11
+safari 184 9
+chrome34.0.1847.76 188 11
+firefox15.0 23 3
+android 1206 65
+chrome43.0.2357.124 9 9
+chrome22.0.1229.79 11 11
+chrome36.0.1985.125 1 1
+firefox24.0 2 2
+firefox31.0 112 12
+chrome46.0.2490.76 914 83
+iphone 43 2
+chrome41.0.2272.101 50 50
+chrome45.0.2454.93 68 4
+chrome24.0.1312.57 1 1
+opera28.0.1750.48 4 4
+chrome40.0.2214.85 12 12
+chrome43.0.2357.93 82 4
+safari8.0 76 2
+chrome48.0.2564.8 1 1
+msie9.0 347 30
+Unknown 15 15
+firefox27.0 100 8
+opera11.01 65 6
+firefox32.0 74 12
+opera33.0.2002.97617 80 4
+firefox3.6.14 24 24
+firefox17.0 78 8
+chrome48.0.2560.0 1 1
+chrome44.0.2403.155 68 4
+firefox30.0 88 8
+chrome36.0.1985.97 8 8
+chrome36.0.1919.0 94 6
+msie11.0 341 29
+chrome45.0.2454.94 109 7
+chrome36.0.1985.135 101 6
+safari9.0 532 38
+chrome45.0.2454.101 519 43
+firefox39.0 126 8
+firefox37.0 22 22
+chrome11.0.696.12 1 1
+chrome39.0.2171.99 4 4
+opera11.50 598 598
+chrome33.0.1750.517 67 4
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+Mozilla 20151121190244
+Mozilla/5.0_(BB10;_Kbd)_AppleWebKit/537.35__(KHTML,_like_Gecko)_Version/10.3.0.1418_Mobile_Safari/537.35_ 20151110003254
+Mozilla/4.0_(compatible;_Synapse) 20151129173219
+panscient.com 20151127031327
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+Apache-HttpClient/4.3.5_(java_1.5) 20151101225440
+panscient.com 20151127031327
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 4314 5324
+From1 0 0
+From2 152 212
+From3 21 30
+From4 3088 23856
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 151 211
+bing 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 17
+http://rankings-analytics.com/try.php 7 7
+http://asnafyazd.ir 2 2
+http://yazdea.ir/fa/wp-admin/post-new.php 1 1
+http://pizza-tycoon.com 1 1
+http://pizza-imperia.com 1 1
+http://hvd-store.com 1 1
+http://scripted.com/ssd-cg.com 1 1
+http://yazdfarda.com/yazdfarda/news/1394/07/111623.html 1 1
+http://asnafyazd.ir/2-uncategorised/207-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%B1%D8%A6%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%88-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B1%DB%8C%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%DB%8C%D8%B2%D8%AF-%D8%AF%D8%B1-%D8%A7%D9%85%D9%88%D8%B1-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA-%D9%88-%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7%D8%A7%D8%AA-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D8%AF 1 1
+http://www.jarchi.ir/gnews 1 1
+http://www.yazdhim.ir/SC.php 0 4
+http://bluerobot.info/nw2/pratyvybomuvymano 1 1
+http://buttons-for-website.com 1 1
+http://yazd.irannsr.org/services/news/129463-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%81%D8%B6%D8%A7%DB%8C-%D8%B1%D9%82%D8%A7%D8%A8%D8%AA%DB%8C.html 0 3
+http://bluerobot.info/nw2/pratyvybomuvymavy 1 1
+http://burger-imperia.com 1 1
+http://yazdhim.ir/SC.php 0 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 4
+ssd_cg 1
+www.ssd_cg.com 1
+cgssdddsd 1
+%d8%a2%d9%86%d8%a7%d9%84%db%8c%d8%b2%d8%a7%d8%b1%d8%aa%d8%b9%d8%a7%d8%b4%d8%a7%d8%aa+%d8%aa%d8%ac%d9%87%db%8c%d8%b2%d8%a7%d8%aa+%d8%af%d9%88%d8%a7%d8%b1 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 6
+ssd_cg 1
+%d8%af%d9%88%d8%a7%d8%b1 1
+www.ssd_cg.com 1
+%d8%aa%d8%ac%d9%87%db%8c%d8%b2%d8%a7%d8%aa 1
+cgssdddsd 1
+%d8%a2%d9%86%d8%a7%d9%84%db%8c%d8%b2%d8%a7%d8%b1%d8%aa%d8%b9%d8%a7%d8%b4%d8%a7%d8%aa 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+302 22 15423
+303 2342 752844
+500 85 85489
+301 71 41522
+404 406 351791
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 123
+/administrator/components/com_acymailing/inc/openflash/php-ofc-library/ofc_upload_image.php 1 -
+/ 4 -
+/plugins/captcha/jproicaptcha/jproicaptcha.php 1 http://ssd-cg.com/plugins/captcha/jproicaptcha/jproicaptcha.php
+/images/phocagallery/seminar/kargahe_Ertebatat/thumbs/phoca_thumb_s_06.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_09-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/user 1 SSD-CG.COM
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_04_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Kargahe_Chaleshhaye_Modiriat/thumbs/phoca_thumb_s_04-km.jpg 1 http://www.ssd-cg.com/administrator/index.php
+/administrator/components/com_jnews/includes/openflashchart/php-ofc-library/ofc_upload_image.php 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_03-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Kargahe_Chaleshhaye_Modiriat/thumbs/phoca_thumb_s_03-km.jpg 1 http://www.ssd-cg.com/administrator/index.php
+/:2222 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_01-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/ssd.php 1 -
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_06_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_03-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/k2/user-page 1 -
+/sad/ 2 -
+/ssd/ 7 -
+/images/phocagallery/seminar/Kargah_Formolasion_loab/thumbs/phoca_thumb_s_04-dle.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/component/content/category/index.php/b-ssd 2 -
+/configuration.php-s 1 http://ssd-cg.com/configuration.php-s
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_05_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/administrator:2222 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_09-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_05-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/components/com_maian15/charts/php-ofc-library/ofc_upload_image.php 1 -
+/index.php/component/content/category/index.php/a-m-k 6 -
+/images/phocagallery/seminar/Kargah_Formolasion_loab/thumbs/phoca_thumb_s_02-dle.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Kargah_Formolasion_loab/thumbs/phoca_thumb_s_03-dle.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/ssd/img/box-right-bottom.png 4 http://www.ssd-cg.com/ssd/css/style.css
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_02-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/ssd/fonts/iranian.woff 4 http://www.ssd-cg.com/ssd/css/ninja-slider.css
+/index.php/features/layout/left-content-right 1 -
+/index.php/amoozesh/seminar/130-seminar-forush 1 -
+/modules/mod_dionefileuploader/upload.php 1 -
+/administrator/components/com_jnewsletter/includes/openflashchart/php-ofc-library/ofc_upload_image.php 1 -
+/administrator/components/com_joomleague/assets/classes/open-flash-chart/ofc_upload_image.php 1 -
+/index.php/k2/itemlist/category/5-nokia 1 -
+/index.php/component/content/article 1 -
+/components/com_jnewsletter/includes/openflashchart/php-ofc-library/ofc_upload_image.php 1 -
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_06-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_03_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/amoozesh/seminar/136-dore-amoozeshi-bazgasht-be-movafaghiat 10 -
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_07_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/kargahe_Ertebatat/thumbs/phoca_thumb_s_04.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/components/com_jnews/includes/openflashchart/php-ofc-library/ofc_upload_image.php 1 -
+/%D8%AF%D9%88%D8%B1%D9%87%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%22%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D9%81%D8%B1%D9%85%D9%88%D9%84%D8%A7%D8%B3%DB%8C%D9%88%D9%86%20%D8%A8%D8%AF%D9%86%D9%87%20%D8%A7%D9%86%D9%88%D8%A7%D8%B9%20%DA%A9%D8%A7%D8%B4%DB%8C%22%20 124 -
+/components/com_maianmedia/utilities/charts/php-ofc-library/ofc_upload_image.php 1 -
+/administrator/components/com_maian15/charts/php-ofc-library/ofc_upload_image.php 2 -
+/images/phocagallery/seminar/Kargahe_Chaleshhaye_Modiriat/thumbs/phoca_thumb_s_01-km.jpg 1 http://www.ssd-cg.com/administrator/index.php
+/index.php/amoozesh/seminar/134-tarahi-formolasion-loab 14 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_08-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/components/com_creativecontactform/assets/js/creative-mousewheel.js 1 -
+/index.php/features/2011-10-31-08-51-19/typography 1 -
+/index.php/component/content/category/index.php/h-d-n-k 2 -
+/index.php/features/layout/left-content 1 -
+/index.php/amoozesh/seminar/97-kargah-ertebat-gheyrekalami 1 -
+/components/com_sexycontactform/assets/js/sexy-mousewheel.js 1 -
+/tmp/aratidhess.php 1 http://ssd-cg.com/tmp/aratidhess.php
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_05-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/components/com_joomleague/assets/classes/open-flash-chart/ofc_upload_image.php 1 -
+/images/phocagallery/seminar/Kargahe_Chaleshhaye_Modiriat/thumbs/phoca_thumb_s_06-km.jpg 1 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/kargahe_Ertebatat/thumbs/phoca_thumb_s_03.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/modules/mod_artuploader/upload.php 1 -
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_04-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/joomla-stuff/the-news 1 -
+/administrator/components/com_jinc/classes/graphics/php-ofc-library/ofc_upload_image.php 1 -
+/wp-login.php 5 -
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_07-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/index.php/dorehaye-yadgiri/78-demo-category/81-other 1 -
+/templates/system/css/template.css 1 -
+/js/lib/ccard.js 1 -
+/index.php/component/content/category/index.php/b-d-a-k 2 -
+/ssd/about-us 3 http://www.ssd-cg.com/ssd/
+/images/phocagallery/seminar/kargahe_negahdari/thumbs/phoca_thumb_s_02_r.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/aratidhess.php 1 http://ssd-cg.com/images/aratidhess.php
+/apple-touch-icon.png 7 http://www.google.com/
+/index.php/amoozesh 1 -
+/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php 1 -
+/index.php/getting-started 1 -
+/ssd/img/logo.png 1 http://www.ssd-cg.com/ssd/
+/components/com_simplephotogallery/js/main.js 1 -
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_06-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/using-joomla/extensions/components/users-component/registration-form 1 http://ssd-cg.com/index.php/using-joomla/extensions/components/users-component/registration-form
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_10-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/%D8%AF%D9%88%D8%B1%D9%87%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20\"%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D9%81%D8%B1%D9%85%D9%88%D9%84%D8%A7%D8%B3%DB%8C%D9%88%D9%86%20%D8%A8%D8%AF%D9%86%D9%87%20%D8%A7%D9%86%D9%88%D8%A7%D8%B9%20%DA%A9%D8%A7%D8%B4%DB%8C\"%20%D 1 -
+/components/com_jinc/classes/graphics/php-ofc-library/ofc_upload_image.php 1 -
+/index.php/dorehaye-yadgiri/76-yadgiri 1 -
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_02-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/amoozesh/kargahe-yadgiri/76-yadgiri 1 -
+/administrator/components/com_maianmedia/utilities/charts/php-ofc-library/ofc_upload_image.php 1 -
+/components/com_gglms/js/utils.js 1 -
+/images/phocagallery/seminar/kargahe_negahdari-2/thumbs/phoca_thumb_s_01-pm2.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/index.php/joomla-stuff/joomla-overview/whats-new-in-17 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_04-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/index.php/component/content/category/index.php/b-k-a-m-k 2 -
+/apple-touch-icon-precomposed.png 7 http://www.google.com/
+/components/com_facileforms/libraries/jquery/uploadify.php 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_07-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/plugins/editors/tinymce/jscripts/tiny_mce/plugins/tinybrowser/upload.php 3 http://ssd-cg.com/
+/images/phocagallery/seminar/kargahe_Ertebatat/thumbs/phoca_thumb_s_01.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_01-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/administrator/:2222 1 -
+/images/phocagallery/seminar/Kargahe_Chaleshhaye_Modiriat/thumbs/phoca_thumb_s_02-km.jpg 1 http://www.ssd-cg.com/administrator/index.php
+/administrator/components/com_civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php 1 -
+/images/phocagallery/seminar/kargahe_Formolasion/thumbs/phoca_thumb_s_06-formolasion.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/components/com_sobipro/usr/templates/usbydesign/js/alpha.js 1 -
+/index.php/component/content/category/83-doreh/m-e 6 -
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_03-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/mambots/editors/wysiwygpro/document.php 1 -
+/index.php/joomla-stuff/the-news/web-links 3 -
+/index.php/k2/tag-k2 3 -
+/index.php 12 -
+/images/phocagallery/seminar/Kargah_Formolasion_loab/thumbs/phoca_thumb_s_01-dle.jpg 2 http://www.ssd-cg.com/administrator/index.php
+/components/com_guru/js/buy.js 1 -
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_04-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+/administrator/components/com_spidercalendar/spidercalendar.xml 1 -
+/index.php/joomla-stuff/the-news/faq 2 -
+/index.php/component/content/category/index.php/g-h-m-t-k 1 -
+/modules/mod_articlemanage/mod_articlemanage.php 1 http://ssd-cg.com/modules/mod_articlemanage/mod_articlemanage.php
+/components/com_acymailing/inc/openflash/php-ofc-library/ofc_upload_image.php 1 -
+/images/phocagallery/seminar/Seminar_Foroush/thumbs/phoca_thumb_s_08-sf.jpg 4 http://www.ssd-cg.com/administrator/index.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 489
+143.233.185.115 1218 1218 8508397 20151130235940
+91.200.12.22 598 598 4191345 20151130153243
+178.137.19.175 566 566 3954124 20151128114856
+178.137.91.54 487 487 3401909 20151125042816
+46.118.125.133 444 444 3101261 20151120145558
+37.115.188.1 320 320 2235412 20151122095852
+94.183.92.97 211 216 447792 20151108124415
+94.183.95.134 157 656 3621665 20151109205722
+94.183.92.162 149 174 281315 20151110122317
+94.183.93.32 145 163 107621 20151107141749
+5.212.30.11 0 1 795 
+80.75.8.44 0 1 59148 
+94.183.235.234 8 102 2331459 20151118153326
+188.214.172.152 7 108 136483 20151124000450
+185.96.242.167 10 122 3081896 20151118020426
+94.183.92.6 30 212 617347 20151114143212
+5.212.126.97 1 3 8188 20151128115534
+89.77.33.244 47 47 1044069 20151129075935
+150.70.173.56 1 1 37144 20151126230739
+37.27.191.167 3 25 474610 20151130182927
+2.188.90.183 1 41 290859 20151122171330
+5.212.103.240 0 1 120192 
+85.9.92.67 21 208 1917147 20151123002221
+5.212.15.101 0 1 7010 
+2.184.39.213 6 94 296644 20151122112830
+46.100.249.133 8 126 149132 20151110125909
+5.201.134.31 2 21 178355 20151116152255
+192.3.50.182 1 1 5581 20151122135432
+5.212.14.251 0 1 33507 
+5.212.127.187 1 1 2610 20151128115526
+151.245.207.199 4 68 1308305 20151118200716
+94.183.93.101 8 59 1929242 20151118202838
+5.212.102.248 0 1 5310 
+5.212.14.210 1 1 25084 20151111195225
+31.130.190.101 3 42 896285 20151103134946
+77.237.163.102 17 91 1443838 20151120112306
+85.9.105.60 8 38 1384722 20151121004348
+188.214.171.190 1 9 204255 20151108231532
+154.16.32.170 3 3 20762 20151105132044
+5.236.19.16 5 68 636354 20151128132923
+5.212.102.102 0 1 17537 
+62.219.191.232 1 1 33719 20151107093003
+45.58.117.236 6 6 35625 20151124091439
+46.100.249.39 18 175 1626585 20151123102803
+94.183.95.185 8 108 1423409 20151116091954
+185.53.78.144 1 1 8766 20151124220759
+85.9.104.212 6 59 149024 20151114075117
+208.42.251.123 1 1 8820 20151126125911
+80.191.178.138 0 1 59148 
+194.225.91.24 4 83 1927395 20151105165115
+2.184.51.60 10 188 304708 20151108095701
+5.212.14.110 0 1 171386 
+209.95.51.208 1 4 29015 20151123010052
+5.212.102.239 0 1 6404 
+5.213.143.60 1 1 6514 20151115103617
+46.32.20.58 6 105 1528714 20151116145042
+107.167.110.12 2 2 73147 20151130131113
+5.212.127.211 0 1 7041 
+77.237.190.73 7 76 882243 20151111144801
+185.113.57.244 5 67 2107928 20151112111920
+94.183.95.109 1 6 105949 20151104172359
+77.237.165.161 0 3 25324 
+84.10.163.95 11 11 104765 20151129093836
+38.100.21.65 4 11 187893 20151111095711
+5.212.15.189 0 1 1216 
+5.218.205.197 8 102 1283216 20151101142020
+185.96.243.200 6 95 1419605 20151122152409
+167.114.130.241 6 6 40859 20151122135430
+5.212.103.242 0 1 333 
+37.27.184.241 1 5 205657 20151130174906
+193.178.202.99 5 73 1347433 20151117132509
+94.183.94.56 139 1042 19749676 20151121143653
+89.43.97.209 8 104 1524931 20151122162423
+80.79.119.220 1 2 702 20151101021235
+5.232.251.180 12 114 1085835 20151112220613
+91.107.164.20 22 160 2756005 20151115191217
+5.232.254.187 9 142 153647 20151112103136
+2.183.204.88 1 38 263362 20151116164121
+5.212.127.125 1 1 2610 20151128115621
+2.184.38.77 11 102 339809 20151127214733
+52.30.215.42 5 88 1481485 20151121032543
+5.212.15.176 0 1 2617 
+5.212.127.16 1 1 3545 20151128080816
+94.183.93.215 1 32 188305 20151102105122
+5.215.215.20 2 6 208753 20151129122921
+64.79.100.29 48 48 345302 20151118155251
+5.212.102.39 0 1 1383 
+5.212.15.148 0 1 4820 
+2.180.195.155 1 6 276980 20151104131802
+188.214.168.120 6 85 64314 20151114130545
+91.99.253.71 19 225 2971400 20151120160632
+89.72.37.91 9 9 53445 20151128101837
+2.177.198.74 4 81 1088230 20151125104419
+5.212.102.42 0 1 17537 
+5.212.14.243 0 1 3390 
+85.9.114.47 6 89 936434 20151104112520
+5.212.126.251 0 11 46595 
+31.214.147.175 8 100 1238637 20151108231403
+104.144.128.87 2 2 12446 20151101110306
+5.212.79.232 0 1 1383 
+5.113.51.127 1 41 1016921 20151126212911
+138.59.80.6 1 23 103481 20151107041519
+94.183.92.228 52 80 657408 20151101143122
+89.235.116.84 1 11 60088 20151122182330
+5.235.220.85 4 80 1086925 20151127125638
+152.236.122.195 0 1 33507 
+5.212.103.239 0 1 85937 
+31.47.52.66 5 71 640686 20151118084524
+46.32.30.98 5 65 2100320 20151124112859
+192.99.10.173 1 1 37141 20151125092831
+5.216.63.156 3 3 8517 20151130164139
+31.184.154.2 4 45 432393 20151119115106
+5.232.216.232 0 3 25156 
+84.10.162.170 8 8 204644 20151129005019
+5.212.103.17 0 1 6404 
+5.212.14.92 0 3 4366 
+80.244.81.191 1 1 8837 20151118224503
+5.212.14.184 0 1 1546 
+5.212.15.183 0 1 1313 
+5.202.172.3 5 65 592104 20151127045439
+5.212.31.205 0 1 560 
+93.115.95.206 1 1 8803 20151117153511
+89.66.212.210 1 1 33381 20151101202140
+5.134.142.149 6 95 1290826 20151114192709
+77.237.187.63 9 84 674156 20151117024223
+46.100.237.190 8 88 139491 20151118093716
+91.107.220.99 4 85 1127101 20151104185404
+85.9.113.204 0 3 25324 
+217.99.147.9 1 1 7224 20151128170547
+158.69.2.151 1 1 33437 20151101093010
+5.212.14.76 0 1 1383 
+107.190.163.9 2 2 12446 20151104100126
+2.184.183.240 1 1 3700 20151127130949
+5.116.192.94 4 71 1337416 20151119164136
+5.232.245.161 5 66 280325 20151116130959
+83.121.141.17 2 43 295773 20151104221856
+85.9.95.110 0 1 59148 
+188.214.188.13 1 38 42850 20151105204603
+37.27.182.132 5 88 1481400 20151118132901
+5.212.14.147 0 1 33994 
+94.183.92.128 3 15 109441 20151102142931
+104.144.128.72 1 1 5739 20151105173012
+5.238.251.172 4 67 1311398 20151116155122
+5.232.251.198 11 115 368518 20151110092643
+2.184.35.48 1 38 42850 20151122100820
+198.199.88.113 1 40 284831 20151108105421
+2.176.91.111 8 105 1324918 20151105115442
+5.212.103.185 0 1 158232 
+46.164.99.201 4 68 1312049 20151110203320
+178.239.154.143 5 78 1366896 20151116195752
+85.9.90.173 8 71 140772 20151104181137
+31.57.22.71 6 72 668283 20151107164412
+93.94.191.236 1 1 5775 20151128121842
+5.212.31.5 1 7 132373 20151125091856
+5.53.42.243 1 46 263503 20151117170143
+5.212.126.3 0 11 43615 
+77.237.168.31 8 92 980343 20151122101720
+5.212.126.178 0 3 3104 
+2.183.212.75 1 19 41760 20151127162551
+89.144.175.168 5 82 1682706 20151123111517
+5.212.126.187 0 2 35977 
+62.210.37.82 1 1 8837 20151118222051
+5.200.119.246 1 27 1685936 20151108170146
+2.184.40.22 1 7 33910 20151119171719
+5.212.126.15 0 17 242389 
+5.232.234.130 5 86 33829 20151127141511
+91.107.193.51 15 128 1111329 20151106173509
+5.212.102.130 0 1 1383 
+62.233.56.195 1 1 8809 20151117091347
+5.212.14.228 0 1 17537 
+89.76.81.222 18 18 144455 20151129082420
+89.72.36.51 85 85 1997724 20151128223547
+5.212.15.95 0 1 942 
+46.119.119.138 1 1 25433 20151101051709
+5.215.84.69 1 6 49181 20151125002629
+94.153.11.67 53 53 370259 20151118060508
+95.82.63.153 4 68 1312051 20151121093824
+5.212.15.235 0 1 1247 
+5.212.127.77 1 3 74152 20151128080732
+5.212.126.141 0 1 2161 
+5.212.15.192 0 1 6404 
+89.219.252.80 4 21 403193 20151128073701
+31.3.250.28 1 4 54807 20151103134800
+187.78.98.54 1 6 21816 20151101215523
+5.212.15.200 0 1 1399 
+193.201.227.15 31 31 216374 20151119150233
+94.74.162.3 2 13 133850 20151116110257
+37.191.65.3 7 105 2549234 20151121105526
+5.213.143.170 0 1 17481 
+5.212.102.55 0 1 1383 
+217.99.117.218 1 1 7224 20151126030057
+95.38.106.109 1 38 265473 20151129163143
+5.22.37.102 1 52 778047 20151116231524
+76.26.155.154 5 73 645125 20151128064041
+5.212.31.183 0 6 16215 
+82.177.170.134 2 2 12448 20151128121850
+85.9.74.125 7 94 1373471 20151114121740
+192.227.226.228 2 2 13623 20151122134848
+5.212.15.31 1 1 26069 20151111195225
+185.23.129.74 4 67 602348 20151127094045
+188.214.177.76 8 9 68751 20151117194542
+91.107.182.71 8 108 2199265 20151115082806
+78.11.136.142 1 1 25474 20151129032946
+46.100.58.94 9 86 550456 20151121100326
+5.212.14.95 0 1 20324 
+5.212.14.10 0 1 735 
+5.233.13.248 5 68 597451 20151122185004
+5.78.109.158 8 94 1089348 20151122164857
+5.212.15.125 0 1 397 
+5.212.102.10 0 1 18044 
+5.213.143.111 0 1 6348 
+5.212.14.194 0 1 758 
+5.212.14.162 0 1 2887 
+5.212.102.145 0 1 6404 
+2.184.57.120 38 465 7478809 20151125131059
+5.212.103.243 0 1 66624 
+5.217.241.121 4 4 11334 20151130083538
+107.161.84.34 5 5 34461 20151108025711
+31.57.248.116 5 71 1343747 20151125121948
+67.55.84.212 4 4 38469 20151121153223
+5.212.126.13 0 1 2620 
+37.137.149.189 11 164 3548966 20151107013943
+45.32.129.1 1 1 37122 20151124124350
+5.212.15.82 0 3 10036 
+78.11.165.24 3 3 76422 20151129070602
+5.212.15.161 0 1 436 
+85.185.159.74 7 94 1443106 20151111123352
+94.183.92.234 110 440 5737019 20151128142356
+5.212.14.203 0 1 2064 
+180.94.77.146 7 1003 734885 20151124111937
+31.58.15.70 31 117 1443855 20151129132951
+5.220.238.69 4 71 654173 20151115191217
+5.212.31.129 0 5 41612 
+37.254.80.44 8 116 2353084 20151116131134
+208.184.112.74 1 50 311543 20151126225000
+176.56.148.10 3 42 236008 20151119115106
+5.212.127.182 1 1 3059 20151128080809
+5.212.127.242 1 1 3059 20151128114637
+185.96.243.183 4 68 1312058 20151123145316
+109.125.143.59 1 46 926776 20151128073126
+5.112.219.70 4 67 595800 20151113125836
+5.232.97.175 8 132 1875603 20151106071452
+45.58.117.235 2 2 12867 20151120132832
+94.183.93.109 131 519 3470198 20151116142946
+139.195.66.106 1 12 68325 20151101163058
+91.98.249.188 8 87 1451879 20151128142847
+2.183.233.223 8 43 378098 20151108131835
+5.212.127.36 0 3 14039 
+5.212.126.179 1 4 26922 20151128080727
+217.218.121.13 5 67 1341922 20151122124521
+2.183.239.195 12 139 745090 20151122132007
+74.81.108.22 1 1 36914 20151116234956
+151.241.13.224 5 115 2352987 20151116004437
+185.96.243.208 0 1 59148 
+185.96.241.142 0 1 59148 
+2.183.238.58 1 38 263361 20151102174153
+5.212.14.91 0 1 400 
+91.107.218.126 10 134 2718287 20151122160349
+185.96.243.26 6 98 1356184 20151112103109
+95.10.137.173 5 96 1340782 20151112145130
+188.136.153.136 8 111 1374040 20151111113122
+5.123.77.191 10 197 2181351 20151123062459
+85.9.116.206 0 1 59148 
+5.212.31.243 0 1 614 
+5.212.126.171 2 5 33120 20151128080732
+5.212.127.196 1 1 2603 20151128114725
+5.212.126.240 2 12 241278 20151128115612
+5.212.14.233 0 1 683 
+200.54.77.42 4 79 1546576 20151109174028
+188.245.41.173 1 38 631230 20151120131353
+5.212.102.40 0 1 3487 
+2.184.51.134 8 97 272002 20151114140050
+5.233.197.73 1 47 1024466 20151120221018
+2.183.228.111 2 44 73859 20151121113157
+5.120.129.42 4 64 562342 20151105203628
+109.201.2.50 6 71 1356046 20151126133451
+5.212.103.244 0 1 332 
+91.106.79.103 9 110 1842885 20151115004033
+200.199.20.118 0 1 1247 
+78.11.168.19 1 1 25474 20151129080250
+5.212.103.47 0 1 17537 
+104.144.128.29 1 1 7021 20151105115501
+37.27.99.251 0 1 59148 
+77.237.185.30 12 117 781222 20151116115136
+188.214.184.85 5 33 172854 20151120162759
+94.183.95.187 95 497 5371779 20151118132228
+5.212.102.65 0 2 91340 
+5.208.93.41 1 38 265456 20151103132832
+107.161.84.10 2 2 12555 20151110103910
+104.238.180.234 2 2 71803 20151126075946
+37.137.81.131 5 34 259784 20151115010410
+5.212.14.231 0 1 2207 
+5.212.127.23 1 14 449548 20151128080728
+5.222.31.113 1 42 292346 20151115112614
+184.73.76.3 1 1 34817 20151112115856
+188.209.202.199 5 88 1481351 20151116135733
+5.232.229.161 16 165 1708761 20151119224340
+5.212.15.84 0 1 913 
+91.107.248.53 8 32 262039 20151118174345
+107.161.84.15 9 9 58113 20151110105242
+151.244.173.234 4 66 558474 20151115102136
+91.99.104.38 16 109 312964 20151101215234
+85.9.112.76 8 114 890738 20151109110610
+5.212.102.56 0 1 4726 
+5.212.14.239 0 2 1558 
+134.255.197.45 1 7 34061 20151125104231
+5.212.15.85 0 1 9919 
+213.21.123.232 1 1 8465 20151115131136
+154.118.242.6 1 1 7169 20151121033401
+89.77.250.171 2 2 39128 20151102232752
+5.212.14.167 0 1 1327 
+77.237.170.226 5 60 148667 20151109233426
+188.136.142.74 5 94 1532953 20151122093738
+77.237.188.202 2 6 37061 20151128210021
+5.212.15.116 0 1 752 
+192.3.242.172 5 5 33377 20151114032926
+185.23.131.15 9 106 1354019 20151102175449
+37.27.176.90 11 90 1541783 20151124222719
+85.9.74.224 6 108 1193323 20151104110321
+5.236.137.118 5 90 1690684 20151105092946
+5.212.14.241 0 1 1186 
+212.7.220.160 1 1 8820 20151124214007
+5.212.127.102 1 1 2603 20151128080802
+91.107.146.65 7 154 1223358 20151108220044
+5.212.14.172 0 1 884 
+91.106.69.93 10 129 2075036 20151116230749
+5.212.127.244 2 14 312812 20151128080727
+37.254.219.72 4 68 1312057 20151124195127
+5.212.31.184 0 6 16668 
+31.187.80.129 1 1 6823 20151104040352
+46.143.156.205 4 68 564739 20151102090828
+2.183.222.2 7 96 195802 20151117104426
+85.9.109.186 6 72 636979 20151125140350
+5.212.15.39 0 1 2339 
+151.234.7.4 18 178 2366697 20151124135206
+159.205.211.88 2 2 62404 20151127001651
+5.212.14.58 0 1 8679 
+46.100.238.5 3 25 99185 20151116212212
+5.212.78.7 0 1 6404 
+5.212.14.244 0 2 16569 
+94.183.92.24 142 184 298980 20151107115451
+185.83.88.147 6 101 1470244 20151122120346
+188.253.63.12 4 69 1313341 20151125165258
+85.9.111.52 10 18 93076 20151130225157
+213.179.252.133 2 2 16313 20151104022112
+85.9.72.78 7 118 2854109 20151121115814
+188.136.153.223 15 193 2439137 20151101113542
+64.79.100.40 50 50 368656 20151102221348
+94.183.95.148 13 36 575954 20151130112931
+5.212.31.130 0 3 37318 
+52.32.55.170 1 1 8226 20151101225440
+89.72.37.160 26 26 311850 20151129025416
+185.96.242.27 5 42 1874933 20151124004605
+159.205.7.198 1 1 25384 20151126112824
+62.201.200.17 11 11 31571 20151111225138
+5.212.103.4 0 1 18044 
+5.212.103.241 0 1 66624 
+58.27.160.216 3 3 74136 20151125111419
+89.38.246.62 7 105 237889 20151106002512
+5.212.15.155 0 1 3631 
+185.104.229.34 7 91 760018 20151123101316
+94.183.94.224 4 90 137965 20151105125325
+85.9.116.103 9 97 508111 20151121072432
+5.212.14.62 0 1 68452 
+83.10.175.71 1 1 7224 20151111155142
+107.173.247.191 3 3 20765 20151101095917
+134.249.50.30 82 82 572684 20151117043952
+91.107.191.13 5 46 1093915 20151122171606
+5.212.126.244 1 1 3545 20151128114705
+72.76.243.86 14 14 100180 20151127031327
+131.161.78.18 1 8 57367 20151106161114
+31.3.239.236 1 25 155438 20151102220155
+185.96.241.7 0 1 59148 
+5.123.123.241 2 43 305999 20151122170157
+85.9.95.18 7 135 1638177 20151115103635
+83.23.43.186 6 6 39218 20151109103243
+94.23.217.201 3 5 30401 20151130221921
+80.79.124.190 1 2 702 20151105021302
+91.107.209.158 29 294 4179552 20151122171250
+2.177.143.253 4 67 602346 20151120164746
+5.212.102.41 0 1 6404 
+31.25.109.42 10 110 1622233 20151124125312
+151.244.135.50 4 68 470261 20151117000303
+64.69.91.210 1 1 37163 20151127103058
+5.212.14.60 0 1 1895 
+5.212.103.245 0 1 101324 
+94.183.95.126 29 130 457274 20151115140252
+172.245.60.167 1 1 8409 20151111033306
+62.210.122.172 1 1 5778 20151104100120
+46.225.108.12 5 67 1341878 20151114102549
+5.212.126.143 0 1 1090 
+5.232.222.226 5 93 940663 20151110003252
+5.212.127.19 0 3 28268 
+31.130.190.13 18 220 3121205 20151126105935
+5.114.82.102 0 1 59148 
+5.212.14.192 0 1 6859 
+5.212.30.64 0 1 1383 
+5.212.14.221 0 1 31450 
+84.10.163.108 7 7 39696 20151129095801
+5.212.15.252 0 1 1185 
+5.212.119.226 1 1 8824 20151129140030
+46.100.239.213 8 96 238323 20151108130855
+5.212.79.187 0 1 17537 
+128.199.254.26 5 89 1482638 20151116125401
+104.144.128.24 2 2 13887 20151105173419
+5.212.15.99 0 1 1207 
+2.184.51.197 40 388 2755372 20151118100124
+5.236.166.197 5 80 1101789 20151122083917
+151.42.187.215 1 15 80822 20151102201233
+46.164.113.122 6 81 1480954 20151129193857
+2.188.25.190 7 86 667963 20151125084009
+109.162.155.26 4 65 559419 20151112223333
+107.189.60.72 1 28 280453 20151120201029
+95.38.253.78 1 4 28861 20151130150720
+192.119.149.227 3 3 20929 20151128121126
+5.117.216.150 4 67 579548 20151130001821
+5.235.182.54 6 63 464239 20151110003625
+5.232.243.131 4 82 639380 20151104012532
+85.185.159.142 0 1 539 
+5.212.15.72 0 3 3319 
+77.237.164.179 99 411 674030 20151128005112
+185.112.234.2 85 85 243344 20151117231056
+5.212.103.48 0 1 1383 
+2.183.212.171 11 21 215489 20151104233201
+128.65.183.9 27 293 8809493 20151118102253
+80.191.63.132 4 67 2046434 20151118141041
+5.212.15.83 0 2 5262 
+85.9.70.68 19 224 3887270 20151123145234
+5.212.102.81 0 1 5310 
+5.122.250.120 1 42 302593 20151103002455
+77.237.160.245 4 53 33680 20151114095429
+2.183.231.223 5 70 62437 20151110031603
+142.129.132.220 1 1 37153 20151124174006
+46.118.124.66 5 5 121656 20151123143724
+5.212.15.62 0 1 1307 
+85.9.78.242 7 95 2182830 20151116112830
+94.183.93.21 16 24 172004 20151122095739
+139.162.223.221 4 57 871557 20151124193536
+85.9.115.92 6 94 1164909 20151104125609
+80.191.193.34 8 78 758713 20151121123748
+94.183.95.46 64 80 404038 20151102105915
+5.212.15.136 1 1 13412 20151111195131
+186.37.122.103 1 7 39329 20151109051100
+2.184.58.116 7 89 317628 20151108200802
+5.212.103.28 1 1 8355 20151115103739
+5.212.15.16 0 1 2805 
+5.212.127.52 0 2 11357 
+209.126.110.234 24 24 636868 20151110101023
+178.175.184.224 2 2 13851 20151104040344
+85.9.119.15 35 312 4751740 20151129232453
+188.122.126.106 5 65 592120 20151109113602
+188.214.161.18 6 57 65743 20151118104600
+151.242.13.34 5 73 489187 20151119091754
+85.9.107.251 0 3 25323 
+5.212.102.249 0 1 4726 
+2.184.243.171 10 111 2307532 20151126134135
+91.121.83.118 1 1 8820 20151127090448
+5.212.102.53 1 1 8693 20151115103743
+37.156.120.185 11 124 874900 20151128194700
+5.212.127.129 1 1 3212 20151128114714
+85.9.97.41 24 167 2220583 20151114003414
+62.173.60.110 1 19 82093 20151105162118
+5.212.15.214 0 1 929 
+188.210.185.109 6 85 1396770 20151121152032
+64.79.100.42 48 48 344535 20151121190244
+5.212.31.145 0 7 17923 
+5.212.15.219 1 1 23086 20151111195228
+5.212.15.106 0 1 3608 
+155.94.168.74 2 2 13900 20151122065518
+5.212.102.242 0 2 21703 
+45.79.91.172 1 1 577 20151127010138
+85.9.83.56 0 3 25324 
+54.191.244.94 1 3 74240 20151125230700
+5.120.173.116 4 64 562234 20151106211645
+5.212.14.63 0 1 2284 
+188.214.179.50 5 86 63016 20151113115744
+5.212.15.147 0 1 701 
+46.225.44.101 11 165 2872373 20151116122317
+5.212.14.80 0 1 1031 
+5.212.14.122 0 1 2366 
+151.239.234.138 6 73 669585 20151128122851
+77.237.189.58 13 121 241540 20151120231447
+85.9.86.187 21 129 1972415 20151117234043
+93.117.6.164 4 85 1452258 20151111232120
+5.212.14.112 0 1 1345 
+209.73.141.190 7 99 1337107 20151112003851
+5.232.123.35 14 203 1874475 20151106213333
+95.38.103.51 2 17 475850 20151104131859
+109.238.178.144 4 81 1328047 20151126090829
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20151101 105 534 5027212 16
+20151102 139 458 3771541 13
+20151103 20 294 3864082 5
+20151104 62 638 6668917 19
+20151105 78 1007 13059905 19
+20151106 44 556 5661783 9
+20151107 307 613 4794269 7
+20151108 273 1077 6843382 14
+20151109 191 997 6939412 12
+20151110 221 746 4285916 14
+20151111 44 462 6015052 16
+20151112 50 683 8010480 9
+20151113 10 157 684617 3
+20151114 118 1140 10184215 20
+20151115 109 1005 13815748 18
+20151116 271 2082 28573196 25
+20151117 234 690 5965549 14
+20151118 380 1651 26058409 19
+20151119 254 624 5781412 8
+20151120 259 848 8750138 13
+20151121 414 1985 33665207 16
+20151122 325 1845 22259986 25
+20151123 247 1107 12428098 11
+20151124 259 1921 13950510 19
+20151125 235 764 7389343 15
+20151126 284 705 9833500 15
+20151127 383 781 5303619 17
+20151128 594 1784 17355961 40
+20151129 558 1037 12541921 19
+20151130 1107 1231 9502908 14
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 46
+5mn-15mn 26
+15mn-30mn 20
+30s-2mn 56
+2mn-5mn 37
+0s-30s 267
+30mn-1h 12
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 90
+/administrator/ 4391 31201127 52 45
+/roundcube/ 748 1106689 2 9
+/ 381 3629404 219 107
+/index.php/component/users/ 288 4608933 30 47
+/templates/jm_arise/fonts/homa.woff 181 2866928 2 34
+/templates/jm_arise/fonts/trafic.woff 179 3041358 1 8
+/templates/jm_arise/fonts/BYekan.woff 174 3146609 3 5
+/index.php/amoozesh/gozareshe-seminar 108 1184643 4 5
+/templates/jm_arise/fonts/bardiya.woff 89 1303440 3 25
+/index.php/amoozesh/seminar/137-kargahe-erteashat 79 901646 31 21
+/index.php/amoozesh/gozareshe-seminar/141-kargahe-chaleshhaye-modiriat 22 135931 1 5
+/ssd/financial/scscsc 1 2824 0 1
+/ssd/business-clinic 1 2866 0 0
+/index.php/component/k2/itemlist/user/1015 1 6974 1 0
+/index.php/component/k2/itemlist/user/963 1 6042 1 0
+/index.php/component/k2/itemlist/user/878 1 7035 1 0
+/ssd/ 48 146725 7 7
+/index.php/amoozesh/gozareshe-seminar/126-dore-tarahi-formalasion-kashi 12 78186 1 2
+/index.php/amoozesh/seminar 63 472202 6 17
+/media/nnframework/fonts/NoNumber.woff 2 4990 0 0
+/index.php/amoozesh/kargahe-yadgiri/83-doreh/m-e/115-modiriate-amalkarde-karkonan 1 7339 1 0
+/ssd/fonts/fontawesome-webfont.ttf 10 65987 0 0
+/ssd/news/Director-General-of-the-Department-of-Co-operative-visit 2 7090 2 2
+/templates/jm_arise/fonts/homa.eot 8 198221 1 0
+/templates/jm_arise/images/ 2 388 0 0
+/index.php/b-d-a-k 15 110562 6 1
+/modules/mod_btslideshow/uploader.php 8 2710 0 0
+/ssd/ssd.php 1 3197 0 0
+/index.php/component/k2/itemlist/user/966 1 6040 1 0
+/index.php/component/content/article 4 28135 2 0
+/index.php/y-b-a-p-e-k 5 37010 3 1
+/media/editors/tinymce/jscripts/tiny_mce/themes/advanced/link.htm 1 1258 0 0
+/media/editors/tinymce/jscripts/tiny_mce/themes/advanced/source_editor.htm 1 972 0 0
+/index.php/amoozesh/seminar/136-dore-amoozeshi-bazgasht-be-movafaghiat 13 108257 0 2
+/templates/jm_arise/fonts/bardiya.ttf 4 94967 0 1
+/templates/jm_arise/fonts/badr.eot 8 239443 0 3
+/templates/jm_arise/fonts/BYekan.ttf 7 173812 0 0
+/index.php/about-me/akhbare-ssd 36 225305 3 2
+/index.php/t-m 12 69791 1 2
+/index.php/moshavere 52 691035 6 18
+/ssd/management 1 2880 0 0
+/ssd/ssd-consultation 4 10425 2 3
+/index.php/amoozesh/kargahe-yadgiri 39 265763 0 5
+/administrator/components/com_widgetkit/css/BYekan.woff 1 26069 0 0
+/index.php/dorehaye-yadgiri/83-m-e 7 65398 5 0
+/ssd/business-clinic/sssdd 1 3168 0 0
+/index.php/component/k2/itemlist/user/967 1 6043 1 0
+/index.php/t-a-m 6 47935 0 0
+/ssd/learning-courses/contact-us 1 2522 0 0
+/index.php/about-me 1 5831 1 0
+/index.php/amoozesh/gozareshe-seminar/129-kargahe-negahdari-pishrafte 12 80337 1 0
+/index.php/b-k-a-m-k 16 98805 0 1
+/index.php/t-r 5 37594 0 0
+/templates/jm_arise/fonts/trafic.eot 8 209783 0 1
+/index.php/amoozesh/gozareshe-seminar/99-kargahe-ertebate-gheyrekalami 8 52564 2 0
+/ssd/about-us 6 19242 2 2
+/index.php/b-r-d 10 76973 1 0
+/index.php/about-me/darbareye-ssd 44 300488 3 7
+/index.php/contactus 31 247045 0 7
+/index.php/g-h-m-t-k 10 62481 1 1
+/index.php/amoozesh/gozareshe-seminar/96-tashrifatseminar 6 39193 0 1
+/ssd/fonts/fontawesome-webfont.woff 22 263391 1 1
+/index.php/t-m-e 20 175018 6 3
+/ssd/learning-courses/1 3 8990 0 0
+/index.php/amoozesh/gozareshe-seminar/124-kargahe-negahdari-moghadamati 7 46895 2 2
+/templates/jm_arise/fonts/bardiya.eot 8 207910 0 0
+/templates/jm_arise/fonts/titr.eot 8 235606 0 1
+/ssd/fonts/BYekan.woff 22 104495 0 1
+/templates/jm_arise/fonts/trafic.ttf 62 1699609 0 20
+/roundcube/program/resources/blank.tif 2 566 0 0
+/index.php/about-me/83-doreh/m-e/111-modiriate-angizesh 1 5888 1 0
+/ssd/financial 3 8544 1 1
+/administrator/index.php/ 49 140088 7 1
+/index.php/moshtarian 34 236735 3 5
+/roundcube/skins/larry/watermark.html 5 1186 0 0
+/templates/jm_arise/ 1 388 0 0
+/index.php/component/k2/itemlist/user/1016 9 101208 9 6
+/index.php/amoozesh/gozareshe-seminar/142-kargahe-erteashat 9 56970 0 2
+/ssd/learning-courses 4 10566 0 0
+/index.php/amoozesh/gozareshe-seminar/135-tarahi-formolasion-loab 38 259851 5 11
+/templates/jm_arise/fonts/homa.ttf 9 195878 1 2
+/ssd/contact-us 2 5134 0 0
+/ssd/ssd-education 4 10397 2 2
+/index.php/amoozesh/gozareshe-seminar/133-seminar-forush 21 139374 1 4
+/index.php/b-ssd 14 87318 0 0
+/ssd/archive-images 1 2725 0 0
+/index.php/h-d-n-k 10 58828 0 0
+/templates/jm_arise/fonts/BYekan.eot 8 202202 0 1
+/index.php/a-m-k 19 125860 14 3
+/index.php/doreha/dorehaye-yadgiri/83-m-e/95-m-k-her 1 8927 1 0
+END_SIDER
