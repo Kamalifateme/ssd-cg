@@ -1,7 +1,7 @@
 
 
 <section id="Education">
-		<h1>&#1570;&#1605;&#1600;&#1600;&#1600;&#1608;&#1586;&#1588;</h1>
+		<h1>آموزش</h1>
 
 		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 		<div class="mmenus">
@@ -9,7 +9,7 @@
                     <li id="learning"  style="">
                         <a href="<?php echo $path; ?>learning-courses" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size:28px;">&#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740;</h2>
+                                <h2 class="ca-main" style="font-size:28px;">دوره های یادگیری</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -29,7 +29,7 @@
                     <li id="reg">
                         <a href="<?php echo $path; ?>reg" style="">
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1583;&#1585; &#1581;&#1575;&#1604; &#1579;&#1576;&#1578; &#1606;&#1575;&#1605;</h2>
+                                <h2 class="ca-main">آموزش آنلاین</h2>
                                 <h3 class="ca-sub">
 			<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -49,7 +49,7 @@
                     <li id="archive">
                         <a href="<?php echo $path; ?>archive-images" style="">
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1570;&#1585;&#1588;&#1600;&#1600;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;</h2>
+                                <h2 class="ca-main">آرشیو تصاویر</h2>
                                 <h3 class="ca-sub">
 			<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -68,7 +68,7 @@
                     <li id="education" style="">
                         <a href="<?php echo $path; ?>ssd-education" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1670;&#1600;&#1600;&#1600;&#1585;&#1575; SSD</h2>
+                                <h2 class="ca-main">چرا SSD</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -93,7 +93,7 @@
 	
 	<section id="Consultation">
 
-	<h1>&#1605;&#1588;&#1600;&#1600;&#1600;&#1575;&#1608;&#1585;&#1607;</h1>
+	<h1>مشاوره</h1>
 
 		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 
@@ -101,7 +101,7 @@
                     <li id="mali">
                         <a href="<?php echo $path; ?>financial" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1605;&#1575;&#1604;&#1600;&#1600;&#1600;&#1600;&#1740;</h2>
+                                <h2 class="ca-main">مالی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -120,7 +120,7 @@
                     <li id="mod">
                         <a href="<?php echo $path; ?>management" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1605;&#1583;&#1740;&#1600;&#1600;&#1585;&#1740;&#1600;&#1600;&#1578;&#1740;</h2>
+                                <h2 class="ca-main">مدیریتی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -139,7 +139,7 @@
                     <li id="fani">
                         <a href="<?php echo $path; ?>technical" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1601;&#1606;&#1600;&#1600;&#1600;&#1600;&#1600;&#1600;&#1600;&#1600;&#1600;&#1740;</h2>
+                                <h2 class="ca-main">فنی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -158,7 +158,7 @@
                     <li id="education">
                         <a href="<?php echo $path; ?>ssd-consultation" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1670;&#1600;&#1600;&#1600;&#1585;&#1575; SSD</h2>
+                                <h2 class="ca-main">چرا SSD</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -180,7 +180,7 @@
 	
 		<section id="Entrepreneurship">
 		
-				<h1>&#1705;&#1575;&#1585;&#1570;&#1601;&#1585;&#1740;&#1606;&#1740; &#1608; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h1>
+				<h1>کارآفرینی و کسب و کار</h1>
 
 		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 		
@@ -190,7 +190,7 @@
                     <li id="dan">
                         <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1583;&#1575;&#1606;&#1587;&#1578;&#1606;&#1740;&#1607;&#1575;&#1740; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h2>
+                                <h2 class="ca-main">دانستنی های کسب و کار</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -209,7 +209,7 @@
                     <li id="clinic">
                         <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
-                                <h2 class="ca-main" >&#1705;&#1604;&#1740;&#1606;&#1740;&#1705; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h2>
+                                <h2 class="ca-main" >کلینیک کسب و کار</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -228,7 +228,7 @@
                     <li id="ser">
                         <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size: 22px;">&#1582;&#1583;&#1605;&#1575;&#1578; &#1705;&#1575;&#1585;&#1570;&#1601;&#1585;&#1740;&#1606;&#1740; &#1608; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h2>
+                                <h2 class="ca-main" style="font-size: 22px;">خدمات کارآفرینی و کسب و کار</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -246,7 +246,7 @@
                     <li id="education">
                         <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
-                                <h2 class="ca-main">&#1670;&#1585;&#1575; SSD&#1567;</h2>
+                                <h2 class="ca-main">چرا SSD</h2>
 
                                 <h3 class="ca-sub">
 				<?php
@@ -270,7 +270,7 @@
 				<div class="cols-2" style="margin-top:30px;">
 				
 				<div class="col" style="text-align:right;">
-					<h1>&#1575;&#1585;&#1578;&#1576;&#1575;&#1591; &#1576;&#1575; &#1605;&#1575;</h1>
+					<h1>ارتباط با ما</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");

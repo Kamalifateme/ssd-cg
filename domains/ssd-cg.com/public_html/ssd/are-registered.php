@@ -7,7 +7,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="در حال ثبت نام"; ?>
+<?php $page="آموزش آنلاین"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -23,7 +23,7 @@
 	<div class="entry-content" >
 		<?php include("tophead.php"); ?>
 
-						<h1 style="direction:rtl;text-align:center;">در حال ثبت نام</h1>
+						<h1 style="direction:rtl;text-align:center;">آموزش آنلاین</h1>
 
 
 			

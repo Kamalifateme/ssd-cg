@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>tutorial/edit_sabt">ویرایش در حال ثبت نام
+		<a href="<?=base_url()?>tutorial/edit_sabt">ویرایش آموزش آنلاین
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'tutorial/edit_sabt',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش دوره یادگیری</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش آموزش آنلاین</header>
 
 				<input type="hidden" name="id" value="<?=$sabts->id?>">
 				

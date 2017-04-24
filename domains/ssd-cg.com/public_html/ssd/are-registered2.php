@@ -7,7 +7,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="در حال ثبت نام"; ?>
+<?php $page="آموزش آنلاین"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -24,7 +24,7 @@
 		<?php include("tophead.php"); ?>
 
 <br><br>
-				<a href="<?php echo $path; ?>reg" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> &#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1583;&#1585; &#1581;&#1575;&#1604; &#1579;&#1576;&#1578; &#1606;&#1575;&#1605;</a><br>
+				<a href="<?php echo $path; ?>reg" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به آموزش آنلاین</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 

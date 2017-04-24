@@ -19,7 +19,7 @@
 	<ul class="nav nav-tabs" >
     <li class="active"><a data-toggle="tab" href="#one">چرا SSD</a></li>
     <li><a data-toggle="tab" href="#two">دوره های یادگیری</a></li>
-    <li><a data-toggle="tab" href="#three">در حال ثبت نام</a></li>
+    <li><a data-toggle="tab" href="#three">آموزش آنلاین</a></li>
     <li><a data-toggle="tab" href="#four">(اضافه کردن عنوان)آرشیو تصاویر</a></li>
 	<li><a data-toggle="tab" href="#five">(اضافه کردن گالری به عنوان)آرشیو تصاویر</a></li>
 
@@ -107,7 +107,7 @@
 		<table  class="table table-striped m-b-none AppendDataTables">
 			<thead>
 				<tr>
-					<th width="30%">نام دوره</th>	
+					<th width="30%">عنوان</th>	
 					<th width="40%">توضیحات</th>	
 					<th width="20%">تاریخ</th>	
 					<th width="10%"><?=lang('option')?> </th>
