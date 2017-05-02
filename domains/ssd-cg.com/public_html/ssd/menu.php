@@ -182,15 +182,15 @@
 		
 				<h1>کارآفرینی و کسب و کار</h1>
 
-		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
+		<ul class="cols-5 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 		
 
 			
-		<div class="mmenus">
-                    <li id="dan">
+		<div class="ent-mmenus">
+                    <li id="lead">
                         <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
-                                <h2 class="ca-main">دانستنی های کسب و کار</h2>
+                                <h2 class="ca-main">رهبری</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -205,11 +205,11 @@
                     </li>
 			</div>
 
-		<div class="mmenus">
-                    <li id="clinic">
+		<div class="ent-mmenus">
+                    <li id="grow">
                         <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
-                                <h2 class="ca-main" >کلینیک کسب و کار</h2>
+                                <h2 class="ca-main" >استراتژی های رشد</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -224,11 +224,11 @@
                     </li>
 			</div>
 
-		<div class="mmenus">
-                    <li id="ser">
+		<div class="ent-mmenus">
+                    <li id="mark">
                         <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size: 22px;">خدمات کارآفرینی و کسب و کار</h2>
+                                <h2 class="ca-main">بازاریابی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -242,11 +242,125 @@
                     </li>								
 			</div>
 
-		<div class="mmenus">
-                    <li id="education">
+		<div class="ent-mmenus">
+                    <li id="tech">
                         <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
-                                <h2 class="ca-main">چرا SSD</h2>
+                                <h2 class="ca-main">تکنولوژی</h2>
+
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>								</h3>
+                            </div>
+                        </a>
+                    </li>
+			</div>
+            
+            <div class="ent-mmenus">
+                    <li id="social">
+                        <a href="<?php echo $path; ?>business-knowledge" >
+                            <div class="ca-content">
+                                <h2 class="ca-main">رسانه های اجتماعی</h2>
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=5 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>									</h3>                           
+								</div>
+                        </a>
+                    </li>
+			</div>
+
+		<div class="ent-mmenus">
+                    <li id="fainance">
+                        <a href="<?php echo $path; ?>business-clinic" >
+                            <div class="ca-content">
+                                <h2 class="ca-main" >مالی</h2>
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=6 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>									</h3>                           
+								</div>
+                        </a>
+                    </li>
+			</div>
+
+		<div class="ent-mmenus">
+                    <li id="entre">
+                        <a href="<?php echo $path; ?>business-services" >
+                            <div class="ca-content">
+                                <h2 class="ca-main">کارآفرینی</h2>
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>									</h3>                            </div>
+                        </a>
+                    </li>								
+			</div>
+
+		<div class="ent-mmenus">
+                    <li id="busi">
+                        <a href="<?php echo $path; ?>ssd-business" >
+                            <div class="ca-content">
+                                <h2 class="ca-main">شروع یک کسب و کار</h2>
+
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>								</h3>
+                            </div>
+                        </a>
+                    </li>
+			</div>	
+            
+            <div class="ent-mmenus">
+                    <li id="franch">
+                        <a href="<?php echo $path; ?>business-services" >
+                            <div class="ca-content">
+                                <h2 class="ca-main">آزاد کردن</h2>
+                                <h3 class="ca-sub">
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
+				$row=mysql_fetch_array($ses_sql);
+				$title_sub=$row['title_sub2'];
+				echo $title_sub;
+				?>									</h3>                            </div>
+                        </a>
+                    </li>								
+			</div>
+
+		<div class="ent-mmenus">
+                    <li id="mag">
+                        <a href="<?php echo $path; ?>ssd-business" >
+                            <div class="ca-content">
+                                <h2 class="ca-main">مجله</h2>
 
                                 <h3 class="ca-sub">
 				<?php
