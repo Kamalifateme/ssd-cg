@@ -28,9 +28,9 @@
 			if (!empty($sabt_details)) {
 			foreach ($sabt_details as $key => $sabts) { ?>
 			<?php
-			 $attributes = array('class' => 'bs-example form-horizontal');
+			 $attributes = array('class' => 'bs-example form-horizontal enctype="multipart/form-data');
              echo form_open(base_url().'tutorial/edit_sabt',$attributes); ?>
-			 
+			
 			 
 			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش آموزش آنلاین</header>
 
@@ -63,10 +63,24 @@
 				</div>
 				
 				<div class="form-group col-lg-12">
-				    <label class="col-lg-12 control-label"><?=lang('image')?></label>
-				<div class="col-lg-12">
-				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu157" class="iframe-btn" id="" type="button">
-                <input type="text" name="image1"  id="imageu157" value="<?=$sabts->image1?>" class="form-control" /></a>
+				    <label class="col-lg-12 control-label">فایل
+                     </label>
+			                  <?php  include('<?=base_url()?>filemanager/include/utils.php');
+include('<?=base_url()?>filemanager/dialog.php'); ?>
+
+            	<div class="col-lg-12">
+                <?php echo $error;?>
+
+               
+
+                <input type="file" name="url"  id="imageu157" class="form-control" value="<?=$sabts->image1?>"/>
+
+                <ul>
+<?php foreach ($upload_data as $item => $value):?>
+<li><?php echo $item;?>: <?php echo $value;?></li>
+<?php endforeach; ?>
+</ul>
+             
 				</div>
 				</div>
 

@@ -75,7 +75,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', '&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1605;&#1585;&#1576;&#1608;&#1591; &#1576;&#1607; SSD &#1579;&#1576;&#1578; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message', 'اطلاعات مربوط به SSD ثبت گردید');
 
 
 			redirect('tutorial');
@@ -123,7 +123,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; SSD &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message','اطلاعات SSD با موفقیت ویرایش گردید');
 			redirect('tutorial');
 		}
 	}else{
@@ -148,7 +148,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('simt');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; SSD &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1581;&#1584;&#1601; &#1711;&#1585;&#1583;&#1740;&#1583;');
+					$this->session->set_flashdata('message','اطلاعات SSD با موفقیت حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -182,7 +182,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', '&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1605;&#1585;&#1576;&#1608;&#1591; &#1576;&#1607; &#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740; &#1579;&#1576;&#1578; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message', 'اطلاعات مربوط به دوره های یادگیری ثبت گردید');
 
 
 			redirect('tutorial');
@@ -233,7 +233,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','&#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1583;&#1608;&#1585;&#1607; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message','ویرایش دوره یادگیری با موفقیت انجام گردید');
 			redirect('tutorial');
 		}
 	}else{
@@ -259,7 +259,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('learning');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1583;&#1608;&#1585;&#1607; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740; &#1581;&#1584;&#1601; &#1711;&#1585;&#1583;&#1740;&#1583;');
+					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -300,7 +300,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', '&#1583;&#1585; &#1581;&#1575;&#1604; &#1579;&#1576;&#1578; &#1606;&#1575;&#1605; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;');
+			$this->session->set_flashdata('message', 'در حال ثبت نام با موفقیت انجام شد');
 
 
 			redirect('tutorial');
@@ -355,7 +355,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','&#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1583;&#1585; &#1581;&#1575;&#1604; &#1579;&#1576;&#1578; &#1606;&#1575;&#1605; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;');
+			$this->session->set_flashdata('message','ویرایش در حال ثبت نام با موفقیت انجام شد');
 			redirect('tutorial');
 		}
 	}else{
@@ -381,7 +381,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('sabt');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','&#1581;&#1584;&#1601; &#1583;&#1585; &#1581;&#1575;&#1604; &#1579;&#1576;&#1578; &#1606;&#1575;&#1605; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;');
+					$this->session->set_flashdata('message','حذف در حال ثبت نام با موفقیت انجام شد');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -418,7 +418,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', '&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1605;&#1585;&#1576;&#1608;&#1591;&#1607; &#1579;&#1576;&#1578; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message', 'اطلاعات مربوطه ثبت گردید');
 
 
 			redirect('tutorial');
@@ -467,7 +467,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','&#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;');
+			$this->session->set_flashdata('message','ویرایش با موفقیت انجام شد');
 			redirect('tutorial');
 		}
 	}else{
@@ -492,7 +492,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('archiveo');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1583;&#1608;&#1585;&#1607; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740; &#1581;&#1584;&#1601; &#1711;&#1585;&#1583;&#1740;&#1583;');
+					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -527,7 +527,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', '&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1605;&#1585;&#1576;&#1608;&#1591;&#1607; &#1579;&#1576;&#1578; &#1711;&#1585;&#1583;&#1740;&#1583;');
+			$this->session->set_flashdata('message', 'اطلاعات مربوطه ثبت گردید');
 
 
 			redirect('tutorial/add_archiveg');
@@ -577,7 +577,7 @@ class Tutorial extends MX_Controller {
 			$this->db->where('id',$id)->update('archiveg', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','&#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1576;&#1575; &#1605;&#1608;&#1601;&#1602;&#1740;&#1578; &#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;');
+			$this->session->set_flashdata('message','ویرایش با موفقیت انجام شد');
 			redirect('tutorial');
 		}
 	}else{
@@ -604,7 +604,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('archiveg');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1583;&#1608;&#1585;&#1607; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740; &#1581;&#1584;&#1601; &#1711;&#1585;&#1583;&#1740;&#1583;');
+					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -613,6 +613,44 @@ class Tutorial extends MX_Controller {
 		
 	}
 	/*zironvan*/
+	
+	
+	 public function do_upload()
+        {
+			
+                $config['upload_path']          = '../../../../../file/';
+                $config['allowed_types']        = '*';
+                $config['max_size']             = 500000;
+                $config['max_width']            = 1024;
+                $config['max_height']           = 768;
+
+                $this->load->library('upload', $config);
+
+                if ( ! $this->upload->do_upload('image1'))
+                {
+                        $error = array('خطا' => $this->upload->display_errors());
+
+                        $this->load->view("<?=base_url()?>tutorial/add_sabt", $error);
+						redirect('tutorial');
+                }
+                else
+                {
+                        $data = array('upload_data' => $this->upload->data());
+
+                        $this->load->view("<?=base_url()?>tutorial/add_sabt", $data);
+						redirect('tutorial');
+                }
+				
+      
+	  if(is_file($config['upload_path']))
+{
+    chmod($config['upload_path'], 777); ## this should change the permissions
+}
+	  
+	  
+	  
+	    }
+	
 	
 	
 }

@@ -1,5 +1,6 @@
 <section id="content"> 
 <section class="vbox"> <section class="scrollable padder">
+<script src="jquery.js"></script>
 	<ul class="breadcrumb no-border no-radius b-b b-light pull-in ">
 		
 		<li>
