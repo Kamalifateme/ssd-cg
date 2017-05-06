@@ -78,6 +78,46 @@
 	{
 	include("business-knowledge2.php");
 	}
+	if($url1=="leadership" && $url2=='')
+	{
+	include("leadership.php");
+	}
+	if($url1=="growth-strategy" && $url2=='')
+	{
+	include("growth-strategy.php");
+	}
+	if($url1=="marketing" && $url2=='')
+	{
+	include("marketing.php");
+	}
+	if($url1=="technology" && $url2=='')
+	{
+	include("technology.php");
+	}
+	if($url1=="social-media" && $url2=='')
+	{
+	include("social-media.php");
+	}
+	if($url1=="finance" && $url2=='')
+	{
+	include("finance.php");
+	}
+	if($url1=="entrepreneur" && $url2=='')
+	{
+	include("entrepreneur.php");
+	}
+	if($url1=="starting-business" && $url2=='')
+	{
+	include("starting-business.php");
+	}
+	if($url1=="franchies" && $url2=='')
+	{
+	include("franchies.php");
+	}
+	if($url1=="magazine" && $url2=='')
+	{
+	include("magazine.php");
+	}
 	if($url1=="technical" && $url2=='')
 	{
 	include("technical.php");
