@@ -46,6 +46,16 @@ class Work extends MX_Controller {
 	$data['dan'] = $this->item_model->list_dan();
 	$data['clinic'] = $this->item_model->list_clinic();
 	$data['service'] = $this->item_model->list_service();
+	$data['lead'] = $this->item_model->list_lead();
+	$data['grow'] = $this->item_model->list_grow();
+	$data['marketing'] = $this->item_model->list_marketing();
+	$data['tech'] = $this->item_model->list_tech();
+	$data['social'] = $this->item_model->list_social();
+	$data['finance'] = $this->item_model->list_finance();
+	$data['entre'] = $this->item_model->list_entre();
+	$data['busi'] = $this->item_model->list_busi();
+	$data['franch'] = $this->item_model->list_franch();
+	$data['mag'] = $this->item_model->list_mag();
 
 	$this->template
 	->set_layout('users')
@@ -478,6 +488,1098 @@ function add_service()
 		}else{
 			$data['id'] = $this->uri->segment(3);
 			$this->load->view('modal/delete_service',$data);
+		}
+		
+	}
+	
+		/*lead*/
+function add_lead()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('lead', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات رهبری با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_lead',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_lead()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('lead', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات رهبری با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['lead_details'] = $this->item_model->lead_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_lead',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_lead(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('lead');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_lead',$data);
+		}
+		
+	}
+	
+	/*grow*/
+function add_grow()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('grow', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات استراتژی های رشد با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_grow',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_grow()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('grow', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات استراتژی های رشد با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['grow_details'] = $this->item_model->grow_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_grow',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_grow(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('grow');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_grow',$data);
+		}
+		
+	}
+	/*marketing*/
+function add_marketing()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('marketing', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات بازاریابی با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_marketing',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_marketing()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('marketing', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات بازاریابی با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['marketing_details'] = $this->item_model->marketing_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_marketing',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_marketing(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('marketing');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_marketing',$data);
+		}
+		
+	}
+	/*tech*/
+function add_tech()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('tech', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات تکنولوژی با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_tech',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_tech()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('tech', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات تکنولوژی با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['tech_details'] = $this->item_model->tech_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_tech',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_tech(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('tech');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_tech',$data);
+		}
+		
+	}
+	/*social*/
+function add_social()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('social', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات رسانه های اجتماعی با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_social',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_social()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('social', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات رسانه های اجتماعی با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['social_details'] = $this->item_model->social_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_social',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_social(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('social');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_social',$data);
+		}
+		
+	}
+	/*finance*/
+function add_finance()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('finance', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات مالی با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_finance',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_finance()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('finance', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات مالی با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['finance_details'] = $this->item_model->finance_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_finance',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_finance(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('finance');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_finance',$data);
+		}
+		
+	}
+	/*entre*/
+function add_entre()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('entre', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات کارآفرینی با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_entre',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_entre()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('entre', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات کارآفرینی با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['entre_details'] = $this->item_model->entre_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_entre',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_entre(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('entre');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_entre',$data);
+		}
+		
+	}
+	/*busi*/
+function add_busi()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('busi', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات شروع یک کسب و کار با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_busi',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_busi()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('busi', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات شروع یک کسب و کار با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['busi_details'] = $this->item_model->busi_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_busi',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_busi(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('busi');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_busi',$data);
+		}
+		
+	}
+	/*franch*/
+function add_franch()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('franch', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات فرانشیز با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_franch',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_franch()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('franch', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات فرانشیز با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['franch_details'] = $this->item_model->franch_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_franch',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_franch(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('franch');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_franch',$data);
+		}
+		
+	}
+	/*mag*/
+function add_mag()
+	{
+		
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('error_editor'));
+				redirect('work');
+		}else{
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->insert('mag', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message', 'اطلاعات مجله با موفقیت ثبت شد');
+			redirect('work');
+		}
+		}else{
+	$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['form'] = TRUE;
+			$data['page'] = lang('work');
+	$data['img'] = TRUE;
+		$this->template
+		->set_layout('users')
+		->build('add_mag',isset($data) ? $data : NULL);
+
+		}
+	}
+	
+	function edit_mag()
+	{		
+
+		if ($this->input->post()) {
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<span style="color:red">', '</span><br>');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		$id = $this->input->post('id', TRUE);
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->session->set_flashdata('response_status', 'error');
+				$this->session->set_flashdata('message', lang('task_update_failed'));
+				redirect('work');
+		}else{
+			$a=	$this->input->post('description');
+ 
+			$sContent = strip_tags(stripslashes($a),"");
+			$form_data = array(
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
+			                'saved_by' => $this->tank_auth->get_user_id(),
+			            );
+			$this->db->where('id',$id)->update('mag', $form_data); 
+
+			$this->session->set_flashdata('response_status', 'success');
+			$this->session->set_flashdata('message',lang('اطلاعات مجله با موفقیت ویرایش گردید'));
+			redirect('work');
+		}
+	}else{
+			$this->load->module('layouts');
+	$this->load->library('template');
+	$this->load->library('jdf');
+	$data['time'] = $this->jdf->jdate('H:i:s',time);
+	$data['datepicker'] = TRUE;
+	$data['datatables'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
+
+		$data['form'] = TRUE;
+		$data['mag_details'] = $this->item_model->mag_details($this->uri->segment(3));
+		$this->template
+		->set_layout('users')
+		->build('edit_mag',isset($data) ? $data : NULL);
+	}
+	}
+	function delete_mag(){
+		if ($this->input->post() ){
+					$id = $this->input->post('id', TRUE);
+					$this->db->where('id',$id)->delete('mag');
+
+					$this->session->set_flashdata('response_status', 'success');
+					$this->session->set_flashdata('message', lang('events_deleted_successfully'));
+					redirect($this->input->post('r_url'));
+		}else{
+			$data['id'] = $this->uri->segment(3);
+			$this->load->view('modal/delete_mag',$data);
 		}
 		
 	}
