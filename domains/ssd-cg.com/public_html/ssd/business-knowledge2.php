@@ -9,7 +9,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1583;&#1575;&#1606;&#1587;&#1578;&#1606;&#1740;&#1607;&#1575;&#1740; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;"; ?>
+<?php $page="رهبری کسب و کار و دارایی ها"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -28,7 +28,7 @@
 	
 
 <br><br>
-				<a href="<?php echo $path; ?>business-knowledge" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> &#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1589;&#1601;&#1581;&#1607; &#1583;&#1575;&#1606;&#1587;&#1578;&#1606;&#1740;&#1607;&#1575;&#1740; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</a><br>
+				<a href="<?php echo $path; ?>business-knowledge" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به صفحه رهبری کسب و کار و دارایی ها</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
@@ -56,7 +56,7 @@
 				<br>
 				<span style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
-				<span style="font-size:15pt;color:#791057"> &#1578;&#1593;&#1583;&#1575;&#1583; &#1576;&#1575;&#1586;&#1583;&#1740;&#1583; : <?php echo $viwe; ?></span>
+				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
 				<br>
 				<span style="font-size:14pt;font-family:BTraffic;"><?php echo $description; ?></span><br><br>
 								<?php if($image==""){}else { ?>

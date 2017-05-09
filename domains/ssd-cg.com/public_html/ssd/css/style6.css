@@ -74,8 +74,7 @@ border-radius:6px;
 
 .ca-menu #learning
 {
-background-color:#fff;
-
+	background-color:#fff;
     background: url(../menu/Dorehaye-Yadgiri.jpg) center center;
     background-size: cover;
 }
@@ -85,7 +84,7 @@ background-color:#fff;
 }
 .ca-menu #reg
 {
-background-color:#fff;
+	background-color:#fff;
     background: url(../menu/Sabtenam2.jpg) center center;
     background-size: cover;
 }
@@ -96,108 +95,130 @@ background-color:#fff;
 
 .ca-menu #education
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/Chera-SSD.png) center center;
     background-size: cover;
 }
 .ca-menu #education:hover{
     background: #ffffff url(../menu/Chera-SSD2.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 
 .ca-menu #learning
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/Yadgiri.png) center center;
     background-size: cover;
 }
 .ca-menu #learning:hover{
     background: #ffffff url(../menu/Yadgir2i.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 .ca-menu #reg
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/sabt1.png) center center;
     background-size: cover;
 }
 .ca-menu #reg:hover{
     background: #ffffff url(../menu/sabt2.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 .ca-menu #mali
 {
-background-color:#fff;
-    background: #ffffff url(../menu/mail2.png) center center;
+	background-color:#fff;
+    background: #ffffff url(../menu/marketing_strategy.png) center center;
     background-size: cover;
 }
 .ca-menu #mali:hover{
-    background: #ffffff url(../menu/mail.png) center center;
-	 background-size: cover;
+    background: #ffffff url(../menu/marketing_strategy1.png) center center;
+	background-size: cover;
 }
 .ca-menu #archive
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/archive.png) center center;
     background-size: cover;
 }
 .ca-menu #archive:hover{
     background: #ffffff url(../menu/archive2.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 .ca-menu #fani
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/fani.png) center center;
     background-size: cover;
 }
 .ca-menu #fani:hover{
     background: #ffffff url(../menu/fani1.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 
 .ca-menu #mod
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/mod1.png) center center;
     background-size: cover;
 }
 .ca-menu #mod:hover{
     background: #ffffff url(../menu/mod3.png) center center;
-	 background-size: cover;
+	background-size: cover;
+}
+
+.ca-menu #org
+{
+	background-color:#fff;
+    background: #ffffff url(../menu/ORGANIZATION.png) center center;
+    background-size: cover;
+}
+.ca-menu #org:hover{
+    background: #ffffff url(../menu/ORGANIZATION1.png) center center;
+	background-size: cover;
 }
 
 .ca-menu #dan
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/dan1.png) center center;
     background-size: cover;
 }
 .ca-menu #dan:hover{
     background: #ffffff url(../menu/dan2.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 
 .ca-menu #clinic
 {
-background-color:#fff;
-    background: #ffffff url(../menu/clinic1.png) center center;
+	background-color:#fff;
+    background: #ffffff url(../menu/Technology.png) center center;
     background-size: cover;
 }
 .ca-menu #clinic:hover{
-    background: #ffffff url(../menu/clinic2.png) center center;
-	 background-size: cover;
+    background: #ffffff url(../menu/Technology1.png) center center;
+	background-size: cover;
 }
 
 .ca-menu #ser
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/ser2.png) center center;
     background-size: cover;
 }
 .ca-menu #ser:hover{
     background: #ffffff url(../menu/ser1.png) center center;
-	 background-size: cover;
+	background-size: cover;
+}
+
+.ca-menu #entrepreneur
+{
+	background-color:#fff;
+    background: #ffffff url(../menu/entrepreneur.png) center center;
+    background-size: cover;
+}
+.ca-menu #entrepreneur:hover{
+    background: #ffffff url(../menu/entrepreneur1.png) center center;
+	background-size: cover;
 }
 
 

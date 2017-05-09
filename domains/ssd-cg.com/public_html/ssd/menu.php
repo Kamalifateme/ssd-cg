@@ -9,7 +9,7 @@
                     <li id="learning"  style="">
                         <a href="<?php echo $path; ?>learning-courses" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size:28px;">دوره های یادگیری</h2>
+                                <h2 class="ca-main" style="font-size:26px;">دوره های یادگیری</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -101,7 +101,7 @@
                     <li id="mali">
                         <a href="<?php echo $path; ?>financial" >
                             <div class="ca-content">
-                                <h2 class="ca-main">مالی</h2>
+                                <h2 class="ca-main" style="font-size:26px">استراتژی و بازاریابی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -120,7 +120,7 @@
                     <li id="mod">
                         <a href="<?php echo $path; ?>management" >
                             <div class="ca-content">
-                                <h2 class="ca-main">مدیریتی</h2>
+                                <h2 class="ca-main">بهبود عملکرد</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -139,7 +139,7 @@
                     <li id="fani">
                         <a href="<?php echo $path; ?>technical" >
                             <div class="ca-content">
-                                <h2 class="ca-main">فنی</h2>
+                                <h2 class="ca-main" style="font-size:26px">تکنولوژی اطلاعات و فناوری نوین</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -155,10 +155,10 @@
 
 					
 		<div class="mmenus">
-                    <li id="education">
+                    <li id="org">
                         <a href="<?php echo $path; ?>ssd-consultation" >
                             <div class="ca-content">
-                                <h2 class="ca-main">چرا SSD</h2>
+                                <h2 class="ca-main">سازمان</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -190,7 +190,7 @@
                     <li id="dan">
                         <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
-                                <h2 class="ca-main">دانستنی های کسب و کار</h2>
+                                <h2 class="ca-main" style="font-size:26px">رهبری کسب و کار و دارایی ها</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -209,7 +209,7 @@
                     <li id="clinic">
                         <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
-                                <h2 class="ca-main" >کلینیک کسب و کار</h2>
+                                <h2 class="ca-main" style="font-size:26px">تکنولوژی و شبکه های اجتماعی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -228,7 +228,7 @@
                     <li id="ser">
                         <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size: 22px;">خدمات کارآفرینی و کسب و کار</h2>
+                                <h2 class="ca-main" style="font-size:24px">استراتژی های رشد و علم فروش</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -243,10 +243,10 @@
 			</div>
 
 		<div class="mmenus">
-                    <li id="education">
+                    <li id="entrepreneur">
                         <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
-                                <h2 class="ca-main">چرا SSD</h2>
+                                <h2 class="ca-main">مجله کارآفرینی</h2>
 
                                 <h3 class="ca-sub">
 				<?php

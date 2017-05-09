@@ -9,7 +9,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1605;&#1583;&#1740;&#1585;&#1740;&#1578;&#1740;"; ?>
+<?php $page="بهبود عملکرد"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -27,7 +27,7 @@
 
 	
 
-				<h1 style="direction:rtl;text-align:center;">&#1605;&#1583;&#1740;&#1585;&#1740;&#1578;&#1740;</h1>
+				<h1 style="direction:rtl;text-align:center;">بهبود عملکرد</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");

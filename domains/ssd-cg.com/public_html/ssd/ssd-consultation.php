@@ -7,7 +7,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="مشاوره(چرا SSD)"; ?>
+<?php $page="سازمان"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -26,7 +26,7 @@
 	
 
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 style="direction:rtl;text-align:center;">مشاوره(چرا SSD)</h1>
+					<h1 style="direction:rtl;text-align:center;">سازمان</h1>
 
 		<div class="col">
 
