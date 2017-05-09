@@ -188,14 +188,14 @@
 			
 		<div class="ent-mmenus">
                     <li id="lead">
-                        <a href="<?php echo $path; ?>leadership" >
+                        <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
                                 <h2 class="ca-main">رهبری</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=14 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=5 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -207,14 +207,14 @@
 
 		<div class="ent-mmenus">
                     <li id="grow">
-                        <a href="<?php echo $path; ?>growth-strategy" >
+                        <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
                                 <h2 class="ca-main" >استراتژی های رشد</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=15 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=6 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -226,14 +226,14 @@
 
 		<div class="ent-mmenus">
                     <li id="mark">
-                        <a href="<?php echo $path; ?>marketing" >
+                        <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
                                 <h2 class="ca-main">بازاریابی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=16 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -244,7 +244,7 @@
 
 		<div class="ent-mmenus">
                     <li id="tech">
-                        <a href="<?php echo $path; ?>technology" >
+                        <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
                                 <h2 class="ca-main">تکنولوژی</h2>
 
@@ -252,7 +252,7 @@
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=17 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -264,14 +264,14 @@
             
             <div class="ent-mmenus">
                     <li id="social">
-                        <a href="<?php echo $path; ?>social-media" >
+                        <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
                                 <h2 class="ca-main">رسانه های اجتماعی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=18 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=5 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -283,14 +283,14 @@
 
 		<div class="ent-mmenus">
                     <li id="fainance">
-                        <a href="<?php echo $path; ?>finance" >
+                        <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
                                 <h2 class="ca-main" >مالی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=19 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=6 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -302,14 +302,14 @@
 
 		<div class="ent-mmenus">
                     <li id="entre">
-                        <a href="<?php echo $path; ?>entrepreneur" >
+                        <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
                                 <h2 class="ca-main">کارآفرینی</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=20 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -320,7 +320,7 @@
 
 		<div class="ent-mmenus">
                     <li id="busi">
-                        <a href="<?php echo $path; ?>starting-business" >
+                        <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
                                 <h2 class="ca-main">شروع یک کسب و کار</h2>
 
@@ -328,7 +328,7 @@
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=21 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -340,14 +340,14 @@
             
             <div class="ent-mmenus">
                     <li id="franch">
-                        <a href="<?php echo $path; ?>franchies" >
+                        <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
-                                <h2 class="ca-main">فرانشیز</h2>
+                                <h2 class="ca-main">آزاد کردن</h2>
                                 <h3 class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=22 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
@@ -358,7 +358,7 @@
 
 		<div class="ent-mmenus">
                     <li id="mag">
-                        <a href="<?php echo $path; ?>magazine" >
+                        <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
                                 <h2 class="ca-main">مجله</h2>
 
@@ -366,7 +366,7 @@
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=23 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
 				$title_sub=$row['title_sub2'];
 				echo $title_sub;
