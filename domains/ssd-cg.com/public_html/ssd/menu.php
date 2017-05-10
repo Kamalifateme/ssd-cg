@@ -1,16 +1,16 @@
 
 
 <section id="Education">
-		<h1>آموزش</h1>
+		<h1  title="ثبت نام از طریق سایت گروه حرفه ای مشاوران کارآفرینی و کسب و کار ssd">آموزش</h1>
 
 		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
-		<div class="mmenus">
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
 			
-                    <li id="learning"  style="">
+                    <li itemscope itemtype="http://schema.org/WebSite" itemprop="url" id="learning"  style="">
                         <a href="<?php echo $path; ?>learning-courses" >
                             <div class="ca-content">
-                                <h2 class="ca-main" style="font-size:28px;">دوره های یادگیری</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-main" style="font-size:28px;">دوره های یادگیری</h2>
+                                <h3 title="نام دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -25,12 +25,12 @@
                     </li>
 </div>
 
-		<div class="mmenus">
-                    <li id="reg">
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li itemscope itemtype="http://schema.org/WebSite" itemprop="url" id="reg">
                         <a href="<?php echo $path; ?>reg" style="">
                             <div class="ca-content">
-                                <h2 class="ca-main">آموزش آنلاین</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="دوره های آموزشی مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-main">آموزش آنلاین</h2>
+                                <h3 title="نام دوره های آموزشی مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-sub">
 			<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -45,12 +45,12 @@
                     </li>
 			</div>
 
-		<div class="mmenus">
-                    <li id="archive">
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li itemscope itemtype="http://schema.org/WebSite" itemprop="url" id="archive">
                         <a href="<?php echo $path; ?>archive-images" style="">
-                            <div class="ca-content">
-                                <h2 class="ca-main">آرشیو تصاویر</h2>
-                                <h3 class="ca-sub">
+                            <div itemscope itemtype="http://schema.org/image" itemprop="photo" class="ca-content">
+                                <h2 title="تصاویر دوره های مجازی و حضوری کارآفرینی و کسب و کار ssd" class="ca-main">آرشیو تصاویر</h2>
+                                <h3 title="نام تصاویر دوره های مجازی و حضوری کارآفرینی و کسب و کار ssd" class="ca-sub">
 			<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -64,12 +64,12 @@
                     </li>								
 			</div>
 			
-		<div class="mmenus">
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
                     <li id="education" style="">
                         <a href="<?php echo $path; ?>ssd-education" >
                             <div class="ca-content">
-                                <h2 class="ca-main">چرا SSD</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-main">چرا SSD</h2>
+                                <h3 title="شرح چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -93,16 +93,15 @@
 	
 	<section id="Consultation">
 
-	<h1>مشاوره</h1>
+	<h1 title="گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار">مشاوره</h1>
+		<ul itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 
-		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
-
-		<div class="mmenus">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
                     <li id="mali">
                         <a href="<?php echo $path; ?>financial" >
                             <div class="ca-content">
-                                <h2 class="ca-main">مالی</h2>
-                                <h3 class="ca-sub">
+                                 <h2 title="گروه حرفه ای مشاوران مالی کارآفرینی و کسب و کار ssd" class="ca-main">مالی</h2>
+                                <h3 title="نام مواد گروه حرفه ای مشاوران مالی کارآفرینی و کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -116,12 +115,12 @@
                     </li>
 		</div>
 
-		<div class="mmenus">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
                     <li id="mod">
                         <a href="<?php echo $path; ?>management" >
                             <div class="ca-content">
-                                <h2 class="ca-main">مدیریتی</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="گروه حرفه ای مشاوران مدیریتی کارآفرینی و کسب و کار ssd" class="ca-main">مدیریتی</h2>
+                                <h3 title="نام مواد گروه حرفه ای مشاوران مدیریتی کارآفرینی و کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -135,12 +134,12 @@
                     </li>
 			</div>
 
-		<div class="mmenus">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
                     <li id="fani">
                         <a href="<?php echo $path; ?>technical" >
                             <div class="ca-content">
-                                <h2 class="ca-main">فنی</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="گروه حرفه ای مشاوران فنی کارآفرینی و کسب و کار ssd" class="ca-main">فنی</h2>
+                                <h3 title="نام مواد گروه حرفه ای مشاوران فنی کارآفرینی و کسب و کار ssd"  class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -154,12 +153,12 @@
 			</div>
 
 					
-		<div class="mmenus">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
                     <li id="education">
                         <a href="<?php echo $path; ?>ssd-consultation" >
                             <div class="ca-content">
-                                <h2 class="ca-main">چرا SSD</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-main">چرا SSD</h2>
+                                <h3 title="شرح چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -180,18 +179,18 @@
 	
 		<section id="Entrepreneurship">
 		
-				<h1>کارآفرینی و کسب و کار</h1>
+				<h1 title="سامانه راهنمای مالکیت فکری، کارآفرینی و تجاری سازی گروه حرفه ای مشاوران SSD">کارآفرینی و کسب و کار</h1>
 
-		<ul class="cols-5 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
+		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 		
 
 			
-		<div class="ent-mmenus">
-                    <li id="lead">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li id="dan">
                         <a href="<?php echo $path; ?>business-knowledge" >
                             <div class="ca-content">
-                                <h2 class="ca-main">رهبری</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="دانستنی های کسب و کار و کارآفرینی ssd" class="ca-main">دانستنیهای کسب و کار</h2>
+                                <h3 title="شرح دانستنی های کسب و کار و کارآفرینی ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -205,12 +204,12 @@
                     </li>
 			</div>
 
-		<div class="ent-mmenus">
-                    <li id="grow">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li id="clinic">
                         <a href="<?php echo $path; ?>business-clinic" >
                             <div class="ca-content">
-                                <h2 class="ca-main" >استراتژی های رشد</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="کلینیک کسب و کار و کارآفرینی ssd" class="ca-main" >کلینیک کسب و کار</h2>
+                                <h3 title="شرح کلینیک کسب و کار و کارآفرینی ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -224,12 +223,12 @@
                     </li>
 			</div>
 
-		<div class="ent-mmenus">
-                    <li id="mark">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li id="ser">
                         <a href="<?php echo $path; ?>business-services" >
                             <div class="ca-content">
-                                <h2 class="ca-main">بازاریابی</h2>
-                                <h3 class="ca-sub">
+                                <h2 title="خدمات کارآفرینی و کسب و کار گروه حرفه ای مشاوران ssd" class="ca-main" style="font-size: 22px;">خدمات کارآفرینی و کسب و کار</h2>
+                                <h3 title="شرح خدمات کارآفرینی و کسب و کار گروه حرفه ای مشاوران ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -242,127 +241,13 @@
                     </li>								
 			</div>
 
-		<div class="ent-mmenus">
-                    <li id="tech">
+		<div  itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="mmenus">
+                    <li id="education">
                         <a href="<?php echo $path; ?>ssd-business" >
                             <div class="ca-content">
-                                <h2 class="ca-main">تکنولوژی</h2>
+                                <h2 title="چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-main">چرا SSD؟</h2>
 
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>								</h3>
-                            </div>
-                        </a>
-                    </li>
-			</div>
-            
-            <div class="ent-mmenus">
-                    <li id="social">
-                        <a href="<?php echo $path; ?>business-knowledge" >
-                            <div class="ca-content">
-                                <h2 class="ca-main">رسانه های اجتماعی</h2>
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=5 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>									</h3>                           
-								</div>
-                        </a>
-                    </li>
-			</div>
-
-		<div class="ent-mmenus">
-                    <li id="fainance">
-                        <a href="<?php echo $path; ?>business-clinic" >
-                            <div class="ca-content">
-                                <h2 class="ca-main" >مالی</h2>
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=6 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>									</h3>                           
-								</div>
-                        </a>
-                    </li>
-			</div>
-
-		<div class="ent-mmenus">
-                    <li id="entre">
-                        <a href="<?php echo $path; ?>business-services" >
-                            <div class="ca-content">
-                                <h2 class="ca-main">کارآفرینی</h2>
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>									</h3>                            </div>
-                        </a>
-                    </li>								
-			</div>
-
-		<div class="ent-mmenus">
-                    <li id="busi">
-                        <a href="<?php echo $path; ?>ssd-business" >
-                            <div class="ca-content">
-                                <h2 class="ca-main">شروع یک کسب و کار</h2>
-
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=10 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>								</h3>
-                            </div>
-                        </a>
-                    </li>
-			</div>	
-            
-            <div class="ent-mmenus">
-                    <li id="franch">
-                        <a href="<?php echo $path; ?>business-services" >
-                            <div class="ca-content">
-                                <h2 class="ca-main">آزاد کردن</h2>
-                                <h3 class="ca-sub">
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=7 ") or die(mysql_error()) ;
-				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub2'];
-				echo $title_sub;
-				?>									</h3>                            </div>
-                        </a>
-                    </li>								
-			</div>
-
-		<div class="ent-mmenus">
-                    <li id="mag">
-                        <a href="<?php echo $path; ?>ssd-business" >
-                            <div class="ca-content">
-                                <h2 class="ca-main">مجله</h2>
-
-                                <h3 class="ca-sub">
+                                <h3 title="شرح چرا گروه حرفه ای مشاوران کارآفرینی و راه اندازی کسب و کار ssd" class="ca-sub">
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -381,10 +266,8 @@
 		
 		</section>
 <section id="contact">
-				<div class="cols-2" style="margin-top:30px;">
 				
 				<div class="col" style="text-align:right;">
-					<h1>ارتباط با ما</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -401,28 +284,24 @@
 				$ins=$row['ins'];
 				?>
 				
-				<div style="direction:rtl;"><i class="fa fa-map-marker"></i> <?php echo $address; ?></div><br>
-				<div style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone; ?></div><br>
 				<?php if($phone4==""){}else{?> 
-				<div style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone4; ?></div><br>
                                 <?php } ?>
 				<?php if($phone5==""){}else{?> 
-				<div style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone5; ?></div><br>
                                 <?php } ?>
 				<?php if($phone6==""){}else{?> 
-				<div style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone6; ?></div><br>
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="isPartOf" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone6; ?></div><br>
                                 <?php } ?>
 
 				<?php if($phone2==""){}else{?> 
-				<div style="direction:rtl;"><i class="fa fa-fax"></i>  <?php echo $phone2; ?></div><br>
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="isPartOf" style="direction:rtl;"><i class="fa fa-fax"></i>  <?php echo $phone2; ?></div><br>
                                 <?php } ?>
 
 				<?php if($phone3==""){}else{?> 
-				<div style="direction:rtl;"><i class="fa fa-paper-plane"></i>  <?php echo $phone3; ?></div><br>
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="isPartOf" style="direction:rtl;"><i class="fa fa-paper-plane"></i>  <?php echo $phone3; ?></div><br>
                                 <?php } ?>
 
                                 <div style="direction:rtl;"><i class="fa fa-envelope"></i>  <?php echo $email; ?></div><br>
-				<div style="direction:rtl;"><i class="fa fa-instagram"></i> <?php echo $ins; ?></div><br>
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="isPartOf" style="direction:rtl;"><i class="fa fa-instagram"></i> <?php echo $ins; ?></div><br>
 
 				</div>
 				

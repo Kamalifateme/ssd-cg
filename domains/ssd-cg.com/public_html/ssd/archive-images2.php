@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<link href='<?php echo $path; ?>css/simplelightbox.css' rel='stylesheet' type='text/css'>
@@ -11,12 +11,12 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1570;&#1585;&#1588;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;"; ?>
+<?php $page="آرشیو تصاویر"; ?>
 
-<div class="container">
-	<div id="page" class="hfeed site">
+<div itemscope itemprop="http://schema.org/image" class="container">
+	<div itemprop="photo" id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -24,13 +24,13 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="entry-content" >
 		<?php include("tophead.php"); ?>
-				<h1 style="direction:rtl;text-align:center;">&#1570;&#1585;&#1588;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;</h1>
+				<h1 title="آرشیو تصاویر ssd" style="direction:rtl;text-align:center;">آرشیو تصاویر</h1>
 
 		
 			<br>
-			<a href="<?php echo $path; ?>archive-images" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;margi">&#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1570;&#1585;&#1588;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;</a><br>
+			<a itemscope itemtype="http://schema.org/WebSite" itemprop="url" href="<?php echo $path; ?>archive-images" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;margi">بازگشت به آرشیو تصاویر</a><br>
 
 			<?php
 				$url=$_GET['url'];
@@ -45,7 +45,7 @@
 				$id=$row2['id'];
 				$description=$row2['description'];				
 				?>
-				<div style="text-align:justify;direction:rtl;font-family:BTraffic;"><?php echo $description; ?></div>
+				<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" style="text-align:justify;direction:rtl;font-family:BTraffic;"><?php echo $description; ?></div>
 			
 			
 						<ul class="grid effect-2 lb-album gallery" id="grid" style="margin-top:20px;">
@@ -71,8 +71,8 @@
 
 				?>
 				<li  style="background-color:#fff;border-radius:7px;" >
-						<a href="<?php echo $image; ?>" class="big">	
-<img  class="jbox-img" src="<?php echo $image; ?>" alt="image01">
+						<a itemscope itemtype="http://schema.org/image" href="<?php echo $image; ?>" class="big">	
+<img  itemprop="photo" alt="آرشیو تصاویر ssd" class="jbox-img" src="<?php echo $image; ?>" >
 			</a>
 				</li>
 				<?php } ?>

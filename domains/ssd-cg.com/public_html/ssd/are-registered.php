@@ -9,10 +9,10 @@
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
 <?php $page="آموزش آنلاین"; ?>
 
-<div class="container">
+<div itemscope itemtype="http://schema.org/Product" class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -20,10 +20,10 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite" itemprop="headline" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
-						<h1 style="direction:rtl;text-align:center;">آموزش آنلاین</h1>
+						<h1 title="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" style="direction:rtl;text-align:center;">آموزش آنلاین</h1>
 
 
 			
@@ -56,16 +56,16 @@
 
 
 			<div class="col">
-				<img  src="<?php echo $image1; ?>" style="width:48%;height:auto;border-radius:8px;">
-				<img  src="<?php echo $image2; ?>" style="width:48%;height:auto;border-radius:8px;">
+				<img itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image1; ?>" style="width:48%;height:auto;border-radius:8px;">
+				<img  itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image2; ?>" style="width:48%;height:auto;border-radius:8px;">
 
 			</div>
 
 			<div class="col" >
-			<h4 style="margin-top:-5px;"><?php echo $name; ?></h4>
+			<h4 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/WebSite" itemprop="name" style="margin-top:-5px;"><?php echo $name; ?></h4>
 			<?php echo $post2 ; ?> ...
 			<br><br>
-			<a href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل دوره</a>
+			<a itemprop="url" href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل دوره</a>
 			</div>			
 			
 

@@ -2,19 +2,19 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1570;&#1585;&#1588;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;"; ?>
+<?php $page="آرشیو تصاویر"; ?>
 
-<div class="container">
+<div itemscope itemtype="http://schema.org/image" class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,12 +22,12 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
 
-				<h1 style="direction:rtl;text-align:center;">&#1570;&#1585;&#1588;&#1740;&#1608; &#1578;&#1589;&#1575;&#1608;&#1740;&#1585;</h1>
+				<h1 title="آرشیو تصاویر ssd" style="direction:rtl;text-align:center;">آرشیو تصاویر</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -58,7 +58,7 @@
 				?>
 				<li style="background-color:#fff;border-radius:7px;" >
 				<a href="<?php echo $path; ?>archive-images/<?php echo $url; ?>">
-				<img src="<?php echo $image; ?>" style="width:100%" />
+				<img itemscope itemtype="http://schema.org/image" itemprop="photo" alt="آرشیو تصاویر ssd" src="<?php echo $image; ?>" style="width:100%" />
 				<span style="font-family:BTraffic;font-size:13pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
