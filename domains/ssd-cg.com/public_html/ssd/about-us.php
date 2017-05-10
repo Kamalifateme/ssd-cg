@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری SSD به عنوان نماینده گروه مشاوران رهاورد تلاش ارغوان در منطقه مرکز و جنوب کشور، با بهره گیری از تیم مشاوران مجرب و متخصص در راستای تعالی و تحقق
+     چشم اندازمشتریان خود گام بر می دارد. ">
 	<?php include("top.php"); ?>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1583;&#1585;&#1576;&#1575;&#1585;&#1607; &#1605;&#1575;"; ?>
-<div class="container">
+<?php $page="درباره ما"; ?>
+<div itemscope itemtype="http://schema.org/Organization" class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -19,15 +21,15 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div  itemscope itemtype="http://schema.org/WebSite" itemprop="headline" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
  
 
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 style="direction:rtl;text-align:center;">&#1583;&#1585;&#1576;&#1575;&#1585;&#1607; &#1605;&#1575;</h1>
+					<h1 title="درباره ssd" style="direction:rtl;text-align:center;">درباره ما</h1>
 
-		<div class="col">
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="col">
 
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
@@ -36,16 +38,16 @@
 				$row=mysql_fetch_array($ses_sql);
 				$description=$row['description'];
 				?>
-			 <span style="font-size:12pt;color:#ffffff;text-align:justify;direction:rtl;"><?php echo $description; ?></span>
+			 <span itemscope itemtype="http://schema.org/WebSite" itemprop="review" style="font-size:12pt;color:#ffffff;text-align:justify;direction:rtl;"><?php echo $description; ?></span>
 			 
 		</div>
 			
 		</div>
 		
-		<h1 style="direction:rtl;text-align:center;">&#1605;&#1588;&#1578;&#1585;&#1740;&#1575;&#1606; &#1605;&#1575;</h1>
+		<h1 itemscope itemtype="http://schema.org/WebSite" itemprop="name" style="direction:rtl;text-align:center;" title="مشتریان ssd">مشتریان ما</h1>
 
 		
-	   <div class="cols-3" style="margin-top:30px;text-align:center;direction:rtl;">
+	   <div itemscope itemtype="http://schema.org/WebSite" itemprop="name" class="cols-3" style="margin-top:30px;text-align:center;direction:rtl;">
 
 
 				<?php
@@ -59,7 +61,7 @@
 
 				?>
 				<div class="col" style="font-size:11pt;color:#ffffff;font-family:tahoma">
-				<img src="<?php echo $image?>" style="width:100%;height:auto">
+				<img itemprop="image" alt="مشتریان ssd" src="<?php echo $image?>" style="width:100%;height:auto">
 				<br>
 				<?php echo $name; ?>
 				</div>
