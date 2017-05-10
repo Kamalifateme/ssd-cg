@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/add_work">اضافه کردن چراSSD
+		<a href="<?=base_url()?>work/add_work">اضافه کردن مجله کسب و کار
 		</a>
 		</li>
 	</ul>
@@ -25,7 +25,7 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>  اضافه کردن چراSSD</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>  اضافه کردن مجله کسب و کار</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'work/add_ssmw',$attributes); ?>

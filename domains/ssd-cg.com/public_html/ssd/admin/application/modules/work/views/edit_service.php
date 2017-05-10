@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/edit_service">ویرایش خدمات کارآفرینی
+		<a href="<?=base_url()?>work/edit_service">ویرایش استراتژی های رشد و علم فروش
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'work/edit_service',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش خدمات کارآفرینی</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش استراتژی های رشد و علم فروش</header>
 
 				<input type="hidden" name="id" value="<?=$dan->id?>">
 

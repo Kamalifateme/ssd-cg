@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/edit_fani">ویرایش فنی
+		<a href="<?=base_url()?>mosha/edit_fani">ویرایش تکنولوژی اطلاعات و فناوری نوین
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'mosha/edit_fani',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش فنی</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش تکنولوژی اطلاعات و فناوری نوین</header>
 
 				<input type="hidden" name="id" value="<?=$fani->id?>">
 

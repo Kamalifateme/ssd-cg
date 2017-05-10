@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/add_clinic">اضافه کردن کلینیک کسب وکار
+		<a href="<?=base_url()?>work/add_clinic">اضافه کردن تکنولوژی و شبکه های اجتماعی
 		</a>
 		</li>
 	</ul>
@@ -25,7 +25,7 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن کلینیک کسب وکار</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن تکنولوژی و شبکه های اجتماعی</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'work/add_clinic',$attributes); ?>

@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/edit_dan">ویرایش دانستنیهای کسب وکار
+		<a href="<?=base_url()?>work/edit_dan">ویرایش رهبری کسب و کار و دارایی ها
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'work/edit_dan',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش دانستنیهای کسب وکار</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش رهبری کسب و کار و دارایی ها</header>
 
 				<input type="hidden" name="id" value="<?=$dan->id?>">
 

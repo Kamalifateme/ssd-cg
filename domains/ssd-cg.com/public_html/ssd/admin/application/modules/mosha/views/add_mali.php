@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/add_mali">اضافه کردن مالی
+		<a href="<?=base_url()?>mosha/add_mali">اضافه کردن استراتژی و بازاریابی
 		</a>
 		</li>
 	</ul>
@@ -25,7 +25,7 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن مالی</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن استراتژی و بازاریابی</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'mosha/add_mali',$attributes); ?>

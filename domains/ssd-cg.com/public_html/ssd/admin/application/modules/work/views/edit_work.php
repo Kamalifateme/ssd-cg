@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/edit_work">ویرایش چرا SSD
+		<a href="<?=base_url()?>work/edit_work">ویرایش مجله کسب و کار
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'work/edit_ssmw',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش چرا SSD</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش مجله کسب و کار</header>
 
 				<input type="hidden" name="id" value="<?=$works->id?>">
 				<div class="form-group" style="padding:15px;">

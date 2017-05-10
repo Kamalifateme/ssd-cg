@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/edit_mosha">ویرایش چرا SSD
+		<a href="<?=base_url()?>mosha/edit_mosha">ویرایش سازمان
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'mosha/edit_ssmm',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش چرا SSD</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش سازمان</header>
 
 				<input type="hidden" name="id" value="<?=$moshav->id?>">
 				<div class="form-group" style="padding:15px;">

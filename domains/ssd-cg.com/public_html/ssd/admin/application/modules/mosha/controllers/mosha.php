@@ -72,7 +72,7 @@ class Mosha extends MX_Controller {
 			$this->db->insert('ssmm', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اضافه کردن چراSSD با موفقیت انجام شد');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید.');
 			redirect('mosha');
 		}
 		}else{
@@ -117,7 +117,7 @@ class Mosha extends MX_Controller {
 			$this->db->where('id',$id)->update('ssmm', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('ویرایش چرا SSD با موفقیت انجام شد'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('mosha');
 		}
 	}else{
@@ -177,7 +177,7 @@ class Mosha extends MX_Controller {
 			$this->db->insert('fani', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اطلاعات فنی با موفقیت ثبت گردید');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید.');
 			redirect('mosha');
 		}
 		}else{
@@ -226,7 +226,7 @@ class Mosha extends MX_Controller {
 			$this->db->where('id',$id)->update('fani', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('اطلاعات فنی با موفقیت ویرایش گردید'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('mosha');
 		}
 	}else{
@@ -287,7 +287,7 @@ class Mosha extends MX_Controller {
 			$this->db->insert('man', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اطلاعات مدیریت با موفقیت ثبت گردید');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید.');
 			redirect('mosha');
 		}
 		}else{
@@ -336,7 +336,7 @@ class Mosha extends MX_Controller {
 			$this->db->where('id',$id)->update('man', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('اطلاعات فنی با موفقیت ویرایش گردید'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('mosha');
 		}
 	}else{
@@ -398,7 +398,7 @@ class Mosha extends MX_Controller {
 			$this->db->insert('mali', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اطلاعات مالی با موفقیت ثبت گردید');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید.');
 			redirect('mosha');
 		}
 		}else{
@@ -447,7 +447,7 @@ class Mosha extends MX_Controller {
 			$this->db->where('id',$id)->update('mali', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('اطلاعات مالی با موفقیت ویرایش گردید'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('mosha');
 		}
 	}else{

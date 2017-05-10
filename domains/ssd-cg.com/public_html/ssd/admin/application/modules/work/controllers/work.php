@@ -72,7 +72,7 @@ class Work extends MX_Controller {
 			$this->db->insert('ssmw', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اضافه کردن چراSSD با موفقیت انجام شد');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید');
 			redirect('work');
 		}
 		}else{
@@ -117,7 +117,7 @@ class Work extends MX_Controller {
 			$this->db->where('id',$id)->update('ssmw', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('ویرایش چرا SSD با موفقیت انجام شد'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('work');
 		}
 	}else{
@@ -177,7 +177,7 @@ function add_dan()
 			$this->db->insert('dan', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'دانستنیهای کسب و کار با موفقیت ثبت شد');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید');
 			redirect('work');
 		}
 		}else{
@@ -226,7 +226,7 @@ function add_dan()
 			$this->db->where('id',$id)->update('dan', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('دانستنیهای کسب و کار با موفقیت ویرایش گردید'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('work');
 		}
 	}else{
@@ -287,7 +287,7 @@ function add_clinic()
 			$this->db->insert('clinic', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message', 'اطلاعات کلینیک کسب و کار با موفقیت ثبت شد');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت گردید');
 			redirect('work');
 		}
 		}else{
@@ -336,7 +336,7 @@ function add_clinic()
 			$this->db->where('id',$id)->update('clinic', $form_data); 
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message',lang('اطلاعات کلینیک کسب و کار با موفقیت ویرایش گردید'));
+			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('work');
 		}
 	}else{

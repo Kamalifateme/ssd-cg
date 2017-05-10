@@ -17,10 +17,10 @@
 	<div class="row" style="direction:rtl;">
 	<div class="col-lg-12">
 	<ul class="nav nav-tabs" >
-    <li class="active"><a data-toggle="tab" href="#one">چرا SSD</a></li>
-    <li><a data-toggle="tab" href="#two">فنی</a></li>
-    <li><a data-toggle="tab" href="#three">مالی</a></li>
-    <li><a data-toggle="tab" href="#four">مدیریتی</a></li>
+    <li class="active"><a data-toggle="tab" href="#one">سازمان</a></li>
+    <li><a data-toggle="tab" href="#two">تکنولوژی اطلاعات و فناوری نوین</a></li>
+    <li><a data-toggle="tab" href="#three">استراتژی و بازاریابی</a></li>
+    <li><a data-toggle="tab" href="#four">بهبود عملکرد</a></li>
 
 	</ul>
 	</div>

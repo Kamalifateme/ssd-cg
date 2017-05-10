@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/add_man">اضافه کردن مدیریتی
+		<a href="<?=base_url()?>mosha/add_man">اضافه کردن بهبود عملکرد
 		</a>
 		</li>
 	</ul>
@@ -25,7 +25,7 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن مدیریتی</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن بهبود عملکرد</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'mosha/add_man',$attributes); ?>

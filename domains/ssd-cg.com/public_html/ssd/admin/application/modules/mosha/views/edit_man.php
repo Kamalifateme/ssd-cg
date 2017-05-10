@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/edit_man">ویرایش مدیریتی
+		<a href="<?=base_url()?>mosha/edit_man">ویرایش بهبود عملکرد
 		</a>
 		</li>
 	</ul>
@@ -32,7 +32,7 @@
              echo form_open(base_url().'mosha/edit_man',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش فنی</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش بهبود عملکرد</header>
 
 				<input type="hidden" name="id" value="<?=$man->id?>">
 

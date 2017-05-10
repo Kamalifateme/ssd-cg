@@ -75,7 +75,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', 'اطلاعات مربوط به SSD ثبت گردید');
+			$this->session->set_flashdata('message', 'اطلاعات مربوطه با موفقیت ثبت گردید');
 
 
 			redirect('tutorial');
@@ -123,7 +123,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','اطلاعات SSD با موفقیت ویرایش گردید');
+			$this->session->set_flashdata('message','اطلاعات با موفقیت ویرایش گردید');
 			redirect('tutorial');
 		}
 	}else{
@@ -148,7 +148,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('simt');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','اطلاعات SSD با موفقیت حذف گردید');
+					$this->session->set_flashdata('message','اطلاعات با موفقیت حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -182,7 +182,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', 'اطلاعات مربوط به دوره های یادگیری ثبت گردید');
+			$this->session->set_flashdata('message', 'اطلاعات مربوطه با موفقیت ثبت گردید');
 
 
 			redirect('tutorial');
@@ -233,7 +233,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','ویرایش دوره یادگیری با موفقیت انجام گردید');
+			$this->session->set_flashdata('message','ویرایش با موفقیت انجام گردید');
 			redirect('tutorial');
 		}
 	}else{
@@ -259,7 +259,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('learning');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
+					$this->session->set_flashdata('message','اطلاعات با موفقیت حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -300,7 +300,7 @@ class Tutorial extends MX_Controller {
 			$this->session->set_flashdata('response_status', 'success');
 			
 			
-			$this->session->set_flashdata('message', 'در حال ثبت نام با موفقیت انجام شد');
+			$this->session->set_flashdata('message', 'اطلاعات با موفقیت ثبت شد');
 
 
 			redirect('tutorial');
@@ -355,7 +355,7 @@ class Tutorial extends MX_Controller {
 			$des=$this->input->post('description');
 
 			$this->session->set_flashdata('response_status', 'success');
-			$this->session->set_flashdata('message','ویرایش در حال ثبت نام با موفقیت انجام شد');
+			$this->session->set_flashdata('message','ویرایش با موفقیت انجام شد');
 			redirect('tutorial');
 		}
 	}else{
@@ -381,7 +381,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('sabt');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','حذف در حال ثبت نام با موفقیت انجام شد');
+					$this->session->set_flashdata('message','حذف با موفقیت انجام شد');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -492,7 +492,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('archiveo');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
+					$this->session->set_flashdata('message','اطلاعات با موفقیت حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);
@@ -604,7 +604,7 @@ class Tutorial extends MX_Controller {
 					$this->db->where('id',$id)->delete('archiveg');
 
 					$this->session->set_flashdata('response_status', 'success');
-					$this->session->set_flashdata('message','اطلاعات دوره یادگیری حذف گردید');
+					$this->session->set_flashdata('message','اطلاعات با موفقیت حذف گردید');
 					redirect($this->input->post('r_url'));
 		}else{
 			$data['id'] = $this->uri->segment(3);

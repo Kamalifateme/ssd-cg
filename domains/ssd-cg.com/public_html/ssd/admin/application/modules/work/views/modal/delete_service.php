@@ -1,7 +1,7 @@
 <div class="modal-dialog animated fadeInDownBig">
 	<div class="modal-content" style="height: 215px;width:50%;margin-right:25%;margin-left:25%;">
 		<div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button> 
-		<h4 class="modal-title">حذف خدمات کارآفرینی</h4>
+		<h4 class="modal-title">حذف استراتژی های رشد و علم فروش</h4>
 		</div><?php
 			echo form_open(base_url().'work/delete_service'); ?>
 		<div class="modal-body">
