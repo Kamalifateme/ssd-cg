@@ -266,8 +266,10 @@
 		
 		</section>
 <section id="contact">
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="contactPoint" class="cols-2" style="margin-top:30px;">
 				
 				<div class="col" style="text-align:right;">
+					<h1 title="ارتباط با گروه حرفه ای مشاوران کارآفرینی و کسب و کار">ارتباط با ما</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -284,9 +286,13 @@
 				$ins=$row['ins'];
 				?>
 				
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="address" style="direction:rtl;"><i class="fa fa-map-marker"></i> <?php echo $address; ?></div><br>
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="telephone" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone; ?></div><br>
 				<?php if($phone4==""){}else{?> 
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="telephone" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone4; ?></div><br>
                                 <?php } ?>
 				<?php if($phone5==""){}else{?> 
+				<div  itemscope itemtype="http://schema.org/Organization" itemprop="telephone" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone5; ?></div><br>
                                 <?php } ?>
 				<?php if($phone6==""){}else{?> 
 				<div  itemscope itemtype="http://schema.org/Organization" itemprop="isPartOf" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone6; ?></div><br>
