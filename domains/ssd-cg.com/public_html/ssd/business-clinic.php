@@ -9,12 +9,12 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1705;&#1604;&#1740;&#1606;&#1740;&#1705; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;"; ?>
+<?php $page="فناوری شبکه های اجتماعی"; ?>
 
-<div class="container">
+<div itemscope itemtype="http://schema.org/Organization class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,12 +22,12 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite itemprop="headline" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
 
-				<h1 style="direction:rtl;text-align:center;">&#1705;&#1604;&#1740;&#1606;&#1740;&#1705; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h1>
+				<h1 title="فناوری شبکه های اجتماعی | تکنولوژی | social media" style="direction:rtl;text-align:center;">فناوری شبکه های اجتماعی</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -56,9 +56,9 @@
 				<li  style="background-color:#fff;border-radius:7px;" >
 				<a href="<?php echo $path; ?>business-clinic/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
-				<img src="<?php echo $image; ?>" style="width:100%" />
+				<img itemscope itemtype="http://schema.org/image" itemprop="photo" alt="آرشیو تصاویر کلینیک کسب و کار ssd" src="<?php echo $image; ?>" style="width:100%" />
 				<?php } ?>
-				<span style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
+				<span itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
 				<?php } ?>	

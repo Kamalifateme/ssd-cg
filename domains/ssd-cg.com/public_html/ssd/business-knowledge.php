@@ -2,19 +2,19 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1583;&#1575;&#1606;&#1587;&#1578;&#1606;&#1740;&#1607;&#1575;&#1740; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;"; ?>
+<?php $page="رهبری کسب و کار و دارایی ها"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,12 +22,12 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite" itemprop="headline" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
 
-				<h1 style="direction:rtl;text-align:center;">&#1583;&#1575;&#1606;&#1587;&#1578;&#1606;&#1740;&#1607;&#1575;&#1740; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h1>
+				<h1 itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" title="رهبری کسب و کار و دارایی ها" style="direction:rtl;text-align:center;">رهبری کسب و کار و دارایی ها</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -58,7 +58,7 @@
 				<?php if($image=="") {} else { ?>
 				<img src="<?php echo $image; ?>" style="width:100%" />
 				<?php } ?>
-				<span style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
+				<span itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
 				<?php } ?>	

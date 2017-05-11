@@ -17,11 +17,10 @@
     -o-transition: all 300ms linear;
     -ms-transition: all 300ms linear;
     transition: all 300ms linear;
-	border-radius:6px;
+border-radius:6px;
 }
+{
 
-.ent-mmenus li {
-	 height: 230px;
 }
 
 .ca-menu li a{
@@ -58,10 +57,6 @@
 	direction:rtl;padding:10px;      margin-top: 165%;
     color: #000;
 }
-.ent-mmenus .ca-main{
-	font-size: 25px;
-	margin-top: 90%;
-}
 .ca-sub{
     text-align:center;
     font-size: 17px;
@@ -74,12 +69,9 @@
     transition: all 200ms linear;
 	direction:rtl;
 	text-align:justify;
-	margin-top:90%;
+		margin-top:90%;
 }
-.ent-mmenus .ca-sub{
-	font-size: 15px;
-	margin-top: 10%;	
-}
+
 .ca-menu #learning
 {
 	background-color:#fff;
@@ -103,7 +95,7 @@
 
 .ca-menu #education
 {
-background-color:#fff;
+	background-color:#fff;
     background: #ffffff url(../menu/Chera-SSD.png) center center;
     background-size: cover;
 }
@@ -130,26 +122,16 @@ background-color:#fff;
 }
 .ca-menu #reg:hover{
     background: #ffffff url(../menu/sabt2.png) center center;
-	 background-size: cover;
+	background-size: cover;
 }
 .ca-menu #mali
 {
-background-color:#fff;
-    background: #ffffff url(../menu/mail2.png) center center;
+	background-color:#fff;
+    background: #ffffff url(../menu/marketing_strategy.png) center center;
     background-size: cover;
 }
 .ca-menu #mali:hover{
-    background: #ffffff url(../menu/mail.png) center center;
-	background-size: cover;
-}
-.ca-menu #fainance
-{
-background-color:#fff;
-    background: #ffffff url(../menu/mail2.png) center center;
-    background-size: cover;
-}
-.ca-menu #fainance:hover{
-    background: #ffffff url(../menu/mail.png) center center;
+    background: #ffffff url(../menu/marketing_strategy1.png) center center;
 	background-size: cover;
 }
 .ca-menu #archive
@@ -184,104 +166,62 @@ background-color:#fff;
 	background-size: cover;
 }
 
-.ca-menu #lead
+.ca-menu #org
 {
 	background-color:#fff;
-    background: #ffffff url(../menu/lead.png) center center;
+    background: #ffffff url(../menu/ORGANIZATION.png) center center;
     background-size: cover;
 }
-.ca-menu #lead:hover{
+.ca-menu #org:hover{
+    background: #ffffff url(../menu/ORGANIZATION1.png) center center;
+	background-size: cover;
+}
+
+.ca-menu #dan
+{
+	background-color:#fff;
+    background: #ffffff url(../menu/dan1.png) center center;
+    background-size: cover;
+}
+.ca-menu #dan:hover{
     background: #ffffff url(../menu/dan2.png) center center;
 	background-size: cover;
 }
 
-.ca-menu #grow
+.ca-menu #clinic
 {
 	background-color:#fff;
-    background: #ffffff url(../menu/growth.png) center center;
+    background: #ffffff url(../menu/Technology.png) center center;
     background-size: cover;
 }
-.ca-menu #grow:hover{
-    background: #ffffff url(../menu/clinic2.png) center center;
+.ca-menu #clinic:hover{
+    background: #ffffff url(../menu/Technology1.png) center center;
 	background-size: cover;
 }
 
-.ca-menu #busi
+.ca-menu #ser
 {
 	background-color:#fff;
     background: #ffffff url(../menu/ser2.png) center center;
     background-size: cover;
 }
-.ca-menu #busi:hover{
+.ca-menu #ser:hover{
     background: #ffffff url(../menu/ser1.png) center center;
 	background-size: cover;
 }
 
-.ca-menu #mark
-{
-	background-color:#fff;
-    background: #ffffff url(../menu/marketing.png) center center;
-    background-size: cover;
-}
-.ca-menu #mark:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
-	background-size: cover;
-}
-
-.ca-menu #tech
-{
-	background-color:#fff;
-    background: #ffffff url(../menu/technology.png) center center;
-    background-size: cover;
-}
-.ca-menu #tech:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
-	background-size: cover;
-}
-
-.ca-menu #social
-{
-	background-color:#fff;
-    background: #ffffff url(../menu/social.png) center center;
-    background-size: cover;
-}
-.ca-menu #social:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
-	background-size: cover;
-}
-
-.ca-menu #entre
+.ca-menu #entrepreneur
 {
 	background-color:#fff;
     background: #ffffff url(../menu/entrepreneur.png) center center;
     background-size: cover;
 }
-.ca-menu #entre:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
+.ca-menu #entrepreneur:hover{
+    background: #ffffff url(../menu/entrepreneur1.png) center center;
 	background-size: cover;
 }
 
-.ca-menu #franch
-{
-	background-color:#fff;
-    background: #ffffff url(../menu/franchise.png) center center;
-    background-size: cover;
-}
-.ca-menu #franch:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
-	background-size: cover;
-}
 
-.ca-menu #mag
-{
-	background-color:#fff;
-    background: #ffffff url(../menu/magazines.png) center center;
-    background-size: cover;
-}
-.ca-menu #mag:hover{
-    background: #ffffff url(../menu/ser1.png) center center;
-	background-size: cover;
-}
 
 .ca-menu li:hover .ca-icon{
     color: #fff;
@@ -294,30 +234,13 @@ width:185px;opacity:1;
     color: #fff;
     -webkit-animation: moveFromLeftRotate 300ms ease;
     -moz-animation: moveFromLeftRotate 300ms ease;
-    -ms-animation: moveFromLeftRotate 300ms ease;
-	margin-top:70%;
+    -ms-animation: moveFromLeftRotate 300ms ease;margin-top:70%;
 }
 .ca-menu li:hover .ca-sub{
     color: #000;
     -webkit-animation: moveFromBottom 500ms ease;
     -moz-animation: moveFromBottom 500ms ease;
-    -ms-animation: moveFromBottom 500ms ease;
-	margin-top:30%;
-
-}
-.ent-mmenus li:hover .ca-main{
-    color: #fff;
-    -webkit-animation: moveFromLeftRotate 300ms ease;
-    -moz-animation: moveFromLeftRotate 300ms ease;
-    -ms-animation: moveFromLeftRotate 300ms ease;
-	margin-top:5%;
-}
-.ent-mmenus li:hover .ca-sub{
-    color: #000;
-    -webkit-animation: moveFromBottom 500ms ease;
-    -moz-animation: moveFromBottom 500ms ease;
-    -ms-animation: moveFromBottom 500ms ease;
-	margin-top:5%;
+    -ms-animation: moveFromBottom 500ms ease;margin-top:30%;
 
 }
 @-webkit-keyframes moveFromLeftRotate{
@@ -380,8 +303,7 @@ width:185px;opacity:1;
     -o-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
     transition: all 200ms linear;
-	direction:rtl;padding:10px;
-	margin-top: 110%;
+	direction:rtl;padding:10px;      margin-top: 110%;
     color: #000;
 }
 .ca-sub{
@@ -396,6 +318,6 @@ width:185px;opacity:1;
     transition: all 200ms linear;
 	direction:rtl;
 	text-align:justify;
-	margin-top:90%;
+		margin-top:90%;
 }
 }

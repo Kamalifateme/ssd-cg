@@ -9,7 +9,7 @@
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1582;&#1583;&#1605;&#1575;&#1578; &#1705;&#1575;&#1585;&#1570;&#1601;&#1585;&#1740;&#1606;&#1740;"; ?>
+<?php $page="استراتژی های رشد و علم فروش"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -27,7 +27,7 @@
 
 	
 
-					<h1 style="direction:rtl;text-align:center;">&#1582;&#1583;&#1605;&#1575;&#1578; &#1705;&#1575;&#1585;&#1570;&#1601;&#1585;&#1740;&#1606;&#1740; &#1608; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</h1>
+					<h1 style="direction:rtl;text-align:center;">استراتژی های رشد و علم فروش</h1>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");

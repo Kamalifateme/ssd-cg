@@ -2,19 +2,19 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1705;&#1604;&#1740;&#1606;&#1740;&#1705; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;"; ?>
+<?php $page="فناوری شبکه های اجتماعی"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,13 +22,13 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/WebSite" itemprop="headline" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
 
 <br><br>
-												<a href="<?php echo $path; ?>business-clinic" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:320px;text-align:center;padding:5px;">&#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1589;&#1601;&#1581;&#1607; &#1705;&#1604;&#1740;&#1606;&#1740;&#1705; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</a><br>
+												<a itemscope itemtype="http://schema.org/WebSite" itemprop="url" href="<?php echo $path; ?>business-clinic" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:320px;text-align:center;padding:5px;">بازگشت به صفحه فناوری شبکه های اجتماعی</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
@@ -54,9 +54,9 @@
 
 				?>
 				<br>
-				<span style="font-size:20pt;"><?php echo $name; ?></span>
+				<span itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
-				<span style="font-size:15pt;color:#791057"> &#1578;&#1593;&#1583;&#1575;&#1583; &#1576;&#1575;&#1586;&#1583;&#1740;&#1583; : <?php echo $viwe; ?></span>
+				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
 				<br>
 				<span style="font-size:14pt;font-family:BTraffic"><?php echo $description; ?></span><br>
 								<?php if($image==""){}else { ?>
@@ -64,7 +64,7 @@
 				<?php } ?>
 				<br>
 								<?php if($file==""){}else { ?>
-				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">&#1583;&#1575;&#1606;&#1604;&#1608;&#1583; &#1601;&#1575;&#1740;&#1604; &#1590;&#1605;&#1740;&#1605;&#1607;</a><br>
+				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دانلود فایل ضمیمه</a><br>
 				<?php } ?>
 				</div>
 
