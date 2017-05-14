@@ -2,19 +2,19 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 <link href="<?php echo $path; ?>css/jquery.bxslider.css" rel="stylesheet" />
 
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;"; ?>
+<?php $page="اخبار و رویدادها"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,7 +22,7 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	<div class="home-slider-wrapper">
@@ -41,7 +41,7 @@
 				?>
                   
                      <?php if($link=="") { ?>
-                     <li style="margin:0px;padding:0px;"><center><img src="<?php echo $slider; ?>" title="<?php echo $title; ?>" /></center></li>
+                     <li style="margin:0px;padding:0px;"><center><img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $slider; ?>" title="<?php echo $title; ?>" /></center></li>
                       <?php } else { ?>
                      <li style="margin:0px;padding:0px;"><center><a href="<?php echo $link; ?>"><img src="<?php echo $slider; ?>" title="<?php echo $title; ?>" /></a><center>
 
@@ -60,7 +60,7 @@
 		
 		<div class="col">
 			<div class="box" style="height:270px">
-			<div class="title">&#1575;&#1582;&#1576;&#1575;&#1585; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</div>
+			<div itemscope itemtype="http://schema.org/isPartOf" itemprop="news" class="title">اخبار کسب و کار</div>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -75,7 +75,7 @@
 			<div style="display:list-item;list-style-type:disc;width:95%;text-align:right"><a href="<?php echo $url; ?>" target="_blank" style="font-family:BTraffic;color:#000;display:block;padding-top:5px;padding-bottom:5px;"><?php echo $title; ?> </a></div>
 	</center>			
 <?php } ?>			
-					<a target="_blank" href="<?php echo $path; ?>newsall2" style="color:#a73b87;font-family:BTraffic">&#1606;&#1605;&#1575;&#1740;&#1588; &#1578;&#1605;&#1575;&#1605; &#1575;&#1582;&#1576;&#1575;&#1585;</a>
+					<a target="_blank" href="<?php echo $path; ?>newsall2" style="color:#a73b87;font-family:BTraffic">نمایش تمام اخبار</a>
 
 				</div>
 
@@ -83,7 +83,7 @@
 		
 		<div class="col">
 			<div class="box">
-			<div class="title">&#1575;&#1582;&#1576;&#1575;&#1585; SSD</div>
+			<div class="title">اخبار SSD</div>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -97,7 +97,7 @@
 			<div style="display:list-item;list-style-type:disc;width:95%;text-align:right"><a href="<?php echo $path; ?>news/<?php echo $url; ?>" style="color:#000;display:block;padding-top:5px;padding-bottom:5px;font-family:BTraffic"><?php echo $title; ?> <span style="font-size:9pt;color:#afafaf;font-family:BTraffic"><?php echo $date_a; ?></span></a></div>
 	</center>			
 <?php } ?>
-				<a href="<?php echo $path; ?>newsall" style="color:#a73b87;font-family:BTraffic">&#1606;&#1605;&#1575;&#1740;&#1588; &#1578;&#1605;&#1575;&#1605; &#1575;&#1582;&#1576;&#1575;&#1585;</a>
+				<a itemscope itemtype="http://schema.org/url" itemprop="news" href="<?php echo $path; ?>newsall" style="color:#a73b87;font-family:BTraffic">نمایش تمام اخبار</a>
 			</div>
 
 		</div>

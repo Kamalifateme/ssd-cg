@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
@@ -11,10 +11,10 @@
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
 <?php $page="آرشیو تصاویر"; ?>
 
-<div itemscope itemtype="http://schema.org/image" class="container">
+<div itemscope itemtype="http://schema.org/photo" itemprop="container" class="container">
 	<div id="page" class="hfeed site">
 
-		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,7 +22,7 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" class="entry-content" >
+	<div itemscope itemtype="http://schema.org/isPartOf" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
@@ -58,7 +58,7 @@
 				?>
 				<li style="background-color:#fff;border-radius:7px;" >
 				<a href="<?php echo $path; ?>archive-images/<?php echo $url; ?>">
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" alt="آرشیو تصاویر ssd" src="<?php echo $image; ?>" style="width:100%" />
+				<img itemscope itemtype="http://schema.org/photo" itemprop="archive-images" alt="آرشیو تصاویر ssd" src="<?php echo $image; ?>" style="width:100%" />
 				<span style="font-family:BTraffic;font-size:13pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>

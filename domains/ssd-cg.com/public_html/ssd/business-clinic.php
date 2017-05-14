@@ -11,10 +11,10 @@
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
 <?php $page="فناوری شبکه های اجتماعی"; ?>
 
-<div itemscope itemtype="http://schema.org/Organization class="container">
+<div itemscope itemtype="http://schema.org/WebSite class="container">
 	<div id="page" class="hfeed site">
 
-		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,7 +22,7 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div itemscope itemtype="http://schema.org/WebSite itemprop="headline" class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline itemprop="social-media" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
@@ -54,11 +54,11 @@
 
 				?>
 				<li  style="background-color:#fff;border-radius:7px;" >
-				<a href="<?php echo $path; ?>business-clinic/<?php echo $url; ?>">
+				<a itemscope itemtype="http://schema.org/url" itemprop="business-clinic" href="<?php echo $path; ?>business-clinic/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" alt="آرشیو تصاویر کلینیک کسب و کار ssd" src="<?php echo $image; ?>" style="width:100%" />
+				<img itemscope itemtype="http://schema.org/photo" itemprop="business-clinic" alt="آرشیو تصاویر کلینیک کسب و کار ssd" src="<?php echo $image; ?>" style="width:100%" />
 				<?php } ?>
-				<span itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="business-clinic" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
 				<?php } ?>	

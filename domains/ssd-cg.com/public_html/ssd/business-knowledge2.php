@@ -14,7 +14,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,13 +22,13 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div itemscope itemtype="http://schema.org/WebSite" itemprop="headline" class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
 
 <br><br>
-				<a itemscope itemtype="http://schema.org/WebSite" itemprop="url" href="<?php echo $path; ?>business-knowledge" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به صفحه رهبری کسب و کار و دارایی ها</a><br>
+				<a itemscope itemtype="http://schema.org/url" itemprop="business-knowledge" href="<?php echo $path; ?>business-knowledge" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به صفحه رهبری کسب و کار و دارایی ها</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
@@ -54,13 +54,13 @@
 
 				?>
 				<br>
-				<span itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" style="font-size:20pt;"><?php echo $name; ?></span>
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
 				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
 				<br>
 				<span style="font-size:14pt;font-family:BTraffic;"><?php echo $description; ?></span><br><br>
 								<?php if($image==""){}else { ?>
-								<img src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
+								<img itemscope itemtype="http://schema.org/photo" itemprop="business-knowledge" src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
 				<?php } ?>
 								<br>
 								<?php if($file==""){}else { ?>

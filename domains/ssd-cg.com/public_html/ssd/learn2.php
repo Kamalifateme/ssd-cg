@@ -2,17 +2,17 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740;"; ?>
+<?php $page="دوره های یادگیری"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -20,10 +20,10 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 <br><br>
-				<a href="<?php echo $path; ?>learning-courses" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;">&#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740;</a><br>
+				<a itemscope itemtype="http://schema.org/url" itemprop="learning-courses" href="<?php echo $path; ?>learning-courses" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;">بازگشت به دوره های یادگیری</a><br>
 
 <div id="nestedAccordion">
 				<?php
@@ -43,7 +43,7 @@
 				$id=$row['id'];
 
 				?>
-			<h2><?php echo $name; ?></h2>
+			<h2 title="دوره های یادگیری | دوره آموزشی رایگان و ارزان | دوره یادگیری رایگان و ارزان"><?php echo $name; ?></h2>
 				<div>
 				<?php 
 				$ses_sql2=mysql_query("select * from  fx_learning where title_sub='$id' ") or die(mysql_error()) ;
@@ -52,7 +52,7 @@
 				$description=$row2['description'];
 				$name=$row2['name'];
 				?>
-					<h3><?php echo $name; ?></h3>
+					<h3 title="نام دوره آموزشی رایگان و ارزان"><?php echo $name; ?></h3>
 					<div>
 					<?php echo $description; ?>	
 					</div>

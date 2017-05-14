@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
@@ -12,7 +12,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -20,7 +20,7 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 						<h1 style="direction:rtl;text-align:center;">دوره های یادگیری</h1>

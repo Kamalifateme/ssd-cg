@@ -2,17 +2,17 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta itemscope itemtype="http://schema.org/WebSite" itemprop="headline" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
 <?php $page="آموزش آنلاین"; ?>
 
-<div itemscope itemtype="http://schema.org/Product" class="container">
+<div itemscope itemtype="http://schema.org/isPartOf" itemprop="container" class="container">
 	<div id="page" class="hfeed site">
 
-		<div itemscope itemtype="http://schema.org/WebSite" itemprop="hasPart" class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -20,11 +20,11 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div itemscope itemtype="http://schema.org/WebSite" itemprop="isPartOf"  class="entry-content" >
+	<div itemscope itemtype="http://schema.org/isPartOf" itemprop="content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 <br><br>
-				<a href="<?php echo $path; ?>reg" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به آموزش آنلاین</a><br>
+				<a itemscope itemtype="http://schema.org/url" itemprop="onlinecourse" href="<?php echo $path; ?>reg" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;"> بازگشت به آموزش آنلاین</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
@@ -58,14 +58,14 @@
 			
 			
 			<div class="col">
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image1; ?>" width="300px;height:auto">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image1; ?>" width="300px;height:auto">
 				<br>
-								<h3 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/WebSite" itemprop="name" style="margin:0px;"><?php echo $name; ?></h3>
+								<h3 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="educationcourse" style="margin:0px;"><?php echo $name; ?></h3>
 
 				<div style="font-family:BTraffic;"><?php echo $description; ?></div>
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image2; ?>" >
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image3; ?>" >
-				<img itemscope itemtype="http://schema.org/image" itemprop="photo" src="<?php echo $image4; ?>" >
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image2" src="<?php echo $image2; ?>" >
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image3" src="<?php echo $image3; ?>" >
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image4" src="<?php echo $image4; ?>" >
 
 			</div>
 					

@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topSite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
@@ -14,7 +14,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -22,11 +22,11 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="headSite" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	<br><br>
-												<a href="<?php echo $path; ?>management" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;"> بازگشت به صفحه بهبود عملکرد</a><br>
+												<a itemscope itemtype="http://schema.org/url" itemprop="management" href="<?php echo $path; ?>management" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;"> بازگشت به صفحه بهبود عملکرد</a><br>
 
 				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
@@ -53,15 +53,15 @@
 				?>
 				<span style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
-				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
 				<br>
 				<span style="font-family:BTraffic;font-size:14pt;"><?php echo $description; ?></span><br><br>
 				<?php if($image==""){}else { ?>
-								<img src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
+								<img itemscope itemtype="http://schema.org/photo" itemprop="management2Image" src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
 				<?php } ?>
 																<br>
 								<?php if($file==""){}else { ?>
-				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">&#1583;&#1575;&#1606;&#1604;&#1608;&#1583; &#1601;&#1575;&#1740;&#1604; &#1590;&#1605;&#1740;&#1605;&#1607;</a><br>
+				<a itemscope itemtype="http://schema.org/url" itemprop="downloadfile" href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;"></دریافت فایل ضمیمه><br>
 				<?php } ?>
 				</div>
 
