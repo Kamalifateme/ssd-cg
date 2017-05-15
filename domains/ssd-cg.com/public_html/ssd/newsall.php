@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
@@ -11,7 +11,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -19,17 +19,17 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/isPartOf" itemprop="itemprop="topOfSiteHead" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
-					<h1>&#1578;&#1605;&#1575;&#1605; &#1575;&#1582;&#1576;&#1575;&#1585;</h1>
+					<h1 title="جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd">تمام اخبار</h1>
 
 		<div class="cols-1" style="margin-top:-10px;">
 
 		<div class="col">
 			<div class="box">
-			<div class="title">&#1575;&#1582;&#1576;&#1575;&#1585; SSD</div>
+			<div class="title">اخبار SSD</div>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
@@ -39,7 +39,7 @@
 				$title=$row['title'];
 				$url=$row['url'];$date_a=$row['date_a'];
 				?>
-			<div><a href="<?php echo $path; ?>news/<?php echo $url; ?>" style="color:#000;display:block;padding-top:5px;padding-bottom:5px;"><?php echo $title; ?> <span style="font-size:9pt;color:#afafaf"><?php echo $date_a; ?></span></a></div>
+			<div><a itemscope itemtype="http://schema.org/url" itemprop="itemprop="newsssd" href="<?php echo $path; ?>news/<?php echo $url; ?>" style="color:#000;display:block;padding-top:5px;padding-bottom:5px;"><?php echo $title; ?> <span style="font-size:9pt;color:#afafaf"><?php echo $date_a; ?></span></a></div>
 				<?php } ?>
 			</div>
 		</div>

@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
@@ -11,7 +11,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -19,11 +19,11 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/isPartOf" itemprop="itemprop="topOfSiteHead" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
-					<h1>&#1578;&#1605;&#1575;&#1605; &#1575;&#1582;&#1576;&#1575;&#1585;</h1>
+					<h1 title="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd">تمام اخبار</h1>
 
 		<div class="cols-1" style="margin-top:-10px;">
 
@@ -31,7 +31,7 @@
 		
 		<div class="col">
 			<div class="box">
-			<div class="title">&#1575;&#1582;&#1576;&#1575;&#1585; &#1705;&#1587;&#1576; &#1608; &#1705;&#1575;&#1585;</div>
+			<div itemscope itemtype="http://schema.org/isPartOf" itemprop="itemprop="newsall" class="title">اخبار کسب و کار</div>
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");

@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<?php include("top.php"); ?>
 </head>
 
@@ -11,7 +11,7 @@
 <div class="container">
 	<div id="page" class="hfeed site">
 
-		<div class="navigation-toggler"><i></i></div>
+		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="navigation" class="navigation-toggler"><i></i></div>
 		<?php include("aside.php"); ?>
 
 	
@@ -19,7 +19,7 @@
 		<div id="top" class="site-content" role="main">
 		<section id="intro" style="padding-top:0px;">	
 
-	<div class="entry-content" >
+	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
 	
@@ -76,9 +76,9 @@
 							 <div style="margin-bottom:3px;width:100%;">
 							 <div class="logg2" style="padding:5px;margin-left:6px;font-family:BYekan,tahoma;direction:rtl;text-align:right">
 						
-						<img src="<?php echo $image; ?>" style="width:300px;height:auto" class="img-rounded" alt="<?php echo $title; ?>" style="width:60%;height:auto;margin-bottom:-10px;margin-right:20%;">
-						<div class="ndrug"><h2 style="font-family:iranian;font-size:13pt;margin-bottom:-10px;"><?php echo $title; ?></h2></div><br>
-						<span style="font-family:iranian;font-size:11pt;">تعداد بازدید : <?php echo $viwe; ?></span> <span style="font-family:iranian;font-size:11pt;margin-right:30px;">تاریخ : <?php echo $date; ?></span>
+						<img itemscope itemtype="http://schema.org/photo" itemprop="newsimg" src="<?php echo $image; ?>" style="width:300px;height:auto" class="img-rounded" alt="<?php echo $title; ?>" style="width:60%;height:auto;margin-bottom:-10px;margin-right:20%;">
+						<div class="ndrug"><h2 title="اخبار روز اقتصادی ssd |اخبار روز کسب و کار و کارآفرینی ssd" style="font-family:iranian;font-size:13pt;margin-bottom:-10px;"><?php echo $title; ?></h2></div><br>
+						<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit1" style="font-family:iranian;font-size:11pt;">تعداد بازدید : <?php echo $viwe; ?></span> <span style="font-family:iranian;font-size:11pt;margin-right:30px;">تاریخ : <?php echo $date; ?></span>
 						
 						<div>
 

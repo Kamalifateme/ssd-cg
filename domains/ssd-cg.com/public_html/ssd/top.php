@@ -1,5 +1,5 @@
 	<title>گروه مشاوران SSD</title>
-	<meta name="description" content="Iran Web Festival" />
+	<meta name="description" content="Iran Web Festival | گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd" />
 	<meta name="keywords" content="" />
 	<?php include("mydb.php"); ?>
 	<link href="<?php echo $path; ?>css/demo.css" rel="stylesheet" />

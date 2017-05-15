@@ -9,7 +9,7 @@
                     <li itemscope itemtype="http://schema.org/url" itemprop="learning" id="learning"  style="">
                         <a href="<?php echo $path; ?>learning-courses" >
                             <div class="ca-content">
-<<<<<<< HEAD
+
                                 <h2 title="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-main" style="font-size:28px;">دوره های یادگیری</h2>
                                 <h3 title="نام دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-sub">
 =======

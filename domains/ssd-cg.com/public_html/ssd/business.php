@@ -27,7 +27,7 @@
 
 		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="why" class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
 					<h1 title="چرا کارافرینی ssd?" style="direction:rtl;text-align:center;">کارآفرینی(چرا SSD)</h1>
-=======
+
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
 					<h1 title="مجله کارآفرینی و کسب و کار ssd" style="direction:rtl;text-align:center;">مجله کارآفرینی</h1>
 
