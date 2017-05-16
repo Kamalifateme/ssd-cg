@@ -66,7 +66,11 @@ class Work extends MX_Controller {
 				redirect('work');
 		}else{
 			$form_data = array(
+							'name' => $this->input->post('name'),
 							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'file' => $this->input->post('file'),
+							'url' => $this->input->post('url'),
 			                'saved_by' => $this->tank_auth->get_user_id(),
 			            );
 			$this->db->insert('ssmw', $form_data); 
@@ -111,7 +115,11 @@ class Work extends MX_Controller {
  
 			$sContent = strip_tags(stripslashes($a),"");
 			$form_data = array(
-							"description"   =>  $this->input->post('description'),
+							'name' => $this->input->post('name'),
+							'description' => $this->input->post('description'),
+							'image' => $this->input->post('image'),
+							'url' => $this->input->post('url'),
+							'file' => $this->input->post('file'),
 			                'saved_by' => $this->tank_auth->get_user_id(),
 			            );
 			$this->db->where('id',$id)->update('ssmw', $form_data); 

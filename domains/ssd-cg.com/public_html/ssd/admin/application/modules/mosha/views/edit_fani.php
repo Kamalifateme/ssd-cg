@@ -38,7 +38,7 @@
 
 				
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">نام دوره<span class="text-danger">*</span></label>
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
 				<div class="col-lg-12">
 					<input type="text" class="form-control"  name="name" value="<?=$fani->name?>"   required >
 				</div>
