@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/edit_clinic">ویرایش دانستنیهای کسب وکار
+		<a href="<?=base_url()?>work/edit_clinic">ویرایش تکنولوژی و شبکه های اجتماعی
 		</a>
 		</li>
 	</ul>
@@ -32,13 +32,13 @@
              echo form_open(base_url().'work/edit_clinic',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش دانستنیهای کسب وکار</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش تکنولوژی و شبکه های اجتماعی</header>
 
 				<input type="hidden" name="id" value="<?=$clinic->id?>">
 
 				
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">نام دوره<span class="text-danger">*</span></label>
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
 				<div class="col-lg-12">
 					<input type="text" class="form-control"  name="name" value="<?=$clinic->name?>"   required >
 				</div>

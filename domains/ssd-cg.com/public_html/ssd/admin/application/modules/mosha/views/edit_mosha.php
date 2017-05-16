@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/edit_mosha">ویرایش چرا SSD
+		<a href="<?=base_url()?>mosha/edit_mosha">ویرایش سازمان
 		</a>
 		</li>
 	</ul>
@@ -32,13 +32,45 @@
              echo form_open(base_url().'mosha/edit_ssmm',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش چرا SSD</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش سازمان</header>
 
 				<input type="hidden" name="id" value="<?=$moshav->id?>">
+				<div class="form-group col-lg-12">
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
+				<div class="col-lg-12">
+					<input type="text" class="form-control"  name="name" value="<?=$moshav->name?>"   required >
+				</div>
+				</div>
+			 
+
 				<div class="form-group" style="padding:15px;">
 				<label class="col-lg-12 control-label"><?=lang('description')?> <span class="text-danger"></span></label>
 				<div class="col-lg-12">
 				<textarea name="description" class="form-control editor"><?=$moshav->description?></textarea>
+				</div>
+				</div>
+				
+				
+				<div class="form-group" style="padding:15px;">
+				<label class="col-lg-12 control-label">آدرس<span class="text-danger">*</span></label>
+				<div class="col-lg-12">
+					<input type="text" class="form-control"  name="url"  value="<?=$moshav->url?>"  required >
+				</div>
+				</div>
+				
+				<div class="form-group col-lg-12">
+				    <label class="col-lg-12 control-label"><?=lang('image')?> </label>
+				<div class="col-lg-12">
+				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu157" class="iframe-btn" id="" type="button">
+                <input type="text" name="image"  id="imageu157" class="form-control" value="<?=$moshav->image?>" /></a>
+				</div>
+				</div>
+				
+				<div class="form-group col-lg-12">
+				    <label class="col-lg-12 control-label">فایل</label>
+				<div class="col-lg-12">
+				<a href="<?=base_url()?>filemanager/dialog.php?type=2&field_id=imageu159" class="iframe-btn" id="" type="button">
+                <input type="text" name="file"  id="imageu159" class="form-control" value="<?=$moshav->file?>" /></a>
 				</div>
 				</div>
 				

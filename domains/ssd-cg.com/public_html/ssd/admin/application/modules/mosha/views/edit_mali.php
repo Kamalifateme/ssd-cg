@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/edit_mali">ویرایش مالی
+		<a href="<?=base_url()?>mosha/edit_mali">ویرایش استراتژی و بازاریابی
 		</a>
 		</li>
 	</ul>
@@ -32,13 +32,13 @@
              echo form_open(base_url().'mosha/edit_mali',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش مالی</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش استراتژی و بازاریابی</header>
 
 				<input type="hidden" name="id" value="<?=$mali->id?>">
 
 				
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">نام دوره<span class="text-danger">*</span></label>
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
 				<div class="col-lg-12">
 					<input type="text" class="form-control"  name="name" value="<?=$mali->name?>"   required >
 				</div>

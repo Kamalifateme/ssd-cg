@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/edit_work">ویرایش چرا SSD
+		<a href="<?=base_url()?>work/edit_work">ویرایش مجله کسب و کار
 		</a>
 		</li>
 	</ul>
@@ -32,15 +32,46 @@
              echo form_open(base_url().'work/edit_ssmw',$attributes); ?>
 			 
 			 
-			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش چرا SSD</header>
+			<header class="panel-heading"> <i class="fa fa-pencil"></i>ویرایش مجله کسب و کار</header>
 
 				<input type="hidden" name="id" value="<?=$works->id?>">
+				<div class="form-group col-lg-12">
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
+				<div class="col-lg-12">
+					<input type="text" class="form-control"  name="name" value="<?=$works->name?>"   required >
+				</div>
+				</div>
+			 
+
 				<div class="form-group" style="padding:15px;">
 				<label class="col-lg-12 control-label"><?=lang('description')?> <span class="text-danger"></span></label>
 				<div class="col-lg-12">
 				<textarea name="description" class="form-control editor"><?=$works->description?></textarea>
 				</div>
 				</div>
+				
+				<div class="form-group" style="padding:15px;">
+				<label class="col-lg-12 control-label">آدرس<span class="text-danger">*</span></label>
+				<div class="col-lg-12">
+					<input type="text" class="form-control"  name="url"  value="<?=$works->url?>"  required >
+				</div>
+				</div>
+				
+				<div class="form-group col-lg-12">
+				    <label class="col-lg-12 control-label"><?=lang('image')?> </label>
+				<div class="col-lg-12">
+				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu157" class="iframe-btn" id="" type="button">
+                <input type="text" name="image"  id="imageu157" class="form-control" value="<?=$works->image?>" /></a>
+				</div>
+				</div>
+				
+				<div class="form-group col-lg-12">
+				    <label class="col-lg-12 control-label">فایل</label>
+				<div class="col-lg-12">
+				<a href="<?=base_url()?>filemanager/dialog.php?type=2&field_id=imageu159" class="iframe-btn" id="" type="button">
+                <input type="text" name="file"  id="imageu159" class="form-control" value="<?=$works->file?>" /></a>
+				</div>
+				</div>		
 				
 			
 		<div class="modal-footer"> <a href="<?=base_url()?>work/" class="btn btn-default"><?=lang('back')?></a> 

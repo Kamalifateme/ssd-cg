@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>mosha/add_fani">اضافه کردن فنی
+		<a href="<?=base_url()?>mosha/add_fani">اضافه کردن تکنولوژی اطلاعات و فناوری نوین
 		</a>
 		</li>
 	</ul>
@@ -25,13 +25,13 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن فنی</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن تکنولوژی اطلاعات و فناوری نوین</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'mosha/add_fani',$attributes); ?>
 			 	
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">نام دوره<span class="text-danger">*</span></label>
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
 				<div class="col-lg-12">
 					<input type="text" class="form-control"  name="name"    required >
 				</div>

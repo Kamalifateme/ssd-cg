@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/add_service">اضافه کردن خدمات کارآفرینی
+		<a href="<?=base_url()?>work/add_service">اضافه کردن استراتژی های رشد و علم فروش
 		</a>
 		</li>
 	</ul>
@@ -25,13 +25,13 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن خدمات کارآفرینی</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن استراتژی های رشد و علم فروش</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'work/add_service',$attributes); ?>
 			 	
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">نام دوره<span class="text-danger">*</span></label>
+					<label class="col-lg-12 control-label">عنوان<span class="text-danger">*</span></label>
 				<div class="col-lg-12">
 					<input type="text" class="form-control"  name="name"    required >
 				</div>

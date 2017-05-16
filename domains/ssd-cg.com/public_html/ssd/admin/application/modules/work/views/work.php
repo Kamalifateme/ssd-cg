@@ -18,10 +18,10 @@
 	<div class="row" style="direction:rtl;">
 	<div class="col-lg-12">
 	<ul class="nav nav-tabs" >
-    <li class="active"><a data-toggle="tab" href="#one">چرا SSD</a></li>
-    <li><a data-toggle="tab" href="#two">دانستنیهای کسب و کار</a></li>
-    <li><a data-toggle="tab" href="#three">کلینیک کسب و کار</a></li>
-    <li><a data-toggle="tab" href="#four">خدمات کارآفرینی و کسب و کار</a></li>
+    <li class="active"><a data-toggle="tab" href="#one">مجله کارآفرینی</a></li>
+    <li><a data-toggle="tab" href="#two">رهبری کسب و کار و دارایی ها</a></li>
+    <li><a data-toggle="tab" href="#three">تکنولوژی و شبکه های اجتماعی</a></li>
+    <li><a data-toggle="tab" href="#four">استراتژی های رشد و علم فروش</a></li>
 	</ul>
 	</div>
 	</div>
@@ -36,14 +36,15 @@
 		<table  class="table table-striped m-b-none AppendDataTables">
 			<thead>
 				<tr>
-					<th width="80%">توضیحات</th>	
-					<th width="20%"><?=lang('option')?> </th>
+					<th width="30%">عنوان</th>	
+					<th width="40%">توضیحات</th>	
+					<th width="10%"><?=lang('option')?> </th>
 				</tr> </thead> <tbody>
 				<?php
 								if (!empty($ssmw)) {
 				foreach ($ssmw as $key => $ssdtt) { ?>
 				<tr>
-
+					<td><?=$ssdtt->name?></td>
 					<td><?=$ssdtt->description?></td>
 					<td>
 
@@ -71,7 +72,7 @@
 		<table  class="table table-striped m-b-none AppendDataTables">
 			<thead>
 				<tr>
-					<th width="30%">نام دوره</th>	
+					<th width="30%">عنوان</th>	
 					<th width="40%">توضیحات</th>	
 					<th width="10%"><?=lang('option')?> </th>
 				</tr> </thead> <tbody>
@@ -107,7 +108,7 @@
 		<table  class="table table-striped m-b-none AppendDataTables">
 			<thead>
 				<tr>
-					<th width="30%">نام دوره</th>	
+					<th width="30%">عنوان</th>	
 					<th width="40%">توضیحات</th>	
 					<th width="10%"><?=lang('option')?> </th>
 				</tr> </thead> <tbody>
@@ -143,7 +144,7 @@
 		<table  class="table table-striped m-b-none AppendDataTables">
 			<thead>
 				<tr>
-					<th width="30%">نام دوره</th>	
+					<th width="30%">عنوان</th>	
 					<th width="40%">توضیحات</th>	
 					<th width="10%"><?=lang('option')?> </th>
 				</tr> </thead> <tbody>
