@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta name="description" content="
+گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد."/>
 	<?php include("top.php"); ?>
 </head>
 
@@ -25,9 +27,6 @@
 
 	
 
-		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="why" class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 title="چرا کارافرینی ssd?" style="direction:rtl;text-align:center;">کارآفرینی(چرا SSD)</h1>
-
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
 					<h1 title="مجله کارآفرینی و کسب و کار ssd" style="direction:rtl;text-align:center;">مجله کارآفرینی</h1>
 
@@ -40,7 +39,7 @@
 				$row=mysql_fetch_array($ses_sql);
 				$ssd=$row['description'];
 				?>
-			 <span  itemscope itemtype="http://schema.org/isPartOf" itemprop="magazine" style="font-family:BTraffic;font-size:14pt;color:#ffffff;text-align:justify;direction:rtl;"><?php echo $ssd; ?></span>
+			 <span itemscope itemtype="http://schema.org/isPartOf" itemprop="magazine" style="font-family:BTraffic;font-size:14pt;color:#ffffff;text-align:justify;direction:rtl;"><?php echo $ssd; ?></span>
 			 
 		</div>
 			
