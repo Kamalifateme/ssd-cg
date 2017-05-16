@@ -23,7 +23,7 @@
 	<div itemscope itemtype="http://schema.org/headline" itemprop="entry-content" class="entry-content" >
 		<?php include("tophead.php"); ?>
 
-						<h1 style="direction:rtl;text-align:center;">دوره های یادگیری</h1>
+						<h1 title="دوره آموزشی ssd" style="direction:rtl;text-align:center;">دوره های یادگیری</h1>
 
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   

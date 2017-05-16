@@ -26,7 +26,7 @@
 	
 
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 title="چرا آموزش ssd؟" style="direction:rtl;text-align:center;">آموزش (چرا SSD)</h1>
+					<h1 title="چرا آموزش ssd؟ |ssd" style="direction:rtl;text-align:center;">آموزش (چرا SSD)</h1>
 
 		<div class="col">
 

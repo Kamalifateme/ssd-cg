@@ -27,7 +27,7 @@
 	
 
 		<div class="cols-2" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 title="contact-us" style="direction:rtl;text-align:center;">ارتباط با ما</h1>
+					<h1 title="contact-us | ssd" style="direction:rtl;text-align:center;">ارتباط با ما</h1>
 
 		<div class="col">
 

@@ -23,7 +23,7 @@
 		<?php include("tophead.php"); ?>
 
 	
-					<h1 title="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd">تمام اخبار</h1>
+					<h1 title="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd | ssd">تمام اخبار</h1>
 
 		<div class="cols-1" style="margin-top:-10px;">
 

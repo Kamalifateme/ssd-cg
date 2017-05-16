@@ -1,7 +1,7 @@
 
 
 <section id="Education">
-		<h1 itemscope itemtype="http://schema.org/headline" itemprop="Education" title="ثبت نام از طریق سایت گروه حرفه ای مشاوران کارآفرینی و کسب و کار ssd | Education | register">آموزش</h1>
+		<h1 itemscope itemtype="http://schema.org/headline" itemprop="Education" title="ثبت نام از طریق سایت گروه حرفه ای مشاوران کارآفرینی و کسب و کار ssd | Education | register | ssd">آموزش</h1>
 
 		<ul class="cols-4 ca-menu" style="margin-top:60px;margin-bottom:60px;margin-right: -20px;margin-left:-15px;">
 		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="learning" class="mmenus">

@@ -43,7 +43,7 @@
 				$id=$row['id'];
 
 				?>
-			<h2 title="دوره های یادگیری | دوره آموزشی رایگان و ارزان | دوره یادگیری رایگان و ارزان"><?php echo $name; ?></h2>
+			<h2 title="دوره های یادگیری | دوره آموزشی رایگان و ارزان | دوره یادگیری رایگان و ارزان |ssd"><?php echo $name; ?></h2>
 				<div>
 				<?php 
 				$ses_sql2=mysql_query("select * from  fx_learning where title_sub='$id' ") or die(mysql_error()) ;
