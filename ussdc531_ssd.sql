@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.12
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Apr 08, 2017 at 05:05 AM
--- Server version: 5.5.45
--- PHP Version: 5.3.29
+-- Host: 127.0.0.1
+-- Generation Time: May 17, 2017 at 09:17 AM
+-- Server version: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,8 +14,11 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
+--
+-- Database: `test`
+--
 --
 -- Database: `ussdc531_ssd`
 --
@@ -27,7 +30,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `fx_account_details` (
-  `id` bigint(20) unsigned NOT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `fullname` varchar(160) DEFAULT NULL,
   `company` varchar(150) NOT NULL,
@@ -37,8 +40,9 @@ CREATE TABLE IF NOT EXISTS `fx_account_details` (
   `phone` varchar(32) NOT NULL,
   `vat` varchar(32) NOT NULL,
   `language` varchar(40) DEFAULT 'english',
-  `avatar` varchar(32) NOT NULL DEFAULT 'default_avatar.jpg'
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+  `avatar` varchar(32) NOT NULL DEFAULT 'default_avatar.jpg',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `fx_account_details`
@@ -60,15 +64,16 @@ INSERT INTO `fx_account_details` (`id`, `user_id`, `fullname`, `company`, `city`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_activities` (
-  `activity_id` int(11) NOT NULL,
+  `activity_id` int(11) NOT NULL AUTO_INCREMENT,
   `user` int(11) NOT NULL,
   `module` varchar(32) CHARACTER SET latin1 NOT NULL,
   `module_field_id` int(11) NOT NULL,
   `activity` varchar(255) CHARACTER SET latin1 NOT NULL,
   `activity_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `icon` varchar(32) CHARACTER SET latin1 DEFAULT 'fa-coffee',
-  `deleted` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `deleted` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`activity_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `fx_activities`
@@ -85,11 +90,12 @@ INSERT INTO `fx_activities` (`activity_id`, `user`, `module`, `module_field_id`,
 --
 
 CREATE TABLE IF NOT EXISTS `fx_archiveg` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `sub_g` varchar(50) COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=77 ;
 
 --
 -- Dumping data for table `fx_archiveg`
@@ -178,12 +184,13 @@ INSERT INTO `fx_archiveg` (`id`, `sub_g`, `image`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_archiveo` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `url` text COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `fx_archiveo`
@@ -217,11 +224,12 @@ INSERT INTO `fx_archiveo` (`id`, `name`, `description`, `saved_by`, `url`) VALUE
 --
 
 CREATE TABLE IF NOT EXISTS `fx_assign_projects` (
-  `a_id` int(11) NOT NULL,
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
   `assigned_user` int(11) NOT NULL,
   `project_assigned` int(11) NOT NULL,
-  `assign_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `assign_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -230,12 +238,13 @@ CREATE TABLE IF NOT EXISTS `fx_assign_projects` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_assign_tasks` (
-  `a_id` int(11) NOT NULL,
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
   `assigned_user` int(11) NOT NULL,
   `project_assigned` int(11) NOT NULL,
   `task_assigned` int(11) NOT NULL,
-  `assign_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `assign_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -244,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `fx_assign_tasks` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_blog` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` text COLLATE utf8_persian_ci NOT NULL,
   `title_sub` text COLLATE utf8_persian_ci NOT NULL,
   `des` text COLLATE utf8_persian_ci NOT NULL,
@@ -258,8 +267,9 @@ CREATE TABLE IF NOT EXISTS `fx_blog` (
   `ip_address` longtext COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` int(11) NOT NULL,
-  `love` varchar(20) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=167 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `love` varchar(20) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=167 ;
 
 --
 -- Dumping data for table `fx_blog`
@@ -267,27 +277,8 @@ CREATE TABLE IF NOT EXISTS `fx_blog` (
 
 INSERT INTO `fx_blog` (`id`, `title`, `title_sub`, `des`, `date_a`, `nev`, `image`, `viwe`, `rating`, `total_rating`, `total_rates`, `ip_address`, `url`, `saved_by`, `love`) VALUES
 (158, 'همایش رازهای موفقیت در کسب و کار', '1', '<p>در دومین روز از هفته کارآفرینی، همایش رازهای موفقیت در کسب و کار در تاریخ 23 آبان ماه 1395 از ساعت 16 الی 18 در شهرستان بافق با سخنرانی مهندس هاشمی مقدم و با حضور پرسنل محترم شرکت سنگ آهن بافق و عموم مردم برگزار گردید.</p>', 'سه شنبه,۲۵ آبان ۱۳۹۵', 'گروه مشاوران  SSD', '', 0, 0, 0, 0, '', '', 1, ''),
-(166, 'اطلاع رسانی SSD', '1', '<p>با سلام و احترام؛</p>\n<p>با توجه به حجم بالای مدارک تحویل نگرفته شده مشتریان؛ در صورت نیاز به مدرک و تحویل گیری حتمی، تا 5 بهمن ماه 1395 با شرکت SSD تماس حاصل فرمائید.</p>\n<p>با تشکر گروه مشاوران SSD</p>', 'دوشنبه,۲۷ دی ۱۳۹۵', '', '', 19, 0, 0, 0, '', 'ssd', 1, ''),
-(157, 'همایش ملی انجمن جمعیت شناسی ایران', '1', '<p>حضور شرکت سیمرغ صنعت و دانش، به درخواست اداره کار، تعاون و رفاه اجتماعی جهت بخش اشتغال در هشتمین همایش ملی انجمن جمعیت شناسی ایران با نام تحولات جمعیت، نیروی انسانی و اشتغال که در تاریخ 5 و 6 آبان ماه 1395 در دانشگاه یزد برگزار گردید.</p>', 'سه شنبه,۲۵ آبان ۱۳۹۵', 'گروه مشاوران  SSD', 'http://www.ssd-cg.com/ssd/file/news_ssd/photo_2016-10-27_12-08-26.jpg', 45, 0, 0, 0, '', 'National-conference-on-demography-forum', 1, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_bugs`
---
-
-CREATE TABLE IF NOT EXISTS `fx_bugs` (
-  `bug_id` int(11) NOT NULL,
-  `issue_ref` int(11) NOT NULL,
-  `project` int(11) NOT NULL,
-  `reporter` int(11) NOT NULL,
-  `assigned_to` int(11) NOT NULL,
-  `bug_status` enum('Unconfirmed','Confirmed','In Progress','Resolved','Verified') CHARACTER SET latin1 NOT NULL DEFAULT 'Unconfirmed',
-  `priority` varchar(100) CHARACTER SET latin1 NOT NULL,
-  `bug_description` text CHARACTER SET latin1 NOT NULL,
-  `reported_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `last_modified` varchar(64) CHARACTER SET latin1 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+(166, 'اطلاع رسانی SSD', '1', '<p>با سلام و احترام؛</p>\n<p>با توجه به حجم بالای مدارک تحویل نگرفته شده مشتریان؛ در صورت نیاز به مدرک و تحویل گیری حتمی، تا 5 بهمن ماه 1395 با شرکت SSD تماس حاصل فرمائید.</p>\n<p>با تشکر گروه مشاوران SSD</p>', 'دوشنبه,۲۷ دی ۱۳۹۵', '', '', 25, 0, 0, 0, '', 'ssd', 1, ''),
+(157, 'همایش ملی انجمن جمعیت شناسی ایران', '1', '<p>حضور شرکت سیمرغ صنعت و دانش، به درخواست اداره کار، تعاون و رفاه اجتماعی جهت بخش اشتغال در هشتمین همایش ملی انجمن جمعیت شناسی ایران با نام تحولات جمعیت، نیروی انسانی و اشتغال که در تاریخ 5 و 6 آبان ماه 1395 در دانشگاه یزد برگزار گردید.</p>', 'سه شنبه,۲۵ آبان ۱۳۹۵', 'گروه مشاوران  SSD', 'http://www.ssd-cg.com/ssd/file/news_ssd/photo_2016-10-27_12-08-26.jpg', 49, 0, 0, 0, '', 'National-conference-on-demography-forum', 1, '');
 
 -- --------------------------------------------------------
 
@@ -296,12 +287,13 @@ CREATE TABLE IF NOT EXISTS `fx_bugs` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_bug_comments` (
-  `c_id` int(11) NOT NULL,
+  `c_id` int(11) NOT NULL AUTO_INCREMENT,
   `bug_id` int(11) NOT NULL,
   `comment_by` int(11) NOT NULL,
   `comment` text CHARACTER SET latin1 NOT NULL,
-  `date_commented` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_commented` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`c_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -310,13 +302,60 @@ CREATE TABLE IF NOT EXISTS `fx_bug_comments` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_bug_files` (
-  `file_id` int(11) NOT NULL,
+  `file_id` int(11) NOT NULL AUTO_INCREMENT,
   `bug` int(11) NOT NULL,
   `file_name` text CHARACTER SET latin1 NOT NULL,
   `description` text CHARACTER SET latin1 NOT NULL,
   `uploaded_by` int(11) NOT NULL,
-  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`file_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_bugs`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_bugs` (
+  `bug_id` int(11) NOT NULL AUTO_INCREMENT,
+  `issue_ref` int(11) NOT NULL,
+  `project` int(11) NOT NULL,
+  `reporter` int(11) NOT NULL,
+  `assigned_to` int(11) NOT NULL,
+  `bug_status` enum('Unconfirmed','Confirmed','In Progress','Resolved','Verified') CHARACTER SET latin1 NOT NULL DEFAULT 'Unconfirmed',
+  `priority` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `bug_description` text CHARACTER SET latin1 NOT NULL,
+  `reported_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_modified` varchar(64) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`bug_id`),
+  UNIQUE KEY `issue_ref` (`issue_ref`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_busi`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_busi` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_busi`
+--
+
+INSERT INTO `fx_busi` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'sb', '<p>sb</p>', '', '', 'sb', '1', '');
 
 -- --------------------------------------------------------
 
@@ -325,11 +364,13 @@ CREATE TABLE IF NOT EXISTS `fx_bug_files` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_captcha` (
-  `captcha_id` bigint(13) unsigned NOT NULL,
+  `captcha_id` bigint(13) unsigned NOT NULL AUTO_INCREMENT,
   `captcha_time` int(10) unsigned NOT NULL,
   `ip_address` varchar(16) CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `word` varchar(20) CHARACTER SET latin1 NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8;
+  `word` varchar(20) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`captcha_id`),
+  KEY `word` (`word`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=132 ;
 
 --
 -- Dumping data for table `fx_captcha`
@@ -360,11 +401,12 @@ INSERT INTO `fx_captcha` (`captcha_id`, `captcha_time`, `ip_address`, `word`) VA
 --
 
 CREATE TABLE IF NOT EXISTS `fx_catalog` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) COLLATE utf8_persian_ci NOT NULL,
   `address` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -373,15 +415,16 @@ CREATE TABLE IF NOT EXISTS `fx_catalog` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_clinic` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_clinic`
@@ -391,22 +434,7 @@ INSERT INTO `fx_clinic` (`id`, `name`, `description`, `image`, `file`, `url`, `s
 (1, 'مسائل حقوقی و بیمه', '<p>در این بخش اطلاعات مربوط به مسائل حقوقی و بیمه ای برای علاقه مندان ارائه میگردد.</p>', '', '', 'Legal-insurance-issues', '1', '26'),
 (2, 'مسائل مالیاتی', '<p>دراین بخش اطلاعات مربوط به مسائل مالیاتی برای علاقه مندان ارائه میگردد.</p>\n<p>&nbsp;</p>', '', '', 'tax-issues', '1', '25'),
 (3, '	ثبت برند و اختراعات', '<p>علامت تجاری نشانی است که قادر است کالاهای تولیدی یا خدمات ارائه شده توسط یک شخص/بنگاه را از کالاها یا خدمات سایر بنگاه&zwnj;ها با اشخاص متمایز نماید، که بموجب آن می&zwnj;توانید ازعرضه کالاهای یکسان یا مشابه توسط اشخاص ثالث تحت علائم تجاری که عین یا به طریق گمراه کننده&zwnj;ای مشابه علامت تجاری شما هستند جلوگیری نمایید. گروه مشاوران SSD در صدد است در راستای اقدامات مربوط به ثبت علائم تجاری، اختراعات و طرح&zwnj;های صنعتی شما را یاری نماید.</p>\n<p>&nbsp;</p>', 'http://www.ssd-cg.com/ssd/file/کارآفرینی/news7aKRC0.jpg', '', 'Brand-registration-and-inventions', '1', '30'),
-(4, 'شناخت و قوانین کسب و کار', '<p>در این بخش اطلاعتی مربوط به بهبود کسب و کار خدمت علاقه مندان ارائه میگردد.</p>', '', '', 'Knowledge-Business-Rules', '1', '22');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_comments`
---
-
-CREATE TABLE IF NOT EXISTS `fx_comments` (
-  `comment_id` int(11) NOT NULL,
-  `project` int(11) NOT NULL,
-  `posted_by` int(11) NOT NULL,
-  `message` text CHARACTER SET latin1 NOT NULL,
-  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+(4, 'شناخت و قوانین کسب و کار', '<p>در این بخش اطلاعتی مربوط به بهبود کسب و کار خدمت علاقه مندان ارائه میگردد.</p>', '', '', 'Knowledge-Business-Rules', '1', '23');
 
 -- --------------------------------------------------------
 
@@ -415,13 +443,30 @@ CREATE TABLE IF NOT EXISTS `fx_comments` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_comment_replies` (
-  `reply_id` int(11) NOT NULL,
+  `reply_id` int(11) NOT NULL AUTO_INCREMENT,
   `parent_comment` int(11) NOT NULL,
   `reply_msg` text CHARACTER SET latin1 NOT NULL,
   `replied_by` int(11) NOT NULL,
   `del` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
-  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`reply_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_comments`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_comments` (
+  `comment_id` int(11) NOT NULL AUTO_INCREMENT,
+  `project` int(11) NOT NULL,
+  `posted_by` int(11) NOT NULL,
+  `message` text CHARACTER SET latin1 NOT NULL,
+  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
+  PRIMARY KEY (`comment_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -430,7 +475,7 @@ CREATE TABLE IF NOT EXISTS `fx_comment_replies` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_companies` (
-  `co_id` int(11) NOT NULL,
+  `co_id` int(11) NOT NULL AUTO_INCREMENT,
   `company_ref` int(32) NOT NULL,
   `company_name` varchar(255) NOT NULL,
   `primary_contact` varchar(10) NOT NULL DEFAULT '-',
@@ -441,8 +486,9 @@ CREATE TABLE IF NOT EXISTS `fx_companies` (
   `city` varchar(100) NOT NULL,
   `country` varchar(255) NOT NULL,
   `VAT` varchar(64) NOT NULL,
-  `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`co_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `fx_companies`
@@ -459,7 +505,8 @@ INSERT INTO `fx_companies` (`co_id`, `company_ref`, `company_name`, `primary_con
 
 CREATE TABLE IF NOT EXISTS `fx_config` (
   `config_key` varchar(255) NOT NULL,
-  `value` text NOT NULL
+  `value` text NOT NULL,
+  PRIMARY KEY (`config_key`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
@@ -578,7 +625,7 @@ INSERT INTO `fx_config` (`config_key`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_contact` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(13) COLLATE utf8_persian_ci NOT NULL,
   `email` varchar(150) COLLATE utf8_persian_ci NOT NULL,
   `address` text COLLATE utf8_persian_ci NOT NULL,
@@ -588,8 +635,9 @@ CREATE TABLE IF NOT EXISTS `fx_contact` (
   `phone3` varchar(15) COLLATE utf8_persian_ci NOT NULL,
   `phone4` varchar(15) COLLATE utf8_persian_ci NOT NULL,
   `phone5` varchar(15) COLLATE utf8_persian_ci NOT NULL,
-  `phone6` varchar(15) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `phone6` varchar(15) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `fx_contact`
@@ -605,13 +653,14 @@ INSERT INTO `fx_contact` (`id`, `phone`, `email`, `address`, `ins`, `saved_by`, 
 --
 
 CREATE TABLE IF NOT EXISTS `fx_contacts` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_persian_ci NOT NULL,
   `phone` varchar(14) COLLATE utf8_persian_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
-  `date2` varchar(16) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `date2` varchar(16) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -620,9 +669,10 @@ CREATE TABLE IF NOT EXISTS `fx_contacts` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_countries` (
-  `id` int(6) NOT NULL,
-  `value` varchar(250) CHARACTER SET latin1 NOT NULL DEFAULT ''
-) ENGINE=MyISAM AUTO_INCREMENT=243 DEFAULT CHARSET=utf8;
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `value` varchar(250) CHARACTER SET latin1 NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=243 ;
 
 --
 -- Dumping data for table `fx_countries`
@@ -878,11 +928,12 @@ INSERT INTO `fx_countries` (`id`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_customer` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -891,22 +942,23 @@ CREATE TABLE IF NOT EXISTS `fx_customer` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_dan` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_dan`
 --
 
 INSERT INTO `fx_dan` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
-(1, 'مقالات کسب و کار', '<ul style="list-style-type: disc;">\n<li>10 استراتژی کاربردی بازاریابی آفلاین</li>\n</ul>\n<p>بازاریابی با گسترش استفاده از موبایل و آنلاین شدن همه چیز شاهد تغییرات قابل توجهی بوده است. ایجاد یک صفحه&zwnj;ی کاری در فیسبوک، قرار دادن اخبار صنایع در توییتر، ارسال اطلاعیه&zwnj;های فروش برای خریداران و ... ؛ کانال&zwnj;های ارتباطی ما با رهبران ومشتریان روزانه در حال تکامل هستند. با وجود تأثیر قابل توجه این خط مشی&zwnj;ها، درصورت نبود آنها از تجارت عقب افتاده ایم. اغلب تجارت&zwnj;های موفق ترکیبی از استراتژی&zwnj;های آنلاین و آفلاین را جهت گسترش راهبردها و ارتقای فروش را به&zwnj;کار بسته&zwnj;اند.</p>\n<p>تبلیغات خیابانی، هدیه های تبلیغاتی (مانند مدادها و تیشرت&zwnj;ها) و خیریه&zwnj;های محلی نمونه&zwnj;هایی از بازاریابی پارتیزانی آفلاین هستند. این اقدامات ساده، راه&zwnj;های آسانی اما مؤثری جهت گسترش زیرکانه نام تجاری هستند. در ادامه به استراتژی &zwnj;های بازاریابی قدیمی که هنوز هم کاربردی هستند خواهیم پرداخت.</p>\n<p>1. از هر فرصتی برای توزیع کارت ویزیت خود استفاده کنید.</p>\n<p>علت قرار گرفتن این مورد در ابتدای لیست یه این دلیل است که&nbsp; شاید آسانترین و ارزانترین گزینه باشد.شما میتوانید این کارت&zwnj;ها را در میان همسایه&zwnj;ها و شرکت های تجاری پخش کنید، میتوانید آن را به تابلوی عمومی اعلانات بزنید، آنها را در میان کتابها و مجلات درون مطب پزشکان قرار دهید و هر اقدام ممکن دیگری را برای پخش آنها صورت دهید. کارت ویز&zwnj;ها نسبت به ابعادشان پتانسل زیادی دارند.</p>\n<p>2. گواهی نامه&zwnj;ها و محصولات تبلیغاتی را به عنوان جایزه در مسابقات اهدا کنید.</p>\n<p>آیا ساختمان دبیرستان شهر شما در در حال برگزاری یک حراج آرام است؟ آیا جریانی خیریه همراه با اهدای جوایز وجود دارد؟ اهدا کنید. این یک راه ساده برای ایجاد یک ارتباط فردی با عوام، با شرکت در یک جنبش و کار خوب، است. در بدبینانه&zwnj;ترین حالت، برندگان از خدمات و یا محصول شما استفاده خواهند کرد، و شما حتی می&zwnj;توانید مراجعه مجدد آنها و دیده شدن را بدست آورید.</p>\n<p>3. در مناسبتها سخنرانی کنید.</p>\n<p>یک مناسبت مرتبط با شرکت خود انتخاب و خود را برای یک سخنرانی علمی و پرمفهوم آماده کنید. این کار یک اثر ماندگار یر ذهن همتایان شما در صنعت خودتان&nbsp; دارد و تجارت شمارا در معرض دید قرار می&zwnj;دهد. اگر احساس می&zwnj;کنید که قدرت تجاری شما برای سخنرانی درمیان همتایانتان کافی نیست، حضور بهم رساندن در آن رویداد هم مفید خواهد بود. خود و شبکه&zwnj;تان را به دیگران معرفی کنید. روابطی که ایجاد می&zwnj;کنید میتواند به ارتقاء درجه بازاریابی شما کمک کند.</p>\n<p>&nbsp;</p>\n<p>4. با انتشارات چاپی محلی خود ارتباط برقرار کنید.</p>\n<p>با وجود رشد دائمی رسانه&zwnj;های آنلاین،&zwnj; صنعت چاپ هنوز هم مؤثر است. یک مطلب مطبوعاتی در یک مجله یا روزنامه به منظور هدف قرار دادن مخاطبین خود چاپ کنید.&nbsp; مطالب مطبوعاتی راهی ساده برای به نمایش درآوردن یک مناسبت مهم یا مرحله&zwnj;ای برجسته در تجارتتان است، و انتشارات درست میتواند توجه ویژه&zwnj;ای را برای شما به ارمغان آورد. فعال بمانید و تا آنجا که ممکن است با انتشارات بیشتری در ارتباط باشید چرا که روزی کارآمد خواهند بود.</p>\n<p>5. نامه بفرستید.</p>\n<p>حتی در عصر ایمیل، ارسال نامه هنوز یک روش قابل قبول برای بازاریابی است. تعداد زیاد افرادی که خواهان پیشنهادات فیزیکی هستند شگفت&zwnj;&zwnj;&zwnj;&zwnj;آور است. ارسال نامه هزینه بیشتری دارد و موجب می&zwnj;شود از اطلاعاتی که از کمپین&zwnj;های ایمیل بدست می&zwnj;اوردید محروم بمانید، اما در میان رقیبان خود که تنها به ایمیل اکتفا می&zwnj;کنند برجسته خواهید بود. برگ تخفیف، نمونه جدید محصولات خود، نامه&zwnj;های خبری یا هرچیزی که به نظرتان به پیشرفت تجارتتان کمک می&zwnj;کند را ارسال کنید. این امر یقیناً یک روش خصوصی سازی شده در بازاریابی خواهد بود.</p>\n<p>6. بازاریابی تلفنی انجام دهید.</p>\n<p>یک لیست از مشتریان بالقوه تهیه کنید و با آنها تماس بگیرید. ابتدا استراتژی بازاریابی تلفنی را ایجاد کنید و سپس با آنها تماس بگیرید. مکالمات را متناسب با هر مشتری صورت دهید و زمان و احتیاجات آنها را نیز در نظر بگیرید. هرچند این امر نوعاً حرکتی در فروش است، بازاریابی تلفنی می&zwnj;تواند در ایجاد روابط همکاری با دیگر مشاغل شما را یاری دهد و به صورت بالقوه تعدادی مشتری جدید در میان راه برای شما به ارمغان آورد.</p>\n<p>7. در نمایشگاه&zwnj;های تجاری شرکت کنید.</p>\n<p>نمایشگاه&zwnj;ّهای نجاری شما را در یک مکان رقابتی قرار می&zwnj;دهند. شما می&zwnj;توانید نحوه استراتژی فروش محصولات رقیبانتان را مطالعه و ابزار و مواد بازاریابیشان را ارزیابی کنید و به طور کلی به بینشی واقعی از استراتژی آنها دست یابید. البته نمایشگاه&zwnj;های تجاری فرصت بسیار مناسبی برای در معرض دید قرار دادن محصولاتتان و بازاریابی برای شرکتتان هستند. با سایر افراد حرفه&zwnj;ای ملاقات کنید و به دنبال فرصت&zwnj;های رشد و ترقی به وسیله کار کردن با یکدیگر باشید.</p>\n<p>8. بسته بندی و عرضه خود را جدید کنید.</p>\n<p>برند خود را با ارزیابی مجدد عرضه خود، تقویت کنید. اینکه چگونه در این رقابت سنجیده می&zwnj;شوید اهمیت دارد. برند&zwnj;سازی و طراحی فروشتان،&zwnj; ماهیت شما را نشان می&zwnj;دهند. شاید زمان آن رسیده است که جلوه&zwnj;ّهای قدیمی&zwnj;ای که پیام درستی به فروشندگان بالقوه&zwnj;ی &zwnj;&zwnj;شما نمی&zwnj;دهند، را بروز کنید. زمانی را برای بازبینی و تکرار اختصاص دهید؛ کمترین تغییرات می&zwnj;توانند بزرگترن تفاوت&zwnj;ها را ایجاد کنند.</p>\n<p>9. موفقیت &zwnj;های خود را جشن بگیرید.</p>\n<p>میزبان یک میهمانی، گردهمایی تجاری یا یک نوع رویداد تجلیلی برای به اشتراک گذاشتن موفقیتتان باشید. شاید شما به یک همکاری بزرگ دست یافته یا یک سرویس جدید ایجاد کرده باشید. از انشارات محلی جهت اشاعه خبر موفقیتتان استفاده کنید. از فرصت برای قدردانی از تیمتان و تشویق موفقیت&zwnj;های آینده، استفاده کنید. جشن&zwnj;ّهایی که برگزار می&zwnj;کنید برای جلب توجه مخاطبان هدف خود و ایمن سازی تجارت آینده&zwnj;تان می&zwnj;باشد.</p>\n<p>&nbsp;</p>\n<p>10. حامی یک رویداد اجتماعی باشید.</p>\n<p>اگر هزینه&zwnj;هایتان اجازه می&zwnj;دهند،&zwnj; این کار یک روش اعجاب&zwnj;آور برای گسترش نامتان است. به جای اینکه تنها دریک رویداد شرکت کنید، رهبری را بدست بگیرید و حامی آن باشید. چندین میلیون تومان کناربگذارید و یا با&nbsp; مؤسسه&zwnj;ای غیرانتفاعی برای راه&zwnj;اندازی یک جریان جمع&zwnj;آوری اعانه تشریک مساعی کنید. زمانی که شما میزبان باشید میتوانید اجناس را در دست بگیرید. کالاهای برند خودتان، کوپن و جزوات و کارت تخفیف اهدا کنید. این کار یک تصویر مثبت که برای مردم قابل احترام است، از برند شما ایجاد خواد نمود.</p>\n<p>سخن پایانی</p>\n<p>این نکات به طور گسترده&zwnj; ای به میزان هزینه و تلاش شما وابسته است، اما هرکدام میتواند بازاریابی شما را ارتقا بخشد. پس پذیرای استراتژی&zwnj;ها و تکنولوژی&zwnj;های نوین باشید، اما ریشه&zwnj;های غیر آنلاین آنها را فراموش نکنید!</p>', '', '', 'Business-Articles', '1', '41'),
+(1, 'مقالات کسب و کار', '<ul style="list-style-type: disc;">\n<li>10 استراتژی کاربردی بازاریابی آفلاین</li>\n</ul>\n<p>بازاریابی با گسترش استفاده از موبایل و آنلاین شدن همه چیز شاهد تغییرات قابل توجهی بوده است. ایجاد یک صفحه&zwnj;ی کاری در فیسبوک، قرار دادن اخبار صنایع در توییتر، ارسال اطلاعیه&zwnj;های فروش برای خریداران و ... ؛ کانال&zwnj;های ارتباطی ما با رهبران ومشتریان روزانه در حال تکامل هستند. با وجود تأثیر قابل توجه این خط مشی&zwnj;ها، درصورت نبود آنها از تجارت عقب افتاده ایم. اغلب تجارت&zwnj;های موفق ترکیبی از استراتژی&zwnj;های آنلاین و آفلاین را جهت گسترش راهبردها و ارتقای فروش را به&zwnj;کار بسته&zwnj;اند.</p>\n<p>تبلیغات خیابانی، هدیه های تبلیغاتی (مانند مدادها و تیشرت&zwnj;ها) و خیریه&zwnj;های محلی نمونه&zwnj;هایی از بازاریابی پارتیزانی آفلاین هستند. این اقدامات ساده، راه&zwnj;های آسانی اما مؤثری جهت گسترش زیرکانه نام تجاری هستند. در ادامه به استراتژی &zwnj;های بازاریابی قدیمی که هنوز هم کاربردی هستند خواهیم پرداخت.</p>\n<p>1. از هر فرصتی برای توزیع کارت ویزیت خود استفاده کنید.</p>\n<p>علت قرار گرفتن این مورد در ابتدای لیست یه این دلیل است که&nbsp; شاید آسانترین و ارزانترین گزینه باشد.شما میتوانید این کارت&zwnj;ها را در میان همسایه&zwnj;ها و شرکت های تجاری پخش کنید، میتوانید آن را به تابلوی عمومی اعلانات بزنید، آنها را در میان کتابها و مجلات درون مطب پزشکان قرار دهید و هر اقدام ممکن دیگری را برای پخش آنها صورت دهید. کارت ویز&zwnj;ها نسبت به ابعادشان پتانسل زیادی دارند.</p>\n<p>2. گواهی نامه&zwnj;ها و محصولات تبلیغاتی را به عنوان جایزه در مسابقات اهدا کنید.</p>\n<p>آیا ساختمان دبیرستان شهر شما در در حال برگزاری یک حراج آرام است؟ آیا جریانی خیریه همراه با اهدای جوایز وجود دارد؟ اهدا کنید. این یک راه ساده برای ایجاد یک ارتباط فردی با عوام، با شرکت در یک جنبش و کار خوب، است. در بدبینانه&zwnj;ترین حالت، برندگان از خدمات و یا محصول شما استفاده خواهند کرد، و شما حتی می&zwnj;توانید مراجعه مجدد آنها و دیده شدن را بدست آورید.</p>\n<p>3. در مناسبتها سخنرانی کنید.</p>\n<p>یک مناسبت مرتبط با شرکت خود انتخاب و خود را برای یک سخنرانی علمی و پرمفهوم آماده کنید. این کار یک اثر ماندگار یر ذهن همتایان شما در صنعت خودتان&nbsp; دارد و تجارت شمارا در معرض دید قرار می&zwnj;دهد. اگر احساس می&zwnj;کنید که قدرت تجاری شما برای سخنرانی درمیان همتایانتان کافی نیست، حضور بهم رساندن در آن رویداد هم مفید خواهد بود. خود و شبکه&zwnj;تان را به دیگران معرفی کنید. روابطی که ایجاد می&zwnj;کنید میتواند به ارتقاء درجه بازاریابی شما کمک کند.</p>\n<p>&nbsp;</p>\n<p>4. با انتشارات چاپی محلی خود ارتباط برقرار کنید.</p>\n<p>با وجود رشد دائمی رسانه&zwnj;های آنلاین،&zwnj; صنعت چاپ هنوز هم مؤثر است. یک مطلب مطبوعاتی در یک مجله یا روزنامه به منظور هدف قرار دادن مخاطبین خود چاپ کنید.&nbsp; مطالب مطبوعاتی راهی ساده برای به نمایش درآوردن یک مناسبت مهم یا مرحله&zwnj;ای برجسته در تجارتتان است، و انتشارات درست میتواند توجه ویژه&zwnj;ای را برای شما به ارمغان آورد. فعال بمانید و تا آنجا که ممکن است با انتشارات بیشتری در ارتباط باشید چرا که روزی کارآمد خواهند بود.</p>\n<p>5. نامه بفرستید.</p>\n<p>حتی در عصر ایمیل، ارسال نامه هنوز یک روش قابل قبول برای بازاریابی است. تعداد زیاد افرادی که خواهان پیشنهادات فیزیکی هستند شگفت&zwnj;&zwnj;&zwnj;&zwnj;آور است. ارسال نامه هزینه بیشتری دارد و موجب می&zwnj;شود از اطلاعاتی که از کمپین&zwnj;های ایمیل بدست می&zwnj;اوردید محروم بمانید، اما در میان رقیبان خود که تنها به ایمیل اکتفا می&zwnj;کنند برجسته خواهید بود. برگ تخفیف، نمونه جدید محصولات خود، نامه&zwnj;های خبری یا هرچیزی که به نظرتان به پیشرفت تجارتتان کمک می&zwnj;کند را ارسال کنید. این امر یقیناً یک روش خصوصی سازی شده در بازاریابی خواهد بود.</p>\n<p>6. بازاریابی تلفنی انجام دهید.</p>\n<p>یک لیست از مشتریان بالقوه تهیه کنید و با آنها تماس بگیرید. ابتدا استراتژی بازاریابی تلفنی را ایجاد کنید و سپس با آنها تماس بگیرید. مکالمات را متناسب با هر مشتری صورت دهید و زمان و احتیاجات آنها را نیز در نظر بگیرید. هرچند این امر نوعاً حرکتی در فروش است، بازاریابی تلفنی می&zwnj;تواند در ایجاد روابط همکاری با دیگر مشاغل شما را یاری دهد و به صورت بالقوه تعدادی مشتری جدید در میان راه برای شما به ارمغان آورد.</p>\n<p>7. در نمایشگاه&zwnj;های تجاری شرکت کنید.</p>\n<p>نمایشگاه&zwnj;ّهای نجاری شما را در یک مکان رقابتی قرار می&zwnj;دهند. شما می&zwnj;توانید نحوه استراتژی فروش محصولات رقیبانتان را مطالعه و ابزار و مواد بازاریابیشان را ارزیابی کنید و به طور کلی به بینشی واقعی از استراتژی آنها دست یابید. البته نمایشگاه&zwnj;های تجاری فرصت بسیار مناسبی برای در معرض دید قرار دادن محصولاتتان و بازاریابی برای شرکتتان هستند. با سایر افراد حرفه&zwnj;ای ملاقات کنید و به دنبال فرصت&zwnj;های رشد و ترقی به وسیله کار کردن با یکدیگر باشید.</p>\n<p>8. بسته بندی و عرضه خود را جدید کنید.</p>\n<p>برند خود را با ارزیابی مجدد عرضه خود، تقویت کنید. اینکه چگونه در این رقابت سنجیده می&zwnj;شوید اهمیت دارد. برند&zwnj;سازی و طراحی فروشتان،&zwnj; ماهیت شما را نشان می&zwnj;دهند. شاید زمان آن رسیده است که جلوه&zwnj;ّهای قدیمی&zwnj;ای که پیام درستی به فروشندگان بالقوه&zwnj;ی &zwnj;&zwnj;شما نمی&zwnj;دهند، را بروز کنید. زمانی را برای بازبینی و تکرار اختصاص دهید؛ کمترین تغییرات می&zwnj;توانند بزرگترن تفاوت&zwnj;ها را ایجاد کنند.</p>\n<p>9. موفقیت &zwnj;های خود را جشن بگیرید.</p>\n<p>میزبان یک میهمانی، گردهمایی تجاری یا یک نوع رویداد تجلیلی برای به اشتراک گذاشتن موفقیتتان باشید. شاید شما به یک همکاری بزرگ دست یافته یا یک سرویس جدید ایجاد کرده باشید. از انشارات محلی جهت اشاعه خبر موفقیتتان استفاده کنید. از فرصت برای قدردانی از تیمتان و تشویق موفقیت&zwnj;های آینده، استفاده کنید. جشن&zwnj;ّهایی که برگزار می&zwnj;کنید برای جلب توجه مخاطبان هدف خود و ایمن سازی تجارت آینده&zwnj;تان می&zwnj;باشد.</p>\n<p>&nbsp;</p>\n<p>10. حامی یک رویداد اجتماعی باشید.</p>\n<p>اگر هزینه&zwnj;هایتان اجازه می&zwnj;دهند،&zwnj; این کار یک روش اعجاب&zwnj;آور برای گسترش نامتان است. به جای اینکه تنها دریک رویداد شرکت کنید، رهبری را بدست بگیرید و حامی آن باشید. چندین میلیون تومان کناربگذارید و یا با&nbsp; مؤسسه&zwnj;ای غیرانتفاعی برای راه&zwnj;اندازی یک جریان جمع&zwnj;آوری اعانه تشریک مساعی کنید. زمانی که شما میزبان باشید میتوانید اجناس را در دست بگیرید. کالاهای برند خودتان، کوپن و جزوات و کارت تخفیف اهدا کنید. این کار یک تصویر مثبت که برای مردم قابل احترام است، از برند شما ایجاد خواد نمود.</p>\n<p>سخن پایانی</p>\n<p>این نکات به طور گسترده&zwnj; ای به میزان هزینه و تلاش شما وابسته است، اما هرکدام میتواند بازاریابی شما را ارتقا بخشد. پس پذیرای استراتژی&zwnj;ها و تکنولوژی&zwnj;های نوین باشید، اما ریشه&zwnj;های غیر آنلاین آنها را فراموش نکنید!</p>', '', '', 'Business-Articles', '1', '42'),
 (2, '	هوشمند سازی کسب و کار', '<p>در این بخش اطلاعات مربوط به هوشمند سازی کسب و کار برای علاقه مندان ارائه میگردد.</p>', 'http://www.ssd-cg.com/ssd/file/Business/_iStock_000010376631Medium.jpg', '', 'Smart-Business', '1', '25'),
 (3, 'مدل های کسب و کار', '<p>در این بخش مدل های کسب و کار برای علاقه مندان ارائه میگردد.</p>', 'http://www.ssd-cg.com/ssd/file/news_ssd/Khabar-5-1.JPG', '', 'Business-model', '1', '44'),
 (4, '	رصد فناوری های نوین', '<p>درقرن 21 ام با گسترش استفاده ازشبکه گسترده جهانی، زندگی بشر پیوسته درحال تغییر و ارتقاء است. &nbsp;انسان قرن 21 همواره در جستجوی ابداع روشی برای زندگی با کیفیت تر است. در این بین کسب اطلاع از تکنولوژی های جدید امری مهم و ضروری است. گروه مشاوران SSD در تلاش است تا &nbsp;شما &nbsp;را &nbsp;از بروزترین &nbsp;فناوری ها &nbsp;آگاه سازد.</p>', 'http://www.ssd-cg.com/ssd/file/کارآفرینی/رصدفناوری.png', '', 'Monitoring-new-technologies', '1', '40');
@@ -918,12 +970,13 @@ INSERT INTO `fx_dan` (`id`, `name`, `description`, `image`, `file`, `url`, `save
 --
 
 CREATE TABLE IF NOT EXISTS `fx_descr` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(10) COLLATE utf8_persian_ci NOT NULL,
   `title_sub` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(2) COLLATE utf8_persian_ci NOT NULL,
-  `title_sub2` text COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `title_sub2` text COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `fx_descr`
@@ -934,14 +987,14 @@ INSERT INTO `fx_descr` (`id`, `title`, `title_sub`, `saved_by`, `title_sub2`) VA
 (2, '6', '<p dir="rtl" style="text-align: justify;"><span dir="RTL" lang="FA">ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم.</span></p>', '1', '<p><span dir="RTL" lang="FA">ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار...</span></p>'),
 (3, '5', '<p dir="rtl" style="text-align: justify;">دانستنی های کسب و کار درک کاملی از عملکرد های کلی کسب و کار و مناطق خاص تحت تجزیه و تحلیل می باشد، داشتن اطلاعات دقیق و کامل از این دانستنی ها برای توسعه ساختار بنیادین سازمان حیاتی است، بر اساس این اطلاعات تحلیلگر می تواند درک درستی از کاربران، مشکلات و احتیاجات آن ها بدست آورد و روش های جدید و پربازده ای را برای انجام وظایف اولیه کاربران طراحی کند.</p>', '1', '<p>دانستنی های کسب و کار درک کاملی از عملکرد های کلی کسب و کار و مناطق خاص تحت تجزیه و تحلیل...</p>'),
 (4, '10', '', '1', '<p>گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه...</p>'),
-(5, '4', '<p dir="rtl" style="text-align: justify;">شرکت سیمرغ صنعت و دانش با تکیه بر دانش و تجربه بی بدیل کارشناسان خود سعی در ارائه خدمات منحصر بفرد در زمینه مشاوره صنعتی دارد تا تمامی هموطنان عزیزمان طعم خوش موفقیت را در فعالیت خود حس نمایند.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>', '1', '<p><span dir="RTL" lang="FA">شرکت سیمرغ صنعت و دانش با تکیه بر دانش و تجربه بی بدیل کارشناسان خود سعی در ارائه خدمات منحصر بفرد در زمینه مشاوره صنعتی دارد...</span></p>'),
-(6, '3', '<p dir="rtl" style="text-align: justify;">مشاوره نتیجه بخش، مستلزم:</p>\n<p dir="rtl" style="text-align: justify;">&nbsp; &nbsp; تشخیص صحیح مسائل سازمان</p>\n<p dir="rtl" style="text-align: justify;">&nbsp; &nbsp; انتخاب بهترین راهکارها و ابزارها</p>\n<p dir="rtl" style="text-align: justify;">&nbsp; &nbsp; و در نهایت پیاده سازی صحیح و اثربخش راهکارهامی باشد.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;ارائه خدمات مشاوره ای جامع، متمایز و نتیجه بخش،متناسب با مراحل مختلف چرخه عمر سازمان ها توسط تیم مشاوران&nbsp;SSD:</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;تشخیص و درمان عارضه های سازمانی/ تدوین و اجرای استراتژی کسب و کار/ حرفه ای سازی و توسعه&nbsp;کسب و کارهای کوچک/ مدیریت جامع منابع انسانی/ مدیریت مالی و سرمایه گذاری/ مدیریت بازاریابی و فروش و ...</p>', '1', '<p dir="rtl">مشاوره نتیجه بخش، مستلزم؛&nbsp;تشخیص صحیح مسائل سازمان،&nbsp;انتخاب بهترین راهکارها و ابزارها&nbsp;و در نهایت پیاده سازی...</p>'),
-(7, '2', '<p dir="rtl" style="text-align: justify;">استفاده از اطلاعات مالی و حسابداری مربوط، قابل اتکاء و مفید مهم ترین وسیله تصمیم گیری برای واحدهای تجاری می باشد و دستیابی به اطلاعات مالی و حسابداری مذکور جز با استفاده از خدمات حسابداران و مشاورین مدیریت امکان پذیر نیست.</p>', '1', '<p><span dir="RTL" lang="AR-SA">استفاده از اطلاعات مالی و حسابداری مربوط، قابل اتکاء و مفید مهم ترین وسیله تصمیم گیری...</span></p>'),
-(8, '9', '<p><strong>&nbsp;</strong></p>', '1', '<p>برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز....</p>'),
+(5, '4', '<p dir="rtl" style="text-align: justify;">مديران ارشد سازمان تأثير قابل توجهي را که فناوري اطلاعات مي‌تواند روي موفقيت سازمان داشته باشد، درک کرده‌اند. مديران اميدوارند که درک و شناخت خود را از روشهاي مبتني بر فناوري اطلاعات که به کار برده شده است و نيز احتمال به کار بردن موفقيت‌آميز آن را براي کسب مزيت رقابتي افزايش دهند.\r\nبنابراين هيئت مديره و مديران اجرايي نياز دارند که مديريت و نظارت روي IT را افزايش دهند، براي اينکه اطمينان يابند که IT سازمان، استراتژيها و هدفهاي سازمان را دنبال مي‌کند و برآورده مي‌سازد. از اينرو راهبري فناوري اطلاعات (IT Governance = ITG) به عنوان بخش جدايي ناپذير مديريت سازمان در نظر گرفته مي‌شود. </p>', '1', '<p><span dir="RTL" lang="FA">مديران ارشد سازمان تأثير قابل توجهي را که فناوري اطلاعات مي‌تواند روي موفقيت سازمان داشته باشد، درک کرده‌اند. مديران اميدوارند که ...</span></p>'),
+(6, '3', '<p dir="rtl" style="text-align: justify;">سازمان ها تازمانی که برای بقاء تلاش می کنند وخودرانیازمند حضور درعرصه ملی وجهانی می دانند، بایداصل بهبود مستمرراسرلوحه فعالیت خودقراردهند. این اصل حاصل نمی شود، مگراینکه زمینه دستیابی به آن با بهبود رضایت عملکرد امکان پذیری شود. این بهبود رامی توان باگرفت بازخورلازم ازمحیط درون وبیرون سازمان بدست آورد. بازخورددرونی سازمانی نمایانگر سرمایه فکری سازمان است وبازخوربرونی سازمانی نمایانگر سرمایه اجتماعی سازمان است که باتجزیه وتحلیل نقاظ قوت وضعف وایجاد وبکارگیری سیستم ارزیابی عملکرد می توان دربهبودعملکرد سازمان قدم برداشت.</p>', '1', '<p dir="rtl">سازمان ها تازمانی که برای بقاء تلاش می کنند وخودرانیازمند حضور درعرصه ملی وجهانی می دانند، بایداصل بهبود مستمرراسرلوحه فعالیت خودقراردهند. این اصل حاصل نمی شود، مگر...</p>'),
+(7, '2', '<p dir="rtl" style="text-align: justify;">اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت هم‌راستا با هدف‌های کلان و جایگاهی که برای کسب‌وکارمان انتظار داریم، باید به تدوین اهداف بازاریابی بپردازیم. سپس براساس تفکر و استراتژی‌های سازمان گام‌های عملی برنامه‌ریزی بازاریابی برداشته می‌شود.\r\nبرنامه بازاریابی مستندی است که تمام یافته‌های تیم تحقیقات بازار را در خود خلاصه کرده و راهنمایی‌های عملی برای دستیابی به اهداف بازاریابی ارائه می‌کند. از آنجا که بخش‌های بازاریابی و فروش قلب تپنده سازمان‌های امروزی هستند، تدوین یک برنامه بازاریابی مکتوب و ساختاریافته از اهمیت بسزایی برخوردار است.</p>', '1', '<p><span dir="RTL" lang="AR-SA">اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت ...</span></p>'),
+(8, '9', '<p><strong>&nbsp;</strong></p>', '1', '<p>برای موفقیت وتقویت سازمان شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز....</p>'),
 (9, '8', '', '1', '<p>مزایای شما از شرکت در دوره های آموزشی...</p>\n<p>&nbsp;</p>'),
 (11, '1', '<p dir="rtl" style="text-align: justify;">گروه مشاوران&nbsp;SSD&nbsp;با وجود شبکه مشاوران و مدرسان مجرب و حرفه ای توان ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف&nbsp;&nbsp;چرخه عمر سازمانی اعم از دوره های کارآفرینی و ایجاد کسب و کار تا دوره های خرد و کلان مدیریت سازمان را دارا می باشد. تاکید ما بر کاربردی بودن دوره های یادگیری مان است.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;">دوره های آموزشی ما به چند دسته تقسیم می شود.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;">1-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;کارگاههای آموزشی کوتاه مدت و میان مدت:</p>\n<p dir="rtl" style="text-align: justify;">کارگاههای کوتاه مدت در یک یا حداکثر 3 روز و با موضوعات متنوع و&nbsp;&nbsp;مشخص برگزار می گردد. دوره های میان مدت بین 5 تا 10 روز می باشند. که به صورت جامعتر و با هدف یادگیری موضوعات مهم سازمانی که در یک یا دو کارگاه میگنجد، برگزار می شود.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;">2-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;کارگاههایی که به سفارش مشتریان با موضوع خاص برای پرسنل یک شرکت برگزار می شود:</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;ما با تیم مدرسان و مشاوران مجرب در اکثر زمینه های مدیریتی و فنی مورد نیاز سازمان توانایی برگزاری دوره های مورد نظر را داریم.شما می توانید مدیریت آموزش شرکتتان را برونسپاری کرده و به ما بسپارید.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;">3-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;سمینارها و همایش های تخصصی</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;ما با برگزاری سمینارهای تخصصی و کاربردی با موضوعات مورد نیاز جامعه کسب و کار استان به دنبال ارتقاء،به روزرسانی دانش مدیریت،مدیران و علاقمندان مدیریت هستیم.</p>', '1', '<p>ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف&nbsp;&nbsp;چرخه عمر سازمانی...</p>'),
 (12, '11', '<p><sub>&nbsp;</sub></p>', '1', '<p>تصاویر دوره های برگزار شده به تفکیک، در این بخش قابل مشاهده میباشد...</p>'),
-(13, '12', '', '1', '<p>دوره های در حال ثبت نام در این بخش قابل مشاهده میباشد...</p>');
+(13, '12', '', '1', '<p>مقالات و ویدئوهای آموزشی در این بخش قابل مشاهده میباشد...</p>');
 
 -- --------------------------------------------------------
 
@@ -950,10 +1003,11 @@ INSERT INTO `fx_descr` (`id`, `title`, `title_sub`, `saved_by`, `title_sub2`) VA
 --
 
 CREATE TABLE IF NOT EXISTS `fx_email_templates` (
-  `template_id` int(11) NOT NULL,
+  `template_id` int(11) NOT NULL AUTO_INCREMENT,
   `email_group` text NOT NULL,
-  `template_body` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+  `template_body` text NOT NULL,
+  PRIMARY KEY (`template_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `fx_email_templates`
@@ -966,11 +1020,53 @@ INSERT INTO `fx_email_templates` (`template_id`, `email_group`, `template_body`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `fx_entre`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_entre` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_entre`
+--
+
+INSERT INTO `fx_entre` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'te', '<p>te</p>', '', '', 'te', '1', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_estimate_items`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_estimate_items` (
+  `item_id` int(11) NOT NULL AUTO_INCREMENT,
+  `estimate_id` int(11) NOT NULL,
+  `item_desc` varchar(200) CHARACTER SET latin1 NOT NULL,
+  `unit_cost` float NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `total_cost` float NOT NULL,
+  `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`item_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `fx_estimates`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_estimates` (
-  `est_id` int(11) NOT NULL,
+  `est_id` int(11) NOT NULL AUTO_INCREMENT,
   `reference_no` varchar(32) CHARACTER SET latin1 NOT NULL,
   `client` varchar(64) CHARACTER SET latin1 NOT NULL,
   `due_date` varchar(40) CHARACTER SET latin1 NOT NULL,
@@ -981,24 +1077,10 @@ CREATE TABLE IF NOT EXISTS `fx_estimates` (
   `est_deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
   `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `emailed` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
-  `invoiced` enum('Yes','No') CHARACTER SET latin1 DEFAULT 'No'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_estimate_items`
---
-
-CREATE TABLE IF NOT EXISTS `fx_estimate_items` (
-  `item_id` int(11) NOT NULL,
-  `estimate_id` int(11) NOT NULL,
-  `item_desc` varchar(200) CHARACTER SET latin1 NOT NULL,
-  `unit_cost` float NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `total_cost` float NOT NULL,
-  `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `invoiced` enum('Yes','No') CHARACTER SET latin1 DEFAULT 'No',
+  PRIMARY KEY (`est_id`),
+  UNIQUE KEY `reference_no` (`reference_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1007,7 +1089,7 @@ CREATE TABLE IF NOT EXISTS `fx_estimate_items` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_events` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `start_date` varchar(20) COLLATE utf8_persian_ci NOT NULL,
@@ -1015,8 +1097,9 @@ CREATE TABLE IF NOT EXISTS `fx_events` (
   `time_start` varchar(13) COLLATE utf8_persian_ci NOT NULL,
   `time_end` varchar(13) COLLATE utf8_persian_ci NOT NULL,
   `color` varchar(20) COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1025,22 +1108,23 @@ CREATE TABLE IF NOT EXISTS `fx_events` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_fani` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `fx_fani`
 --
 
 INSERT INTO `fx_fani` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
-(1, 'خدمات مشاوره فنی', '<p dir="rtl" style="text-align: justify;">شرکت سیمرغ صنعت و دانش با تکیه بر دانش و تجربه بی بدیل کارشناسان خود سعی در ارائه خدمات منحصر بفرد در زمینه مشاوره صنعتی دارد تا تمامی هموطنان عزیزمان طعم خوش موفقیت را در فعالیت خود حس نمایند.</p>\n<p dir="rtl" style="text-align: justify;">برخی از خدمات این بخش عبارتند از:</p>\n<ul dir="rtl">\n<li style="text-align: justify;">استقرار و ممیزی سیستم های نوین نگهداری و تعمیرات.</li>\n<li style="text-align: justify;"><strong>CMMS</strong> و پیاده سازی موثر آن در سازمان.</li>\n<li style="text-align: justify;">ممیزی و بازرسی فنی واحد های صنعتی و ارائه راهکارهایی در جهت بهینه سازی خطوط تولید.</li>\n<li style="text-align: justify;">ارائه خدمات در زمینه پایش وضعیت تجهیزات شامل : آنالیز ارتعاشات، بالانس، الایمنت، ترموگرافی.</li>\n<li style="text-align: justify;">کدینگ کالاهای فنی موجود در انبار.</li>\n<li style="text-align: justify;">طراحی ،نصب و راه اندازی سیستم های پنوماتیک.</li>\n<li style="text-align: justify;">طراحی ، نصب و راه اندازی سیستم های هیدرولیک.</li>\n</ul>', '', '', 'Technical-consulting-services', '1', '52'),
+(1, 'خدمات مشاوره فنی', '<p dir="rtl" style="text-align: justify;">شرکت سیمرغ صنعت و دانش با تکیه بر دانش و تجربه بی بدیل کارشناسان خود سعی در ارائه خدمات منحصر بفرد در زمینه مشاوره صنعتی دارد تا تمامی هموطنان عزیزمان طعم خوش موفقیت را در فعالیت خود حس نمایند.</p>\n<p dir="rtl" style="text-align: justify;">برخی از خدمات این بخش عبارتند از:</p>\n<ul dir="rtl">\n<li style="text-align: justify;">استقرار و ممیزی سیستم های نوین نگهداری و تعمیرات.</li>\n<li style="text-align: justify;"><strong>CMMS</strong> و پیاده سازی موثر آن در سازمان.</li>\n<li style="text-align: justify;">ممیزی و بازرسی فنی واحد های صنعتی و ارائه راهکارهایی در جهت بهینه سازی خطوط تولید.</li>\n<li style="text-align: justify;">ارائه خدمات در زمینه پایش وضعیت تجهیزات شامل : آنالیز ارتعاشات، بالانس، الایمنت، ترموگرافی.</li>\n<li style="text-align: justify;">کدینگ کالاهای فنی موجود در انبار.</li>\n<li style="text-align: justify;">طراحی ،نصب و راه اندازی سیستم های پنوماتیک.</li>\n<li style="text-align: justify;">طراحی ، نصب و راه اندازی سیستم های هیدرولیک.</li>\n</ul>', '', '', 'Technical-consulting-services', '1', '53'),
 (2, 'دانستنی های فنی', '<ul>\n<li dir="rtl" style="text-align: justify;">نگهداری و تعمیرات</li>\n</ul>\n<p dir="rtl" style="text-align: justify;">اتوماسیون تجهیزات و دستگاه های جدید نیازمند سرمایه گذاری بسیار بالایی می باشد و لذا توقفات ، بسیار هزینه ساز خواهد بود. باید به منظور حصول اطمینان از آماده بکاری دستگاه ها و تجهیزات ،نگهداری و تعمیر به طور منظم صورت گیرد. این نگهداری و تعمیر باید در ارتباط با نیازها و برنامه های تولیدی به گونه ای دقیق برنامه ریزی گردد.</p>\n<p dir="rtl" style="text-align: justify;">نگهداری و تعمیرات عبارت است از تمامی فعالیت های انجام شده در جهت حفاظت وضعیت مطلوب و استاندارد یک قسمت یا کل سیستم.</p>\n<p dir="rtl" style="text-align: justify;">وضعیت مطلوب از دیدگاه مدیریت نگهداری و تعمیر عبارتست از:</p>\n<p dir="rtl" style="text-align: justify;">الف) دستگاه ها درحین نیاز، آماده به کار باشند.</p>\n<p dir="rtl" style="text-align: justify;">ب) دستگاه ها در حین بهره برداری، به طور ناگهانی از کار نیافتاده و بتوانند به طور کارآمد و مطابق با برنامه ی تولیدی و خدماتی مورد نظر و سایر توقفات مربوطه کار کنند.</p>\n<p dir="rtl" style="text-align: justify;">ج) زمان توقف جهت انجام نگهداری و تعمیر با برنامه ی تولید تلاقی نداشته باشد.</p>\n<p dir="rtl" style="text-align: justify;">د) زمان توقف ناشی از خرابهای ناگهانی به حداقل برسد.</p>\n<p dir="rtl" style="text-align: justify;">ه) نیاز به مواد، قطعات و لوازم یدکی و سایر تسهیلات در طی پریودهای زمانی آتی مشخص باشد.</p>\n<p dir="rtl" style="text-align: justify;">به کارگیری سیستم نگهداری و تعمیرات خاص یک سازمان،می تواند نقش بسیار زیادی را در کاهش قیمت تمام شده محصول نهایی ایفا نماید. اما این تاثیرات تنها محدود به هزینه نبوده و در سرعت ارائه محصول در کل زنجیره تامین، کیفیت محصول، قابلیت اطمینان، چابکی سازمان و عواملی از این دست نیز تاثیرات خاص خود را خواهد داشت. از این رو می توان به نقش مهم و تاثیرگذار استراتژی های مختلف نگهداری و تعمیرات&nbsp; بر روی کسب و کار یک بنگاه اقتصادی پی برد.</p>\n<p dir="rtl" style="text-align: justify;">برخی از مهمترین استراتژی ها عبارت اند از:</p>\n<p dir="rtl" style="text-align: justify;">&uuml;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; نگهداری وتعمیرات پیشگیرانه (<strong>Preventive Maintenance-PM</strong>)</p>\n<p dir="rtl" style="text-align: justify;">&uuml;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; نگهداری و تعمیرات پیش بینانه(<strong>Predictive Maintenance-PM</strong>)</p>\n<p dir="rtl" style="text-align: justify;">&uuml;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; نگهداری و تعمیرات مبتنی بر وضعیت(<strong>Condition Based Maintenance-CBM</strong>)</p>\n<p dir="rtl" style="text-align: justify;">&uuml;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; نگهداری و تعمیرات مبتنی بر قابلیت اطمینان(<strong>Reliability Centered Maintenance-RCM</strong>)</p>\n<p dir="rtl" style="text-align: justify;">&uuml;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; نگهداری و تعمیرات بهره ور فراگیر(<strong>Total Productive Maintenance-TPM</strong>).</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<ul dir="rtl" style="text-align: justify;">\n<li>پایش وضعیت</li>\n</ul>\n<p dir="rtl" style="text-align: justify;">پایش وضعیت فرآیند تعیین و بررسی تغییر وضعیت ماشین آلات در حالت کاریشان در طول زمان می باشد. کلید یک برنامه پایش وضعیت موفق عبارت است از:</p>\n<p dir="rtl" style="text-align: justify;">o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; دانستن گوش دادن به چه چیزی.</p>\n<p dir="rtl" style="text-align: justify;">o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; چگونگی تفسیر آن.</p>\n<p dir="rtl" style="text-align: justify;">o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; زمان استفاده از این دانش.</p>\n<p dir="rtl" style="text-align: justify;">در نهایت استفاده از این برنامه موجب تعمیر اجزای مشکل دار پیش از شکست می شود. برنامه پایش وضعیت نه تنها باعث کاهش احتمال شکست های فاجعه بار توسط پرسنل کارخانه می شود بلکه به آنها اجازه ی برنامه ریزی جهت سفارش قطعات مورد نیاز تعمیر، تنظیم بارکاری پرسنل تعمیرات و برنامه ریزی های دیگر در طول تعمیرات را می دهد.</p>\n<p dir="rtl" style="text-align: justify;">برنامه پایش وضعیت براساس پارامترهایی مانند ارتعاشات، صدا، روانکاری و دما وضعیت ماشین را تعیین می کند.</p>\n<p>&nbsp;نیازهای اساسی برای راه اندازی سیستم CM با توجه به اندازه و پیچیدگی کارخانه متفاوت است. اما قطع نظر از تفاوتها حداقل های زیر باید در نظر گرفته شوند:</p>\n<p style="padding-right: 30px;">1-&nbsp;&nbsp;&nbsp;&nbsp; حمایت مدیریت.</p>\n<p style="padding-right: 30px;">2-&nbsp;&nbsp;&nbsp; اختصاص نیروهایی خاص CM.</p>\n<p style="padding-right: 30px;">3-&nbsp;&nbsp;&nbsp; تهیه فرآیندهای جمع آوری و آنالیز اطلاعات کارآمد.</p>\n<p style="padding-right: 30px;">4-&nbsp;&nbsp;&nbsp; بانک اطلاعاتی بادوام.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>1</strong><strong>-حمایت مدیریت اولین و مهمترین رکن موفقیت اجرای یک برنامه </strong>CM<strong> می باشد.</strong></p>\n<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; بزرگترین چالش اجرای CM بالا بردن کاذب انتظارات مدیریت.</p>\n<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مطلع کردن مدیریت از اصول CM گامی موثر در برخورداری از حمایت .</p>\n<p>- &nbsp; &nbsp; &nbsp; در اغلب برنامه های ناموفق مدیریت روی سرمایه گذاری اولیه برای خرید تجهیزات اقدام کرده است اما به منابع لازم برای آموزش، حمایت مشورتی و منابع انسانی که برای موفقیت ضروری هستند کم توجهی کرده است.</p>\n<p>&nbsp;</p>\n<p><strong>2</strong><strong>-اختصاص نیروهای خاص </strong>CM</p>\n<p>همه برنامه های موفق حول يک تيم تعميرات پيشگيرانه تمام وقت ساخته شده اند. مسئوليت پذيری و پاسخگويي عامل موثری است که از يک گروه نت پيش بينانه انتظار می رود.</p>\n<p>آموزش هم در زمينه شناخت سيستمهای نت و هم در زمينه فنی تخصصی آن بسيار حائز اهميت است.</p>\n<p>علاوه بر آموزش های کلی از ماشينهای دوار مکانيکی و برقی، آموزشهای تخصصی ارتعاشات، اطلاعات کافی از ترموگرافی، ترايبولوژی و ديگر اطلاعات مربوط به تجهيزات تحت نظر برنامه CM الزامی می باشد.</p>\n<p>&nbsp;</p>\n<p><strong>3-تهیه فرآیندهای جمع آوری و آنالیز اطلاعات کارآمد</strong></p>\n<p>برنامه ای که خوب طراحی شده باشد همه ماشینها و تجهیزات را به یک اندازه مورد بازرسی قرار نمی دهد.&nbsp; قبل از هر چیز نیاز به طبقه بندی تجهیزات و ماشینهای کارخانه می باشد. آناليز اطلاعات بدون شناخت کافی از ماشين يا تجهيز مورد آناليز تقريبا غير ممکن است. اين اطلاعات عبارتند از :</p>\n<p>&nbsp;&nbsp;مشخصات بيرينگ ها، &nbsp;&nbsp;&nbsp;&nbsp;چرخدنده ها، &nbsp;&nbsp;&nbsp;&nbsp;الکتروموتورها، &nbsp;&nbsp;&nbsp;&nbsp;تيغه های پروانه پمپ ها، کمپرسورها و توربين ها&nbsp;،&nbsp; &nbsp;دور نامي ماشينها ، &nbsp;&nbsp;&nbsp;تهيه کتابچه روغنهای مصرفی &nbsp;&nbsp;و &nbsp;&nbsp;&nbsp;&nbsp;برخي حدود مجاز سازنده تجهیز&nbsp; &nbsp; &nbsp; می باشد.</p>\n<p>&nbsp;</p>\n<p><strong>4</strong><strong>-بانک اطلاعاتی بادوام</strong></p>\n<p>نتیجه کار بستگی به کامل یا ناقص بودن بانک اطلاعاتی دارد. باید برنامه ای منظم برای Back up گیری از بانک اطلاعاتی داشته باشید تا دوام آن تضمین شود.</p>\n<p><strong>&nbsp;</strong></p>\n<p><span style="font-size: 14pt;"><strong>طبقه بندی تجهیزات:</strong></span></p>\n<p style="padding-right: 30px;"><strong>Class I</strong> (<strong>حياتی</strong>).&nbsp; &nbsp; ماشين آلات و تجهيزاتی که برای تداوم توليد بايد بصورت دائمی در سرويس باشند و فقدان يکی از آنها باعث توقف کارخانه و هدر رفتن کلی توليدات خواهد شد.</p>\n<p>همچنين تجهيزاتی که دارای هزينه تعميراتی بسيار زيادی هستند يا زمان تعمير آنها زياد طول می کشد.</p>\n<p>&nbsp;</p>\n<p style="padding-right: 30px;"><strong>C</strong><strong>lass II</strong> (<strong>بحرانی</strong>).&nbsp; &nbsp; ماشين آلاتی که به شدت ظرفيت توليد را محدود می کنند.</p>\n<p>بعنوان يک قانون کلی ماشين آلاتی که آسيب ديدنشان باعث افت 30 درصدی يا بيشتر در توليد می شوند. همچنين ماشينها يا سيستمهايی که سابقه تعميراتی مزمنی دارند يا اينکه هزينه تعميرات يا جايگزينی آنها زياد است.</p>\n<p>&nbsp;</p>\n<p style="padding-right: 30px;"><strong>Class III</strong>&nbsp; (<strong>جدی</strong>). &nbsp; تجهيزاتی که جزء تجهيزات اصلی هستند و هزينه تعميرات را بالا می برند اما ضربات و اثرات چشمگيری روی توليد ندارند.</p>\n<p>دستگاههای آماده بكار(standby) جزء اين کلاس قرار دارند . چرا که باعث تأمين تداوم توليد در موارد خاص می شوند و اگر چه خرابی آنها روی توليد اثر نخواهد گذاشت. اما تأثير مستقيم روی هزينه تعميرات دارند.</p>\n<p>&nbsp;</p>\n<p style="padding-right: 30px;"><strong>Class IV</strong>&nbsp; (<strong>ديگر ماشين آلات</strong>). &nbsp; تجيهزات ديگر که سابقه ثابت شده ای از تأثير روی خط توليد يا هزينه تعميرات دارند.</p>\n<p>همه تجهيزات اين گروه بايد از اين نظر که ارزش مانيتورينگ دارند يا خير مورد ارزيابی قرار گيرند. زيرا در برخی موارد هزينه تعويض کمتر از هزينه ساليانه مانيتور کردن آنها می باشد.</p>\n<p>ابتدا بايد همه انواع ماشين آلات دوار را برای بدست آوردن خط مرز معتبر و درستی از داده ها تحت مانيتورينگ قرار داد. داده برداري بصورت spectrum از اثر انگشت ارتعاش ماشين براي ايجاد بانك اطلاعاتي بعنوان مرجع (reference) وضعيت کارکرد اوليه ماشين آلات بايد انجام شود.</p>\n<p>چند مرحله داده برداری روی همه ماشين آلات نياز است تا اطلاعات کافی برای ريزپردازنده مهيا شود و ترند به حد قابل قبول اطلاعات دسترسی داشته باشد. در اين فاز اندازه گيری معمولا هر دو هفته يکبار انجام می شود. (فاز اول بايد 6 پريود انجام شود يعنی 12 هفته)</p>\n<p>داده های ارتعاشی پایه ای هستند که وقتی کارکرد تجهیز ثابت و معلوم باشد اندازه گیری می شوند و رصد می شوند.</p>\n<p>برای ماشین های با چندین شرایط کارکرد ضروری است برای هر شرایطی یک baseline ایجاد کرد.</p>\n<p>برای تجهیزات نو یا overhaule شده لازم است تغییرات ارتعاش در چند روز یا چند هفته اول ملاحظه شود.</p>\n<p>برای تجهیزی که برای دوره قابل توجهی کار کرده است و برای بار اول مانیتور می شود، یک baseline به عنوان نقطه مبنای مرجع ترند می توان ایجاد کرد.</p>\n<p>بعد از مرحله اول يعنی ارزيابی و ترسيم baseline ماشين آلات، تناوب داده برداری بسته به طبقه بندی ماشين آلات متفاوت خواهد بود.</p>\n<p><strong>&iexcl;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Class I هر دو يا سه هفته يکبار بايد مانيتور شوند.</p>\n<p><strong>&iexcl;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Class II دوره اندازه گيري سه تا چهار هفته ای.</p>\n<p><strong>&iexcl;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Class III تناوب اندازه گيری چهار تا شش هفته ای.</p>\n<p><strong>&iexcl;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>Class IV&nbsp;دوره اندازه گيری شش تا ده هفته ای.</p>\n<p><strong>&nbsp; </strong>&nbsp; اين تناوبها قابل تغيير می باشند و برای شرايط واقعی خاص ماشين بايد تنظيم شود.</p>\n<p dir="rtl" style="text-align: justify;"><strong>&nbsp;</strong></p>\n<ul dir="rtl">\n<li style="text-align: justify;">هیدرولیک و پنوماتیک</li>\n<li style="text-align: justify;">نرم افزارهای تخصصی</li>\n</ul>', '', '', 'Technical-Facts', '1', '80');
 
 -- --------------------------------------------------------
@@ -1050,13 +1134,89 @@ INSERT INTO `fx_fani` (`id`, `name`, `description`, `image`, `file`, `url`, `sav
 --
 
 CREATE TABLE IF NOT EXISTS `fx_files` (
-  `file_id` int(11) NOT NULL,
+  `file_id` int(11) NOT NULL AUTO_INCREMENT,
   `project` int(11) NOT NULL,
   `file_name` text CHARACTER SET latin1 NOT NULL,
   `description` text CHARACTER SET latin1 NOT NULL,
   `uploaded_by` int(11) NOT NULL,
-  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`file_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_finance`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_finance` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_finance`
+--
+
+INSERT INTO `fx_finance` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'finance test', '<p>we are testing!!!</p>', '', '', 'testfin', '1', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_franch`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_franch` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_franch`
+--
+
+INSERT INTO `fx_franch` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'fran', '<p>test fran</p>', '', '', 'frant', '1', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_grow`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_grow` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_grow`
+--
+
+INSERT INTO `fx_grow` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'تست', '<p>استراتژی2</p>', '', '', 'test2', '1', '');
 
 -- --------------------------------------------------------
 
@@ -1065,10 +1225,11 @@ CREATE TABLE IF NOT EXISTS `fx_files` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_image_ip` (
-  `id_ip` int(11) NOT NULL,
+  `id_ip` int(11) NOT NULL AUTO_INCREMENT,
   `img_id_fk` int(11) NOT NULL,
-  `ip_add` varchar(40) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=5055 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `ip_add` varchar(40) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id_ip`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=5055 ;
 
 -- --------------------------------------------------------
 
@@ -1077,10 +1238,11 @@ CREATE TABLE IF NOT EXISTS `fx_image_ip` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_introduction` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `description` longtext COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `fx_introduction`
@@ -1096,7 +1258,7 @@ INSERT INTO `fx_introduction` (`id`, `description`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_invoices` (
-  `inv_id` int(11) NOT NULL,
+  `inv_id` int(11) NOT NULL AUTO_INCREMENT,
   `reference_no` varchar(32) CHARACTER SET latin1 NOT NULL,
   `client` varchar(64) CHARACTER SET latin1 NOT NULL,
   `due_date` varchar(40) CHARACTER SET latin1 NOT NULL,
@@ -1111,8 +1273,10 @@ CREATE TABLE IF NOT EXISTS `fx_invoices` (
   `date_sent` varchar(64) CHARACTER SET latin1 NOT NULL,
   `inv_deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
   `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `emailed` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `emailed` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
+  PRIMARY KEY (`inv_id`),
+  UNIQUE KEY `reference_no` (`reference_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1121,7 +1285,7 @@ CREATE TABLE IF NOT EXISTS `fx_invoices` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_ipn_log` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `listener_name` varchar(3) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Either IPN or API',
   `transaction_type` varchar(16) CHARACTER SET latin1 DEFAULT NULL COMMENT 'The type of call being made to the listener',
   `transaction_id` varchar(19) CHARACTER SET latin1 DEFAULT NULL COMMENT 'The unique transaction ID generated by PayPal',
@@ -1130,8 +1294,46 @@ CREATE TABLE IF NOT EXISTS `fx_ipn_log` (
   `ipn_data_hash` varchar(32) CHARACTER SET latin1 DEFAULT NULL COMMENT 'MD5 hash of the IPN post data',
   `detail` text CHARACTER SET latin1 COMMENT 'Detail text (potentially JSON) on this call',
   `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_ipn_order_items`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_ipn_order_items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) DEFAULT NULL,
+  `item_name` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Item name as passed by you, the merchant. Or, if not passed by you, as entered by your customer. If this is a shopping cart transaction, Paypal will append the number of the item (e.g., item_name_1,item_name_2, and so forth).',
+  `item_number` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Pass-through variable for you to track purchases. It will get passed back to you at the completion of the payment. If omitted, no variable will be passed back to you.',
+  `quantity` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Quantity as entered by your customer or as passed by you, the merchant. If this is a shopping cart transaction, PayPal appends the number of the item (e.g., quantity1,quantity2).',
+  `mc_gross` decimal(10,2) DEFAULT NULL COMMENT 'Full amount of the customer''s payment',
+  `mc_handling` decimal(10,2) DEFAULT NULL COMMENT 'Total handling charge associated with the transaction',
+  `mc_shipping` decimal(10,2) DEFAULT NULL COMMENT 'Total shipping amount associated with the transaction',
+  `tax` decimal(10,2) DEFAULT NULL COMMENT 'Amount of tax charged on payment',
+  `cost_per_item` decimal(10,2) DEFAULT NULL COMMENT 'Cost of an individual item',
+  `option_name_1` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 1 name as requested by you',
+  `option_selection_1` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 1 choice as entered by your customer',
+  `option_name_2` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 2 name as requested by you',
+  `option_selection_2` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 2 choice as entered by your customer',
+  `option_name_3` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 3 name as requested by you',
+  `option_selection_3` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 3 choice as entered by your customer',
+  `option_name_4` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 4 name as requested by you',
+  `option_selection_4` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 4 choice as entered by your customer',
+  `option_name_5` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 5 name as requested by you',
+  `option_selection_5` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 5 choice as entered by your customer',
+  `option_name_6` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 6 name as requested by you',
+  `option_selection_6` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 6 choice as entered by your customer',
+  `option_name_7` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 7 name as requested by you',
+  `option_selection_7` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 7 choice as entered by your customer',
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `order_id` (`order_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1140,7 +1342,7 @@ CREATE TABLE IF NOT EXISTS `fx_ipn_log` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_ipn_orders` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `notify_version` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'IPN Version Number',
   `verify_sign` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Encrypted string used to verify the authenticityof the tansaction',
   `test_ipn` int(11) DEFAULT NULL,
@@ -1228,43 +1430,10 @@ CREATE TABLE IF NOT EXISTS `fx_ipn_orders` (
   `ipn_track_id` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Internal tracking variable added in April 2011',
   `transaction_subject` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Describes the product for a button-based purchase',
   `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_ipn_order_items`
---
-
-CREATE TABLE IF NOT EXISTS `fx_ipn_order_items` (
-  `id` int(11) NOT NULL,
-  `order_id` int(11) DEFAULT NULL,
-  `item_name` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Item name as passed by you, the merchant. Or, if not passed by you, as entered by your customer. If this is a shopping cart transaction, Paypal will append the number of the item (e.g., item_name_1,item_name_2, and so forth).',
-  `item_number` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Pass-through variable for you to track purchases. It will get passed back to you at the completion of the payment. If omitted, no variable will be passed back to you.',
-  `quantity` varchar(127) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Quantity as entered by your customer or as passed by you, the merchant. If this is a shopping cart transaction, PayPal appends the number of the item (e.g., quantity1,quantity2).',
-  `mc_gross` decimal(10,2) DEFAULT NULL COMMENT 'Full amount of the customer''s payment',
-  `mc_handling` decimal(10,2) DEFAULT NULL COMMENT 'Total handling charge associated with the transaction',
-  `mc_shipping` decimal(10,2) DEFAULT NULL COMMENT 'Total shipping amount associated with the transaction',
-  `tax` decimal(10,2) DEFAULT NULL COMMENT 'Amount of tax charged on payment',
-  `cost_per_item` decimal(10,2) DEFAULT NULL COMMENT 'Cost of an individual item',
-  `option_name_1` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 1 name as requested by you',
-  `option_selection_1` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 1 choice as entered by your customer',
-  `option_name_2` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 2 name as requested by you',
-  `option_selection_2` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 2 choice as entered by your customer',
-  `option_name_3` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 3 name as requested by you',
-  `option_selection_3` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 3 choice as entered by your customer',
-  `option_name_4` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 4 name as requested by you',
-  `option_selection_4` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 4 choice as entered by your customer',
-  `option_name_5` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 5 name as requested by you',
-  `option_selection_5` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 5 choice as entered by your customer',
-  `option_name_6` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 6 name as requested by you',
-  `option_selection_6` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 6 choice as entered by your customer',
-  `option_name_7` varchar(64) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 7 name as requested by you',
-  `option_selection_7` varchar(200) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Option 7 choice as entered by your customer',
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UniqueTransactionID` (`txn_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1273,14 +1442,15 @@ CREATE TABLE IF NOT EXISTS `fx_ipn_order_items` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_items` (
-  `item_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL AUTO_INCREMENT,
   `invoice_id` int(11) NOT NULL,
   `item_desc` varchar(200) CHARACTER SET latin1 NOT NULL,
   `unit_cost` float NOT NULL,
   `quantity` int(11) NOT NULL,
   `total_cost` float NOT NULL,
-  `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_saved` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`item_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1289,11 +1459,37 @@ CREATE TABLE IF NOT EXISTS `fx_items` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_items_saved` (
-  `item_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL AUTO_INCREMENT,
   `item_desc` varchar(200) CHARACTER SET latin1 NOT NULL,
   `unit_cost` int(11) NOT NULL,
-  `deleted` enum('Yes','No') CHARACTER SET latin1 DEFAULT 'No'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `deleted` enum('Yes','No') CHARACTER SET latin1 DEFAULT 'No',
+  PRIMARY KEY (`item_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_lead`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_lead` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `fx_lead`
+--
+
+INSERT INTO `fx_lead` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(3, 'تست1', '<p>رهبری</p>', '', '', 'leadtest', '1', '');
 
 -- --------------------------------------------------------
 
@@ -1302,12 +1498,13 @@ CREATE TABLE IF NOT EXISTS `fx_items_saved` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_learning` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `title_sub` varchar(5) COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=48 ;
 
 --
 -- Dumping data for table `fx_learning`
@@ -1357,11 +1554,37 @@ INSERT INTO `fx_learning` (`id`, `name`, `description`, `title_sub`, `saved_by`)
 --
 
 CREATE TABLE IF NOT EXISTS `fx_login_attempts` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `ip_address` varchar(40) COLLATE utf8_bin NOT NULL,
   `login` varchar(50) COLLATE utf8_bin NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_mag`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_mag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_mag`
+--
+
+INSERT INTO `fx_mag` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'mag', '<p>magtest</p>', '', '', 'magte', '1', '');
 
 -- --------------------------------------------------------
 
@@ -1370,23 +1593,24 @@ CREATE TABLE IF NOT EXISTS `fx_login_attempts` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_mali` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `fx_mali`
 --
 
 INSERT INTO `fx_mali` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
-(5, 'خدمات مشاوره مالی', '<p dir="rtl" style="text-align: justify;">استفاده از اطلاعات مالی و حسابداری مربوط، قابل اتکاء و مفید مهم ترین وسیله تصمیم گیری برای واحدهای تجاری می باشد و دستیابی به اطلاعات مالی و حسابداری مذکور جز با استفاده از خدمات حسابداران و مشاورین مدیریت امکان پذیر نیست.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>عارضه یابی مالی:</strong></p>\n<p dir="rtl" style="text-align: justify;">آسیب شناسی وکشف مسئله،تشکیل کمیته بهبود،شناسایی اقدامات ضروری،تعین زمان بندی اقدامات بهبود و پیاده سازی اقدامات بهبود.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>مدل های مالی:</strong></p>\n<p dir="rtl" style="text-align: justify;">نمایندگی ریاضی از عملیات مالی و صورتهای مالی (با مفروضات مربوط به چگونه برنامه ریزی بودجه) یک شرکت است برای پیش بینی عملکرد مالی آینده شرکت.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>بودجه بندی: &nbsp;</strong></p>\n<p dir="rtl" style="text-align: justify;">برنامه ریزی مالی، همانند نقشه ای برای راهنمایی، هماهنگی و کنترل عملیات، جهت دستیابی به اهداف شرکت می باشد.</p>', '', '', 'Financial-Consulting-services', '1', '50'),
-(6, 'دانستنی های مالی', '<p dir="rtl" style="text-align: justify;">حسابداری&nbsp; درجهان نزدیک به 6000 سال قدمت دارد ونخستین مدارک کشف شده حسابداری به 3600 سال قبل از میلاد مسیح بر میگردد. دانش حسابداری در ایران نیز از زمان هخامنشیان وجود داشته ودرطول تاریخ، با روش های متنوعی(ممیزی املاک در تمدن ساسانی و مخارج حکومتی در دوران سلجوقیان) استفاده می شده است.</p>', '', '', 'Financial-Facts', '1', '52');
+(5, 'خدمات مشاوره مالی', '<p dir="rtl" style="text-align: justify;">استفاده از اطلاعات مالی و حسابداری مربوط، قابل اتکاء و مفید مهم ترین وسیله تصمیم گیری برای واحدهای تجاری می باشد و دستیابی به اطلاعات مالی و حسابداری مذکور جز با استفاده از خدمات حسابداران و مشاورین مدیریت امکان پذیر نیست.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>عارضه یابی مالی:</strong></p>\n<p dir="rtl" style="text-align: justify;">آسیب شناسی وکشف مسئله،تشکیل کمیته بهبود،شناسایی اقدامات ضروری،تعین زمان بندی اقدامات بهبود و پیاده سازی اقدامات بهبود.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>مدل های مالی:</strong></p>\n<p dir="rtl" style="text-align: justify;">نمایندگی ریاضی از عملیات مالی و صورتهای مالی (با مفروضات مربوط به چگونه برنامه ریزی بودجه) یک شرکت است برای پیش بینی عملکرد مالی آینده شرکت.</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;</p>\n<p dir="rtl" style="text-align: justify;"><strong>بودجه بندی: &nbsp;</strong></p>\n<p dir="rtl" style="text-align: justify;">برنامه ریزی مالی، همانند نقشه ای برای راهنمایی، هماهنگی و کنترل عملیات، جهت دستیابی به اهداف شرکت می باشد.</p>', '', '', 'Financial-Consulting-services', '1', '52'),
+(6, 'دانستنی های مالی', '<p dir="rtl" style="text-align: justify;">حسابداری&nbsp; درجهان نزدیک به 6000 سال قدمت دارد ونخستین مدارک کشف شده حسابداری به 3600 سال قبل از میلاد مسیح بر میگردد. دانش حسابداری در ایران نیز از زمان هخامنشیان وجود داشته ودرطول تاریخ، با روش های متنوعی(ممیزی املاک در تمدن ساسانی و مخارج حکومتی در دوران سلجوقیان) استفاده می شده است.</p>', '', '', 'Financial-Facts', '1', '55');
 
 -- --------------------------------------------------------
 
@@ -1395,23 +1619,49 @@ INSERT INTO `fx_mali` (`id`, `name`, `description`, `image`, `file`, `url`, `sav
 --
 
 CREATE TABLE IF NOT EXISTS `fx_man` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `fx_man`
 --
 
 INSERT INTO `fx_man` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
-(7, 'خدمات مشاوره مدیریتی', '<p dir="rtl" style="text-align: justify;">&nbsp; مشاوره نتیجه بخش، مستلزم:</p>\n<ul dir="rtl" style="text-align: justify;">\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;تشخیص صحیح مسائل سازمان</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;انتخاب بهترین راهکارها و ابزارها</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;و در نهایت پیاده سازی صحیح و اثربخش راهکارهامی باشد.</li>\n</ul>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;ارائه خدمات مشاوره ای جامع، متمایز و نتیجه بخش،متناسب با مراحل مختلف چرخه عمر سازمان ها توسط تیم مشاوران&nbsp;SSD:</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;تشخیص و درمان عارضه های سازمانی/ تدوین و اجرای استراتژی کسب و کار/ حرفه ای سازی و توسعه&nbsp;کسب و کارهای کوچک/ مدیریت جامع منابع انسانی/ مدیریت مالی و سرمایه گذاری/ مدیریت بازاریابی و فروش / مدیریت فنی و تولید</p>', '', '', 'Management-consulting-services', '1', '44'),
-(8, 'دانستنی های مدیریتی', '<p>در این بخش مقالات بروز و دانستنیهای مربوط به کسب و کار ارائه میگردد.</p>', '', '', 'Knowledge-management', '1', '41');
+(7, 'خدمات مشاوره مدیریتی', '<p dir="rtl" style="text-align: justify;">&nbsp; مشاوره نتیجه بخش، مستلزم:</p>\n<ul dir="rtl" style="text-align: justify;">\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;تشخیص صحیح مسائل سازمان</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;انتخاب بهترین راهکارها و ابزارها</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;و در نهایت پیاده سازی صحیح و اثربخش راهکارهامی باشد.</li>\n</ul>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;ارائه خدمات مشاوره ای جامع، متمایز و نتیجه بخش،متناسب با مراحل مختلف چرخه عمر سازمان ها توسط تیم مشاوران&nbsp;SSD:</p>\n<p dir="rtl" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;تشخیص و درمان عارضه های سازمانی/ تدوین و اجرای استراتژی کسب و کار/ حرفه ای سازی و توسعه&nbsp;کسب و کارهای کوچک/ مدیریت جامع منابع انسانی/ مدیریت مالی و سرمایه گذاری/ مدیریت بازاریابی و فروش / مدیریت فنی و تولید</p>', '', '', 'Management-consulting-services', '1', '45'),
+(9, 'دانستنی های مدیریتی', '<p>در این بخش مقالات بروز و دانستنیهای مربوط به کسب و کار ارائه میگردد.</p>', '', '', 'Knowledge-management', '1', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_marketing`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_marketing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `fx_marketing`
+--
+
+INSERT INTO `fx_marketing` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(3, 'بازاریابی', '<p>تست</p>', '', '', 'mark', '1', '');
 
 -- --------------------------------------------------------
 
@@ -1420,15 +1670,16 @@ INSERT INTO `fx_man` (`id`, `name`, `description`, `image`, `file`, `url`, `save
 --
 
 CREATE TABLE IF NOT EXISTS `fx_messages` (
-  `msg_id` int(11) NOT NULL,
+  `msg_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_to` int(11) NOT NULL,
   `user_from` int(11) NOT NULL,
   `message` text CHARACTER SET latin1 NOT NULL,
   `status` enum('Read','Unread') CHARACTER SET latin1 NOT NULL DEFAULT 'Unread',
   `attached_file` varchar(100) CHARACTER SET latin1 NOT NULL,
   `date_received` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No'
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  `deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
+  PRIMARY KEY (`msg_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_messages`
@@ -1447,11 +1698,12 @@ INSERT INTO `fx_messages` (`msg_id`, `user_to`, `user_from`, `message`, `status`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_newsk` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` text COLLATE utf8mb4_persian_ci NOT NULL,
   `url` text COLLATE utf8mb4_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8mb4_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=342 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8mb4_persian_ci NOT NULL,
+  UNIQUE KEY `a` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_persian_ci AUTO_INCREMENT=342 ;
 
 --
 -- Dumping data for table `fx_newsk`
@@ -1763,34 +2015,14 @@ INSERT INTO `fx_newsk` (`id`, `title`, `url`, `saved_by`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fx_payments`
---
-
-CREATE TABLE IF NOT EXISTS `fx_payments` (
-  `p_id` int(11) NOT NULL,
-  `invoice` int(11) NOT NULL,
-  `paid_by` int(11) NOT NULL,
-  `payer_email` varchar(100) CHARACTER SET latin1 NOT NULL,
-  `payment_method` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `amount` float NOT NULL,
-  `trans_id` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `notes` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `month_paid` varchar(32) CHARACTER SET latin1 NOT NULL,
-  `year_paid` varchar(32) CHARACTER SET latin1 NOT NULL,
-  `inv_deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `fx_payment_methods`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_payment_methods` (
-  `method_id` int(11) NOT NULL,
-  `method_name` varchar(64) CHARACTER SET latin1 NOT NULL DEFAULT 'Paypal'
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `method_id` int(11) NOT NULL AUTO_INCREMENT,
+  `method_name` varchar(64) CHARACTER SET latin1 NOT NULL DEFAULT 'Paypal',
+  PRIMARY KEY (`method_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `fx_payment_methods`
@@ -1803,11 +2035,48 @@ INSERT INTO `fx_payment_methods` (`method_id`, `method_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `fx_payments`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_payments` (
+  `p_id` int(11) NOT NULL AUTO_INCREMENT,
+  `invoice` int(11) NOT NULL,
+  `paid_by` int(11) NOT NULL,
+  `payer_email` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `payment_method` varchar(64) CHARACTER SET latin1 NOT NULL,
+  `amount` float NOT NULL,
+  `trans_id` varchar(64) CHARACTER SET latin1 NOT NULL,
+  `notes` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `month_paid` varchar(32) CHARACTER SET latin1 NOT NULL,
+  `year_paid` varchar(32) CHARACTER SET latin1 NOT NULL,
+  `inv_deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
+  PRIMARY KEY (`p_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_project_timer`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_project_timer` (
+  `timer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `project` int(11) NOT NULL,
+  `start_time` varchar(64) CHARACTER SET latin1 NOT NULL,
+  `end_time` varchar(64) CHARACTER SET latin1 NOT NULL,
+  `date_timed` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`timer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `fx_projects`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_projects` (
-  `project_id` int(11) NOT NULL,
+  `project_id` int(11) NOT NULL AUTO_INCREMENT,
   `project_code` varchar(32) CHARACTER SET latin1 NOT NULL,
   `project_title` varchar(255) CHARACTER SET latin1 NOT NULL DEFAULT 'Project Title',
   `client` int(11) NOT NULL,
@@ -1826,22 +2095,9 @@ CREATE TABLE IF NOT EXISTS `fx_projects` (
   `proj_deleted` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'No',
   `auto_progress` enum('TRUE','FALSE') CHARACTER SET latin1 NOT NULL DEFAULT 'FALSE',
   `estimate_hours` int(11) NOT NULL,
-  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_project_timer`
---
-
-CREATE TABLE IF NOT EXISTS `fx_project_timer` (
-  `timer_id` int(11) NOT NULL,
-  `project` int(11) NOT NULL,
-  `start_time` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `end_time` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `date_timed` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1850,10 +2106,11 @@ CREATE TABLE IF NOT EXISTS `fx_project_timer` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_roles` (
-  `r_id` int(11) NOT NULL,
+  `r_id` int(11) NOT NULL AUTO_INCREMENT,
   `role` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `default` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `default` int(11) NOT NULL,
+  PRIMARY KEY (`r_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `fx_roles`
@@ -1871,7 +2128,7 @@ INSERT INTO `fx_roles` (`r_id`, `role`, `default`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_sabt` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
@@ -1880,8 +2137,9 @@ CREATE TABLE IF NOT EXISTS `fx_sabt` (
   `image3` text COLLATE utf8_persian_ci NOT NULL,
   `image4` text COLLATE utf8_persian_ci NOT NULL,
   `date2` varchar(150) COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `fx_sabt`
@@ -1897,14 +2155,15 @@ INSERT INTO `fx_sabt` (`id`, `name`, `description`, `url`, `image1`, `image2`, `
 --
 
 CREATE TABLE IF NOT EXISTS `fx_saved_tasks` (
-  `template_id` int(11) NOT NULL,
+  `template_id` int(11) NOT NULL AUTO_INCREMENT,
   `task_name` varchar(64) CHARACTER SET latin1 NOT NULL,
   `task_desc` varchar(255) CHARACTER SET latin1 NOT NULL,
   `visible` enum('Yes','No') CHARACTER SET latin1 NOT NULL DEFAULT 'Yes',
   `estimate_hours` float NOT NULL,
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `saved_by` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `saved_by` int(11) NOT NULL,
+  PRIMARY KEY (`template_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `fx_saved_tasks`
@@ -1922,15 +2181,16 @@ INSERT INTO `fx_saved_tasks` (`template_id`, `task_name`, `task_desc`, `visible`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_service` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `image` text COLLATE utf8_persian_ci NOT NULL,
   `file` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
-  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_service`
@@ -1939,7 +2199,7 @@ CREATE TABLE IF NOT EXISTS `fx_service` (
 INSERT INTO `fx_service` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
 (1, 'ارزیابی طرح ها', '<p>در این بخش اطلاعات مربوط به ارزیابی طرح ها ارائه میگردد.</p>', 'http://www.ssd-cg.com/ssd/file/کارآفرینی/business-plan-with-glasses-and-pen.jpg', '', 'Plans-evaluation', '1', '25'),
 (2, 'راه اندازی و بهبود کسب و کار', '<p>در این بخش اطلاعات مربوط به ابزارهای مدیریتی ارائه میگردد.</p>', '', '', 'Set-up-Improve-Business', '1', '26'),
-(3, 'سرمایه گزاری و تامین مالی', '<p>در این بخش اطلاعات مربوط به سرمایه گزاری ارائه میگردد.</p>', '', '', 'Investment-Finaning', '1', '22'),
+(3, 'سرمایه گزاری و تامین مالی', '<p>در این بخش اطلاعات مربوط به سرمایه گزاری ارائه میگردد.</p>', '', '', 'Investment-Finaning', '1', '23'),
 (4, 'رشد و توسعه کسب و کار', '<p>توسعه&zwnj;بخشیدن یا رشد دادن کسب&zwnj;و&zwnj;کار، منافع و مزایای آشکاری دارد. فرصت برای تنوع&zwnj;بخشی، مبارزه در رقابت کاری، جا انداختن محصولات و خدمات جدید، و نیز مهیاکردن فرصت&zwnj;هایی برای ترقی پرسنل، همگی جذاب هستند و می&zwnj;توانند به درک اهداف و رویاهای&zwnj;تان برای کسب و کار کمک کنند. هرچند قبل از آنکه برای رشد و گسترش نقشه بکشید، مهم است که به چند سوال کلیدی پاسخ دهید؛ &laquo;چقدرتعیین&zwnj;کننده است که پیش از توسعه&zwnj;بخشی کسب و کارتان، ازهرحیث آماده شوید؟ رشد دادن کسب&zwnj;و&zwnj;کارتان هم کار و هم برنامه&zwnj;ریزی بسیار می&zwnj;برد. باید از خود بپرسید؛ لازم است چه چیزهایی را آماده کنم؟&raquo; گروه مشاوران SSD در صدد است در راستای پاسخگویی به این پرسش&zwnj;ها، شما را در مهیا شدن جهت رشد کسب و کارتان بصورت مطمئن و پربازده، یاری رساند.</p>', 'http://www.ssd-cg.com/ssd/file/کارآفرینی/business-development-resized-600.png', '', 'Business-Development', '1', '42');
 
 -- --------------------------------------------------------
@@ -1949,10 +2209,11 @@ INSERT INTO `fx_service` (`id`, `name`, `description`, `image`, `file`, `url`, `
 --
 
 CREATE TABLE IF NOT EXISTS `fx_simt` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `ssd` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_simt`
@@ -1968,21 +2229,47 @@ INSERT INTO `fx_simt` (`id`, `ssd`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_slider` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `slider` text COLLATE utf8_persian_ci NOT NULL,
   `title` text COLLATE utf8_persian_ci NOT NULL,
   `saved_by` int(11) NOT NULL,
-  `link` text COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `link` text COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `fx_slider`
 --
 
 INSERT INTO `fx_slider` (`id`, `slider`, `title`, `saved_by`, `link`) VALUES
-(12, 'http://www.ssd-cg.com/ssd/file/slider/6.jpg', 'SSD گروه مشاوران', 1, ''),
-(15, 'http://www.ssd-cg.com/ssd/file/slider/1_1.jpg', 'SSD گروه مشاوران', 1, ''),
-(21, 'http://www.ssd-cg.com/ssd/file/slider/عیدjpg.jpg', 'گروه مشاوران SSD', 1, '');
+(12, 'http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/file/slider/6.jpg', 'SSD گروه مشاوران', 1, ''),
+(15, 'http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/file/slider/1_1.jpg', 'SSD گروه مشاوران', 1, ''),
+(21, 'http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/file/slider/Eydjpg.jpg', 'گروه مشاوران SSD', 1, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_social`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_social` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_social`
+--
+
+INSERT INTO `fx_social` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'تست', '<p>رسانه های اجتماعی</p>', '', '', 'social', '1', '');
 
 -- --------------------------------------------------------
 
@@ -1991,17 +2278,23 @@ INSERT INTO `fx_slider` (`id`, `slider`, `title`, `saved_by`, `link`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_ssmm` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(12) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `fx_ssmm`
 --
 
-INSERT INTO `fx_ssmm` (`id`, `description`, `saved_by`) VALUES
-(1, '<p dir="rtl" style="text-align: justify;">برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما&nbsp; به طور مستقیم و موثر&nbsp; و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم.گروه مشاوران ما با نیت تعالی سازمان شما در زمینه های</p>\n<ul dir="rtl" style="text-align: justify;">\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;مدیریتی: عارضه یابی ودرمان عارضه ها،جذب وتوانمندسازی پرسنل،افزایش بهره وری سازمان ، تدوین استراتژی های بهبود و توسعه سازمان وهمچنین مدیریت برند.</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مالی: درک روشن از وضعیت کنونی،حفظ دارایی ها ، مدیریت ریسک برای بهبود مستمر درآمدوافزایش سرمایه.</li>\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; فنی: دستیابی به سطح بالاتری از عملکرد، حذف فعالیت های بدون ارزش افزوده،ارائه راهکارهایی در راستای کاهش هزینه های تولید از قبیل تعمیرات ونگهداری سسیتم ها، پایش وضعیت ،خدمات هیدرولیک وپنومانیک، برق و شبکه.</li>\n</ul>\n<p dir="rtl" style="text-align: justify;">&nbsp;همراهی مطمئن در کنار شما می باشد.&nbsp;</p>', '1');
+INSERT INTO `fx_ssmm` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(1, 'چرا SSD', '<p dir="rtl" style="text-align: justify;">برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما&nbsp; به طور مستقیم و موثر&nbsp; و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم.گروه مشاوران ما با نیت تعالی سازمان شما در زمینه های</p>\r\n<ul dir="rtl" style="text-align: justify;">\r\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;مدیریتی: عارضه یابی ودرمان عارضه ها،جذب وتوانمندسازی پرسنل،افزایش بهره وری سازمان ، تدوین استراتژی های بهبود و توسعه سازمان وهمچنین مدیریت برند.</li>\r\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مالی: درک روشن از وضعیت کنونی،حفظ دارایی ها ، مدیریت ریسک برای بهبود مستمر درآمدوافزایش سرمایه.</li>\r\n<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; فنی: دستیابی به سطح بالاتری از عملکرد، حذف فعالیت های بدون ارزش افزوده،ارائه راهکارهایی در راستای کاهش هزینه های تولید از قبیل تعمیرات ونگهداری سسیتم ها، پایش وضعیت ،خدمات هیدرولیک وپنومانیک، برق و شبکه.</li>\r\n</ul>\r\n<p dir="rtl" style="text-align: justify;">&nbsp;همراهی مطمئن در کنار شما می باشد...</p>', '', '', 'ssm', '1', '');
 
 -- --------------------------------------------------------
 
@@ -2010,17 +2303,23 @@ INSERT INTO `fx_ssmm` (`id`, `description`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_ssmw` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `fx_ssmw`
 --
 
-INSERT INTO `fx_ssmw` (`id`, `description`, `saved_by`) VALUES
-(1, '<p dir="rtl" style="text-align: justify;">گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست.</p>\n<p dir="rtl" style="text-align: justify;">ارائه مشاوره کامل وکاربردی در حوزه های بازرگانی ،حقوقی،مالیاتی، بیمه، وطراحی و بازاریابی وفروش بخشی از خدمات کلینیک کسب و کار SSD می باشد. برگزاری جلسات همفکری با کانون کارآفرینی، جوامع مهندسین، اتاق تعاون و خانه صنعت ، همچنین همراهی شرکت شهرک های صنعتی استان یزد داشته های ما را فزونی می بخشد.</p>', '1');
+INSERT INTO `fx_ssmw` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'چرا SSD', '<p>گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست.</p>\r\n<p dir="rtl" style="text-align: justify;">ارائه مشاوره کامل وکاربردی در حوزه های بازرگانی ،حقوقی،مالیاتی، بیمه، وطراحی و بازاریابی وفروش بخشی از خدمات کلینیک کسب و کار SSD می باشد. برگزاری جلسات همفکری با کانون کارآفرینی، جوامع مهندسین، اتاق تعاون و خانه صنعت ، همچنین همراهی شرکت شهرک های صنعتی استان یزد داشته های ما را فزونی می بخشد...</p>', '', '', 'ssm', '1', '');
 
 -- --------------------------------------------------------
 
@@ -2029,7 +2328,7 @@ INSERT INTO `fx_ssmw` (`id`, `description`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_tasks` (
-  `t_id` int(11) NOT NULL,
+  `t_id` int(11) NOT NULL AUTO_INCREMENT,
   `task_name` varchar(255) CHARACTER SET latin1 NOT NULL,
   `project` int(11) NOT NULL,
   `assigned_to` varchar(255) CHARACTER SET latin1 NOT NULL,
@@ -2042,8 +2341,9 @@ CREATE TABLE IF NOT EXISTS `fx_tasks` (
   `logged_time` int(11) NOT NULL DEFAULT '0',
   `auto_progress` enum('TRUE','FALSE') CHARACTER SET latin1 NOT NULL DEFAULT 'FALSE',
   `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `added_by` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `added_by` int(11) NOT NULL,
+  PRIMARY KEY (`t_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2052,13 +2352,39 @@ CREATE TABLE IF NOT EXISTS `fx_tasks` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_tasks_timer` (
-  `timer_id` int(11) NOT NULL,
+  `timer_id` int(11) NOT NULL AUTO_INCREMENT,
   `task` int(11) NOT NULL,
   `pro_id` int(11) NOT NULL,
   `start_time` varchar(64) CHARACTER SET latin1 NOT NULL,
   `end_time` varchar(64) CHARACTER SET latin1 NOT NULL,
-  `date_timed` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `date_timed` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`timer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fx_tech`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_tech` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `image` text COLLATE utf8_persian_ci NOT NULL,
+  `file` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `saved_by` varchar(10) COLLATE utf8_persian_ci NOT NULL,
+  `viwe` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `fx_tech`
+--
+
+INSERT INTO `fx_tech` (`id`, `name`, `description`, `image`, `file`, `url`, `saved_by`, `viwe`) VALUES
+(2, 'تکنولوژی', '<p>تست</p>', '', '', 'techtest', '1', '');
 
 -- --------------------------------------------------------
 
@@ -2067,11 +2393,12 @@ CREATE TABLE IF NOT EXISTS `fx_tasks_timer` (
 --
 
 CREATE TABLE IF NOT EXISTS `fx_title` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(20) COLLATE utf8_persian_ci NOT NULL,
   `title_sub` text COLLATE utf8_persian_ci NOT NULL,
-  `saved_by` int(11) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `saved_by` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `fx_title`
@@ -2090,11 +2417,12 @@ INSERT INTO `fx_title` (`id`, `title`, `title_sub`, `saved_by`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fx_title2` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `sub_title` int(11) NOT NULL,
   `name` text COLLATE utf8mb4_persian_ci NOT NULL,
-  `saved_by` varchar(10) COLLATE utf8mb4_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_persian_ci;
+  `saved_by` varchar(10) COLLATE utf8mb4_persian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_persian_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `fx_title2`
@@ -2117,7 +2445,8 @@ CREATE TABLE IF NOT EXISTS `fx_un_sessions` (
   `ip_address` varchar(16) COLLATE utf8_bin NOT NULL DEFAULT '0',
   `user_agent` varchar(150) COLLATE utf8_bin NOT NULL,
   `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
-  `user_data` text COLLATE utf8_bin NOT NULL
+  `user_data` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`session_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
@@ -2130,11 +2459,26 @@ INSERT INTO `fx_un_sessions` (`session_id`, `ip_address`, `user_agent`, `last_ac
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `fx_user_autologin`
+--
+
+CREATE TABLE IF NOT EXISTS `fx_user_autologin` (
+  `key_id` char(32) COLLATE utf8_bin NOT NULL,
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `user_agent` varchar(150) COLLATE utf8_bin NOT NULL,
+  `last_ip` varchar(40) COLLATE utf8_bin NOT NULL,
+  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`key_id`,`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `fx_users`
 --
 
 CREATE TABLE IF NOT EXISTS `fx_users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) COLLATE utf8_bin NOT NULL,
   `password` varchar(255) COLLATE utf8_bin NOT NULL,
   `email` varchar(100) COLLATE utf8_bin NOT NULL,
@@ -2149,15 +2493,18 @@ CREATE TABLE IF NOT EXISTS `fx_users` (
   `last_ip` varchar(40) COLLATE utf8_bin NOT NULL,
   `last_login` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `fx_users`
 --
 
 INSERT INTO `fx_users` (`id`, `username`, `password`, `email`, `role_id`, `activated`, `banned`, `ban_reason`, `new_password_key`, `new_password_requested`, `new_email`, `new_email_key`, `last_ip`, `last_login`, `created`, `modified`) VALUES
-(1, 'ssdadmin', '$P$BG0UyYkDFv4MgN.48F8fgUlInRX5qM/', 'wm@gitbench.com', 1, 1, 0, NULL, NULL, NULL, NULL, NULL, '94.183.233.226', '2017-04-08 04:50:06', '2014-10-20 09:17:58', '2017-04-08 04:50:06'),
+(1, 'ssdadmin', '$P$BG0UyYkDFv4MgN.48F8fgUlInRX5qM/', 'wm@gitbench.com', 1, 1, 0, NULL, NULL, NULL, NULL, NULL, '127.0.0.1', '2017-05-17 08:35:11', '2014-10-20 09:17:58', '2017-05-17 06:35:11'),
 (2, 'unique', '$P$B.bPfiSbt70bJfYryCvmXeDmSwOVVg/', 'uniqueweb.ir@gmail.com', 2, 1, 0, NULL, '9c8ed2b58cf7d47b303f0a6c27c33445', '2015-04-16 04:54:11', NULL, NULL, '127.0.0.1', '2015-04-15 11:34:28', '2015-02-28 11:23:03', '2015-04-16 04:54:11'),
 (3, 'unique.rayaneh@yahoo', '$P$Bo4c2jyJdEK.gl2iSc8DQY.RgQr8TV0', 'uniquewebr.ir@gmail.com', 2, 1, 0, NULL, NULL, NULL, NULL, NULL, '127.0.0.1', '0000-00-00 00:00:00', '2015-04-15 03:34:15', '2015-04-15 03:34:15'),
 (4, 'rezaali', '$P$BGl79oPBVOI4cPYdM5tCNUgWxHSqTO0', 'uniqueweddb.ir@gmail.com', 2, 1, 0, NULL, NULL, NULL, NULL, NULL, '127.0.0.1', '0000-00-00 00:00:00', '2015-04-16 03:49:56', '2015-04-16 03:49:56'),
@@ -2165,703 +2512,6 @@ INSERT INTO `fx_users` (`id`, `username`, `password`, `email`, `role_id`, `activ
 (6, 'eeeuuuuuuuuu', '$P$Bo0tXYJ89x5sAkfbAO/8s2ghhM0O8N/', 'uniqueweffbjjjjr.ir@gmail.com', 2, 1, 0, NULL, NULL, NULL, NULL, NULL, '127.0.0.1', '0000-00-00 00:00:00', '2015-04-16 04:20:03', '2015-04-16 04:20:03'),
 (7, 'fffffff', '$P$Bn.eTgO9amcuxtXGJT2OY/VPtvf6zp/', 'uniqueweb.ir@gmgail.com', 2, 1, 0, NULL, NULL, NULL, NULL, NULL, '127.0.0.1', '2015-04-16 04:54:27', '2015-04-16 04:45:36', '2015-04-16 04:54:27');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `fx_user_autologin`
---
-
-CREATE TABLE IF NOT EXISTS `fx_user_autologin` (
-  `key_id` char(32) COLLATE utf8_bin NOT NULL,
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  `user_agent` varchar(150) COLLATE utf8_bin NOT NULL,
-  `last_ip` varchar(40) COLLATE utf8_bin NOT NULL,
-  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `fx_account_details`
---
-ALTER TABLE `fx_account_details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_activities`
---
-ALTER TABLE `fx_activities`
-  ADD PRIMARY KEY (`activity_id`);
-
---
--- Indexes for table `fx_archiveg`
---
-ALTER TABLE `fx_archiveg`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_archiveo`
---
-ALTER TABLE `fx_archiveo`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_assign_projects`
---
-ALTER TABLE `fx_assign_projects`
-  ADD PRIMARY KEY (`a_id`);
-
---
--- Indexes for table `fx_assign_tasks`
---
-ALTER TABLE `fx_assign_tasks`
-  ADD PRIMARY KEY (`a_id`);
-
---
--- Indexes for table `fx_blog`
---
-ALTER TABLE `fx_blog`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_bugs`
---
-ALTER TABLE `fx_bugs`
-  ADD PRIMARY KEY (`bug_id`),
-  ADD UNIQUE KEY `issue_ref` (`issue_ref`);
-
---
--- Indexes for table `fx_bug_comments`
---
-ALTER TABLE `fx_bug_comments`
-  ADD PRIMARY KEY (`c_id`);
-
---
--- Indexes for table `fx_bug_files`
---
-ALTER TABLE `fx_bug_files`
-  ADD PRIMARY KEY (`file_id`);
-
---
--- Indexes for table `fx_captcha`
---
-ALTER TABLE `fx_captcha`
-  ADD PRIMARY KEY (`captcha_id`),
-  ADD KEY `word` (`word`);
-
---
--- Indexes for table `fx_catalog`
---
-ALTER TABLE `fx_catalog`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_clinic`
---
-ALTER TABLE `fx_clinic`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_comments`
---
-ALTER TABLE `fx_comments`
-  ADD PRIMARY KEY (`comment_id`);
-
---
--- Indexes for table `fx_comment_replies`
---
-ALTER TABLE `fx_comment_replies`
-  ADD PRIMARY KEY (`reply_id`);
-
---
--- Indexes for table `fx_companies`
---
-ALTER TABLE `fx_companies`
-  ADD PRIMARY KEY (`co_id`);
-
---
--- Indexes for table `fx_config`
---
-ALTER TABLE `fx_config`
-  ADD PRIMARY KEY (`config_key`);
-
---
--- Indexes for table `fx_contact`
---
-ALTER TABLE `fx_contact`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_contacts`
---
-ALTER TABLE `fx_contacts`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_countries`
---
-ALTER TABLE `fx_countries`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_customer`
---
-ALTER TABLE `fx_customer`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_dan`
---
-ALTER TABLE `fx_dan`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_descr`
---
-ALTER TABLE `fx_descr`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_email_templates`
---
-ALTER TABLE `fx_email_templates`
-  ADD PRIMARY KEY (`template_id`);
-
---
--- Indexes for table `fx_estimates`
---
-ALTER TABLE `fx_estimates`
-  ADD PRIMARY KEY (`est_id`),
-  ADD UNIQUE KEY `reference_no` (`reference_no`);
-
---
--- Indexes for table `fx_estimate_items`
---
-ALTER TABLE `fx_estimate_items`
-  ADD PRIMARY KEY (`item_id`);
-
---
--- Indexes for table `fx_events`
---
-ALTER TABLE `fx_events`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_fani`
---
-ALTER TABLE `fx_fani`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_files`
---
-ALTER TABLE `fx_files`
-  ADD PRIMARY KEY (`file_id`);
-
---
--- Indexes for table `fx_image_ip`
---
-ALTER TABLE `fx_image_ip`
-  ADD PRIMARY KEY (`id_ip`);
-
---
--- Indexes for table `fx_introduction`
---
-ALTER TABLE `fx_introduction`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_invoices`
---
-ALTER TABLE `fx_invoices`
-  ADD PRIMARY KEY (`inv_id`),
-  ADD UNIQUE KEY `reference_no` (`reference_no`);
-
---
--- Indexes for table `fx_ipn_log`
---
-ALTER TABLE `fx_ipn_log`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_ipn_orders`
---
-ALTER TABLE `fx_ipn_orders`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `UniqueTransactionID` (`txn_id`);
-
---
--- Indexes for table `fx_ipn_order_items`
---
-ALTER TABLE `fx_ipn_order_items`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `order_id` (`order_id`);
-
---
--- Indexes for table `fx_items`
---
-ALTER TABLE `fx_items`
-  ADD PRIMARY KEY (`item_id`);
-
---
--- Indexes for table `fx_items_saved`
---
-ALTER TABLE `fx_items_saved`
-  ADD PRIMARY KEY (`item_id`);
-
---
--- Indexes for table `fx_learning`
---
-ALTER TABLE `fx_learning`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_login_attempts`
---
-ALTER TABLE `fx_login_attempts`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_mali`
---
-ALTER TABLE `fx_mali`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_man`
---
-ALTER TABLE `fx_man`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_messages`
---
-ALTER TABLE `fx_messages`
-  ADD PRIMARY KEY (`msg_id`);
-
---
--- Indexes for table `fx_newsk`
---
-ALTER TABLE `fx_newsk`
-  ADD UNIQUE KEY `a` (`id`);
-
---
--- Indexes for table `fx_payments`
---
-ALTER TABLE `fx_payments`
-  ADD PRIMARY KEY (`p_id`);
-
---
--- Indexes for table `fx_payment_methods`
---
-ALTER TABLE `fx_payment_methods`
-  ADD PRIMARY KEY (`method_id`);
-
---
--- Indexes for table `fx_projects`
---
-ALTER TABLE `fx_projects`
-  ADD PRIMARY KEY (`project_id`);
-
---
--- Indexes for table `fx_project_timer`
---
-ALTER TABLE `fx_project_timer`
-  ADD PRIMARY KEY (`timer_id`);
-
---
--- Indexes for table `fx_roles`
---
-ALTER TABLE `fx_roles`
-  ADD PRIMARY KEY (`r_id`);
-
---
--- Indexes for table `fx_sabt`
---
-ALTER TABLE `fx_sabt`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_saved_tasks`
---
-ALTER TABLE `fx_saved_tasks`
-  ADD PRIMARY KEY (`template_id`);
-
---
--- Indexes for table `fx_service`
---
-ALTER TABLE `fx_service`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_simt`
---
-ALTER TABLE `fx_simt`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_slider`
---
-ALTER TABLE `fx_slider`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_ssmm`
---
-ALTER TABLE `fx_ssmm`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_ssmw`
---
-ALTER TABLE `fx_ssmw`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_tasks`
---
-ALTER TABLE `fx_tasks`
-  ADD PRIMARY KEY (`t_id`);
-
---
--- Indexes for table `fx_tasks_timer`
---
-ALTER TABLE `fx_tasks_timer`
-  ADD PRIMARY KEY (`timer_id`);
-
---
--- Indexes for table `fx_title`
---
-ALTER TABLE `fx_title`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_title2`
---
-ALTER TABLE `fx_title2`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `fx_un_sessions`
---
-ALTER TABLE `fx_un_sessions`
-  ADD PRIMARY KEY (`session_id`);
-
---
--- Indexes for table `fx_users`
---
-ALTER TABLE `fx_users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
--- Indexes for table `fx_user_autologin`
---
-ALTER TABLE `fx_user_autologin`
-  ADD PRIMARY KEY (`key_id`,`user_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `fx_account_details`
---
-ALTER TABLE `fx_account_details`
-  MODIFY `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
---
--- AUTO_INCREMENT for table `fx_activities`
---
-ALTER TABLE `fx_activities`
-  MODIFY `activity_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `fx_archiveg`
---
-ALTER TABLE `fx_archiveg`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=77;
---
--- AUTO_INCREMENT for table `fx_archiveo`
---
-ALTER TABLE `fx_archiveo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
---
--- AUTO_INCREMENT for table `fx_assign_projects`
---
-ALTER TABLE `fx_assign_projects`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_assign_tasks`
---
-ALTER TABLE `fx_assign_tasks`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_blog`
---
-ALTER TABLE `fx_blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=167;
---
--- AUTO_INCREMENT for table `fx_bugs`
---
-ALTER TABLE `fx_bugs`
-  MODIFY `bug_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_bug_comments`
---
-ALTER TABLE `fx_bug_comments`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_bug_files`
---
-ALTER TABLE `fx_bug_files`
-  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_captcha`
---
-ALTER TABLE `fx_captcha`
-  MODIFY `captcha_id` bigint(13) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
---
--- AUTO_INCREMENT for table `fx_catalog`
---
-ALTER TABLE `fx_catalog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_clinic`
---
-ALTER TABLE `fx_clinic`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_comments`
---
-ALTER TABLE `fx_comments`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_comment_replies`
---
-ALTER TABLE `fx_comment_replies`
-  MODIFY `reply_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_companies`
---
-ALTER TABLE `fx_companies`
-  MODIFY `co_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `fx_contact`
---
-ALTER TABLE `fx_contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT for table `fx_contacts`
---
-ALTER TABLE `fx_contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_countries`
---
-ALTER TABLE `fx_countries`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=243;
---
--- AUTO_INCREMENT for table `fx_customer`
---
-ALTER TABLE `fx_customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_dan`
---
-ALTER TABLE `fx_dan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_descr`
---
-ALTER TABLE `fx_descr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
---
--- AUTO_INCREMENT for table `fx_email_templates`
---
-ALTER TABLE `fx_email_templates`
-  MODIFY `template_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
---
--- AUTO_INCREMENT for table `fx_estimates`
---
-ALTER TABLE `fx_estimates`
-  MODIFY `est_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_estimate_items`
---
-ALTER TABLE `fx_estimate_items`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_events`
---
-ALTER TABLE `fx_events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_fani`
---
-ALTER TABLE `fx_fani`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `fx_files`
---
-ALTER TABLE `fx_files`
-  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_image_ip`
---
-ALTER TABLE `fx_image_ip`
-  MODIFY `id_ip` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5055;
---
--- AUTO_INCREMENT for table `fx_introduction`
---
-ALTER TABLE `fx_introduction`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `fx_invoices`
---
-ALTER TABLE `fx_invoices`
-  MODIFY `inv_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_ipn_log`
---
-ALTER TABLE `fx_ipn_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_ipn_orders`
---
-ALTER TABLE `fx_ipn_orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_ipn_order_items`
---
-ALTER TABLE `fx_ipn_order_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_items`
---
-ALTER TABLE `fx_items`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_items_saved`
---
-ALTER TABLE `fx_items_saved`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_learning`
---
-ALTER TABLE `fx_learning`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
---
--- AUTO_INCREMENT for table `fx_login_attempts`
---
-ALTER TABLE `fx_login_attempts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_mali`
---
-ALTER TABLE `fx_mali`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `fx_man`
---
-ALTER TABLE `fx_man`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
---
--- AUTO_INCREMENT for table `fx_messages`
---
-ALTER TABLE `fx_messages`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_newsk`
---
-ALTER TABLE `fx_newsk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=342;
---
--- AUTO_INCREMENT for table `fx_payments`
---
-ALTER TABLE `fx_payments`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_payment_methods`
---
-ALTER TABLE `fx_payment_methods`
-  MODIFY `method_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `fx_projects`
---
-ALTER TABLE `fx_projects`
-  MODIFY `project_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_project_timer`
---
-ALTER TABLE `fx_project_timer`
-  MODIFY `timer_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_roles`
---
-ALTER TABLE `fx_roles`
-  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `fx_sabt`
---
-ALTER TABLE `fx_sabt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `fx_saved_tasks`
---
-ALTER TABLE `fx_saved_tasks`
-  MODIFY `template_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `fx_service`
---
-ALTER TABLE `fx_service`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_simt`
---
-ALTER TABLE `fx_simt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_slider`
---
-ALTER TABLE `fx_slider`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
---
--- AUTO_INCREMENT for table `fx_ssmm`
---
-ALTER TABLE `fx_ssmm`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `fx_ssmw`
---
-ALTER TABLE `fx_ssmw`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `fx_tasks`
---
-ALTER TABLE `fx_tasks`
-  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_tasks_timer`
---
-ALTER TABLE `fx_tasks_timer`
-  MODIFY `timer_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `fx_title`
---
-ALTER TABLE `fx_title`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `fx_title2`
---
-ALTER TABLE `fx_title2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `fx_users`
---
-ALTER TABLE `fx_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
