@@ -34,9 +34,17 @@
 	{
 	include("ssd-consultation.php");
 	}	
+	if($url1=="ssd-consultation" && $url2!='')
+	{
+	include("ssd-consultation2.php");
+	}	
 	if($url1=="ssd-business" && $url2=='')
 	{
 	include("business.php");
+	}
+	if($url1=="ssd-business" && $url2!='')
+	{
+	include("business2.php");
 	}	
 	if($url1=="learning-courses" && $url2=='')
 	{
@@ -62,7 +70,7 @@
 	{
 	include("business-services2.php");
 	}
-		if($url1=="business-clinic" && $url2=='')
+	if($url1=="business-clinic" && $url2=='')
 	{
 	include("business-clinic.php");
 	}

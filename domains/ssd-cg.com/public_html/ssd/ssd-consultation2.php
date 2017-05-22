@@ -27,50 +27,47 @@
 
 	
 
-		<!--<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">!-->
-		<h1 title="سازمان مشاوره راه اندازی کسب و کار و کارآفرینی ssd" style="direction:rtl;text-align:center;">سازمان</h1>
+		<br><br>
+									<a itemscope itemtype="http://schema.org/url" itemprop="financialStrategy" href="<?php echo $path; ?>ssd-consultation" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">بازگشت به صفحه سازمان</a><br>
 
-		<!--<div class="col">!-->
+				<div class="col" style="text-align:justify;direction:rtl;width:100%;margin:0px;margin-top:-30px;">
 
 				<?php
+				$url=$_GET['url'];
+				$a=(explode("/",$url));
+				$url1=$a[0];
+				$url2=$a[1];
+				$url3=$a[2];
+				$sql = "UPDATE  fx_ssmm  SET viwe=viwe+1 where url='$url2'";
+				mysql_query($sql) or die(mysql_error());
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from fx_descr where title=9 ") or die(mysql_error()) ;
+				$ses_sql=mysql_query("select * from  fx_ssmm where url='$url2' order by id DESC ") or die(mysql_error()) ;
 				$row=mysql_fetch_array($ses_sql);
-				$title_sub=$row['title_sub'];
-				echo $title_sub;
-				?>
-			 <!--<span itemscope itemtype="http://schema.org/Company" itemprop="ssd" style="font-family:BTraffic;font-size:12pt;color:#ffffff;text-align:justify;direction:rtl;"><?php echo $ssd; ?></span>!-->
-			 
-		<!--</div>
-			
-		</div>!-->
-		<center>
-			<ul class="grid effect-2" id="grid" style="margin-top:20px;">
-
-				<?php
-				mysql_query("SET CHARACTER SET utf8");   
-				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from  fx_ssmm order by id DESC ") or die(mysql_error()) ;
-				while($row=mysql_fetch_array($ses_sql))
-				{
+				
 				$name=$row['name'];
 				$image=$row['image'];
 				$url=$row['url'];
+				$description=$row['description'];
+				$viwe=$row['viwe'];
+				$file=$row['file'];
 
 				?>
-				<li  style="background-color:#fff;border-radius:7px" >
-				<a itemscope itemtype="http://schema.org/url" itemprop="financial" href="<?php echo $path; ?>ssd-consultation/<?php echo $url; ?>">
-				<?php if($image=="") {} else { ?>
-				<img itemscope itemtype="http://schema.org/photo" itemprop="financialImage" alt="خدمات مشاوره مالی ssd" src="<?php echo $image; ?>" style="width:100%" />
+
+				<span style="font-size:20pt;"><?php echo $name; ?></span>
+				<br>
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
+				<br>
+				<span style="font-size:14pt;font-family:BTraffic;"><?php echo $description; ?></span><br><br>
+				<?php if($image==""){}else { ?>
+								<img itemscope itemtype="http://schema.org/photo" itemprop="downloadFileImage" src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
 				<?php } ?>
-				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="nameOfcourse" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
-				</a>
-				</li>
-				<?php } ?>	
-			</ul>
-		</center>
-		
+				<br>
+												<?php if($file==""){}else { ?>
+				<a itemscope itemtype="http://schema.org/url" itemprop="downloadFile" href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه</a><br>
+				<?php } ?>
+				</div>
+
 	</section>
 
 
