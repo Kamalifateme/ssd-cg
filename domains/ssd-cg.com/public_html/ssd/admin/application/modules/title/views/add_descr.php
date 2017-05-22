@@ -37,17 +37,17 @@
 				
 					<select  id="select2-option" style="width:100%;margin-bottom:30px;"  name="title">
 						<option value="1">دوره های یادگیری</option>
-						<option value="2">مالی</option>
-						<option value="3">مدیریتی</option>
-						<option value="4">فنی</option>
-						<option value="5">دانستنیهای کسب و کار</option>
-						<option value="6">کلینیک کسب و کار</option>
-						<option value="7">خدمات کارآفرینی و کسب و کار</option>
+						<option value="2">استراتژی و بازاریابی</option>
+						<option value="3">بهبود عملکرد</option>
+						<option value="4">تکنولوژی نوین اطلاعات</option>
+						<option value="5"> رهبری کسب و کار و دارایی ها</option>
+						<option value="6">تکنولوژی و شبکه های اجتماعی</option>
+						<option value="7">استراتژی رشد</option>
 						<option value="8">ssd(آموزش)</option>
-						<option value="9">ssd(مشاوره)</option>
-						<option value="10">ssd(کارآفرینی)</option>
+						<option value="9">سازمان</option>
+						<option value="10">مجله کارآفرینی</option>
 						<option value="11">گالری تصاویر</option>
-						<option value="12">در حال ثبت نام</option>
+						<option value="12">آموزش آنلاین</option>
 
 					</select>
 				
