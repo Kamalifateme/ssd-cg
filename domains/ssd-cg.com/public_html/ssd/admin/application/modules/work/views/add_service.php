@@ -14,7 +14,7 @@
 		
 		
 		<li class="active">
-		<a href="<?=base_url()?>work/add_service">اضافه کردن استراتژی های رشد و علم فروش
+		<a href="<?=base_url()?>work/add_service">اضافه کردن استراتژی رشد
 		</a>
 		</li>
 	</ul>
@@ -25,7 +25,7 @@
 	<section class="panel">
 				    <?php $a=lang('error_fill');
 				 ?>
-			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن استراتژی های رشد و علم فروش</header>
+			<header class="panel-heading"> <i class="fa fa-navicon"></i>اضافه کردن استراتژی رشد</header>
 			<?php 
 						 $attributes = array('class' => 'bs-example form-horizontal');
              echo form_open(base_url().'work/add_service',$attributes); ?>

@@ -21,7 +21,7 @@
     <li class="active"><a data-toggle="tab" href="#one">مجله کارآفرینی</a></li>
     <li><a data-toggle="tab" href="#two">رهبری کسب و کار و دارایی ها</a></li>
     <li><a data-toggle="tab" href="#three">تکنولوژی و شبکه های اجتماعی</a></li>
-    <li><a data-toggle="tab" href="#four">استراتژی های رشد و علم فروش</a></li>
+    <li><a data-toggle="tab" href="#four">استراتژی رشد</a></li>
 	</ul>
 	</div>
 	</div>
