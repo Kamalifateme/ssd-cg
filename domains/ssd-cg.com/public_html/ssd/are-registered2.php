@@ -46,11 +46,7 @@
 				$description=$row['description'];
 				$id=$row['id'];
 				$url=$row['url'];
-				$image1=$row['image1'];
-				$date2=$row['date2'];
-				$image2=$row['image2'];
-				$image3=$row['image3'];
-				$image4=$row['image4'];
+				$image=$row['image'];
 
 				?>
 		<div class="cols-1"  style="margin-top:30px;margin-bottom:30px;text-align:justify;direction:rtl;border-bottom:1px #fff dotted;">
@@ -58,14 +54,11 @@
 			
 			
 			<div class="col">
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image1; ?>" width="300px;height:auto">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" width="300px;height:auto">
 				<br>
 								<h3 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="educationcourse" style="margin:0px;"><?php echo $name; ?></h3>
 
 				<div style="font-family:BTraffic;"><?php echo $description; ?></div>
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image2" src="<?php echo $image2; ?>" >
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image3" src="<?php echo $image3; ?>" >
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image4" src="<?php echo $image4; ?>" >
 
 			</div>
 					

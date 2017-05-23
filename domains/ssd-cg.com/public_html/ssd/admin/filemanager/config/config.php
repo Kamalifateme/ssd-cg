@@ -19,7 +19,7 @@ mb_internal_encoding('UTF-8');
 //    |   |   |   |- responsivefilemanager
 //    |   |   |   |   |- plugin.min.js
 
-$base_url="http://".$_SERVER['HTTP_HOST']."/ssd/file/";  // base url (only domain) of site (without final /). If you prefer relative urls leave empty
+$base_url="http://".$_SERVER['HTTP_HOST']."/ssd-cg/domains/ssd-cg.com/public_html/ssd/file/";  // base url (only domain) of site (without final /). If you prefer relative urls leave empty
 $upload_dir = ''; // path from base_url to base of upload folder (with start and final /)
 $current_path = '../../file/'; // relative path from filemanager folder to upload folder (with final /)
 //thumbs folder can't put inside upload folder
