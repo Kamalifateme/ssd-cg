@@ -49,20 +49,21 @@
 		</div>  !-->
         
         <center>
-			<ul class="grid effect-2" id="grid" style="margin-top:20px;">
+			<ul class="grid effect-2" id="grid" style="margin-top:20px;border-bottom:1px #bbb dotted;">
 
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
-				$ses_sql=mysql_query("select * from  fx_ssmw order by id DESC ") or die(mysql_error()) ;
-				while($row=mysql_fetch_array($ses_sql))
+				$ses_sql=mysql_query("select * from  fx_ssmw order by viwe DESC ") or die(mysql_error()) ;
+				for($i=0;$i<3;$i++)
 				{
-				$name=$row['name'];
-				$image=$row['image'];
-				$url=$row['url'];
+					$row=mysql_fetch_array($ses_sql);
+					$name=$row['name'];
+					$image=$row['image'];
+					$url=$row['url'];
 
 				?>
-				<li  style="background-color:#fff;border-radius:7px" >
+				<li  style="background-color:#fff;border-radius:7px;width:30%" >
 				<a itemscope itemtype="http://schema.org/url" itemprop="business-knowledge" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
 				<img src="<?php echo $image; ?>" style="width:100%" />
@@ -73,7 +74,48 @@
 				<?php } ?>	
 			</ul>
 		</center>
-		
+        <h5 title="آرشیو مقالات مجله کسب و کار" style="direction:rtl;text-align:right;color:#bbb;margin-top:-20px">آرشیو</h5>
+		<?php
+				$url=$_GET['url'];
+				$a=(explode("/",$url));
+				$url1=$a[0];
+				$url2=$a[1];
+				$url3=$a[2];
+
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from  fx_ssmw order by id DESC ") or die(mysql_error()) ;
+				while($row=mysql_fetch_array($ses_sql))
+				{
+				$name=$row['name'];
+				$description=$row['description'];
+                $post2 = substr($description, 0, 800); 
+				$id=$row['id'];
+				$url=$row['url'];
+				$image=$row['image'];
+
+				?>
+		<div class="cols-2"  style="margin-top:30px;margin-bottom:30px;text-align:justify;direction:rtl;border-bottom:1px #bbb dotted;">
+
+
+			<div class="col" style="width:25%">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="border-radius:8px;">
+
+			</div>
+
+			<div class="col"  style="width:65%">
+			<h4 title="مقالات مجله کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="onlinecourse" style="margin-top:-5px;"><?php echo $name; ?></h4>
+			<?php echo $post2 ; ?> ...
+			<br><br>
+			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل مقاله</a>
+			</div>			
+			
+
+
+
+					</div>
+
+			<?php } ?>
 		
 	</section>
 
@@ -93,19 +135,19 @@
 	<script type='text/javascript' src='<?php echo $path; ?>js/script.js'></script>
 	<script type="text/javascript" src="<?php echo $path; ?>js/loader.js" async></script>
 	<script src="<?php echo $path; ?>js/thumbnail-slider.js" type="text/javascript"></script>
-	<!-- <script src="<?php echo $path; ?>js/ninja-slider.js" type="text/javascript"></script> -->
+	<script src="<?php echo $path; ?>js/ninja-slider.js" type="text/javascript"></script>
     <script src="<?php echo $path; ?>js/thumbnail-slider.js" type="text/javascript"></script>
-		<script src="<?php echo $path; ?>js/masonry.pkgd.min.js"></script>
-		<script src="<?php echo $path; ?>js/imagesloaded.js"></script>
-		<script src="<?php echo $path; ?>js/classie.js"></script>
-		<script src="<?php echo $path; ?>js/AnimOnScroll.js"></script>
-		<script>
-			new AnimOnScroll( document.getElementById( 'grid' ), {
-				minDuration : 0.4,
-				maxDuration : 0.7,
-				viewportFactor : 0.2
-			} );
-		</script>
+  	<script src="<?php echo $path; ?>js/masonry.pkgd.min.js"></script>
+    <script src="<?php echo $path; ?>js/imagesloaded.js"></script>
+    <script src="<?php echo $path; ?>js/classie.js"></script>
+    <script src="<?php echo $path; ?>js/AnimOnScroll.js"></script>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+        } );
+    </script>
 
 </body>
 </html>
