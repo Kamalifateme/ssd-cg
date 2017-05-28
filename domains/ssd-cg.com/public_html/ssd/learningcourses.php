@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta name="description" content="دوره های یادگیری در گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd | ssd" />
 	<?php include("top.php"); ?>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
-<?php $page="&#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740;"; ?>
+<?php $page="دوره های یادگیری"; ?>
 
 <div class="container">
 	<div id="page" class="hfeed site">
@@ -23,7 +24,7 @@
 	<div class="entry-content" >
 		<?php include("tophead.php"); ?>
 
-				<a href="<?php echo $path; ?>learning-courses" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;">&#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1583;&#1608;&#1585;&#1607; &#1607;&#1575;&#1740; &#1740;&#1575;&#1583;&#1711;&#1740;&#1585;&#1740;</a><br>
+				<a href="<?php echo $path; ?>learning-courses" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:290px;text-align:center;padding:5px;">بازگشت به دوره های یادگیری</a><br>
 
 
 <div class="ac-container">

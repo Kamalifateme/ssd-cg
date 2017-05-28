@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+	<meta name="description" content=" گروه حرفه ای مشاوران کسب و کار و کارآفرینی  ssd آرشیو تصاویر| ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<link href='<?php echo $path; ?>css/simplelightbox.css' rel='stylesheet' type='text/css'>

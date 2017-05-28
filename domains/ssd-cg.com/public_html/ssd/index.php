@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
+    <meta name="description" content="Iran Web Festival | گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd | ssd" />
 	<?php include("top.php"); ?>
 <link href="<?php echo $path; ?>css/jquery.bxslider.css" rel="stylesheet" />
 

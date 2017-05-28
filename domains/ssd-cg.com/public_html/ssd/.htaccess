@@ -7,7 +7,7 @@ RewriteRule (.*)http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/$1 [R
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
-ErrorDocument 404 /unique/error.php
+ErrorDocument 404 http://localhost/ssd-cg/domains/ssd-cg.com/public_html/ssd/error.html
 order deny,allow
 AddDefaultCharset UTF-8
 <FilesMatch "\.(gif|jpe?g|png|ico|css|js|swf|woff)$">
