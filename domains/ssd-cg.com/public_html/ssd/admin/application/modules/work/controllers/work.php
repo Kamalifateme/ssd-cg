@@ -87,6 +87,7 @@ class Work extends MX_Controller {
 	$data['datepicker'] = TRUE;
 	$data['datatables'] = TRUE;
 		$data['form'] = TRUE;
+		$data['img'] = TRUE;
 			$data['page'] = lang('work');
 
 		$this->template
@@ -138,6 +139,7 @@ class Work extends MX_Controller {
 		$data['page'] = lang('work');
 
 		$data['form'] = TRUE;
+		$data['img'] = TRUE;
 		$data['task_work'] = $this->item_model->ssmw_details($this->uri->segment(3));
 		$this->template
 		->set_layout('users')
