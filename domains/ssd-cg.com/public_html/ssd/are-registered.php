@@ -43,21 +43,17 @@
 				{
 				$name=$row['name'];
 				$description=$row['description'];
-                                $post2 = substr($description, 0, 800); 
+                $post2 = substr($description, 0, 800); 
 				$id=$row['id'];
 				$url=$row['url'];
-				$image1=$row['image1'];
-				$image2=$row['image2'];
-
-				$date2=$row['date2'];
+				$image=$row['image'];
 
 				?>
 		<div class="cols-2"  style="margin-top:30px;margin-bottom:30px;text-align:justify;direction:rtl;border-bottom:1px #fff dotted;">
 
 
 			<div class="col">
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image1; ?>" style="width:48%;height:auto;border-radius:8px;">
-				<img  itemscope itemtype="http://schema.org/photo" itemprop="image2" src="<?php echo $image2; ?>" style="width:48%;height:auto;border-radius:8px;">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="width:48%;height:auto;border-radius:8px;">
 
 			</div>
 
@@ -65,7 +61,7 @@
 			<h4 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="onlinecourse" style="margin-top:-5px;"><?php echo $name; ?></h4>
 			<?php echo $post2 ; ?> ...
 			<br><br>
-			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل دوره</a>
+			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل مقاله</a>
 			</div>			
 			
 

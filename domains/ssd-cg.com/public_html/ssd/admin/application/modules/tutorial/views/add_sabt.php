@@ -52,57 +52,20 @@
 				</div>
 				</div>
 
+				
 				<div class="form-group col-lg-12">
-					<label class="col-lg-12 control-label">تاریخ<span class="text-danger">*</span></label>
+				    <label class="col-lg-12 control-label">فایل</label>
 				<div class="col-lg-12">
-					<input type="text" class="form-control"  name="date2"     >
+				<a href="<?=base_url()?>filemanager/dialog.php?type=2&field_id=imageu159" class="iframe-btn" id="" type="button">
+                <input type="text" name="file"  id="imageu159" class="form-control" /></a>
 				</div>
-				</div>
-
-				
-				<div class="form-group col-lg-12">
-				    <label class="col-lg-12 control-label">فایل
-                     </label>
-				
-                      <?php  include('<?=base_url()?>filemanager/include/utils.php');
-include('<?=base_url()?>filemanager/dialog.php'); ?>
-         
-
-                <div class="col-lg-12">
-                <?php echo $error;?>
-
-
-                <input type="file" name="url"  id="imageu157" class="form-control"  />
-				
-                <ul>
-<?php foreach ($upload_data as $item => $value):?>
-<li><?php echo $item;?>: <?php echo $value;?></li>
-<?php endforeach; ?>
-</ul>
-                </div>
-				</div>
-
+				</div>	
+                
 				<div class="form-group col-lg-12">
 				    <label class="col-lg-12 control-label"><?=lang('image')?> </label>
 				<div class="col-lg-12">
 				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu158" class="iframe-btn" id="" type="button">
-                <input type="text" name="image2"  id="imageu158" class="form-control" /></a>
-				</div>
-				</div>
-				
-				<div class="form-group col-lg-12">
-				    <label class="col-lg-12 control-label"><?=lang('image')?> </label>
-				<div class="col-lg-12">
-				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu159" class="iframe-btn" id="" type="button">
-                <input type="text" name="image3"  id="imageu159" class="form-control" /></a>
-				</div>
-				</div>
-				
-				<div class="form-group col-lg-12">
-				    <label class="col-lg-12 control-label"><?=lang('image')?> </label>
-				<div class="col-lg-12">
-				<a href="<?=base_url()?>filemanager/dialog.php?type=1&field_id=imageu160" class="iframe-btn" id="" type="button">
-                <input type="text" name="image4"  id="imageu160" class="form-control" /></a>
+                <input type="text" name="image"  id="imageu158" class="form-control" /></a>
 				</div>
 				</div>
 

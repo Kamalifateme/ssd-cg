@@ -109,8 +109,7 @@
 			<thead>
 				<tr>
 					<th width="30%">عنوان</th>	
-					<th width="40%">توضیحات</th>	
-					<th width="20%">تاریخ</th>	
+					<th width="40%">توضیحات</th>
 					<th width="10%"><?=lang('option')?> </th>
 				</tr> </thead> <tbody>
 				<?php
@@ -120,7 +119,6 @@
 
 					<td><?=$sabts->name?></td>
 					<td><?=$sabts->description?></td>
-					<td><?=$sabts->date2?></td>
 					<td>
 
 					<a href="<?=base_url()?>tutorial/edit_sabt/<?=$sabts->id?>" class="btn btn-warning btn-xs" ><i class="icon-note"></i></a>

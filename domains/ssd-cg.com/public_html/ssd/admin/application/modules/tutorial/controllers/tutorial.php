@@ -288,11 +288,7 @@ class Tutorial extends MX_Controller {
 							'name' => $this->input->post('name'),
 							'description' => $this->input->post('description'),
 							'url' => $this->input->post('url'),
-							'image1' => $this->input->post('image1'),
-							'image2' => $this->input->post('image2'),
-							'image3' => $this->input->post('image3'),
-							'image4' => $this->input->post('image4'),
-							'date2' => $this->input->post('date2'),
+							'image' => $this->input->post('image'),
 			                'saved_by' => $this->tank_auth->get_user_id(),
 			            );
 			$this->db->insert('sabt ', $form_data); 
@@ -344,11 +340,7 @@ class Tutorial extends MX_Controller {
 							'name' => $this->input->post('name'),
 							'description' => $this->input->post('description'),
 							'url' => $this->input->post('url'),
-							'image1' => $this->input->post('image1'),
-							'image2' => $this->input->post('image2'),
-							'image3' => $this->input->post('image3'),
-							'image4' => $this->input->post('image4'),
-							'date2' => $this->input->post('date2'),
+							'image' => $this->input->post('image'),
 			                'saved_by' => $this->tank_auth->get_user_id(),
 			            );
 			$this->db->where('id',$id)->update('sabt', $form_data); 
