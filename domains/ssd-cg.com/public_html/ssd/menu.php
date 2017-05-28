@@ -1,5 +1,3 @@
-
-<meta name="description" content="Iran Web Festival | گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd | ssd" />
 <section id="Education">
 		<h1 itemscope itemtype="http://schema.org/headline" itemprop="Education" title="ثبت نام از طریق سایت گروه حرفه ای مشاوران کارآفرینی و کسب و کار ssd | Education | register | ssd">آموزش</h1>
 
