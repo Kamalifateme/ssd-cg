@@ -66,7 +66,7 @@
 				<li  style="background-color:#fff;border-radius:7px;width:30%" >
 				<a itemscope itemtype="http://schema.org/url" itemprop="business-knowledge" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
-				<img src="<?php echo $image; ?>" style="width:100%" />
+				<img src="<?php echo $image; ?>" style="width:100%;height:150px" />
 				<?php } ?>
 				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="business-knowledge" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
@@ -89,7 +89,7 @@
 				{
 				$name=$row['name'];
 				$description=$row['description'];
-                $post2 = substr($description, 0, 800); 
+                $post2 = substr($description, 0, 400); 
 				$id=$row['id'];
 				$url=$row['url'];
 				$image=$row['image'];
@@ -99,15 +99,16 @@
 
 
 			<div class="col" style="width:25%">
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="border-radius:8px;">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="border-radius:8px;height:150px;width:100%">
 
 			</div>
 
 			<div class="col"  style="width:65%">
-			<h4 title="مقالات مجله کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="onlinecourse" style="margin-top:-5px;"><?php echo $name; ?></h4>
+            <a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>" style="padding:5px;font-weight:bold;font-size:26px"  onmouseover="this.style.textDecoration='underline'" 
+    onmouseout="this.style.textDecoration='none'"><?php echo $name; ?></a>
+            <br><br>
 			<?php echo $post2 ; ?> ...
-			<br><br>
-			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل مقاله</a>
+			
 			</div>			
 			
 
