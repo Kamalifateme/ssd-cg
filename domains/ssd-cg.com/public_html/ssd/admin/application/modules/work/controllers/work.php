@@ -31,25 +31,25 @@ class Work extends MX_Controller {
 
 	function list_items()
 	{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['form'] = TRUE;
 
-	$this->template->title(lang('work').' - '.$this->config->item('company_name'). ' '. $this->config->item('version'));
-	$data['page'] = lang('work');
-
-	$data['ssmw'] = $this->item_model->list_ssmw();
-	$data['dan'] = $this->item_model->list_dan();
-	$data['clinic'] = $this->item_model->list_clinic();
-	$data['service'] = $this->item_model->list_service();
-
-	$this->template
-	->set_layout('users')
-	->build('work',isset($data) ? $data : NULL);
+		$this->template->title(lang('work').' - '.$this->config->item('company_name'). ' '. $this->config->item('version'));
+		$data['page'] = lang('work');
+	
+		$data['ssmw'] = $this->item_model->list_ssmw();
+		$data['dan'] = $this->item_model->list_dan();
+		$data['clinic'] = $this->item_model->list_clinic();
+		$data['service'] = $this->item_model->list_service();
+	
+		$this->template
+		->set_layout('users')
+		->build('work',isset($data) ? $data : NULL);
 	}
 	function add_ssmw()
 	{
@@ -80,19 +80,19 @@ class Work extends MX_Controller {
 			redirect('work');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
-		$data['img'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
+			$data['img'] = TRUE;
 			$data['page'] = lang('work');
 
-		$this->template
-		->set_layout('users')
-		->build('add_work',isset($data) ? $data : NULL);
+			$this->template
+			->set_layout('users')
+			->build('add_work',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -130,12 +130,12 @@ class Work extends MX_Controller {
 			redirect('work');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('work');
 
 		$data['form'] = TRUE;
@@ -191,18 +191,18 @@ function add_dan()
 			redirect('work');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
 			$data['page'] = lang('work');
-	$data['img'] = TRUE;
-		$this->template
-		->set_layout('users')
-		->build('add_dan',isset($data) ? $data : NULL);
+			$data['img'] = TRUE;
+			$this->template
+			->set_layout('users')
+			->build('add_dan',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -239,13 +239,13 @@ function add_dan()
 			$this->session->set_flashdata('message',lang('اطلاعات با موفقیت ویرایش گردید'));
 			redirect('work');
 		}
-	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+	}else{	
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('work');
 		$data['img'] = TRUE;
 
@@ -301,18 +301,18 @@ function add_clinic()
 			redirect('work');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
 			$data['page'] = lang('work');
-	$data['img'] = TRUE;
-		$this->template
-		->set_layout('users')
-		->build('add_clinic',isset($data) ? $data : NULL);
+			$data['img'] = TRUE;
+			$this->template
+			->set_layout('users')
+			->build('add_clinic',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -350,12 +350,12 @@ function add_clinic()
 			redirect('work');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('work');
 		$data['img'] = TRUE;
 
@@ -412,15 +412,15 @@ function add_service()
 			redirect('work');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['form'] = TRUE;
-			$data['page'] = lang('work');
-	$data['img'] = TRUE;
+		$data['page'] = lang('work');
+		$data['img'] = TRUE;
 		$this->template
 		->set_layout('users')
 		->build('add_service',isset($data) ? $data : NULL);
@@ -461,12 +461,12 @@ function add_service()
 			redirect('work');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('work');
 		$data['img'] = TRUE;
 

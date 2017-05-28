@@ -31,25 +31,25 @@ class Mosha extends MX_Controller {
 
 	function list_items()
 	{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['form'] = TRUE;
 
-	$this->template->title(lang('mosha').' - '.$this->config->item('company_name'). ' '. $this->config->item('version'));
-	$data['page'] = lang('mosha');
-
-	$data['ssmm'] = $this->item_model->list_ssmm();
-	$data['fani'] = $this->item_model->list_fani();
-	$data['mali'] = $this->item_model->list_mali();
-	$data['man'] = $this->item_model->list_man();
-
-	$this->template
-	->set_layout('users')
-	->build('mosha',isset($data) ? $data : NULL);
+		$this->template->title(lang('mosha').' - '.$this->config->item('company_name'). ' '. $this->config->item('version'));
+		$data['page'] = lang('mosha');
+	
+		$data['ssmm'] = $this->item_model->list_ssmm();
+		$data['fani'] = $this->item_model->list_fani();
+		$data['mali'] = $this->item_model->list_mali();
+		$data['man'] = $this->item_model->list_man();
+	
+		$this->template
+		->set_layout('users')
+		->build('mosha',isset($data) ? $data : NULL);
 	}
 	function add_ssmm()
 	{
@@ -80,18 +80,19 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
+			$data['img'] = TRUE;
 			$data['page'] = lang('mosha');
 
-		$this->template
-		->set_layout('users')
-		->build('add_mosha',isset($data) ? $data : NULL);
+			$this->template
+			->set_layout('users')
+			->build('add_mosha',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -129,14 +130,14 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('mosha');
-
+		$data['img'] = TRUE;
 		$data['form'] = TRUE;
 		$data['task_mosha'] = $this->item_model->ssmm_details($this->uri->segment(3));
 		$this->template
@@ -189,18 +190,18 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
 			$data['page'] = lang('mosha');
-	$data['img'] = TRUE;
-		$this->template
-		->set_layout('users')
-		->build('add_fani',isset($data) ? $data : NULL);
+			$data['img'] = TRUE;
+			$this->template
+			->set_layout('users')
+			->build('add_fani',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -238,12 +239,12 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('mosha');
 		$data['img'] = TRUE;
 
@@ -299,18 +300,18 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
 			$data['page'] = lang('mosha');
-	$data['img'] = TRUE;
-		$this->template
-		->set_layout('users')
-		->build('add_man',isset($data) ? $data : NULL);
+			$data['img'] = TRUE;
+			$this->template
+			->set_layout('users')
+			->build('add_man',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -348,12 +349,12 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('mosha');
 		$data['img'] = TRUE;
 
@@ -410,18 +411,18 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 		}else{
-	$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
-		$data['form'] = TRUE;
+			$this->load->module('layouts');
+			$this->load->library('template');
+			$this->load->library('jdf');
+			$data['time'] = $this->jdf->jdate('H:i:s',time);
+			$data['datepicker'] = TRUE;
+			$data['datatables'] = TRUE;
+			$data['form'] = TRUE;
 			$data['page'] = lang('mosha');
-	$data['img'] = TRUE;
-		$this->template
-		->set_layout('users')
-		->build('add_mali',isset($data) ? $data : NULL);
+			$data['img'] = TRUE;
+			$this->template
+			->set_layout('users')
+			->build('add_mali',isset($data) ? $data : NULL);
 
 		}
 	}
@@ -459,12 +460,12 @@ class Mosha extends MX_Controller {
 			redirect('mosha');
 		}
 	}else{
-			$this->load->module('layouts');
-	$this->load->library('template');
-	$this->load->library('jdf');
-	$data['time'] = $this->jdf->jdate('H:i:s',time);
-	$data['datepicker'] = TRUE;
-	$data['datatables'] = TRUE;
+		$this->load->module('layouts');
+		$this->load->library('template');
+		$this->load->library('jdf');
+		$data['time'] = $this->jdf->jdate('H:i:s',time);
+		$data['datepicker'] = TRUE;
+		$data['datatables'] = TRUE;
 		$data['page'] = lang('mosha');
 		$data['img'] = TRUE;
 
