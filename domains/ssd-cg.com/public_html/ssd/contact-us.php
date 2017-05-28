@@ -48,7 +48,7 @@
 				<div itemscope itemtype="http://schema.org/address" itemprop="addresscompany" style="direction:rtl;">آدرس : <?php echo $address; ?></div><br>
 				<div itemscope itemtype="http://schema.org/phone" itemprop="phonecompany" style="direction:rtl;">تلفن : <?php echo $phone; ?></div><br>
 				<div itemscope itemtype="http://schema.org/email" itemprop="emailcompany" style="direction:rtl;">آدرس ایمیل : <?php echo $email; ?></div><br>
-				<div itemscope itemtype="http://schema.org/address" itemprop="addressinstagram" style="direction:rtl;">آدرس اینستاگرام : <?php echo $ins; ?></div><br>
+				<div itemscope itemtype="http://schema.org/address" itemprop="addressinstagram" style="direction:rtl;">آدرس اینستاگرام :<a href="https://www.instagram.com/ssd_cg"> <?php echo $ins; ?> </a> </div><br>
 		</div>		
 			
 			

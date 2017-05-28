@@ -291,7 +291,7 @@
 				<div itemscope itemtype="http://schema.org/telephone" itemprop="phone4" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone4; ?></div><br>
                                 <?php } ?>
 				<?php if($phone5==""){}else{?> 
-				<div itemscope itemtype="http://schema.org/telephone" itemprop="phone5" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone5; ?></div><br>
+				<div itemscope itemtype="http://schema.org/telephone" itemprop="phone5" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone5; ?> </div><br>
                                 <?php } ?>
 				<?php if($phone6==""){}else{?> 
 				<div itemscope itemtype="http://schema.org/isPartOf" itemprop="phone6" style="direction:rtl;"><i class="fa fa-phone"></i>  <?php echo $phone6; ?></div><br>
@@ -302,11 +302,11 @@
                                 <?php } ?>
 
 				<?php if($phone3==""){}else{?> 
-				<div itemscope itemtype="http://schema.org/isPartOf" itemprop="phone3" style="direction:rtl;"><i class="fa fa-paper-plane"></i>  <?php echo $phone3; ?></div><br>
+				<div itemscope itemtype="http://schema.org/isPartOf" itemprop="phone3" style="direction:rtl;"><i class="fa fa-paper-plane"></i> <a href="https://t.me/SSDTraining"> <?php echo $phone3; ?> </a></div><br>
                                 <?php } ?>
 
                                 <div style="direction:rtl;"><i class="fa fa-envelope"></i>  <?php echo $email; ?></div><br>
-				<div itemscope itemtype="http://schema.org/isPartOf" itemprop="instagram" style="direction:rtl;"><i class="fa fa-instagram"></i> <?php echo $ins; ?></div><br>
+				<div itemscope itemtype="http://schema.org/isPartOf" itemprop="instagram" style="direction:rtl;"><i class="fa fa-instagram"></i><a href="https://www.instagram.com/ssd_cg"> <?php echo $ins; ?></a></div><br>
 
 				</div>
 				
