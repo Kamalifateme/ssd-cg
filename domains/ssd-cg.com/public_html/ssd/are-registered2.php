@@ -50,21 +50,20 @@
 				$image=$row['image'];
 
 				?>
-		<div class="cols-1"  style="margin-top:30px;margin-bottom:30px;text-align:justify;direction:rtl;border-bottom:1px #fff dotted;">
-
-			
-			
-			<div class="col">
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" width="300px;height:auto">
+		<br>
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
-								<h3 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="educationcourse" style="margin:0px;"><?php echo $name; ?></h3>
-
-				<div style="font-family:BTraffic;"><?php echo $description; ?></div>
-
-			</div>
-					
-			</div>
-</div>
+                <?php if($image==""){}else { ?>
+								<img itemscope itemtype="http://schema.org/photo" itemprop="business-knowledge" src="<?php echo $image; ?>" style="border-radius:7px;width:640px;height:320px;border:5px #fff solid;" />
+				<?php } ?>
+								<br>
+				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
+				<br>
+				<span style="font-size:14pt;font-family:BTraffic;"><?php echo $description; ?></span><br><br>
+								<?php if($file==""){}else { ?>
+				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه شده</a><br>
+				<?php } ?>
+				</div>
 			
 		
 		

@@ -136,7 +136,6 @@
 	<script type="text/javascript" src="<?php echo $path; ?>js/loader.js" async></script>
 	<script src="<?php echo $path; ?>js/thumbnail-slider.js" type="text/javascript"></script>
 	<script src="<?php echo $path; ?>js/ninja-slider.js" type="text/javascript"></script>
-    <script src="<?php echo $path; ?>js/thumbnail-slider.js" type="text/javascript"></script>
   	<script src="<?php echo $path; ?>js/masonry.pkgd.min.js"></script>
     <script src="<?php echo $path; ?>js/imagesloaded.js"></script>
     <script src="<?php echo $path; ?>js/classie.js"></script>

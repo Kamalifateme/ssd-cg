@@ -5,6 +5,8 @@
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
     <meta name="description" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار | ssd" />
 	<?php include("top.php"); ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
+	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
 </head>
 
 <body id="page-new" class=" home page page-id-424 page-template-default" style="direction:ltr">
@@ -26,7 +28,33 @@
 
 						<h1 title="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" style="direction:rtl;text-align:center;">آموزش آنلاین</h1>
 
+<center>
+			<ul class="grid effect-2" id="grid" style="margin-top:20px;border-bottom:1px #bbb dotted;">
 
+				<?php
+				mysql_query("SET CHARACTER SET utf8");   
+				mysql_query("SET NAMES utf8_persian_ci");
+				$ses_sql=mysql_query("select * from  fx_sabt order by viwe DESC ") or die(mysql_error()) ;
+				for($i=0;$i<3;$i++)
+				{
+					$row=mysql_fetch_array($ses_sql);
+					$name=$row['name'];
+					$image=$row['image'];
+					$url=$row['url'];
+
+				?>
+				<li  style="background-color:#fff;border-radius:7px;width:30%" >
+				<a itemscope itemtype="http://schema.org/url" itemprop="business-knowledge" href="<?php echo $path; ?>reg/<?php echo $url; ?>">
+				<?php if($image=="") {} else { ?>
+				<img src="<?php echo $image; ?>" style="width:100%;height:150px" />
+				<?php } ?>
+				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="business-knowledge" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
+				</a>
+				</li>
+				<?php } ?>	
+			</ul>
+		</center>
+        <h5 title="آرشیو مقالات مجله کسب و کار" style="direction:rtl;text-align:right;color:#bbb;margin-top:-20px">آرشیو</h5>
 			
 
 
@@ -53,16 +81,16 @@
 		<div class="cols-2"  style="margin-top:30px;margin-bottom:30px;text-align:justify;direction:rtl;border-bottom:1px #fff dotted;">
 
 
-			<div class="col">
-				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="width:48%;height:auto;border-radius:8px;">
+			<div class="col" style="width:25%">
+				<img itemscope itemtype="http://schema.org/photo" itemprop="image1" src="<?php echo $image; ?>" style="width:100%;height:150px;border-radius:8px;">
 
 			</div>
 
-			<div class="col" >
-			<h4 title="نام دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" itemscope itemtype="http://schema.org/name" itemprop="onlinecourse" style="margin-top:-5px;"><?php echo $name; ?></h4>
-			<?php echo $post2 ; ?> ...
+			<div class="col" style="width:65%">
+			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="padding:5px;font-weight:bold;font-size:26px"  onmouseover="this.style.textDecoration='underline'" 
+    onmouseout="this.style.textDecoration='none'"><?php echo $name; ?></a>
 			<br><br>
-			<a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>reg/<?php echo $url; ?>" style="background-color:#fff;color:#000;padding:5px;">متن کامل مقاله</a>
+			<?php echo $post2 ; ?> ...
 			</div>			
 			
 
@@ -93,6 +121,17 @@
 	<script type="text/javascript" src="<?php echo $path; ?>js/loader.js" async></script>
 	<script src="<?php echo $path; ?>js/thumbnail-slider.js" type="text/javascript"></script>
 	<script src="<?php echo $path; ?>js/ninja-slider.js" type="text/javascript"></script>
+  	<script src="<?php echo $path; ?>js/masonry.pkgd.min.js"></script>
+    <script src="<?php echo $path; ?>js/imagesloaded.js"></script>
+    <script src="<?php echo $path; ?>js/classie.js"></script>
+    <script src="<?php echo $path; ?>js/AnimOnScroll.js"></script>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+        } );
+    </script>
 
 </body>
 </html>
