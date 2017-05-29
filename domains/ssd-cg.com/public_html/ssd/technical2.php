@@ -57,13 +57,14 @@
 				<br>
 				<span style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
+                <?php if($image==""){}else { ?>
+								<img src="<?php echo $image; ?>" style="border-radius:7px;width:640px;height:320px;border:5px #fff solid;" />
+				<?php } ?>
+												<br>
 				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
 				<br>
 				<span style="font-size:14pt;font-family:BTraffic;"><?php echo $description; ?></span><br><Br>
-								<?php if($image==""){}else { ?>
-								<img src="<?php echo $image; ?>" style="border-radius:7px;width:320px;height:auto;border:5px #fff solid;" />
-				<?php } ?>
-												<br>
+								
 								<?php if($file==""){}else { ?>
 				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه</a><br>
 				<?php } ?>
