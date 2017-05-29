@@ -96,7 +96,7 @@
 			</div>
 
 			<div class="col"  style="width:65%">
-            <a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>ssd-business/<?php echo $url; ?>" style="padding:5px;font-weight:bold;font-size:26px"  onmouseover="this.style.textDecoration='underline'" 
+            <a itemscope itemtype="http://schema.org/url" itemprop="describecourse" href="<?php echo $path; ?>business-services/<?php echo $url; ?>" style="padding:5px;font-weight:bold;font-size:26px"  onmouseover="this.style.textDecoration='underline'" 
     onmouseout="this.style.textDecoration='none'"><?php echo $name; ?></a>
             <br><br>
 			<?php echo $post2 ; ?> ...
