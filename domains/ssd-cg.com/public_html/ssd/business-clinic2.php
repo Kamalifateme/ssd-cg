@@ -58,7 +58,7 @@
 				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:20pt;"><?php echo $name; ?></span>
 				<br>
                 <?php if($image==""){}else { ?>
-								<img alt="کلینیک رونق کسب و کار" src="<?php echo $image; ?>" style="borer-radius:7px;width:640px;height:auto;border:5px #fff solid;" />
+								<img alt="کلینیک رونق کسب و کار" src="<?php echo $image; ?>" style="borer-radius:7px;width:640px;height:320px;border:5px #fff solid;" />
 				<?php } ?>
 				<br>
 				<span style="font-size:15pt;color:#791057"> تعداد بازدید : <?php echo $viwe; ?></span>
