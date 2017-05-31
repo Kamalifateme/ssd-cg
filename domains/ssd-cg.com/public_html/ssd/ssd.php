@@ -7,115 +7,116 @@
 
 	if($url1=="news" && $url2!='')
 	{
-	include("news.php");
+		include("news.php");
 	}	
-	
-	if($url1=="newsall" && $url2=='')
+	else if($url1=="newsall" && $url2=='')
 	{
-	include("newsall.php");
+		include("newsall.php");
 	}
-	if($url1=="newsall2" && $url2=='')
+	else if($url1=="newsall2" && $url2=='')
 	{
-	include("newsall2.php");
+		include("newsall2.php");
 	}
-	if($url1=="about-us" && $url2=='')
+	else if($url1=="about-us" && $url2=='')
 	{
-	include("about-us.php");
+		include("about-us.php");
 	}
-	if($url1=="contact-us" && $url2=='')
+	else if($url1=="contact-us" && $url2=='')
 	{
-	include("contact-us.php");
+		include("contact-us.php");
 	}
-	if($url1=="ssd-education" && $url2=='')
+	else if($url1=="ssd-education" && $url2=='')
 	{
-	include("ssd-education.php");
+		include("ssd-education.php");
 	}
-	if($url1=="ssd-consultation" && $url2=='')
+	else if($url1=="ssd-consultation" && $url2=='')
 	{
-	include("ssd-consultation.php");
+		include("ssd-consultation.php");
 	}	
-	if($url1=="ssd-consultation" && $url2!='')
+	else if($url1=="ssd-consultation" && $url2!='')
 	{
-	include("ssd-consultation2.php");
+		include("ssd-consultation2.php");
 	}	
-	if($url1=="ssd-business" && $url2=='')
+	else if($url1=="ssd-business" && $url2=='')
 	{
-	include("business.php");
+		include("business.php");
 	}
-	if($url1=="ssd-business" && $url2!='')
+	else if($url1=="ssd-business" && $url2!='')
 	{
-	include("business2.php");
+		include("business2.php");
 	}	
-	if($url1=="learning-courses" && $url2=='')
+	else if($url1=="learning-courses" && $url2=='')
 	{
-	include("learn.php");
+		include("learn.php");
 	}
-	if($url1=="learning-courses" && $url2!='')
+	else if($url1=="learning-courses" && $url2!='')
 	{
-	include("learn2.php");
+		include("learn2.php");
 	}	
-	if($url1=="reg" && $url2=='')
+	else if($url1=="reg" && $url2=='')
 	{
-	include("are-registered.php");
+		include("are-registered.php");
 	}
-	if($url1=="reg" && $url2!='')
+	else if($url1=="reg" && $url2!='')
 	{
-	include("are-registered2.php");
+		include("are-registered2.php");
 	}
-	if($url1=="business-services" && $url2=='')
+	else if($url1=="business-services" && $url2=='')
 	{
-	include("business-services.php");
+		include("business-services.php");
 	}
-	if($url1=="business-services" && $url2!='')
+	else if($url1=="business-services" && $url2!='')
 	{
-	include("business-services2.php");
+		include("business-services2.php");
 	}
-	if($url1=="business-clinic" && $url2=='')
+	else if($url1=="business-clinic" && $url2=='')
 	{
-	include("business-clinic.php");
+		include("business-clinic.php");
 	}
-	if($url1=="business-clinic" && $url2!='')
+	else if($url1=="business-clinic" && $url2!='')
 	{
-	include("business-clinic2.php");
+		include("business-clinic2.php");
 	}
-	if($url1=="business-knowledge" && $url2=='')
+	else if($url1=="business-knowledge" && $url2=='')
 	{
-	include("business-knowledge.php");
+		include("business-knowledge.php");
 	}
-	if($url1=="business-knowledge" && $url2!='')
+	else if($url1=="business-knowledge" && $url2!='')
 	{
-	include("business-knowledge2.php");
+		include("business-knowledge2.php");
 	}
-	if($url1=="technical" && $url2=='')
+	else if($url1=="technical" && $url2=='')
 	{
-	include("technical.php");
+		include("technical.php");
 	}
-	if($url1=="technical" && $url2!='')
+	else if($url1=="technical" && $url2!='')
 	{
-	include("technical2.php");
+		include("technical2.php");
 	}
-	if($url1=="management" && $url2=='')
+	else if($url1=="management" && $url2=='')
 	{
-	include("management.php");
+		include("management.php");
 	}
-	if($url1=="management" && $url2!='')
+	else if($url1=="management" && $url2!='')
 	{
-	include("management2.php");
+		include("management2.php");
 	}
-	if($url1=="financial" && $url2=='')
+	else if($url1=="financial" && $url2=='')
 	{
-	include("financial.php");
+		include("financial.php");
 	}
-	if($url1=="financial" && $url2!='')
+	else if($url1=="financial" && $url2!='')
 	{
-	include("financial2.php");
+		include("financial2.php");
 	}
-	if($url1=="archive-images" && $url2=='')
+	else if($url1=="archive-images" && $url2=='')
 	{
-	include("archive-images.php");
+		include("archive-images.php");
 	}
-	if($url1=="archive-images" && $url2!='')
+	else if($url1=="archive-images" && $url2!='')
 	{
-	include("archive-images2.php");
+		include("archive-images2.php");
+	} else {
+		include("error.php");
 	}
 ?>

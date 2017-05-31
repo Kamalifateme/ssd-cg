@@ -20,8 +20,8 @@
 		<?php include("tophead.php"); ?>
 <h2 style="margin-top:170px" title="خطای 404"> صفحه مورد نظر یافت نشد </h2>
 	</section>
-<section id="contact">
-				<div itemscope itemtype="http://schema.org/contactPoint" itemprop="contact" class="cols-2" style="margin-top:30px;">
+<section id="contact" style="background-color:#000">
+				<div itemscope itemtype="http://schema.org/contactPoint" itemprop="contact" class="cols-2" style="margin-top:30px">
 				
 				<div class="col" style="text-align:right;">
 					<h1 title="ارتباط با گروه حرفه ای مشاوران کارآفرینی و کسب و کار">ارتباط با ما</h1>
