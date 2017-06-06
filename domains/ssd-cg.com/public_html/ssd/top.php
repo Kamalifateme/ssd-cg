@@ -16,3 +16,7 @@ property="og:type" content="article"> <meta property="og:image" content="img/log
 	<link href="<?php echo $path; ?>css/font-awesome.min.css" rel="stylesheet" />
 	<link rel='stylesheet' id='iwc-style-css'  href='<?php echo $path; ?>css/style.css?ver=4.1.8' type='text/css' media='all' />
 	<script src="<?php echo $path; ?>js/modernizr.custom.29473.js" type="text/javascript"></script>
+    <script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" 
+        src="<?php echo $path; ?>easy-comment/jquery.easy-comment.min.js"></script>

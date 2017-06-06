@@ -69,6 +69,8 @@
 				<a itemscope itemtype="http://schema.org/url" itemprop="downloadFile" href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه</a><br>
 				<?php } ?>
 				</div>
+                
+<div id="my-comment"></div>
 
 	</section>
 
@@ -100,6 +102,17 @@
 				viewportFactor : 0.2
 			} );
 		</script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo $path; ?>easy-comment/jquery.easy-comment.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function(){
+		   $("#my-comment").EasyComment({
+			   path:"<?php echo $path; ?>easy-comment/",
+			   moderate:false,
+			   maxReply:5
+			   });
+		});
+	</script>
 
 </body>
 </html>
