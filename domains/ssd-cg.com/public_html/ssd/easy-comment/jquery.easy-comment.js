@@ -413,12 +413,12 @@ EasyComment.prototype.showPaging = function(nTotal){
          $.fn.EasyComment.StyleReady = true;
          var arrStyle = [
             "<style type='text/css'>",
-            ".ec-comment-pane{position:relative; padding-left:20px; margin:5px 0; overflow:auto}",
-            ".ec-comment-pane div.ec-total{font:1.3em Georgia; height:24px; line-height:24px}",
-            ".ec-comment-pane div.ec-paging{height:30px; line-height:30px;text-align:right;}",
+            ".ec-comment-pane{position:relative; padding-left:20px; margin:5px 0; overflow:auto; direction:rtl}",
+            ".ec-comment-pane div.ec-total{height:30px; line-height:24px; direction:rtl; background:linear-gradient(#ffffff,#dddddd); color:#444;width: 15%; padding: 0px 5px; border-top-right-radius: 6px; border-top-left-radius: 6px; border: 1px solid #ccc; margin-right : 1%;}",
+            ".ec-comment-pane div.ec-paging{height:30px; line-height:30px;text-align:right; background:#fff; border-top-left-radius:12px; border-top-right-radius:12px;}",
             ".ec-comment-pane div.ec-paging>button{font:13px arial;height:30px; line-height:30px;margin-right:10px;}",
-            ".ec-comment-pane ul.ec-comment-list{position:relative; font-family:'Lucida Grande',sans-serif; font-size:14px; line-height:16px; list-style-type:none; padding:0px; background-color:#FFF; border:0px solid #14a1cc; border-radius:12px; overflow:auto; margin-bottom:1%;direction:rtl;text-align:right}",
-            ".ec-comment-pane ul.ec-comment-list li.ec-comment{position:relative; min-height:48px; min-width:48px; padding:4px 4px 12px 56px; margin-bottom:8px; border-radius:4px; font-size:9pt arial;direction:rtl}",
+            ".ec-comment-pane ul.ec-comment-list{position:relative; font-family:'Lucida Grande',sans-serif; font-size:14px; line-height:16px; list-style-type:none; padding:0px; background:linear-gradient(#ffffff,#eeeeee); border:0px solid #14a1cc; border-bottom-left-radius:12px; border-bottom-right-radius:12px; overflow:auto; margin-bottom:1%; direction: rtl;}",
+            ".ec-comment-pane ul.ec-comment-list li.ec-comment{position:relative; min-height:48px; min-width:48px; padding:4px 4px 12px 56px; margin-bottom:8px; border-radius:4px; font-size:9pt arial; direction:rtl; border-bottom: 1px #bbb dotted;}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment:last-child{border:none; padding-bottom:0px}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment button{font:11px arial}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment a, ",
@@ -430,14 +430,14 @@ EasyComment.prototype.showPaging = function(nTotal){
             ".ec-comment-form{direction:rtl}",
             ".ec-comment-form form{margin:0; padding:0}",
             ".ec-comment-form form input, .ec-comment-form form textarea, .ec-comment-form form button{font:1em arial}",
-            ".ec-comment-form fieldset{ background:-webkit-gradient(linear,0 0,0 bottom,from(#ffffff),to(#dddddd));  background:-moz-linear-gradient(#ffffff,#dddddd);  background:linear-gradient(#ffffff,#dddddd);  filter :progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#dddddd)}",
-            ".ec-comment-form fieldset legend{ background:-webkit-gradient(linear,0 0,0 bottom,from(#ffffff),to(#dddddd));  background:-moz-linear-gradient(#ffffff,#dddddd);  background:linear-gradient(#ffffff,#dddddd);  filter :progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#dddddd);  padding:0px 5px;  border-radius:6px;  border:1px solid #ccc}",
+            ".ec-comment-form fieldset{ background:-webkit-gradient(linear,0 0,0 bottom,from(#ffffff),to(#dddddd));  background:-moz-linear-gradient(#ffffff,#dddddd); background:linear-gradient(#ffffff,#dddddd); filter :progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#dddddd)}",
+            ".ec-comment-form fieldset legend{ background:-webkit-gradient(linear,0 0,0 bottom,from(#ffffff),to(#dddddd));  background:-moz-linear-gradient(#ffffff,#dddddd); background:linear-gradient(#ffffff,#dddddd); filter :progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#dddddd); padding:0px 5px; border-radius:6px;  border:1px solid #ccc}",
             ".ec-comment-form .title{ color:#444;  line-height:30px}",
             ".ec-comment-form fieldset{ border-radius:6px}",
-            ".ec-comment-form fieldset fieldset{ border:none;  background:none;  filter:none}",
-            ".ec-comment-form fieldset fieldset legend{ background:none;  border:none;  filter:none; color:#555}",
+            ".ec-comment-form fieldset fieldset{ border:none; background:none; filter:none}",
+            ".ec-comment-form fieldset fieldset legend{ background:none; border:none; filter:none; color:#555}",
             ".ec-comment-reply-form{position:absolute; left:0px; top:0px; height:400px}",
-            ".ec-comment-reply-form div.close_button{ position:absolute;  right:-18px; top:-18px;  width:36px; height:36px;  background:url(" + path + "ec-close_box.png) no-repeat;  cursor:pointer}",
+            ".ec-comment-reply-form div.close_button{ position:absolute; right:-18px; top:-18px; width:36px; height:36px; background:url(" + path + "ec-close_box.png) no-repeat; cursor:pointer}",
             "</style>"
          ];
          $(arrStyle.join("")).appendTo("head");
