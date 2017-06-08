@@ -3,7 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd | ssd" />
+	<meta name="description" content="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd" />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd" />
+<meta property="og:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta property="og:image" content="../ssd/img/logo33.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta name="telegram:title" content="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd" />
+<meta name="instagram:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta name="instagram:title" content="تمام اخبار داغ کسب و کار کارآفرینی ssd | تمام اخبار داغ اقتصادی ssd" />
 	<?php include("top.php"); ?>
 </head>
 

@@ -3,7 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="مجله کارآفرینی و کسب و کار ssd |ssd"/>
+	<meta name="description" content="گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست."/>
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="مجله کارآفرینی و کسب و کار ssd" />
+<meta property="og:description" content="گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست." />
+<meta property="og:image" content="../ssd/menu/entrepreneur.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست." />
+<meta name="telegram:title" content="مجله کارآفرینی و کسب و کار ssd" />
+<meta name="instagram:description" content="گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد. انواع تامین مالی طرح ها با توجه به ارائه مدل های متنوع کسب وکار (تولیدی،خدماتی وسرمایه گذاری) و ارائه درک روشنی از ریسک سرمایه گذاری و تاثیرات آن روی تصمیمات سرمایه گذاری شما در آینده خدمتی ناچیز از گروه مشاورین ماست." />
+<meta name="instagram:title" content="مجله کارآفرینی و کسب و کار ssd" />
 	<?php include("top.php"); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

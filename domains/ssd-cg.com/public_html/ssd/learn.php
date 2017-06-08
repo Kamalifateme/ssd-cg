@@ -1,9 +1,19 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html dir="rtl" lang="fa-IR" style="margin-top: 0px!important;">
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-      <meta name="description" content="Iran Web Festival | دوره های یادگیری ssd | ssd" />
+      <meta name="description" content="گروه مشاوران SSD با وجود شبکه مشاوران و مدرسان مجرب و حرفه ای توان ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف  چرخه عمر سازمانی اعم از دوره های کارآفرینی و ایجاد کسب و کار تا دوره های خرد و کلان مدیریت سازمان را دارا می باشد. تاکید ما بر کاربردی بودن دوره های یادگیری مان است." />
+	<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="دوره آموزشی ssd" />
+<meta property="og:description" content="گروه مشاوران SSD با وجود شبکه مشاوران و مدرسان مجرب و حرفه ای توان ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف  چرخه عمر سازمانی اعم از دوره های کارآفرینی و ایجاد کسب و کار تا دوره های خرد و کلان مدیریت سازمان را دارا می باشد. تاکید ما بر کاربردی بودن دوره های یادگیری مان است." />
+<meta property="og:image" content="../ssd/menu/Yadgiri.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="گروه مشاوران SSD با وجود شبکه مشاوران و مدرسان مجرب و حرفه ای توان ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف  چرخه عمر سازمانی اعم از دوره های کارآفرینی و ایجاد کسب و کار تا دوره های خرد و کلان مدیریت سازمان را دارا می باشد. تاکید ما بر کاربردی بودن دوره های یادگیری مان است." />
+<meta name="telegram:title" content="دوره آموزشی ssd" />
+<meta name="instagram:description" content="گروه مشاوران SSD با وجود شبکه مشاوران و مدرسان مجرب و حرفه ای توان ارائه دوره های یادگیری عملیاتی در اکثر سطوح مدیریتی و مراحل مختلف  چرخه عمر سازمانی اعم از دوره های کارآفرینی و ایجاد کسب و کار تا دوره های خرد و کلان مدیریت سازمان را دارا می باشد. تاکید ما بر کاربردی بودن دوره های یادگیری مان است." />
+<meta name="instagram:title" content="دوره آموزشی ssd" />
 	<?php include("top.php"); ?>
 </head>
 

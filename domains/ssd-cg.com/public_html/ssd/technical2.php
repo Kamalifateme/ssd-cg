@@ -3,7 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd | ssd" />
+	<meta name="description" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
+<meta property="og:description" content="مديران ارشد سازمان تأثير قابل توجهي را که فناوري اطلاعات مي‌تواند روي موفقيت سازمان داشته باشد، درک کرده‌اند. مديران اميدوارند که درک و شناخت خود را از روشهاي مبتني بر فناوري اطلاعات که به کار برده شده است و نيز احتمال به کار بردن موفقيت‌آميز آن را براي کسب مزيت رقابتي افزايش دهند." />
+<meta property="og:image" content="../ssd/menu/fani.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
+<meta property="og:description" content="مديران ارشد سازمان تأثير قابل توجهي را که فناوري اطلاعات مي‌تواند روي موفقيت سازمان داشته باشد، درک کرده‌اند. مديران اميدوارند که درک و شناخت خود را از روشهاي مبتني بر فناوري اطلاعات که به کار برده شده است و نيز احتمال به کار بردن موفقيت‌آميز آن را براي کسب مزيت رقابتي افزايش دهند." />
+<meta name="telegram:title" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
+<meta name="instagram:description" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
+<meta property="og:description" content="مديران ارشد سازمان تأثير قابل توجهي را که فناوري اطلاعات مي‌تواند روي موفقيت سازمان داشته باشد، درک کرده‌اند. مديران اميدوارند که درک و شناخت خود را از روشهاي مبتني بر فناوري اطلاعات که به کار برده شده است و نيز احتمال به کار بردن موفقيت‌آميز آن را براي کسب مزيت رقابتي افزايش دهند."/>
+<meta name="instagram:title" content="تکنولوژی نوین اطلاعات | گروه مشاوران کسب و کار و کارآفرینی ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

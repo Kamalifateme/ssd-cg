@@ -5,6 +5,17 @@
 		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="learning" class="mmenus">
 			
                     <li itemscope itemtype="http://schema.org/url" itemprop="learning" id="learning"  style="">
+                     <meta name="description" content="Iran Web Festival | گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd | ssd" />
+	<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" />
+<meta property="og:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است." />
+<meta property="og:image" content="../ssd/img/logo33.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است." />
+<meta name="telegram:title" content="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" />
+<meta name="instagram:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است.s" />
+<meta name="instagram:title" content="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" />
                         <a href="<?php echo $path; ?>learning-courses" >
                             <div class="ca-content">
                                 <h2 title="دوره های یادگیری مجازی و حضوری کارافرینی و کسب و کار ssd" class="ca-main" style="font-size:26px;">دوره های یادگیری</h2>

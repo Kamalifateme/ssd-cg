@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<meta name="description" content="فناوری شبکه های اجتماعی ssd |ssd"/>
+     <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
+<meta property="og:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
+<meta property="og:image" content="../ssd/menu/entrepreneur.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
+<meta name="telegram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
+<meta name="instagram:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
+<meta name="instagram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

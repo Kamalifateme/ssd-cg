@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<meta name="description" content=" گروه حرفه ای مشاوران کسب و کار و کارآفرینی  ssd آرشیو تصاویر| ssd" />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="آرشیو تصاویر ssd" />
+<meta property="og:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
+<meta property="og:image" content="../ssd/menu/archive.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
+<meta name="telegram:title" content="آرشیو تصاویر ssd" />
+<meta name="instagram:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
+<meta name="instagram:title" content="آرشیو تصاویر ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<link href='<?php echo $path; ?>css/simplelightbox.css' rel='stylesheet' type='text/css'>

@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
     <meta name="description" content="جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd | ssd" />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd | ssd" />
+<meta property="og:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta property="og:image" content="../ssd/img/logo33.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta name="telegram:title" content="اخبار روز اقتصادی ssd |اخبار روز کسب و کار و کارآفرینی ssd" />
+<meta name="instagram:description" content="ما با تشکیل تیم های متخصص جهت مشاوره و آموزش در زمینه های مختلف مسائل سازمانی از مجموعه های صنفی و صنعتی کوچک تا صنایع بزرگ، با بالاترین کیفیت و تعهد در خدمت صاحبان کسب و کار هستیم." />
+<meta name="instagram:title" content="جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd | ssd" />
 	<?php include("top.php"); ?>
 </head>
 
@@ -24,7 +34,7 @@
 		<?php include("tophead.php"); ?>
 
 	
-					<h1 title="جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd | ssd">تمام اخبار</h1>
+					<h1 title= "جدیدترین و آخرین تمام اخبار اقتصادی ssd | جدیدترین و آخرین تمام اخبار کسب و کار و کارآفرینی ssd | ssd">تمام اخبار</h1>
 
 		<div class="cols-1" style="margin-top:-10px;">
 

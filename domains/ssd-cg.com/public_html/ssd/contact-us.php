@@ -5,6 +5,18 @@
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<meta name="description" content="
 گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد."/>
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ارتباط با گروه حرفه ای مشاوران ssd" />
+<meta property="og:description" content="این خدمات به کارآفرینان کمک میکند تا سرمایه گذاری های خطر پذیر کارافرینی را پایش و کنترل کنند و بر انجام فعالیت های کسب و کار نظارت داشته باشند." />
+<meta property="og:image" content="../ssd/img/logo33.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="
+گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد." />
+<meta name="telegram:title" content="ارتباط با گروه حرفه ای مشاوران ssd" />
+<meta name="instagram:description" content="
+گروه مشاوران ما با دید بهبود وترقی وضعیت کسب وکار کشورمان ایران، با راهنمایی وجهت دهی ایده وسرمایه در چهار چوب ارائه طرح های کسب وکار نوآورانه گام بر می دارد." />
+<meta name="instagram:title" content="ارتباط با گروه حرفه ای مشاوران ssd" />
 	<?php include("top.php"); ?>
 </head>
 

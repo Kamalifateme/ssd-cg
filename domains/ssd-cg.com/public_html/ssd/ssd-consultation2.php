@@ -3,8 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topSite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-      <meta name="description" content="Iran Web Festival | سازمان مشاوره راه اندازی کسب و کار و کارآفرینی گروه حرفه ای ssd | ssd" />
-	<?php include("top.php"); ?>
+<meta name="description" content="برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما به طور مستقیم و موثر و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم. " />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Iran Web Festival | سازمان مشاوره راه اندازی کسب و کار و کارآفرینی ssd" />
+<meta property="og:description" content="برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما به طور مستقیم و موثر و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم. " />
+<meta property="og:image" content="../ssd/menu/ORGANIZATION.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما به طور مستقیم و موثر و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم. " />
+<meta name="telegram:title" content="Iran Web Festival | سازمان مشاوره راه اندازی کسب و کار و کارآفرینی ssd" />
+<meta name="instagram:description" content="برای موفقیت وتقویت شرکت شما در بازار رقابتی حال حاضر، در کنار شما هستیم تا تغییرات موفقیت آمیز سریعی را در محیط شرکت خود شاهد باشید. ما به طور مستقیم و موثر و با تیم مشاورین مجرب خود در جهت ارزیابی نیازها و کشف منابع لازم به منظور تحقق نیاز با شما همکاری می کنیم. " />
+<meta name="instagram:title" content="Iran Web Festival | سازمان مشاوره راه اندازی کسب و کار و کارآفرینی ssd" />	<?php include("top.php"); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
     <script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
 </head>

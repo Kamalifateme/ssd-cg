@@ -9,6 +9,7 @@
                   canvas, online image editor, online photo editor, photoshop algorithms" />
       <meta name="author" content="Yubo Dong" />
       <style>
+	
       .caption,
       .filter,.note{
          margin: 0 auto;
@@ -17,10 +18,10 @@
          font:24px Georgia;
          padding:10px;
          margin-bottom:10px;
-         text-align:center;
+         text-align:right;
       }
-      .filter{text-align:right;font:13px Georgia;}
-      .note{font:italic 12px Georgia;}
+      .filter{text-align:right;font:13px Georgia; text-align:right;}
+      .note{font:italic 12px Georgia; text-align:right;}
       .page_section{
          margin: 0 auto;
          width: 1000px;
@@ -33,6 +34,7 @@
          background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e2e4e3));
          background-image: -moz-linear-gradient(#ffffff, #e2e4e3);
          background-image: linear-gradient(#ffffff, #e2e4e3);
+		 text-align:right;
          filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#ffffff,endColorstr=#e2e4e3);
       }
       .page_section .url{
@@ -41,39 +43,46 @@
          font-weight:bold;
          height:24px;
          line-height:24px;
+		 text-align:right;
       }
       .page_section .title{
          position:relative;
          font-size:0.9em;
          height:24px;
          line-height:24px;
+		 text-align:right;
       }
       .page_section .comments{
          position:relative;
+		 text-align:right;
       }         
       .page_section .comments .domid{
          position:relative;
          font-size:0.9em;
          height:24px;
          line-height:24px;
+		 text-align:right;
       }         
       .page_section .comments .comment_list{
          position:relative;
+		 text-align:right;
       }         
-      .page_section .comments .comment_list table{border-left:1px solid #cccccc;border-top:1px solid #cccccc;}
+      .page_section .comments .comment_list table{border-left:1px solid #cccccc;border-top:1px solid #cccccc; text-align:right;}
       .page_section .comments .comment_list table td,
       .page_section .comments .comment_list table th{
          font:12px arial;
+		 text-align:right;
          border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;
       }
       .page_section .comments .comment_list table th{
          font-weight:bold;
+		 text-align:right;
          background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e2e4e3));
          background-image: -moz-linear-gradient(#ffffff, #e2e4e3);
          background-image: linear-gradient(#ffffff, #e2e4e3);
          filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#ffffff,endColorstr=#e2e4e3);
       }
-      .page_section .comments .comment_list table td button{font:bold 11px arial;}
+      .page_section .comments .comment_list table td button{font:bold 11px arial; text-align:right;}
       </style>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
       <script type="text/javascript">
@@ -183,7 +192,7 @@
                         .append($("<td></td>").html(isEmpty(data[i].ip,"---")))
                         .append($("<td></td>").html(isEmpty(data[i].time,"---")))
                         .append(
-                           $("<td></td>").html(sStatus + "</br></br>").attr("align","center").css("background-color","#EEEEEE")
+                           $("<td></td>").html(sStatus + "</br></br>").attr("align","right").css("background-color","#EEEEEE")
                               .append(
                                  $("<button>Approve</button>").data("data",{page:page,comment:data[i].id,action:"ok"})
                                     .click(function(){doAction($(this).data("data"));})

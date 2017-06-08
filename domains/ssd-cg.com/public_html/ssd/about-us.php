@@ -6,7 +6,18 @@
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" >
 
 <meta content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری SSD به عنوان نماینده گروه مشاوران رهاورد تلاش ارغوان در منطقه مرکز و جنوب کشور، با بهره گیری از تیم مشاوران مجرب و متخصص در راستای تعالی و تحقق
-     چشم اندازمشتریان خود گام بر می دارد. ">	
+     چشم اندازمشتریان خود گام بر می دارد. ">
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ssd درباره مشاوران حرفه ای کسب و کار و کارآفرینی" />
+<meta property="og:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری SSD به عنوان نماینده گروه مشاوران رهاورد تلاش ارغوان در منطقه مرکز و جنوب کشور، با بهره گیری از تیم مشاوران مجرب و متخصص در راستای تعالی و تحقق
+     چشم اندازمشتریان خود گام بر می دارد. " />
+<meta property="og:image" content="../ssd/img/logo33.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری ssd با بهره گیری از تیم مشاوره ای حرفه ای سعی در جلب رضایت مشتریان دارد. " />
+<meta name="telegram:title" content="ssd درباره مشاوران حرفه ای کسب و کار و کارآفرینی" />
+<meta name="instagram:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری ssd با بهره گیری از تیم مشاوره ای حرفه ای سعی در جلب رضایت مشتریان دارد. " />
+<meta name="instagram:title" content="ssd درباره مشاوران حرفه ای کسب و کار و کارآفرینی" />	
 	
 	<?php include("top.php"); ?>
 </head>

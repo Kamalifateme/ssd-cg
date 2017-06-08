@@ -3,7 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="چرا آموزش ssd؟ |ssd" />
+	<meta name="description" content="چرا آموزش ssd؟" />
+	<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="چرا آموزش ssd؟" />
+<meta property="og:description" content="مزایای شما از شرکت در دوره های آموزشی:
+
+             رفع نیاز های آموزشی در جهت بهبود مستمر.
+             به روز رسانی در رابطه با آخرین گرایش ها و پیشرفت ها.
+             تبادل اطلاعات و تجارب با  کارشناسان صنعت.
+             اجتناب از اشتباه در خرید نرم افزار، تجهیز، قطعه و ...
+             ارتباط با شبکه جدیدی از اطلاعات تماس متخصصان.
+" />
+<meta property="og:image" content="../ssd/menu/Chera-SSD.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="مزایای شما از شرکت در دوره های آموزشی:
+
+             رفع نیاز های آموزشی در جهت بهبود مستمر.
+             به روز رسانی در رابطه با آخرین گرایش ها و پیشرفت ها.
+             تبادل اطلاعات و تجارب با  کارشناسان صنعت.
+             اجتناب از اشتباه در خرید نرم افزار، تجهیز، قطعه و ...
+             ارتباط با شبکه جدیدی از اطلاعات تماس متخصصان.
+" />
+<meta name="telegram:title" content="چرا آموزش ssd؟" />
+<meta name="instagram:description" content="مزایای شما از شرکت در دوره های آموزشی:
+
+             رفع نیاز های آموزشی در جهت بهبود مستمر.
+             به روز رسانی در رابطه با آخرین گرایش ها و پیشرفت ها.
+             تبادل اطلاعات و تجارب با  کارشناسان صنعت.
+             اجتناب از اشتباه در خرید نرم افزار، تجهیز، قطعه و ...
+             ارتباط با شبکه جدیدی از اطلاعات تماس متخصصان.
+" />
+<meta name="instagram:title" content="چرا آموزش ssd؟" />
 	<?php include("top.php"); ?>
 </head>
 

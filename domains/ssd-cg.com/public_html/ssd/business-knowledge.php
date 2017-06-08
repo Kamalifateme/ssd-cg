@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfSite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
 	<meta name="description" content="رهبری کسب و کار و دارایی ها گروه حرفه ای مشاوران ssd |ssd"/>
+     <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="رهبری کسب و کار و دارایی ها گروه حرفه ای مشاوران ssd |ssd" />
+<meta property="og:description" content="دانستنی های کسب و کار درک کاملی از عملکرد های کلی کسب و کار و مناطق خاص تحت تجزیه و تحلیل می باشد، داشتن اطلاعات دقیق و کامل از این دانستنی ها برای توسعه ساختار بنیادین سازمان حیاتی است، بر اساس این اطلاعات تحلیلگر می تواند درک درستی از کاربران، مشکلات و احتیاجات آن ها بدست آورد و روش های جدید و پربازده ای را برای انجام وظایف اولیه کاربران طراحی کند." />
+<meta property="og:image" content="../ssd/menu/dan1.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="دانستنی های کسب و کار درک کاملی از عملکرد های کلی کسب و کار و مناطق خاص تحت تجزیه و تحلیل می باشد، داشتن اطلاعات دقیق و کامل از این دانستنی ها برای توسعه ساختار بنیادین سازمان حیاتی است، بر اساس این اطلاعات تحلیلگر می تواند درک درستی از کاربران، مشکلات و احتیاجات آن ها بدست آورد و روش های جدید و پربازده ای را برای انجام وظایف اولیه کاربران طراحی کند." />
+<meta name="telegram:title" content="رهبری کسب و کار و دارایی ها گروه حرفه ای مشاوران ssd |ssd" />
+<meta name="instagram:description" content="دانستنی های کسب و کار درک کاملی از عملکرد های کلی کسب و کار و مناطق خاص تحت تجزیه و تحلیل می باشد، داشتن اطلاعات دقیق و کامل از این دانستنی ها برای توسعه ساختار بنیادین سازمان حیاتی است، بر اساس این اطلاعات تحلیلگر می تواند درک درستی از کاربران، مشکلات و احتیاجات آن ها بدست آورد و روش های جدید و پربازده ای را برای انجام وظایف اولیه کاربران طراحی کند." />
+<meta name="instagram:title" content="رهبری کسب و کار و دارایی ها گروه حرفه ای مشاوران ssd |ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

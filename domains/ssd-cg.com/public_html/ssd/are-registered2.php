@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
     <meta name="description" content="Iran Web Festival | دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار ssd | ssd" />
+    <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="برگزاری دوره‌ های آموزشی کارآفرینی و کسب و کار ssd" />
+<meta property="og:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
+<meta property="og:image" content="../ssd/menu/sabt1.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
+<meta name="telegram:title" content="برگزاری دوره‌ های آموزشی کارآفرینی و کسب و کار ssd" />
+<meta name="instagram:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
+<meta name="instagram:title" content="برگزاری دوره‌ های آموزشی کارآفرینی و کسب و کار ssd" />
 	<?php include("top.php"); ?>
 </head>
 

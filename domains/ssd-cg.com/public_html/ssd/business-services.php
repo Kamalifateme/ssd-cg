@@ -3,7 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="استراتژی رشد گروه حرفه ای مشاوران ssd |ssd"/>
+	<meta name="description" content="این خدمات به کارآفرینان کمک میکند تا سرمایه گذاری های خطر پذیر کارافرینی را پایش و کنترل کنند و بر انجام فعالیت های کسب و کار نظارت داشته باشند." />
+     <meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="استراتژی رشد گروه حرفه ای مشاوران ssd" />
+<meta property="og:description" content="این خدمات به کارآفرینان کمک میکند تا سرمایه گذاری های خطر پذیر کارافرینی را پایش و کنترل کنند و بر انجام فعالیت های کسب و کار نظارت داشته باشند." />
+<meta property="og:image" content="../ssd/menu/dan1.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="این خدمات به کارآفرینان کمک میکند تا سرمایه گذاری های خطر پذیر کارافرینی را پایش و کنترل کنند و بر انجام فعالیت های کسب و کار نظارت داشته باشند." />
+<meta name="telegram:title" content="استراتژی رشد گروه حرفه ای مشاوران ssd" />
+<meta name="instagram:description" content="این خدمات به کارآفرینان کمک میکند تا سرمایه گذاری های خطر پذیر کارافرینی را پایش و کنترل کنند و بر انجام فعالیت های کسب و کار نظارت داشته باشند." />
+<meta name="instagram:title" content="استراتژی رشد گروه حرفه ای مشاوران ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

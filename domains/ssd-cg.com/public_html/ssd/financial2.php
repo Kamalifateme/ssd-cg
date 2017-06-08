@@ -3,7 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="Iran Web Festival |استراتژی و بازاریابی در گروه مشاوران کسب و کار و کارآفرینی ssd | ssd" />
+	<meta name="description" content="اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت هم‌راستا با هدف‌های کلان و جایگاهی که برای کسب‌وکارمان انتظار داریم، باید به تدوین اهداف بازاریابی بپردازیم." />
+	<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ssd استراتژی بازاریابی" />
+<meta property="og:description" content="اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت هم‌راستا با هدف‌های کلان و جایگاهی که برای کسب‌وکارمان انتظار داریم، باید به تدوین اهداف بازاریابی بپردازیم." />
+<meta property="og:image" content="../ssd/menu/marketing_strategy.png" />
+<meta property="og:site_name" content="ssd_cg" />
+<meta name="telegram:description" content="اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت هم‌راستا با هدف‌های کلان و جایگاهی که برای کسب‌وکارمان انتظار داریم، باید به تدوین اهداف بازاریابی بپردازیم." />
+<meta name="telegram:title" content="ssd استراتژی بازاریابی" />
+<meta name="instagram:description" content="اندیشه داشتن یک برنامه بازاریابی در لایه استراتژی شرکت‌ها شکل می‌گیرد. در حقیقت هم‌راستا با هدف‌های کلان و جایگاهی که برای کسب‌وکارمان انتظار داریم، باید به تدوین اهداف بازاریابی بپردازیم." />
+<meta name="instagram:title" content="ssd استراتژی بازاریابی" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
