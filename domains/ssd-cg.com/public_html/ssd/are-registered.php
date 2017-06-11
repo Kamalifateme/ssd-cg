@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-<meta name="description" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار | ssd" />
+<meta name="description" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار در شرکت سیمرغ صنعت و دانش ssd" />
 <meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="ssd برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" />
+<meta property="og:title" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار در شرکت سیمرغ صنعت و دانش ssd" />
 <meta property="og:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
 <meta property="og:image" content="../ssd/menu/sabt1.png" />
 <meta property="og:site_name" content="ssd_cg" />
 <meta name="telegram:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
-<meta name="telegram:title" content="ssd برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" />
+<meta name="telegram:title" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار شرکت سیمرغ صنعت و دانش ssd" />
 <meta name="instagram:description" content="مقالات و ویدیوهای آموزشی در این بخش موجود می باشد." />
-<meta name="instagram:title" content="ssd برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" />
+<meta name="instagram:title" content="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار در شرکت سیمرغ صنعت و دانش ssd" />
 	<?php include("top.php"); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

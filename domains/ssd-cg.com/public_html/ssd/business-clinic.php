@@ -6,14 +6,14 @@
 	<meta name="description" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd"/>
     <meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
+<meta property="og:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران شرکت سیمرغ صنعت و دانش ssd" />
 <meta property="og:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
 <meta property="og:image" content="../ssd/menu/Technology.png" />
 <meta property="og:site_name" content="ssd_cg" />
 <meta name="telegram:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
-<meta name="telegram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
+<meta name="telegram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران شرکت سیمرغ صنعت و دانش ssd" />
 <meta name="instagram:description" content="ما هستیم تا از رشد و پیشرفت شما در ایجاد یک کسب و کار، توسعه کسب و کار و بهبود مشکلات کسب و کار اطمینان حاصل کنیم." />
-<meta name="instagram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران ssd |ssd" />
+<meta name="instagram:title" content="فناوری شبکه های اجتماعی گروه حرفه ای مشاوران شرکت سیمرغ صنعت و دانش ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>

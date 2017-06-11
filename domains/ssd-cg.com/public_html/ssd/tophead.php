@@ -7,14 +7,14 @@
 <meta charset='utf-8'>
 <meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="ssd مشاوران حرفه ای کسب و کار و کارآفرینی" />
+<meta property="og:title" content="مشاوران حرفه ای کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش  ssd" />
 <meta property="og:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری ssd با بهره گیری از تیم مشاوره ای حرفه ای سعی در جلب رضایت مشتریان دارد. " />
 <meta property="og:image" content="../ssd/img/logo33.png" />
 <meta property="og:site_name" content="ssd-cg" />
 <meta name="telegram:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری ssd با بهره گیری از تیم مشاوره ای حرفه ای سعی در جلب رضایت مشتریان دارد. " />
-<meta name="telegram:title" content="ssd مشاوران حرفه ای کسب و کار و کارآفرینی" />
+<meta name="telegram:title" content="مشاوران حرفه ای کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش  ssd" />
 <meta name="instagram:description" content="شرکت تعاونی دانش بنیان سیمرغ صنعت و دانش با نام اختصاری ssd با بهره گیری از تیم مشاوره ای حرفه ای سعی در جلب رضایت مشتریان دارد. " />
-<meta name="instagram:title" content="مشاوران حرفه ای کسب و کار و کارآفرینی" />
+<meta name="instagram:title" content="مشاوران حرفه ای کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش  ssd" />
 </head>
 <body>
 <div class="pos" >

@@ -41,7 +41,7 @@
  
 
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 title="درباره ssd" style="direction:rtl;text-align:center;">درباره ما</h1>
+					<h1 title="ssd درباره شرکت سیمرغ صنعت و دانش" style="direction:rtl;text-align:center;">درباره ما</h1>
 
 		<div itemscope itemtype="http://schema.org/isPartOf" itemprop="introduct" class="col">
 

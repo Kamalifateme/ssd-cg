@@ -5,17 +5,17 @@
 url=www.ssd-cg.com'></script></a>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-    <meta name="description" content="Iran Web Festival | گروه حرفه ای مشاوران کسب و کار و کارآفرینی ssd | ssd" />
+    <meta name="description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است؛ با ارائه خدمات مشاوره و آموزش راهکارهای تعالی کسب و کار در خدمت بنگاههای اقتصادی استان می باشد." />
 	<meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="روزنامه کار و کارآفرینی ssd" />
+<meta property="og:title" content="روزنامه کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd" />
 <meta property="og:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است؛ با ارائه خدمات مشاوره و آموزش راهکارهای تعالی کسب و کار در خدمت بنگاههای اقتصادی استان می باشد." />
 <meta property="og:image" content="../ssd/img/logo33.png" />
 <meta property="og:site_name" content="ssd_cg" />
 <meta name="telegram:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است؛ با ارائه خدمات مشاوره و آموزش راهکارهای تعالی کسب و کار در خدمت بنگاههای اقتصادی استان می باشد." />
-<meta name="telegram:title" content="روزنامه کار و کارآفرینی ssd" />
+<meta name="telegram:title" content="روزنامه کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd" />
 <meta name="instagram:description" content="این شرکت به عنوان یکی از با سابقه ترین شرکت های مستقر در مرکز خدمات فناوری و کسب و کار استان یزد که تحت نظر شرکت شهرکهای صنعتی استان است؛ با ارائه خدمات مشاوره و آموزش راهکارهای تعالی کسب و کار در خدمت بنگاههای اقتصادی استان می باشد.s" />
-<meta name="instagram:title" content="روزنامه کار و کارآفرینی ssd" />
+<meta name="instagram:title" content="روزنامه کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd" />
 	<?php include("top.php"); ?>
 <link href="<?php echo $path; ?>css/jquery.bxslider.css" rel="stylesheet" />
 

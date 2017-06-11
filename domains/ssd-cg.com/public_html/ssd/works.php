@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta itemscope itemtype="http://schema.org/headline" itemprop="topOfsite" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />
-	<meta name="description" content="چرا مشاوره کسب و کار و کارآفرینی ssd? " />
+	<meta name="description" content="چرا مشاوره کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd?" />
     	<meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="چرا مشاوره کسب و کار و کارآفرینی ssd? " />
+<meta property="og:title" content="چرا مشاوره کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd?" />
 <meta property="og:description" content="ارائه مشاوره کامل وکاربردی در حوزه های بازرگانی ،حقوقی،مالیاتی، بیمه، وطراحی و بازاریابی وفروش بخشی از خدمات کلینیک کسب و کار SSD می باشد. برگزاری جلسات همفکری با کانون کارآفرینی، جوامع مهندسین، اتاق تعاون و خانه صنعت ، همچنین همراهی شرکت شهرک های صنعتی استان یزد داشته های ما را فزونی می بخشد..." />
 <meta property="og:image" content="../ssd/img/logo33.png" />
 <meta property="og:site_name" content="ssd_cg" />
 <meta name="telegram:description" content="ارائه مشاوره کامل وکاربردی در حوزه های بازرگانی ،حقوقی،مالیاتی، بیمه، وطراحی و بازاریابی وفروش بخشی از خدمات کلینیک کسب و کار SSD می باشد. برگزاری جلسات همفکری با کانون کارآفرینی، جوامع مهندسین، اتاق تعاون و خانه صنعت ، همچنین همراهی شرکت شهرک های صنعتی استان یزد داشته های ما را فزونی می بخشد..." />
-<meta name="telegram:title" content="چرا مشاوره کسب و کار و کارآفرینی ssd? " />
+<meta name="telegram:title" content="چرا مشاوره کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd?" />
 <meta name="instagram:description" content="ارائه مشاوره کامل وکاربردی در حوزه های بازرگانی ،حقوقی،مالیاتی، بیمه، وطراحی و بازاریابی وفروش بخشی از خدمات کلینیک کسب و کار SSD می باشد. برگزاری جلسات همفکری با کانون کارآفرینی، جوامع مهندسین، اتاق تعاون و خانه صنعت ، همچنین همراهی شرکت شهرک های صنعتی استان یزد داشته های ما را فزونی می بخشد..." />
-<meta name="instagram:title" content="چرا مشاوره کسب و کار و کارآفرینی ssd? "/>
+<meta name="instagram:title" content="چرا مشاوره کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd?"/>
 	<?php include("top.php"); ?>
 </head>
 
@@ -37,7 +37,7 @@
 	
 
 		<div class="cols-1" style="margin-top:30px;text-align:justify;direction:rtl;">
-					<h1 title="چرا مشاوره کسب و کار و کارآفرینی ssd? | ssd" style="direction:rtl;text-align:center;">مشاوره(چرا SSD)</h1>
+					<h1 title="چرا مشاوره کسب و کار و کارآفرینی شرکت سیمرغ صنعت و دانش ssd?" style="direction:rtl;text-align:center;">مشاوره(چرا SSD)</h1>
 
 		<div class="col">
 

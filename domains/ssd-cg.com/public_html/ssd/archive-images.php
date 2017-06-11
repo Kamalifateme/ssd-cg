@@ -6,14 +6,14 @@
     <meta name="description" content="آرشیو تصاویر ssd | ssd" />
       <meta property="og:locale" content="fa_IR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="آرشیو تصاویر ssd" />
-<meta property="og:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
+<meta property="og:title" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd" />
+<meta property="og:description" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd در این بخش موجود می‌باشد." />
 <meta property="og:image" content="../ssd/menu/archive.png" />
 <meta property="og:site_name" content="ssd_cg" />
-<meta name="telegram:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
-<meta name="telegram:title" content="آرشیو تصاویر ssd" />
-<meta name="instagram:description" content="آرشیو تصاویر ssd در این بخش موجود می باشد." />
-<meta name="instagram:title" content="آرشیو تصاویر ssd" />
+<meta name="telegram:description" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd در این بخش موجود می‌باشد." />
+<meta name="telegram:title" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd" />
+<meta name="instagram:description" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd در این بخش موجود می‌باشد." />
+<meta name="instagram:title" content="آرشیو تصاویر شرکت سیمرغ صنعت و دانش ssd" />
 	<?php include("top.php"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>css/component.css" />
 	<script src="<?php echo $path; ?>js/modernizr.custom.js"></script>
