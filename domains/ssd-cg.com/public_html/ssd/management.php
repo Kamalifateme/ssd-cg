@@ -59,7 +59,7 @@
 				$ses_sql=mysql_query("select * from  fx_man order by viwe DESC ") or die(mysql_error()) ;
 				for($i=0;$i<3;$i++)
 				{
-					$row=mysql_fetch_array($ses_sql);
+					if($row=mysql_fetch_array($ses_sql)) {
 					$name=$row['name'];
 					$image=$row['image'];
 					$url=$row['url'];
@@ -69,7 +69,7 @@
 				<a href="<?php echo $path; ?>management/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
 				<img itemscope itemtype="http://schema.org/photo" itemprop="managementImage" src="<?php echo $image; ?>" style="width:100%;height:150px" />
-				<?php } ?>
+				<?php }} ?>
 				<span itemscope itemtype="http://schema.org/name" itemprop="nameofsection" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>

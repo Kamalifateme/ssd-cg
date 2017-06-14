@@ -59,7 +59,7 @@
 				$ses_sql=mysql_query("select * from  fx_service order by viwe DESC ") or die(mysql_error()) ;
 				for($i=0;$i<3;$i++)
 				{
-				$row=mysql_fetch_array($ses_sql);
+				if($row=mysql_fetch_array($ses_sql)) {
 				$name=$row['name'];
 				$image=$row['image'];
 				$url=$row['url'];
@@ -73,7 +73,7 @@
 				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="business-services" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
-				<?php } ?>	
+				<?php }} ?>	
 			</ul>
 		</center>
         <h5 title="آرشیو مقالات استراتژی رشد" style="direction:rtl;text-align:right;color:#bbb;margin-top:-20px">آرشیو</h5>
