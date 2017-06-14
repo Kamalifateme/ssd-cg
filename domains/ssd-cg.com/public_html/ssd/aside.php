@@ -17,7 +17,7 @@
 
 <body>
 <aside id="site-sidebar">
-			<a itemscope itemtype="http://schema.org/url" itemprop="ssd-cg" alt="لوگو ssd" id="logo" href="http://www.ssd-cg.com/ssd/"><center><img style="width:130px;margin-top:-20px;height:auto" src="<?php echo $path; ?>img/logo3.png"><center></a>
+			<a itemscope itemtype="http://schema.org/url" itemprop="ssd-cg" alt="لوگو ssd" id="logo" href="http://www.ssd-cg.com/ssd/"><center><img style="width:130px;margin-top:-70px;height:auto" src="<?php echo $path; ?>img/logo3.png"><center></a>
 			<nav id="site-navigation" role="navigation" style="margin-top:-20px;">
 				<ul itemscope itemtype="http://schema.org/brand" itemprop="aside">
 					<li class="selected"><a href="#top" style="font-size:15px"><?php echo $page; ?></a></li>
@@ -30,7 +30,7 @@
 			</nav>
             
                  <!-- Google Search by www.1abzar.com --->
-<center><form style="width:140px;font-size:9pt;font-family:Tahoma;text-align:center;border:1px dotted #bbbbbb;padding:5px;direction:rtl; margin-bottom:5%; margin-top:5%" target="_new" method=get action=http://www.google.com/search><a target="_blank" href="http://www.ssd-cg.com"><img border=0 src="http://www.ssd-cg.com/ssd/img/g.png"></a><input name=q size=18 style="border:1px solid #999999;background:#efefef;font-family:Tahoma"><br><br><input type="submit" name="btnG" value="جستجو" style="font-family:Tahoma; background-color:#a9277f;"><br><input value="http://www.ssd-cg.com" type=radio name=sitesearch checked>در این سایت<br><input type=radio name=sitesearch value="">در کل اینترنت<input type=hidden name=ie value=UTF-8><input type=hidden name=oe value=UTF-8><br></form></center>
+<center><form style="width:180px;font-size:9pt;font-family:Tahoma;text-align:center;border:1px dotted #bbbbbb;padding:5px;direction:rtl; margin-bottom:5%; margin-top:5%" target="_new" method=get action=http://www.google.com/search><a target="_blank" href="http://www.ssd-cg.com"><img border=0 src="http://www.ssd-cg.com/ssd/img/g.png"></a><input name=q size=18 style="border:1px solid #999999;background:#efefef;font-family:Tahoma;"><input type="submit" name="btnG" value="" style="font-family:Tahoma; background:url(<?php echo $path; ?>img/SearchButton.png) no-repeat; background-size:30px 30px; border:hidden;"><br><input value="http://www.ssd-cg.com" type=radio name=sitesearch checked>در این سایت<br><input type=radio name=sitesearch value="">در کل اینترنت<input type=hidden name=ie value=UTF-8><input type=hidden name=oe value=UTF-8><br></form></center>
 <!-- Google Search by www.1abzar.com --->
 <a href="http://www.alexa.com/siteinfo/seokar.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/a?
 url=www.ssd-cg.com'></script></a>           

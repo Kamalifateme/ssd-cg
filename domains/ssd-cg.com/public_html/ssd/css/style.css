@@ -201,7 +201,7 @@ nav ul {
 }
 #logo img{ display: block; width: 186px; }
 
-#site-navigation li { margin-top: 20px; }
+#site-navigation li { margin-top: 10px; }
 
 #site-navigation li a{
 	-webkit-transition: all .2s;
