@@ -48,7 +48,8 @@
 				$url1=$a[0];
 				$url2=$a[1];
 				$url3=$a[2];
-
+				$sql = "UPDATE  fx_sabt SET viwe=viwe+1 where url='$url2'";
+				mysql_query($sql) or die(mysql_error());
 				mysql_query("SET CHARACTER SET utf8");   
 				mysql_query("SET NAMES utf8_persian_ci");
 				$ses_sql=mysql_query("select * from  fx_sabt where url='$url2' ") or die(mysql_error()) ;
@@ -58,7 +59,7 @@
 				$id=$row['id'];
 				$url=$row['url'];
 				$image=$row['image'];
-
+				$viwe=$row['viwe'];
 				?>
 		<br>
 				<span itemscope itemtype="http://schema.org/isPartOf" itemprop="visit" style="font-size:20pt;"><?php echo $name; ?></span>
@@ -74,7 +75,7 @@
 				<a href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه شده</a><br>
 				<?php } ?>
 				</div>
-			
+				
 				<div id="my-comment"></div>
 		
 	</section>
@@ -107,6 +108,9 @@
 			   });
 		});
 	</script>
+    <link rel="stylesheet" href="<?php echo $path; ?>css/Fr.star.css" />
+    <script src="<?php echo $path; ?>Francium-Star-master/js/Fr.star.js"></script>
+    <script src="<?php echo $path; ?>Francium-Star-master/js/rate.js"></script>
 
 </body>
 </html>
