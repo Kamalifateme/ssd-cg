@@ -414,10 +414,10 @@ EasyComment.prototype.showPaging = function(nTotal){
          var arrStyle = [
             "<style type='text/css'>",
             ".ec-comment-pane{position:relative; padding-left:20px; margin:5px 0; overflow:auto; direction:rtl}",
-            ".ec-comment-pane div.ec-total{height:30px; line-height:24px; direction:rtl; background:linear-gradient(#ffffff,#dddddd); color:#444;width: 15%; padding: 0px 5px; border-top-right-radius: 6px; border-top-left-radius: 6px; border: 1px solid #ccc; margin-right : 1%;}",
-            ".ec-comment-pane div.ec-paging{height:30px; line-height:30px;text-align:right; background:#fff; border-top-left-radius:12px; border-top-right-radius:12px;}",
+            ".ec-comment-pane div.ec-total{height:30px; line-height:24px; direction:rtl; background:linear-gradient(#ffffff,#dddddd); color:#444;width: 15%; padding: 0px 5px; border-radius: 6px; border: 1px solid #ccc; margin : auto;}",
+            ".ec-comment-pane div.ec-paging{height:30px; line-height:30px;text-align:right;}",
             ".ec-comment-pane div.ec-paging>button{font:13px arial;height:30px; line-height:30px;margin-right:10px;}",
-            ".ec-comment-pane ul.ec-comment-list{position:relative; font-family:'Lucida Grande',sans-serif; font-size:14px; line-height:16px; list-style-type:none; padding:0px; background:linear-gradient(#ffffff,#eeeeee); border:0px solid #14a1cc; border-bottom-left-radius:12px; border-bottom-right-radius:12px; overflow:auto; margin-bottom:1%; direction: rtl;}",
+            ".ec-comment-pane ul.ec-comment-list{position:relative; font-family:'Lucida Grande',sans-serif; font-size:14px; line-height:16px; list-style-type:none; padding:0px; background:linear-gradient(#ffffff,#eeeeee); border:0px solid #14a1cc; border-radius:12px; overflow:auto; margin-bottom:1%; direction: rtl;}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment{position:relative; min-height:48px; min-width:48px; padding:4px 4px 12px 56px; margin-bottom:8px; border-radius:4px; font-size:9pt arial; direction:rtl; border-bottom: 1px #bbb dotted;}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment:last-child{border:none; padding-bottom:0px}",
             ".ec-comment-pane ul.ec-comment-list li.ec-comment button{font:11px arial}",
