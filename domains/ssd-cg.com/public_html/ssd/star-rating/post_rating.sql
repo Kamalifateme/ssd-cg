@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `post_rating`
 --
 
-CREATE TABLE IF NOT EXISTS `post_rating` (
+CREATE TABLE IF NOT EXISTS `fx_post_rating` (
   `rating_id` int(11) NOT NULL,
   `post_id` int(11) NOT NULL,
   `rating_number` int(11) NOT NULL,
