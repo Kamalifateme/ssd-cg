@@ -39,7 +39,7 @@
 						<h1 title="برگزاری دوره‌ های آموزشی حضوری و رایگان آنلاین کارآفرینی و کسب و کار" style="direction:rtl;text-align:center;">آموزش آنلاین</h1>
 
 <center>
-			<ul class="grid effect-2" id="grid" style="margin-top:20px;border-bottom:1px #bbb dotted;">
+			<ul class="grid effect-2" id="grid" style="margin-top:20px;border-bottom:1px #bbb dotted;overflow:auto">
 
 				<?php
 				mysql_query("SET CHARACTER SET utf8");   
