@@ -69,11 +69,11 @@
 				<a href="<?php echo $path; ?>management/<?php echo $url; ?>">
 				<?php if($image=="") {} else { ?>
 				<img itemscope itemtype="http://schema.org/photo" itemprop="managementImage" src="<?php echo $image; ?>" style="width:100%;height:150px" />
-				<?php }} ?>
+				<?php } ?>
 				<span itemscope itemtype="http://schema.org/name" itemprop="nameofsection" style="font-family:BTraffic;font-size:14pt;color:#000;text-align:justify;direction:rtl;padding:10px;display:block;padding-top:5px;"><?php echo $name; ?></span>			 
 				</a>
 				</li>
-				<?php } ?>	
+				<?php }} ?>	
 			</ul>
 		</center>
         <h5 title="آرشیو مقالات مجله کسب و کار" style="direction:rtl;text-align:right;color:#bbb;margin-top:-20px">آرشیو</h5>

@@ -79,7 +79,17 @@
 				<a itemscope itemtype="http://schema.org/url" itemprop="دریافت فایل ضمیمه شده" href="<?php echo $file; ?>" style="font-size:13pt;display:block;border-radius:6px;border:2px #fff solid;width:200px;text-align:center;padding:5px;">دریافت فایل ضمیمه</a><br>
 				<?php } ?>
 				</div>
-
+				<?php
+				include_once 'star-rating/dbConfig.php';
+				//Fetch rating deatails from database
+				$query = "SELECT rating_number, FORMAT((total_points / rating_number),1) as average_rating FROM fx_post_rating WHERE post_id = 8".$id." AND status = 1";
+				$result = $db->query($query);
+				$ratingRow = $result->fetch_assoc();
+				?>
+                <input name="rating" value="0" id="rating_star" type="hidden" postID="8<?php echo $id?>" />
+                <div class="overall-rating">(میانگین امتیاز <span id="avgrat"><?php echo $ratingRow['average_rating']; ?></span>
+	            از <span id="totalrat"><?php echo $ratingRow['rating_number']; ?></span>  رای)</span></div>	
+                <br/><br/>
 	<div id="my-comment"></div>
 
 	</section>
@@ -121,6 +131,37 @@
 			   maxReply:5
 			   });
 		});
+	</script>
+    <link href="<?php echo $path; ?>star-rating/rating.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<?php echo $path; ?>star-rating/rating.js"></script>
+    <script language="javascript" type="text/javascript">
+	$(function() {
+		$("#rating_star").codexworld_rating_widget({
+			starLength: '5',
+			initialValue: '',
+			callbackFunctionName: 'processRating',
+			imageDirectory: 'images/',
+			inputAttr: 'postID'
+		});
+	});
+	
+	function processRating(val, attrVal){
+		$.ajax({
+			type: 'POST',
+			url: '../star-rating/rating.php',
+			data: 'postID='+attrVal+'&ratingPoints='+val,
+			dataType: 'json',
+			success : function(data) {
+				if (data.status == 'ok') {
+					alert('You have rated '+val);
+					$('#avgrat').text(data.average_rating);
+					$('#totalrat').text(data.rating_number);
+				}else{
+					alert('Some problem occured, please try again.');
+				}
+			}
+		});
+	}
 	</script>
 
 </body>

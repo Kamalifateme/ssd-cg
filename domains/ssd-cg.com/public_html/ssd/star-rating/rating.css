@@ -1,7 +1,7 @@
 .codexworld_rating_widget{
     padding: 0px;
     margin: 0px;
-    float: left;
+    float: right;
 }
 .codexworld_rating_widget li{
     line-height: 0px;
@@ -11,7 +11,7 @@
     margin: 0px;
     margin-left: 2px;
     list-style: none;
-    float: left;
+    float: right;
     cursor: pointer;
 }
 .codexworld_rating_widget li span{
@@ -21,5 +21,5 @@
 	font-size: 14px;
 	margin-top: 5px;
 	color: #8e8d8d;
-	float: left;
+	float: right;
 }

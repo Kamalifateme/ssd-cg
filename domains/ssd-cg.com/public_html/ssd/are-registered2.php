@@ -83,8 +83,9 @@
 				$ratingRow = $result->fetch_assoc();
 				?>
                 <input name="rating" value="0" id="rating_star" type="hidden" postID="1<?php echo $id?>" />
-                <div class="overall-rating">(Average Rating <span id="avgrat"><?php echo $ratingRow['average_rating']; ?></span>
-	            Based on <span id="totalrat"><?php echo $ratingRow['rating_number']; ?></span>  rating)</span></div>	
+                <div class="overall-rating">(میانگین امتیاز <span id="avgrat"><?php echo $ratingRow['average_rating']; ?></span>
+	            از <span id="totalrat"><?php echo $ratingRow['rating_number']; ?></span>  رای)</span></div>	
+                <br/><br/>
 				<div id="my-comment"></div>
 		
 	</section>
